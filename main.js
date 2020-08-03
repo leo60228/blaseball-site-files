@@ -431,13 +431,13 @@
           peanuts: 10,
           squirrels: 0,
         },
-        x = {
+        U = {
           user: j,
           initUser: function () {},
           clearUser: function () {},
           refreshUser: function () {},
         },
-        U = Object(n.createContext)(x),
+        x = Object(n.createContext)(U),
         P = function (e, a) {
           var t = Object(u.a)({}, e, {
             id: e._id,
@@ -592,9 +592,9 @@
             },
             refreshUser: c,
           };
-          return r.a.createElement(U.Provider, { value: E }, a);
+          return r.a.createElement(x.Provider, { value: E }, a);
         };
-      Y.context = U;
+      Y.context = x;
       var J = Y,
         H = r.a.createContext([]),
         F = function (e) {
@@ -1610,8 +1610,8 @@
                   )
                 : null);
         }
-        var x,
-          U = null;
+        var U,
+          x = null;
         if (d.complete) {
           var P = u[i._id],
             Y =
@@ -1622,20 +1622,20 @@
               g() === i.homeTeam
                 ? i.homeOdds - i.awayOdds
                 : i.awayOdds - i.homeOdds;
-          U = r.a.createElement(
+          x = r.a.createElement(
             "div",
             { className: "GameWidget-Outcome" },
             r.a.createElement(
               "div",
               { className: "GameWidget-Outcome-Blurb" },
               "The ",
-              (x = H) > 0.25
+              (U = H) > 0.25
                 ? "heavily favored"
-                : x > 0
+                : U > 0
                 ? "favored"
-                : x < -0.25
+                : U < -0.25
                 ? "heavy underdog"
-                : x < 0
+                : U < 0
                 ? "underdog"
                 : "",
               "\xa0",
@@ -1727,7 +1727,7 @@
               : null
           );
         } else
-          U = d.started
+          x = d.started
             ? r.a.createElement(
                 r.a.Fragment,
                 null,
@@ -2114,7 +2114,7 @@
                 )
               )
             ),
-            U,
+            x,
             F
           )
         );
@@ -2934,7 +2934,7 @@
         );
       }
       t(140);
-      function xe() {
+      function Ue() {
         return r.a.createElement(
           "div",
           { className: "Advertisement-SiteHeader" },
@@ -2952,7 +2952,7 @@
         );
       }
       t(141);
-      var Ue,
+      var xe,
         Pe = function (e) {
           var a = e.dateString,
             t = Object(n.useState)(),
@@ -3011,7 +3011,7 @@
         };
       !(function (e) {
         (e[(e.Live = 0)] = "Live"), (e[(e.Upcoming = 1)] = "Upcoming");
-      })(Ue || (Ue = {}));
+      })(xe || (xe = {}));
       var Ye,
         Je = function (e) {
           var a,
@@ -3021,11 +3021,11 @@
             l = Object(n.useContext)(V.context),
             s = void 0 === o.schedule;
           function c() {
-            return "/upcoming" === t ? Ue.Upcoming : Ue.Live;
+            return "/upcoming" === t ? xe.Upcoming : xe.Live;
           }
           if (!o.sim) return null;
-          var m = c() === Ue.Upcoming ? o.tomorrowSchedule : o.schedule,
-            u = c() === Ue.Live ? o.sim.day : o.sim.day + 1,
+          var m = c() === xe.Upcoming ? o.tomorrowSchedule : o.schedule,
+            u = c() === xe.Live ? o.sim.day : o.sim.day + 1,
             d =
               void 0 === m
                 ? null
@@ -3072,7 +3072,7 @@
                     r.a.createElement(
                       "div",
                       { className: "DailySchedule-Countdown" },
-                      c() === Ue.Upcoming
+                      c() === xe.Upcoming
                         ? r.a.createElement(Pe, { dateString: te().toString() })
                         : null
                     ),
@@ -3098,7 +3098,7 @@
                 u + 1
               )
             ),
-            r.a.createElement(xe, null),
+            r.a.createElement(Ue, null),
             r.a.createElement(
               "div",
               { className: "DailySchedule-Nav" },
@@ -3263,7 +3263,7 @@
                 T() + 1
               )
             ),
-            r.a.createElement(xe, null),
+            r.a.createElement(Ue, null),
             r.a.createElement(
               "div",
               { className: "DailySchedule-Nav" },
@@ -3359,7 +3359,7 @@
             ),
             "\xa0Standings"
           ),
-          r.a.createElement(xe, null),
+          r.a.createElement(Ue, null),
           r.a.createElement(
             "div",
             { className: "DailySchedule-Nav" },
@@ -4191,22 +4191,14 @@
                       return (
                         (e.next = 5),
                         b(t.buyUrl, JSON.stringify(t.buyParams))
-                          .then(
-                            Object(g.a)(
-                              v.a.mark(function e() {
-                                return v.a.wrap(function (e) {
-                                  for (;;)
-                                    switch ((e.prev = e.next)) {
-                                      case 0:
-                                        a(t.toast, { appearance: "success" });
-                                      case 1:
-                                      case "end":
-                                        return e.stop();
-                                    }
-                                }, e);
-                              })
-                            )
-                          )
+                          .then(function (e) {
+                            e.json().then(function (t) {
+                              t.message &&
+                                (e.ok && e.status && 200 === e.status
+                                  ? a(t.message, { appearance: "success" })
+                                  : a(t.message, { appearance: "error" }));
+                            });
+                          })
                           .then(function () {
                             t.handleComplete();
                           })
@@ -5269,7 +5261,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function xa(e, a) {
+      function Ua(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -5293,19 +5285,19 @@
         }
         return r;
       }
-      var Ua = r.a.createElement("path", {
+      var xa = r.a.createElement("path", {
           d:
             "M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v6h-6c-1.104 0-2 .896-2 2s.896 2 2 2h6v6h-14v-16zm9 8c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z",
         }),
         Pa = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = xa(e, ["svgRef", "title"]);
+            n = Ua(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
             ja({ viewBox: "0 0 24 24", ref: a }, n),
             t ? r.a.createElement("title", null, t) : null,
-            Ua
+            xa
           );
         },
         Ya = r.a.forwardRef(function (e, a) {
