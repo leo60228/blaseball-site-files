@@ -30,7 +30,9 @@
     158: function (e, a, t) {},
     159: function (e, a, t) {},
     160: function (e, a, t) {},
-    161: function (e, a, t) {
+    161: function (e, a, t) {},
+    162: function (e, a, t) {},
+    163: function (e, a, t) {
       "use strict";
       t.r(a);
       var n = t(1),
@@ -38,8 +40,8 @@
         o = t(18),
         i = t.n(o),
         l = (t(89), t(6)),
-        s = t(11),
-        c = (t(40), t(90), t(14)),
+        s = t(12),
+        c = (t(41), t(90), t(11)),
         m = function (e) {
           var a = e.path,
             t = e.className,
@@ -106,11 +108,11 @@
           );
         };
       p.context = E;
-      var A = p,
-        f = t(3),
-        v = t.n(f),
+      var f = p,
+        A = t(3),
+        v = t.n(A),
         g = t(5),
-        y = (t(15), "https://blaseball.com"),
+        y = (t(13), "https://blaseball.com"),
         b = function (e) {
           var a =
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
@@ -125,11 +127,11 @@
             body: a,
           });
         };
-      function T() {
-        return N.apply(this, arguments);
-      }
       function N() {
-        return (N = Object(g.a)(
+        return T.apply(this, arguments);
+      }
+      function T() {
+        return (T = Object(g.a)(
           v.a.mark(function e() {
             var a, t;
             return v.a.wrap(
@@ -161,10 +163,10 @@
         )).apply(this, arguments);
       }
       function S() {
-        return O.apply(this, arguments);
+        return w.apply(this, arguments);
       }
-      function O() {
-        return (O = Object(g.a)(
+      function w() {
+        return (w = Object(g.a)(
           v.a.mark(function e() {
             var a, t;
             return v.a.wrap(
@@ -196,10 +198,10 @@
         )).apply(this, arguments);
       }
       function B(e) {
-        return w.apply(this, arguments);
+        return O.apply(this, arguments);
       }
-      function w() {
-        return (w = Object(g.a)(
+      function O() {
+        return (O = Object(g.a)(
           v.a.mark(function e(a) {
             var t, n;
             return v.a.wrap(
@@ -235,10 +237,10 @@
         )).apply(this, arguments);
       }
       function I(e) {
-        return C.apply(this, arguments);
+        return k.apply(this, arguments);
       }
-      function C() {
-        return (C = Object(g.a)(
+      function k() {
+        return (k = Object(g.a)(
           v.a.mark(function e(a) {
             var t, n;
             return v.a.wrap(
@@ -271,7 +273,7 @@
           })
         )).apply(this, arguments);
       }
-      function k(e) {
+      function C(e) {
         return R.apply(this, arguments);
       }
       function R() {
@@ -311,10 +313,10 @@
         )).apply(this, arguments);
       }
       function G(e) {
-        return D.apply(this, arguments);
+        return L.apply(this, arguments);
       }
-      function D() {
-        return (D = Object(g.a)(
+      function L() {
+        return (L = Object(g.a)(
           v.a.mark(function e(a) {
             var t, n;
             return v.a.wrap(
@@ -345,11 +347,11 @@
           })
         )).apply(this, arguments);
       }
-      function L(e) {
-        return Q.apply(this, arguments);
+      function D(e) {
+        return M.apply(this, arguments);
       }
-      function Q() {
-        return (Q = Object(g.a)(
+      function M() {
+        return (M = Object(g.a)(
           v.a.mark(function e(a) {
             var t, n;
             return v.a.wrap(
@@ -380,7 +382,7 @@
           })
         )).apply(this, arguments);
       }
-      var M = {
+      var P = {
           id: "",
           email: "",
           isSignedIn: !1,
@@ -397,14 +399,14 @@
           peanuts: 10,
           squirrels: 0,
         },
-        W = {
-          user: M,
+        Q = {
+          user: P,
           initUser: function () {},
           clearUser: function () {},
           refreshUser: function () {},
         },
-        j = Object(n.createContext)(W),
-        U = function (e, a) {
+        W = Object(n.createContext)(Q),
+        j = function (e, a) {
           var t = Object(u.a)({}, e, {
             id: e._id,
             isFetching: !1,
@@ -424,7 +426,7 @@
         },
         x = function (e) {
           var a = e.children,
-            t = Object(n.useState)(M),
+            t = Object(n.useState)(P),
             o = Object(l.a)(t, 2),
             i = o[0],
             s = o[1],
@@ -454,7 +456,7 @@
                                           switch ((e.prev = e.next)) {
                                             case 0:
                                               if (
-                                                (((t = U(
+                                                (((t = j(
                                                   a,
                                                   i
                                                 )).isFetching = !1),
@@ -554,16 +556,16 @@
             user: i,
             initUser: m,
             clearUser: function () {
-              h.emit("setUserId", { userId: "" }), s(M);
+              h.emit("setUserId", { userId: "" }), s(P);
             },
             refreshUser: c,
           };
-          return r.a.createElement(j.Provider, { value: E }, a);
+          return r.a.createElement(W.Provider, { value: E }, a);
         };
-      x.context = j;
-      var P = x,
+      x.context = W;
+      var U = x,
         Y = r.a.createContext([]),
-        J = function (e) {
+        H = function (e) {
           var a = e.children,
             t = Object(s.g)().pathname,
             o = Object(n.useState)({}),
@@ -596,10 +598,10 @@
             r.a.createElement(Y.Provider, { value: c }, a)
           );
         };
-      J.context = Y;
-      var F = J;
-      function H() {
-        return (H =
+      H.context = Y;
+      var J = H;
+      function F() {
+        return (F =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -687,7 +689,7 @@
             n = V(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            H(
+            F(
               {
                 viewBox: "0 0 255 197",
                 xmlSpace: "preserve",
@@ -704,7 +706,7 @@
           );
         },
         _ = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(X, H({ svgRef: a }, e));
+          return r.a.createElement(X, F({ svgRef: a }, e));
         });
       t.p;
       function $(e) {
@@ -742,7 +744,7 @@
         return a;
       }
       var ae,
-        te = t(12),
+        te = t(14),
         ne = t(80),
         re = t(17),
         oe = (t(128), t(129), t(27)),
@@ -829,7 +831,7 @@
         ce = t(16),
         me = t(24),
         ue = t(23),
-        de = t(53),
+        de = t(54),
         he =
           (t(134),
           function () {
@@ -853,9 +855,9 @@
           ? Math.round(a * (2 + 555e-6 * Math.pow(100 * (0.5 - e), 2.4135)))
           : Math.round(a * (2 - 335e-6 * Math.pow(100 * (e - 0.5), 2.045)));
       }
-      var Ae = function (e) {
+      var fe = function (e) {
           var a = Object(ce.useToasts)().addToast,
-            t = Object(n.useContext)(P.context),
+            t = Object(n.useContext)(U.context),
             o = t.user,
             i = t.refreshUser,
             c = Object(s.f)(),
@@ -865,16 +867,16 @@
             h = Object(l.a)(d, 2),
             E = h[0],
             p = h[1],
-            f = Object(n.useState)(""),
-            v = Object(l.a)(f, 2),
+            A = Object(n.useState)(""),
+            v = Object(l.a)(A, 2),
             g = v[0],
             y = v[1],
-            T = Object(n.useState)(void 0),
-            N = Object(l.a)(T, 2),
-            S = N[0],
-            O = N[1],
-            B = Object(n.useContext)(A.context),
-            w = function (e) {
+            N = Object(n.useState)(void 0),
+            T = Object(l.a)(N, 2),
+            S = T[0],
+            w = T[1],
+            B = Object(n.useContext)(f.context),
+            O = function (e) {
               var a = e.target.value;
               p(a);
             };
@@ -895,7 +897,7 @@
                     : a.find(function (e) {
                         return u === e._id;
                       })),
-                t && (O(t), y(t.homeTeam));
+                t && (w(t), y(t.homeTeam));
             }, []),
             void 0 === S)
           )
@@ -910,8 +912,8 @@
                 value: null === S || void 0 === S ? void 0 : S.awayTeam,
               },
             ],
-            C = ue.maxBetTiers[o.maxBetTier].amount,
-            k = function () {
+            k = ue.maxBetTiers[o.maxBetTier].amount,
+            C = function () {
               return S ? (g === S.homeTeam ? S.homeOdds : S.awayOdds) : 0.5;
             };
           S && (g === S.homeTeam ? S.homeTeamNickname : S.awayTeamNickname),
@@ -922,7 +924,7 @@
               {
                 style: {
                   color:
-                    ((R = k()),
+                    ((R = C()),
                     R > 0.6
                       ? "#59bd42"
                       : R > 0.5
@@ -933,21 +935,21 @@
                 },
                 className: "Bet-Outcome-Winnings",
               },
-              Math.round(100 * k()),
+              Math.round(100 * C()),
               "%"
             ),
-            D = r.a.createElement(
+            L = r.a.createElement(
               "span",
               { className: "Bet-Outcome-Winnings" },
-              pe(k(), E)
+              pe(C(), E)
             ),
-            L = r.a.createElement(
+            D = r.a.createElement(
               "div",
               { className: "Bet-Outcome-Wrapper" },
               "You'll have a ",
               G,
               " chance to win ",
-              D,
+              L,
               " coins."
             );
           return r.a.createElement(
@@ -963,8 +965,8 @@
               {
                 className: "Bet-Form",
                 onSubmit: function (e) {
-                  if ((e.preventDefault(), E > C))
-                    a("Max bet is ".concat(C, "!"), { appearance: "error" });
+                  if ((e.preventDefault(), E > k))
+                    a("Max bet is ".concat(k, "!"), { appearance: "error" });
                   else {
                     var t = {
                       gameId: u,
@@ -972,7 +974,7 @@
                       userId: o._id,
                       entityId: g,
                       type: "winner",
-                      odds: k(),
+                      odds: C(),
                     };
                     b("/api/bet", JSON.stringify(t)).then(function (e) {
                       e.ok && e.status && 200 === e.status
@@ -1049,26 +1051,26 @@
                         "div",
                         { className: "Bet-Form-Inputs-Amount-MaxBet" },
                         "Max Bet: ",
-                        C
+                        k
                       )
                     ),
                     r.a.createElement(me.a.Control, {
                       type: "number",
                       value: E,
-                      onChange: w,
+                      onChange: O,
                     }),
                     r.a.createElement(me.a.Control, {
                       type: "range",
                       min: 0,
-                      max: Math.min(o.coins, C),
+                      max: Math.min(o.coins, k),
                       value: E,
-                      onChange: w,
+                      onChange: O,
                       step: "1",
                     })
                   )
                 )
               ),
-              L,
+              D,
               r.a.createElement(
                 "div",
                 { className: "Bet-Submit-Wrapper" },
@@ -1085,40 +1087,40 @@
             )
           );
         },
-        fe = (t(136), t(20));
+        Ae = (t(136), t(20));
       function ve(e) {
         var a = e.type,
           t = null;
         switch (a) {
           case 0:
-            t = r.a.createElement(fe.e, null);
+            t = r.a.createElement(Ae.e, null);
             break;
           case 1:
-            t = r.a.createElement(fe.c, null);
+            t = r.a.createElement(Ae.c, null);
             break;
           case 2:
-            t = r.a.createElement(fe.a, null);
+            t = r.a.createElement(Ae.a, null);
             break;
           case 3:
-            t = r.a.createElement(fe.f, null);
+            t = r.a.createElement(Ae.f, null);
             break;
           case 4:
-            t = r.a.createElement(fe.g, null);
+            t = r.a.createElement(Ae.g, null);
             break;
           case 5:
-            t = r.a.createElement(fe.h, null);
+            t = r.a.createElement(Ae.h, null);
             break;
           case 6:
-            t = r.a.createElement(fe.d, null);
+            t = r.a.createElement(Ae.d, null);
             break;
           case 7:
-            t = r.a.createElement(fe.i, null);
+            t = r.a.createElement(Ae.i, null);
             break;
           case 8:
-            t = r.a.createElement(fe.j, null);
+            t = r.a.createElement(Ae.j, null);
             break;
           case 9:
-            t = r.a.createElement(fe.k, null);
+            t = r.a.createElement(Ae.k, null);
             break;
           case 10:
             t = r.a.createElement(re.g, null);
@@ -1196,11 +1198,11 @@
       function be(e) {
         return e.homeScore;
       }
-      function Te(e) {
+      function Ne(e) {
         return e.awayScore;
       }
-      function Ne(e) {
-        var a = Object(n.useContext)(A.context),
+      function Te(e) {
+        var a = Object(n.useContext)(f.context),
           t = (function (e, a) {
             var t, n, r, o;
             if (a) {
@@ -1219,7 +1221,7 @@
               awayTeamName: e.awayTeamNickname,
               awayTeamWins: void 0 === r ? "" : r.toString(),
               awayTeamLosses: void 0 === o ? "" : o.toString(),
-              awayTeamScore: Te(e).toString(),
+              awayTeamScore: Ne(e).toString(),
             };
           })(e.data, a.standings);
         return r.a.createElement(Se, { data: e.data, metaInfo: t });
@@ -1230,8 +1232,8 @@
           o,
           i = e.data,
           l = e.metaInfo,
-          c = Object(n.useContext)(P.context).user,
-          u = Object(n.useContext)(F.context),
+          c = Object(n.useContext)(U.context).user,
+          u = Object(n.useContext)(J.context),
           d = {
             started: (a = i).gameStart,
             complete: a.gameComplete,
@@ -1345,9 +1347,9 @@
             );
           })(d),
           p = i.topOfInning ? i.awayTeamColor : i.homeTeamColor,
-          A = i.topOfInning ? i.homeTeamColor : i.awayTeamColor,
-          f = be(i),
-          v = Te(i);
+          f = i.topOfInning ? i.homeTeamColor : i.awayTeamColor,
+          A = be(i),
+          v = Ne(i);
         function g() {
           return i.homeScore > i.awayScore ? i.homeTeam : i.awayTeam;
         }
@@ -1361,7 +1363,7 @@
             ? i.awayTeamNickname
             : "Null Team";
         }
-        function T(e) {
+        function N(e) {
           return e === i.homeTeam
             ? i.homeTeamColor
             : e === i.awayTeam
@@ -1369,14 +1371,14 @@
             : "Null Color";
         }
         (t =
-          f > v && i.gameComplete
+          A > v && i.gameComplete
             ? { border: 2, borderColor: "#fffffff", borderStyle: "solid" }
             : {}),
           (o =
-            v > f && i.gameComplete
+            v > A && i.gameComplete
               ? { border: 2, borderColor: "#fffffff", borderStyle: "solid" }
               : {});
-        var N = (function (e) {
+        var T = (function (e) {
             for (
               var a = {
                   onFirst: !1,
@@ -1405,16 +1407,16 @@
             return a;
           })(i),
           S = "";
-        N.onFirst && (S += " first"),
-          N.onSecond && (S += " second"),
-          N.onThird && (S += " third");
-        var O = r.a.createElement(
+        T.onFirst && (S += " first"),
+          T.onSecond && (S += " second"),
+          T.onThird && (S += " third");
+        var w = r.a.createElement(
             "div",
             { className: "GameWidget-Bases" + S },
             r.a.createElement(_, { width: "100%", height: "100%" })
           ),
           B = r.a.createElement("div", { className: "GameWidget-Outs" }, E),
-          w =
+          O =
             d.complete || !d.started
               ? r.a.createElement("div", null)
               : r.a.createElement(
@@ -1436,7 +1438,7 @@
                       "div",
                       {
                         className: "GameWidget-PlayerLineNameWrapper",
-                        style: { background: $(A, 0.5) },
+                        style: { background: $(f, 0.5) },
                       },
                       r.a.createElement(
                         "div",
@@ -1473,17 +1475,17 @@
                   )
                 ),
           I = Object(s.g)(),
-          C = null;
-        if (d.started && c.isSignedIn) C = null;
-        else if (d.started) C = r.a.createElement("div", null);
+          k = null;
+        if (d.started && c.isSignedIn) k = null;
+        else if (d.started) k = r.a.createElement("div", null);
         else if (c.isSignedIn) {
-          var k,
+          var C,
             R = u[i._id],
             G = (null === R || void 0 === R ? void 0 : R.length) || 0,
-            D = G > 0 ? R[0] : void 0;
-          void 0 !== D &&
-            (k = D.entityId === i.homeTeam ? i.homeTeamName : i.awayTeamName),
-            (C = r.a.createElement(
+            L = G > 0 ? R[0] : void 0;
+          void 0 !== L &&
+            (C = L.entityId === i.homeTeam ? i.homeTeamName : i.awayTeamName),
+            (k = r.a.createElement(
               ne.a,
               { className: "GameWidget-Button-Centered" },
               G > 0
@@ -1493,7 +1495,7 @@
                     r.a.createElement(re.k, null),
                     " ",
                     G > 0
-                      ? "".concat(D.amount, " on ").concat(k)
+                      ? "".concat(L.amount, " on ").concat(C)
                       : "No active bets"
                   )
                 : r.a.createElement(
@@ -1507,7 +1509,7 @@
                   )
             ));
         } else
-          C = r.a.createElement(
+          k = r.a.createElement(
             "a",
             { href: "/login" },
             r.a.createElement(
@@ -1516,17 +1518,17 @@
               "Login to Play"
             )
           );
-        var L = null,
-          Q = null;
+        var D = null,
+          M = null;
         if (d.started) {
-          var M = u[i._id],
-            W =
-              ((null === M || void 0 === M ? void 0 : M.length) || 0) > 0
-                ? M[0]
+          var P = u[i._id],
+            Q =
+              ((null === P || void 0 === P ? void 0 : P.length) || 0) > 0
+                ? P[0]
                 : void 0,
-            j = void 0 !== W ? pe(W.odds, W.amount) : 0;
-          (L =
-            void 0 !== W && W.entityId === i.homeTeam
+            W = void 0 !== Q ? pe(Q.odds, Q.amount) : 0;
+          (D =
+            void 0 !== Q && Q.entityId === i.homeTeam
               ? r.a.createElement(
                   "div",
                   { className: "GameWidget-ScoreBet" },
@@ -1537,7 +1539,7 @@
                     r.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
-                      W.amount
+                      Q.amount
                     )
                   ),
                   r.a.createElement(
@@ -1546,12 +1548,12 @@
                     r.a.createElement("div", {
                       className: "GameWidget-ScoreBet-Triangle",
                     }),
-                    j
+                    W
                   )
                 )
               : null),
-            (Q =
-              void 0 !== W && W.entityId === i.awayTeam
+            (M =
+              void 0 !== Q && Q.entityId === i.awayTeam
                 ? r.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet" },
@@ -1562,7 +1564,7 @@
                       r.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
-                        W.amount
+                        Q.amount
                       )
                     ),
                     r.a.createElement(
@@ -1571,20 +1573,20 @@
                       r.a.createElement("div", {
                         className: "GameWidget-ScoreBet-Triangle",
                       }),
-                      j
+                      W
                     )
                   )
                 : null);
         }
-        var U,
+        var j,
           x = null;
         if (d.complete) {
           var Y = u[i._id],
-            J =
+            H =
               ((null === Y || void 0 === Y ? void 0 : Y.length) || 0) > 0
                 ? Y[0]
                 : void 0,
-            H =
+            F =
               g() === i.homeTeam
                 ? i.homeOdds - i.awayOdds
                 : i.awayOdds - i.homeOdds;
@@ -1595,13 +1597,13 @@
               "div",
               { className: "GameWidget-Outcome-Blurb" },
               "The ",
-              (U = H) > 0.25
+              (j = F) > 0.25
                 ? "heavily favored"
-                : U > 0
+                : j > 0
                 ? "favored"
-                : U < -0.25
+                : j < -0.25
                 ? "heavy underdog"
-                : U < 0
+                : j < 0
                 ? "underdog"
                 : "",
               "\xa0",
@@ -1631,7 +1633,7 @@
                     "span",
                     {
                       className: "GameWidget-Outcome-Callout",
-                      style: { color: T(y()) },
+                      style: { color: N(y()) },
                     },
                     b(y())
                   ),
@@ -1643,7 +1645,7 @@
                   )
                 )
               : null,
-            void 0 !== J
+            void 0 !== H
               ? r.a.createElement(
                   "div",
                   { className: "GameWidget-Outcome-Blurb" },
@@ -1653,19 +1655,19 @@
                     { className: "GameWidget-Outcome-Callout" },
                     r.a.createElement(re.k, null),
                     "\xa0",
-                    J.amount
+                    H.amount
                   ),
                   "\xa0on the \xa0",
                   r.a.createElement(
                     "span",
                     {
                       className: "GameWidget-Outcome-Callout",
-                      style: { color: T(J.entityId) },
+                      style: { color: N(H.entityId) },
                     },
-                    b(J.entityId)
+                    b(H.entityId)
                   ),
                   "\xa0and ",
-                  g() == J.entityId
+                  g() == H.entityId
                     ? r.a.createElement(
                         "span",
                         null,
@@ -1675,7 +1677,7 @@
                           { className: "GameWidget-Outcome-Callout" },
                           r.a.createElement(re.k, null),
                           "\xa0",
-                          pe(J.odds, J.amount)
+                          pe(H.odds, H.amount)
                         ),
                         "."
                       )
@@ -1708,9 +1710,9 @@
                       r.a.createElement(
                         r.a.Fragment,
                         null,
-                        O,
-                        B,
                         w,
+                        B,
+                        O,
                         r.a.createElement(
                           "div",
                           { className: "GameWidget-Log" },
@@ -1786,7 +1788,7 @@
                     r.a.createElement(
                       "div",
                       { className: "GameWidget-Upcoming-Body" },
-                      r.a.createElement(fe.b, {
+                      r.a.createElement(Ae.b, {
                         className: "GameWidget-Upcoming-Icon",
                       }),
                       r.a.createElement(
@@ -1906,7 +1908,7 @@
                   r.a.createElement(
                     "div",
                     { className: "GameWidget-Upcoming-BetButtons" },
-                    C
+                    k
                   )
                 )
               );
@@ -1925,7 +1927,7 @@
               { className: "GameWidget-Log-Content" },
               i.lastUpdate
             ),
-            C
+            k
           ));
         var q = d.started ? "GameWidget-Full-Live" : "GameWidget-Full-Upcoming",
           K = i.isPostseason
@@ -2007,7 +2009,7 @@
                               Math.round(100 * i.awayOdds),
                               "%"
                             ),
-                            Q
+                            M
                           )
                         : null
                     )
@@ -2067,7 +2069,7 @@
                               Math.round(100 * i.homeOdds),
                               "%"
                             ),
-                            L
+                            D
                           )
                         : null
                     )
@@ -2085,7 +2087,7 @@
           )
         );
       }
-      function Oe(e) {
+      function we(e) {
         var a = (function (e, a) {
           var t = void 0;
           if (void 0 !== a)
@@ -2102,16 +2104,16 @@
             awayTeamName: e.awayTeamNickname,
             awayTeamWins: void 0 === t ? "" : t.awayWins,
             awayTeamLosses: void 0 === t ? "" : t.homeWins,
-            awayTeamScore: Te(e).toString(),
+            awayTeamScore: Ne(e).toString(),
           };
         })(e.data, e.matchups);
         return r.a.createElement(Se, { data: e.data, metaInfo: a });
       }
       t(137);
-      var Be = t(38),
-        we = t(82),
+      var Be = t(39),
+        Oe = t(82),
         Ie = t(81),
-        Ce =
+        ke =
           (t(138),
           function (e) {
             var a,
@@ -2125,13 +2127,13 @@
               h = Object(n.useState)(!1),
               E = Object(l.a)(h, 2),
               p = E[0],
-              A = E[1],
-              f = function () {
-                clearTimeout(a), A(!0);
+              f = E[1],
+              A = function () {
+                clearTimeout(a), f(!0);
               },
               v = function () {
                 a = setTimeout(function () {
-                  A(!1);
+                  f(!1);
                 }, 100);
               },
               g = r.a.createElement(
@@ -2143,7 +2145,7 @@
                     e.arrowProps,
                     e.outOfBoundaries,
                     e.show;
-                  var a = Object(we.a)(e, [
+                  var a = Object(Oe.a)(e, [
                     "placement",
                     "scheduleUpdate",
                     "arrowProps",
@@ -2155,7 +2157,7 @@
                     Object.assign({}, a, {
                       style: Object(u.a)({}, a.style, { top: "12px" }),
                       className: "Overlay ".concat(c),
-                      onMouseOver: f,
+                      onMouseOver: A,
                       onMouseOut: v,
                     }),
                     r.a.createElement("div", { className: "Overlay-Arrow" }),
@@ -2172,7 +2174,7 @@
                     {
                       href: s,
                       ref: t,
-                      onMouseOver: f,
+                      onMouseOver: A,
                       onMouseOut: v,
                       className: m,
                     },
@@ -2188,7 +2190,7 @@
                     "button",
                     {
                       ref: t,
-                      onMouseOver: f,
+                      onMouseOver: A,
                       onMouseOut: v,
                       onClick: d,
                       className: m,
@@ -2202,14 +2204,14 @@
                   null,
                   r.a.createElement(
                     "div",
-                    { ref: t, onMouseOver: f, onMouseOut: v, className: m },
+                    { ref: t, onMouseOver: A, onMouseOut: v, className: m },
                     i
                   ),
                   g
                 );
           });
       t(139);
-      function ke() {
+      function Ce() {
         var e = Object(n.useState)([]),
           a = Object(l.a)(e, 2),
           t = a[0],
@@ -2232,7 +2234,7 @@
                 for (;;)
                   switch ((e.prev = e.next)) {
                     case 0:
-                      return (e.next = 2), T();
+                      return (e.next = 2), N();
                     case 2:
                       if (((a = e.sent), (t = []), void 0 !== a)) {
                         e.next = 6;
@@ -2253,15 +2255,15 @@
         var h = "EventTicker-Group";
         if (c) {
           for (var E = 0, p = 0; p < t.length; p++) E += t[p].length;
-          var A = E / 5;
+          var f = E / 5;
           h +=
-            A > 300
+            f > 300
               ? " EventTicker-Group-Animating-300"
-              : A > 240
+              : f > 240
               ? " EventTicker-Group-Animating-240"
-              : A > 180
+              : f > 180
               ? " EventTicker-Group-Animating-180"
-              : A > 120
+              : f > 120
               ? " EventTicker-Group-Animating-120"
               : " EventTicker-Group-Animating-60";
         }
@@ -2292,10 +2294,10 @@
         );
       }
       var Re = function () {
-          var e = Object(n.useContext)(P.context),
+          var e = Object(n.useContext)(U.context),
             a = e.user,
             t = (e.clearUser, e.refreshUser),
-            o = Object(n.useContext)(A.context),
+            o = Object(n.useContext)(f.context),
             i = (Object(s.f)(), Object(n.useState)(!1)),
             c = Object(l.a)(i, 2),
             m = c[0],
@@ -2309,7 +2311,7 @@
             ],
             E = ["SO GOOD", "YUMMY", "SO GREAT"],
             p = Object(n.useRef)(Math.floor(Math.random() * h.length)),
-            f = Object(n.useRef)(Math.floor(Math.random() * E.length)),
+            A = Object(n.useRef)(Math.floor(Math.random() * E.length)),
             y = r.a.createElement(
               "div",
               { className: "CoinOverlay-Content" },
@@ -2319,7 +2321,7 @@
                 "Earn Coins by placing bets on upcoming games"
               )
             ),
-            T = r.a.createElement(
+            N = r.a.createElement(
               "div",
               { className: "CoinOverlay-Content" },
               r.a.createElement(
@@ -2328,24 +2330,24 @@
                 "Buy Votes in the Shop to spend in the Offseason"
               )
             ),
-            N = r.a.createElement(
+            T = r.a.createElement(
               "div",
               { className: "CoinOverlay-Content" },
               r.a.createElement(
                 "div",
                 { className: "CoinOverlay-Content-Body" },
-                m ? E[f.current] : h[p.current]
+                m ? E[A.current] : h[p.current]
               )
             ),
             S = null;
           if (a.favoriteTeamInfo) {
-            var O = String.fromCodePoint(Number(a.favoriteTeamInfo.emoji)),
+            var w = String.fromCodePoint(Number(a.favoriteTeamInfo.emoji)),
               B = encodeURIComponent(
                 ""
                   .concat(a.favoriteTeamInfo.slogan || "", " ")
-                  .concat(O, " #blaseball")
+                  .concat(w, " #blaseball")
               ),
-              w = "http://twitter.com/intent/tweet?text=".concat(
+              O = "http://twitter.com/intent/tweet?text=".concat(
                 B,
                 "&url=https%3A%2F%2Fblaseball.com"
               );
@@ -2353,18 +2355,18 @@
               "a",
               {
                 target: "_blank",
-                href: w,
+                href: O,
                 style: { background: a.favoriteTeamInfo.mainColor },
                 className: "Navigation-FavoriteTeamEmoji",
               },
-              O
+              w
             );
           }
           return r.a.createElement(
             r.a.Fragment,
             null,
             r.a.createElement(
-              Ce,
+              ke,
               {
                 className: "CoinOverlay",
                 buttonClassname: "Navigation-CurrencyButton",
@@ -2377,11 +2379,11 @@
             ),
             a.unlockedElection
               ? r.a.createElement(
-                  Ce,
+                  ke,
                   {
                     className: "CoinOverlay",
                     buttonClassname: "Navigation-CurrencyButton",
-                    content: T,
+                    content: N,
                     url: "/shop",
                   },
                   r.a.createElement(re.j, null),
@@ -2394,11 +2396,11 @@
                   "div",
                   { className: "Peanut-Container" },
                   r.a.createElement(
-                    Ce,
+                    ke,
                     {
                       className: "CoinOverlay",
                       buttonClassname: "Navigation-CurrencyButton",
-                      content: N,
+                      content: T,
                       handleClick: m
                         ? void 0
                         : function () {
@@ -2568,38 +2570,46 @@
           return r.a.createElement(
             r.a.Fragment,
             null,
-            r.a.createElement(Le, { isModal: !0, path: "/signup" }, "Signup"),
-            r.a.createElement(Le, { isModal: !0, path: "/login" }, "Login")
+            r.a.createElement(De, { isModal: !0, path: "/signup" }, "Signup"),
+            r.a.createElement(De, { isModal: !0, path: "/login" }, "Login")
           );
         };
-      function De(e) {
-        var a = Object(n.useContext)(A.context),
-          t = Object(n.useContext)(P.context).user,
-          o = Object(n.useState)(!1),
-          i = Object(l.a)(o, 2),
-          s = i[0],
-          c = i[1],
-          m = [];
-        m.push({
-          text: "League",
-          path: "/",
-          subpaths: ["/upcoming", "/standings"],
-        }),
-          t &&
-            t.isSignedIn &&
-            (m.push({ text: "Shop", path: "/shop", locked: !t.unlockedShop }),
-            m.push({
+      function Le(e) {
+        var a,
+          t = Object(n.useContext)(f.context),
+          o = Object(n.useContext)(U.context).user,
+          i = Object(n.useState)(!1),
+          s = Object(l.a)(i, 2),
+          c = s[0],
+          m = s[1],
+          u = [];
+        (null === (a = t.sim) || void 0 === a ? void 0 : a.unlockedInterviews)
+          ? (u.push({ text: "Hello", path: "/" }),
+            u.push({
+              text: "League",
+              path: "/league",
+              subpaths: ["/upcoming", "/standings"],
+            }))
+          : u.push({
+              text: "League",
+              path: "/",
+              subpaths: ["/upcoming", "/standings"],
+            }),
+          o &&
+            o.isSignedIn &&
+            (u.push({ text: "Shop", path: "/shop", locked: !o.unlockedShop }),
+            u.push({
               text: "Election",
               path: "/offseason",
-              locked: !t.unlockedElection,
+              locked: !o.unlockedElection,
             }),
-            a &&
-              a.sim &&
-              a.sim.openedBook &&
-              m.push({ text: "Book", path: "/thebook" }));
-        var u = t.isFetching
+            t &&
+              t.sim &&
+              t.sim.openedBook &&
+              u.push({ text: "Book", path: "/thebook" }));
+        var d = o.isFetching
           ? null
-          : t.isSignedIn
+          : o.isSignedIn
           ? r.a.createElement(Re, null)
           : r.a.createElement(Ge, null);
         return r.a.createElement(
@@ -2678,7 +2688,7 @@
                     "BETA"
                   )
                 );
-              })(a),
+              })(t),
               r.a.createElement(
                 "div",
                 { className: "Navigation-Patreon" },
@@ -2737,7 +2747,7 @@
                 "div",
                 {
                   className: "Navigation-Bar-Menu ".concat(
-                    s ? "Navigation-Bar-Menu--IsOpen" : ""
+                    c ? "Navigation-Bar-Menu--IsOpen" : ""
                   ),
                 },
                 r.a.createElement(
@@ -2745,7 +2755,7 @@
                   {
                     className: "Navigation-Bar-Menu-Toggle",
                     onClick: function () {
-                      return c(!s);
+                      return m(!c);
                     },
                   },
                   "My Account"
@@ -2753,21 +2763,21 @@
                 r.a.createElement(
                   "div",
                   { className: "Navigation-Bar-Menu-List" },
-                  u
+                  d
                 )
               )
             )
           ),
-          a && a.sim && a.sim.openedBook ? r.a.createElement(ke, null) : null,
+          t && t.sim && t.sim.openedBook ? r.a.createElement(Ce, null) : null,
           r.a.createElement(
             "div",
             { className: "Navigation-Bar" },
             r.a.createElement(
               "div",
               { className: "Navigation-Bar-Section" },
-              m.map(function (e, a) {
+              u.map(function (e, a) {
                 return r.a.createElement(
-                  Le,
+                  De,
                   { key: a, path: e.path, subpaths: e.subpaths },
                   e.text,
                   " ",
@@ -2781,12 +2791,12 @@
                 className:
                   "Navigation-Bar-Section Navigation-Bar-Section--Desktop",
               },
-              u
+              d
             )
           )
         );
       }
-      function Le(e) {
+      function De(e) {
         var a = e.path,
           t = e.isModal,
           n = e.subpaths,
@@ -2812,8 +2822,8 @@
           e.children
         );
       }
-      function Qe() {
-        Object(n.useContext)(A.context);
+      function Me() {
+        Object(n.useContext)(f.context);
         return r.a.createElement(
           "header",
           { className: "Navigation" },
@@ -2886,8 +2896,8 @@
           )
         );
       }
-      function Me() {
-        Object(n.useContext)(A.context);
+      function Pe() {
+        Object(n.useContext)(f.context);
         return r.a.createElement(
           "header",
           { className: "Navigation" },
@@ -2900,7 +2910,7 @@
         );
       }
       t(140);
-      function We() {
+      function Qe() {
         return r.a.createElement(
           "div",
           { className: "Advertisement-SiteHeader" },
@@ -2918,8 +2928,8 @@
         );
       }
       t(141);
-      var je,
-        Ue = function (e) {
+      var We,
+        je = function (e) {
           var a = e.dateString,
             t = Object(n.useState)(),
             o = Object(l.a)(t, 2),
@@ -2977,21 +2987,21 @@
         };
       !(function (e) {
         (e[(e.Live = 0)] = "Live"), (e[(e.Upcoming = 1)] = "Upcoming");
-      })(je || (je = {}));
+      })(We || (We = {}));
       var xe,
-        Pe = function (e) {
+        Ue = function (e) {
           var a,
             t = e.path,
-            o = Object(n.useContext)(A.context),
-            i = Object(n.useContext)(P.context).user,
-            l = Object(n.useContext)(F.context),
+            o = Object(n.useContext)(f.context),
+            i = Object(n.useContext)(U.context).user,
+            l = Object(n.useContext)(J.context),
             s = void 0 === o.schedule;
           function c() {
-            return "/upcoming" === t ? je.Upcoming : je.Live;
+            return "/upcoming" === t ? We.Upcoming : We.Live;
           }
           if (!o.sim) return null;
-          var m = c() === je.Upcoming ? o.tomorrowSchedule : o.schedule,
-            u = c() === je.Live ? o.sim.day : o.sim.day + 1,
+          var m = c() === We.Upcoming ? o.tomorrowSchedule : o.schedule,
+            u = c() === We.Live ? o.sim.day : o.sim.day + 1,
             d =
               void 0 === m
                 ? null
@@ -3037,7 +3047,7 @@
                       })(m)) || void 0 === a
                       ? void 0
                       : a.map(function (e, a) {
-                          return r.a.createElement(Ne, { key: a, data: e });
+                          return r.a.createElement(Te, { key: a, data: e });
                         })
                   ),
             h =
@@ -3055,8 +3065,8 @@
                     r.a.createElement(
                       "div",
                       { className: "DailySchedule-Countdown" },
-                      c() === je.Upcoming
-                        ? r.a.createElement(Ue, { dateString: ee().toString() })
+                      c() === We.Upcoming
+                        ? r.a.createElement(je, { dateString: ee().toString() })
                         : null
                     ),
                     d
@@ -3081,13 +3091,13 @@
                 u + 1
               )
             ),
-            r.a.createElement(We, null),
+            r.a.createElement(Qe, null),
             r.a.createElement(
               "div",
               { className: "DailySchedule-Nav" },
-              r.a.createElement(Le, { path: "/" }, "Watch Live"),
-              r.a.createElement(Le, { path: "/upcoming" }, "Place Bets"),
-              r.a.createElement(Le, { path: "/standings" }, "Standings")
+              r.a.createElement(De, { path: "/" }, "Watch Live"),
+              r.a.createElement(De, { path: "/upcoming" }, "Place Bets"),
+              r.a.createElement(De, { path: "/standings" }, "Standings")
             ),
             s ? r.a.createElement(Ee, null) : h
           );
@@ -3109,29 +3119,29 @@
             h,
             E,
             p = e.path,
-            f = Object(n.useContext)(A.context),
-            v = Object(n.useContext)(P.context).user,
-            g = Object(n.useContext)(F.context),
-            y = void 0 === f.schedule;
-          if (void 0 === f.postseason.playoffs) return null;
+            A = Object(n.useContext)(f.context),
+            v = Object(n.useContext)(U.context).user,
+            g = Object(n.useContext)(J.context),
+            y = void 0 === A.schedule;
+          if (void 0 === A.postseason.playoffs) return null;
           function b() {
             return "/upcoming" === p ? xe.Upcoming : xe.Live;
           }
-          function T() {
+          function N() {
             var e, a;
             return b() === xe.Live
-              ? (null === (e = f.sim) || void 0 === e ? void 0 : e.day) || -1
-              : (null === (a = f.sim) || void 0 === a ? void 0 : a.day) || 0;
+              ? (null === (e = A.sim) || void 0 === e ? void 0 : e.day) || -1
+              : (null === (a = A.sim) || void 0 === a ? void 0 : a.day) || 0;
           }
-          if (!f.sim) return null;
-          var N = b() === xe.Live ? f.schedule : f.tomorrowSchedule,
+          if (!A.sim) return null;
+          var T = b() === xe.Live ? A.schedule : A.tomorrowSchedule,
             S =
-              (b() === xe.Live ? f.sim.day : f.sim.day,
+              (b() === xe.Live ? A.sim.day : A.sim.day,
               b() === xe.Live
-                ? f.postseason.matchups
-                : f.postseason.tomorrowMatchups),
-            O =
-              void 0 === N || (void 0 !== N && N.length <= 0)
+                ? A.postseason.matchups
+                : A.postseason.tomorrowMatchups),
+            w =
+              void 0 === T || (void 0 !== T && T.length <= 0)
                 ? null
                 : r.a.createElement(
                     "ul",
@@ -3172,10 +3182,10 @@
                               : 1;
                           }))
                         );
-                      })(N)) || void 0 === a
+                      })(T)) || void 0 === a
                       ? void 0
                       : a.map(function (e, a) {
-                          return r.a.createElement(Oe, {
+                          return r.a.createElement(we, {
                             key: a,
                             data: e,
                             matchups: S,
@@ -3184,43 +3194,43 @@
                   ),
             B =
               void 0 !==
-              (null === f ||
-              void 0 === f ||
-              null === (t = f.postseason) ||
+              (null === A ||
+              void 0 === A ||
+              null === (t = A.postseason) ||
               void 0 === t ||
               null === (o = t.round) ||
               void 0 === o
                 ? void 0
                 : o.roundNumber)
-                ? null === f ||
-                  void 0 === f ||
-                  null === (i = f.postseason) ||
+                ? null === A ||
+                  void 0 === A ||
+                  null === (i = A.postseason) ||
                   void 0 === i ||
                   null === (l = i.round) ||
                   void 0 === l
                   ? void 0
                   : l.roundNumber
                 : -1,
-            w =
+            O =
               void 0 !==
-              (null === f ||
-              void 0 === f ||
-              null === (s = f.postseason) ||
+              (null === A ||
+              void 0 === A ||
+              null === (s = A.postseason) ||
               void 0 === s ||
               null === (c = s.tomorrowRound) ||
               void 0 === c
                 ? void 0
                 : c.roundNumber)
-                ? null === f ||
-                  void 0 === f ||
-                  null === (m = f.postseason) ||
+                ? null === A ||
+                  void 0 === A ||
+                  null === (m = A.postseason) ||
                   void 0 === m ||
                   null === (u = m.tomorrowRound) ||
                   void 0 === u
                   ? void 0
                   : u.roundNumber
                 : -1,
-            I = (b() === xe.Live ? B : w) + 1;
+            I = (b() === xe.Live ? B : O) + 1;
           return r.a.createElement(
             "div",
             null,
@@ -3231,14 +3241,14 @@
                 "div",
                 { className: "DailySchedule-Header-Group" },
                 (
-                  null === (d = f.postseason.round) || void 0 === d
+                  null === (d = A.postseason.round) || void 0 === d
                     ? void 0
                     : d.special
                 )
                   ? r.a.createElement(
                       r.a.Fragment,
                       null,
-                      null === (h = f.postseason.round) || void 0 === h
+                      null === (h = A.postseason.round) || void 0 === h
                         ? void 0
                         : h.name,
                       "\xa0"
@@ -3246,7 +3256,7 @@
                   : "Postseason Round"
               ),
               (
-                null === (E = f.postseason.round) || void 0 === E
+                null === (E = A.postseason.round) || void 0 === E
                   ? void 0
                   : E.special
               )
@@ -3260,23 +3270,23 @@
               r.a.createElement(
                 "span",
                 { className: "DailySchedule-Number" },
-                T() + 1
+                N() + 1
               )
             ),
-            r.a.createElement(We, null),
+            r.a.createElement(Qe, null),
             r.a.createElement(
               "div",
               { className: "DailySchedule-Nav" },
-              r.a.createElement(Le, { path: "/" }, "Watch Live"),
-              r.a.createElement(Le, { path: "/upcoming" }, "Place Bets"),
-              r.a.createElement(Le, { path: "/standings" }, "Standings")
+              r.a.createElement(De, { path: "/" }, "Watch Live"),
+              r.a.createElement(De, { path: "/upcoming" }, "Place Bets"),
+              r.a.createElement(De, { path: "/standings" }, "Standings")
             ),
             y
               ? r.a.createElement(Ee, null)
               : r.a.createElement(
                   "div",
                   null,
-                  null !== O
+                  null !== w
                     ? r.a.createElement(
                         "div",
                         null,
@@ -3284,24 +3294,24 @@
                           "div",
                           { className: "DailySchedule-Countdown" },
                           b() === xe.Upcoming
-                            ? r.a.createElement(Ue, {
+                            ? r.a.createElement(je, {
                                 dateString: ee().toString(),
                               })
                             : null
                         ),
-                        r.a.createElement("ul", null, O)
+                        r.a.createElement("ul", null, w)
                       )
                     : r.a.createElement(
                         "div",
                         { className: "DailySchedule-Body" },
                         "There are no postseason games yet scheduled for Day ",
-                        T() + 1,
+                        N() + 1,
                         ". Check back when the current batch of games finish."
                       )
                 )
           );
         },
-        Je =
+        He =
           (t(142),
           t(143),
           r.a.createContext({
@@ -3311,7 +3321,7 @@
             teams: [],
             players: [],
           })),
-        Fe = function (e) {
+        Je = function (e) {
           var a = e.children,
             t = Object(n.useState)({
               leagues: [],
@@ -3336,13 +3346,13 @@
                 }
               );
             }, []),
-            r.a.createElement(Je.Provider, { value: i }, a)
+            r.a.createElement(He.Provider, { value: i }, a)
           );
         };
-      Fe.context = Je;
-      var He = Fe;
+      Je.context = He;
+      var Fe = Je;
       function Ve() {
-        var e = Object(n.useContext)(A.context);
+        var e = Object(n.useContext)(f.context);
         if (!e || !e.sim) return null;
         var a = void 0 !== e.sim.season ? e.sim.season : -1;
         return r.a.createElement(
@@ -3359,20 +3369,20 @@
             ),
             "\xa0Standings"
           ),
-          r.a.createElement(We, null),
+          r.a.createElement(Qe, null),
           r.a.createElement(
             "div",
             { className: "DailySchedule-Nav" },
-            r.a.createElement(Le, { path: "/" }, "Watch Live"),
-            r.a.createElement(Le, { path: "/upcoming" }, "Place Bets"),
-            r.a.createElement(Le, { path: "/standings" }, "Standings")
+            r.a.createElement(De, { path: "/" }, "Watch Live"),
+            r.a.createElement(De, { path: "/upcoming" }, "Place Bets"),
+            r.a.createElement(De, { path: "/standings" }, "Standings")
           ),
           r.a.createElement(qe, null)
         );
       }
       function qe() {
-        var e = Object(n.useContext)(A.context),
-          a = Object(n.useContext)(He.context);
+        var e = Object(n.useContext)(f.context),
+          a = Object(n.useContext)(Fe.context);
         if (!e || !e.sim) return null;
         if (!a || !a.leagues) return null;
         var t = a.leagues.find(function (a) {
@@ -3407,7 +3417,7 @@
           : r.a.createElement(Ee, null);
       }
       function Ke(e) {
-        var a = Object(n.useContext)(He.context).subleagues.find(function (a) {
+        var a = Object(n.useContext)(Fe.context).subleagues.find(function (a) {
           return a._id === e.subleague;
         });
         if (void 0 === a) return null;
@@ -3435,7 +3445,7 @@
         );
       }
       function ze(e) {
-        var a = Object(n.useContext)(He.context).divisions.find(function (a) {
+        var a = Object(n.useContext)(Fe.context).divisions.find(function (a) {
           return a._id === e.division;
         });
         if (void 0 === a) return null;
@@ -3499,7 +3509,7 @@
       }
       function Xe(e) {
         var a = Object(s.g)(),
-          t = Object(n.useContext)(He.context).teams.find(function (a) {
+          t = Object(n.useContext)(Fe.context).teams.find(function (a) {
             return a._id === e.team;
           });
         return void 0 === t
@@ -3545,8 +3555,8 @@
             );
       }
       var _e = function () {
-        var e = Object(n.useContext)(A.context),
-          a = Object(n.useContext)(He.context);
+        var e = Object(n.useContext)(f.context),
+          a = Object(n.useContext)(Fe.context);
         if (void 0 === e || void 0 === e.sim || void 0 === a) return null;
         if (void 0 === e.postseason || void 0 === e.postseason.playoffs)
           return null;
@@ -3604,7 +3614,7 @@
               { className: "PlayoffsEnd-End" },
               "The next season starts in..."
             ),
-            r.a.createElement(Ue, { dateString: e.sim.nextSeasonStart })
+            r.a.createElement(je, { dateString: e.sim.nextSeasonStart })
           ),
           r.a.createElement(qe, null)
         );
@@ -3716,6 +3726,26 @@
             "a",
             {
               href:
+                "https://www.polygon.com/features/2020/8/6/21357131/blaseball-fans-absurd-baseball-sim-the-game-band",
+              target: "_blank",
+              className: "About-Quote",
+            },
+            "\u201cA strong contender to become the best game of 2020.\u201d"
+          ),
+          r.a.createElement(
+            "a",
+            {
+              href:
+                "https://www.polygon.com/features/2020/8/6/21357131/blaseball-fans-absurd-baseball-sim-the-game-band",
+              target: "_blank",
+              className: "About-QuoteAuthor",
+            },
+            "\u2013 Polygon"
+          ),
+          r.a.createElement(
+            "a",
+            {
+              href:
                 "https://www.vice.com/en_us/article/n7w44w/blaseball-is-the-real-return-of-baseball",
               target: "_blank",
               className: "About-Quote",
@@ -3749,24 +3779,6 @@
               className: "About-QuoteAuthor",
             },
             "\u2013 FANBYTE"
-          ),
-          r.a.createElement(
-            "a",
-            {
-              href: "https://twitter.com/blaseballcomms",
-              target: "_blank",
-              className: "About-Quote",
-            },
-            "\u201cVery strange\u201d"
-          ),
-          r.a.createElement(
-            "a",
-            {
-              href: "https://twitter.com/blaseballcomms",
-              target: "_blank",
-              className: "About-QuoteAuthor",
-            },
-            "\u2013 A lot of people on Twitter"
           ),
           r.a.createElement(
             m,
@@ -3833,7 +3845,7 @@
           : r.a.createElement("div", { className: "Stubs-Header" }, e.text);
       }
       t(146);
-      var ta = t(54);
+      var ta = t(32);
       t(147);
       function na(e) {
         var a = e.type,
@@ -3866,6 +3878,36 @@
         return "#e1e1e1";
       }
       function ia(e) {
+        return sa(
+          (function (e) {
+            return (
+              Math.pow(1 - e.tragicness, 0.01) *
+              Math.pow(e.buoyancy, 0) *
+              Math.pow(e.thwackability, 0.35) *
+              Math.pow(e.moxie, 0.075) *
+              Math.pow(e.divinity, 0.35) *
+              Math.pow(e.musclitude, 0.075) *
+              Math.pow(1 - e.patheticism, 0.05) *
+              Math.pow(e.martyrdom, 0.02)
+            );
+          })(e)
+        );
+      }
+      function la(e) {
+        return sa(
+          (function (e) {
+            return (
+              Math.pow(e.shakespearianism, 0.1) *
+              Math.pow(e.suppression, 0) *
+              Math.pow(e.unthwackability, 0.5) *
+              Math.pow(e.coldness, 0.025) *
+              Math.pow(e.overpowerment, 0.15) *
+              Math.pow(e.ruthlessness, 0.4)
+            );
+          })(e)
+        );
+      }
+      function sa(e) {
         for (
           var a = e / 0.2,
             t = Math.round(2 * a) / 2,
@@ -3882,26 +3924,28 @@
           r.a.createElement("span", null, i)
         );
       }
-      var la = function (e) {
-          var a = Object(s.h)().nickname,
-            t = Object(n.useContext)(A.context),
-            o = Object(n.useContext)(He.context),
-            i = Object(n.useState)({
+      var ca = function (e) {
+          var a,
+            t = Object(s.h)().nickname,
+            o = Object(n.useContext)(f.context),
+            i = Object(n.useContext)(Fe.context),
+            c = Object(s.g)(),
+            u = Object(n.useState)({
               lineup: [],
               rotation: [],
               bullpen: [],
               bench: [],
             }),
-            c = Object(l.a)(i, 2),
-            m = c[0],
-            u = c[1],
-            d = o.teams.find(function (e) {
-              return e._id === a;
+            d = Object(l.a)(u, 2),
+            h = d[0],
+            E = d[1],
+            p = i.teams.find(function (e) {
+              return e._id === t;
             });
           Object(n.useEffect)(function () {
-            h();
+            A();
           }, []);
-          var h = (function () {
+          var A = (function () {
             var e = Object(g.a)(
               v.a.mark(function e() {
                 var a, t, n, r, o, i, l, s, c, m;
@@ -3909,17 +3953,17 @@
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
-                        if (void 0 !== d) {
+                        if (void 0 !== p) {
                           e.next = 2;
                           break;
                         }
                         return e.abrupt("return");
                       case 2:
-                        for (a = [], t = 0; t < d.lineup.length; t++)
-                          a.push(d.lineup[t]);
-                        for (n = 0; n < d.rotation.length; n++)
-                          a.push(d.rotation[n]);
-                        return (e.next = 7), L(a);
+                        for (a = [], t = 0; t < p.lineup.length; t++)
+                          a.push(p.lineup[t]);
+                        for (n = 0; n < p.rotation.length; n++)
+                          a.push(p.rotation[n]);
+                        return (e.next = 7), D(a);
                       case 7:
                         for (
                           r = e.sent,
@@ -3927,12 +3971,12 @@
                             i = function (e) {
                               o.push(
                                 r.find(function (a) {
-                                  return d.lineup[e] === a._id;
+                                  return p.lineup[e] === a._id;
                                 })
                               );
                             },
                             l = 0;
-                          l < d.lineup.length;
+                          l < p.lineup.length;
                           l++
                         )
                           i(l);
@@ -3941,16 +3985,16 @@
                             c = function (e) {
                               s.push(
                                 r.find(function (a) {
-                                  return d.rotation[e] === a._id;
+                                  return p.rotation[e] === a._id;
                                 })
                               );
                             },
                             m = 0;
-                          m < d.rotation.length;
+                          m < p.rotation.length;
                           m++
                         )
                           c(m);
-                        u({ lineup: o, rotation: s, bench: [], bullpen: [] });
+                        E({ lineup: o, rotation: s, bench: [], bullpen: [] });
                       case 15:
                       case "end":
                         return e.stop();
@@ -3962,68 +4006,91 @@
               return e.apply(this, arguments);
             };
           })();
-          if (void 0 === o || void 0 === o.teams) return null;
-          if (void 0 === d) return null;
-          var E,
-            p = d.emoji;
-          if (void 0 === m) return r.a.createElement(Ee, null);
-          var f = m.lineup.map(function (e) {
-              return r.a.createElement(
-                "li",
-                { className: "Player-Line" },
-                r.a.createElement(
-                  "div",
-                  { className: "Player-Header" },
-                  null === e || void 0 === e ? void 0 : e.name
-                ),
-                r.a.createElement(
-                  "div",
-                  { className: "Player-Ratings" },
-                  ia(
-                    (function (e) {
-                      return (
-                        Math.pow(1 - e.tragicness, 0.01) *
-                        Math.pow(e.buoyancy, 0) *
-                        Math.pow(e.thwackability, 0.35) *
-                        Math.pow(e.moxie, 0.075) *
-                        Math.pow(e.divinity, 0.35) *
-                        Math.pow(e.musclitude, 0.075) *
-                        Math.pow(1 - e.patheticism, 0.05) *
-                        Math.pow(e.martyrdom, 0.02)
-                      );
-                    })(e)
-                  )
-                )
-              );
-            }),
-            y = m.rotation.map(function (e) {
-              return r.a.createElement(
-                "li",
-                { className: "Player-Line" },
-                r.a.createElement(
-                  "div",
-                  { className: "Player-Header" },
-                  null === e || void 0 === e ? void 0 : e.name
-                ),
-                r.a.createElement(
-                  "div",
-                  { className: "Player-Ratings" },
-                  ia(
-                    (function (e) {
-                      return (
-                        Math.pow(e.shakespearianism, 0.1) *
-                        Math.pow(e.suppression, 0) *
-                        Math.pow(e.unthwackability, 0.5) *
-                        Math.pow(e.coldness, 0.025) *
-                        Math.pow(e.overpowerment, 0.15) *
-                        Math.pow(e.ruthlessness, 0.4)
-                      );
-                    })(e)
-                  )
-                )
-              );
-            }),
-            b = (function (e, a) {
+          if (void 0 === o) return null;
+          if (void 0 === i || void 0 === i.teams) return null;
+          if (void 0 === p) return null;
+          var y,
+            b = p.emoji;
+          if (void 0 === h) return r.a.createElement(Ee, null);
+          var N =
+              null === (a = o.sim) || void 0 === a
+                ? void 0
+                : a.unlockedInterviews,
+            T = N
+              ? h.lineup.map(function (e) {
+                  return r.a.createElement(
+                    m,
+                    {
+                      background: c,
+                      path: "/player/".concat(e._id),
+                      className: "Team-Player-Line",
+                    },
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Header" },
+                      null === e || void 0 === e ? void 0 : e.name
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Ratings" },
+                      ia(e)
+                    )
+                  );
+                })
+              : h.lineup.map(function (e) {
+                  return r.a.createElement(
+                    "div",
+                    { className: "Team-Player-Line-Blank" },
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Header" },
+                      null === e || void 0 === e ? void 0 : e.name
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Ratings" },
+                      ia(e)
+                    )
+                  );
+                }),
+            S = N
+              ? h.rotation.map(function (e) {
+                  return r.a.createElement(
+                    m,
+                    {
+                      background: c,
+                      path: "/player/".concat(e._id),
+                      className: "Team-Player-Line",
+                    },
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Header" },
+                      null === e || void 0 === e ? void 0 : e.name
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Ratings" },
+                      la(e)
+                    )
+                  );
+                })
+              : h.rotation.map(function (e) {
+                  return r.a.createElement(
+                    "div",
+                    { className: "Team-Player-Line-Blank" },
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Header" },
+                      null === e || void 0 === e ? void 0 : e.name
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Team-Player-Ratings" },
+                      la(e)
+                    )
+                  );
+                }),
+            w = (function (e, a) {
               var t = 0,
                 n = 0;
               if ((console.log(a), void 0 !== a)) {
@@ -4039,11 +4106,11 @@
                   }
               }
               return [t, n];
-            })(d._id, null === t || void 0 === t ? void 0 : t.standings),
-            T = b[1],
-            N = b[0];
+            })(p._id, null === o || void 0 === o ? void 0 : o.standings),
+            B = w[1],
+            O = w[0];
           return (
-            (E = r.a.createElement(
+            (y = r.a.createElement(
               r.a.Fragment,
               null,
               r.a.createElement(
@@ -4058,16 +4125,16 @@
                     r.a.createElement(
                       "div",
                       {
-                        style: { backgroundColor: d.mainColor },
+                        style: { backgroundColor: p.mainColor },
                         className: "Team-Logo",
                       },
-                      String.fromCodePoint(Number(p))
+                      String.fromCodePoint(Number(b))
                     ),
                     r.a.createElement(
                       "div",
                       { className: "Team-Attributes" },
-                      void 0 !== d.seasonAttributes
-                        ? d.seasonAttributes.map(function (e, a) {
+                      void 0 !== p.seasonAttributes
+                        ? p.seasonAttributes.map(function (e, a) {
                             return r.a.createElement(
                               "div",
                               { key: a, className: "Team-Attributes-Icon" },
@@ -4083,17 +4150,17 @@
                     r.a.createElement(
                       "header",
                       { className: "Team-Name" },
-                      d.fullName
+                      p.fullName
                     ),
                     r.a.createElement(
                       "div",
                       { className: "Team-Slogan" },
-                      r.a.createElement("i", null, '"', d.slogan, '"')
+                      r.a.createElement("i", null, '"', p.slogan, '"')
                     ),
                     r.a.createElement(
                       "div",
                       { className: "Team-Standing" },
-                      "( ".concat(N, " - ").concat(T, " )")
+                      "( ".concat(O, " - ").concat(B, " )")
                     )
                   )
                 )
@@ -4109,7 +4176,7 @@
                     { className: "Team-Subheader" },
                     "Lineup"
                   ),
-                  r.a.createElement("ul", null, f)
+                  r.a.createElement("ul", null, T)
                 ),
                 r.a.createElement(
                   "div",
@@ -4119,19 +4186,19 @@
                     { className: "Team-Subheader" },
                     "Rotation"
                   ),
-                  r.a.createElement("ul", null, y)
+                  r.a.createElement("ul", null, S)
                 )
               )
             )),
             r.a.createElement(
               se,
               Object.assign({}, e, { className: "Team" }),
-              E
+              y
             )
           );
         },
-        sa = (t(148), r.a.createContext({ doc: void 0 })),
-        ca = function (e) {
+        ma = (t(148), r.a.createContext({ doc: void 0 })),
+        ua = function (e) {
           var a = e.children,
             t = Object(n.useState)({ doc: void 0 }),
             o = Object(l.a)(t, 2),
@@ -4150,31 +4217,31 @@
                 }
               );
             }, []),
-            r.a.createElement(sa.Provider, { value: i }, a)
+            r.a.createElement(ma.Provider, { value: i }, a)
           );
         };
-      ca.context = sa;
-      var ma = ca;
-      function ua() {
+      ua.context = ma;
+      var da = ua;
+      function ha() {
         var e,
           a = Object(ce.useToasts)().addToast,
           t = Object(n.useState)(),
           o = Object(l.a)(t, 2),
           i = o[0],
           s = o[1],
-          c = Object(n.useContext)(P.context),
+          c = Object(n.useContext)(U.context),
           m = c.user,
           u = c.refreshUser,
-          d = Object(n.useContext)(He.context).teams.find(function (e) {
+          d = Object(n.useContext)(Fe.context).teams.find(function (e) {
             return e._id === m.favoriteTeam;
           }),
-          h = Object(n.useContext)(A.context),
-          E = Object(n.useContext)(ma.context);
+          h = Object(n.useContext)(f.context),
+          E = Object(n.useContext)(da.context);
         function p(e) {
-          return f.apply(this, arguments);
+          return A.apply(this, arguments);
         }
-        function f() {
-          return (f = Object(g.a)(
+        function A() {
+          return (A = Object(g.a)(
             v.a.mark(function e(t) {
               return v.a.wrap(function (e) {
                 for (;;)
@@ -4243,7 +4310,7 @@
         function y(e) {
           s({ purchaseItem: e });
         }
-        function T(e) {
+        function N(e) {
           return e.maxed
             ? "Maxed Out"
             : e.available
@@ -4402,8 +4469,8 @@
                     ) {
                       var E = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144],
                         p = E[Math.min(e.squirrels, E.length)],
-                        A = 100 * Math.pow(2, e.squirrels + 1),
-                        f = E[Math.min(e.squirrels + 1, E.length)];
+                        f = 100 * Math.pow(2, e.squirrels + 1),
+                        A = E[Math.min(e.squirrels + 1, E.length)];
                       e.squirrels < Math.min(i.beta, E.length - 1)
                         ? o.push({
                             id: 7,
@@ -4419,15 +4486,15 @@
                                     .concat(p, " peanut")
                                     .concat(p > 1 ? "s" : "", ".")
                                 : "Recruit a Peanut-hungry squirrel to your side, to help you eat Peanuts faster.",
-                            amount: A,
+                            amount: f,
                             toast: "You now have "
                               .concat(e.squirrels, " squirrel")
                               .concat(
                                 1 === e.squirrels ? "" : "s",
                                 " capable of eating "
                               )
-                              .concat(f, " peanut")
-                              .concat(1 === f ? "" : "s", "."),
+                              .concat(A, " peanut")
+                              .concat(1 === A ? "" : "s", "."),
                             available: !0,
                             buyUrl: "/api/buyADangSquirrel",
                             handleComplete: function () {},
@@ -4575,7 +4642,7 @@
                                           p(e);
                                         },
                                       },
-                                      T(e)
+                                      N(e)
                                     )
                                   : r.a.createElement(
                                       te.a,
@@ -4587,7 +4654,7 @@
                                           p(e);
                                         },
                                       },
-                                      T(e)
+                                      N(e)
                                     );
                               })(e)
                         )
@@ -4600,9 +4667,9 @@
         );
       }
       t(149);
-      var da = function (e) {
-          var a = Object(n.useContext)(P.context).refreshUser,
-            t = Object(n.useContext)(He.context),
+      var Ea = function (e) {
+          var a = Object(n.useContext)(U.context).refreshUser,
+            t = Object(n.useContext)(Fe.context),
             o = Object(n.useState)(),
             i = Object(l.a)(o, 2),
             s = i[0],
@@ -4721,8 +4788,8 @@
             )
           );
         },
-        ha = function (e) {
-          var a = Object(n.useContext)(P.context).user,
+        pa = function (e) {
+          var a = Object(n.useContext)(U.context).user,
             t = Object(n.useState)(!1),
             o = Object(l.a)(t, 2),
             i = o[0],
@@ -4738,7 +4805,7 @@
             }, []),
             a && a.isSignedIn && i
               ? r.a.createElement(
-                  da,
+                  Ea,
                   Object.assign({}, e, {
                     dismiss: Object(g.a)(
                       v.a.mark(function e() {
@@ -4759,10 +4826,10 @@
               : null
           );
         },
-        Ea =
+        fa =
           (t(150),
           function (e) {
-            var a = Object(n.useContext)(P.context).initUser,
+            var a = Object(n.useContext)(U.context).initUser,
               t = Object(s.f)(),
               o = Object(ce.useToasts)().addToast,
               i = Object(s.g)(),
@@ -4896,10 +4963,10 @@
               )
             );
           }),
-        pa =
+        Aa =
           (t(151),
           r.a.createContext({ bonuses: [], decrees: [], decreesToPass: 0 })),
-        Aa = function (e) {
+        va = function (e) {
           var a = e.children,
             t = Object(n.useState)({
               bonuses: [],
@@ -4941,17 +5008,17 @@
                 }
               );
             }, []),
-            r.a.createElement(pa.Provider, { value: i }, a)
+            r.a.createElement(Aa.Provider, { value: i }, a)
           );
         };
-      Aa.context = pa;
-      var fa,
-        va = Aa;
+      va.context = Aa;
+      var ga,
+        ya = va;
       t(152);
       !(function (e) {
         (e[(e.DECREE = 0)] = "DECREE"), (e[(e.BONUS = 1)] = "BONUS");
-      })(fa || (fa = {}));
-      var ga = function (e) {
+      })(ga || (ga = {}));
+      var ba = function (e) {
           var a = Object(ce.useToasts)().addToast,
             t = e.entityId,
             o = e.data,
@@ -4967,7 +5034,7 @@
                 {
                   onClick: function () {
                     u(!0);
-                    var e = { entityId: t, voteType: fa.BONUS, data: o };
+                    var e = { entityId: t, voteType: ga.BONUS, data: o };
                     b("/api/vote", JSON.stringify(e))
                       .then(function (e) {
                         e.status && 200 === e.status
@@ -4999,7 +5066,7 @@
                 "Submit Blessing Vote"
               );
         },
-        ya = function () {
+        Na = function () {
           return r.a.createElement(
             "a",
             { href: "/login" },
@@ -5010,7 +5077,7 @@
             )
           );
         },
-        ba = function () {
+        Ta = function () {
           return r.a.createElement(
             "a",
             { href: "/welcome" },
@@ -5021,7 +5088,7 @@
             )
           );
         },
-        Ta = function () {
+        Sa = function () {
           return r.a.createElement(
             "a",
             { href: "/shop" },
@@ -5032,7 +5099,7 @@
             )
           );
         },
-        Na = function (e) {
+        wa = function (e) {
           var a = e.isActive;
           return r.a.createElement(
             "button",
@@ -5041,7 +5108,7 @@
             a ? "ed" : ""
           );
         },
-        Sa = function (e) {
+        Ba = function (e) {
           var a = e.title,
             t = e.description,
             n = e._id,
@@ -5066,32 +5133,32 @@
               { className: "Blessings-Option-Description" },
               t
             ),
-            r.a.createElement(Na, { isActive: o })
+            r.a.createElement(wa, { isActive: o })
           );
         },
         Oa = function () {
-          var e = Object(n.useContext)(va.context),
-            a = Object(n.useContext)(P.context),
+          var e = Object(n.useContext)(ya.context),
+            a = Object(n.useContext)(U.context),
             t = a.user,
             o = a.refreshUser,
             i = Object(n.useState)(),
             s = Object(l.a)(i, 2),
             c = s[0],
             m = s[1],
-            u = r.a.createElement(ya, null);
+            u = r.a.createElement(Na, null);
           if (
             (t.isFetching ||
               !t.isSignedIn ||
               t.favoriteTeam ||
-              (u = r.a.createElement(ba, null)),
+              (u = r.a.createElement(Ta, null)),
             t.isFetching ||
               !t.isSignedIn ||
               t.votes ||
-              (u = r.a.createElement(Ta, null)),
+              (u = r.a.createElement(Sa, null)),
             !t.isFetching && t.isSignedIn && t.favoriteTeam && t.votes)
           ) {
             var d = { team1: t.favoriteTeam };
-            u = r.a.createElement(ga, {
+            u = r.a.createElement(ba, {
               entityId: c,
               data: d,
               onSubmit: function () {
@@ -5117,7 +5184,7 @@
               { className: "Blessings-Container" },
               e.bonuses.map(function (e, a) {
                 return r.a.createElement(
-                  Sa,
+                  Ba,
                   Object.assign({ key: a }, e, {
                     isActive: c === e._id,
                     onSelect: function (e) {
@@ -5131,8 +5198,8 @@
           );
         };
       t(153);
-      function Ba() {
-        return (Ba =
+      function Ia() {
+        return (Ia =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -5143,7 +5210,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function wa(e, a) {
+      function ka(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -5167,27 +5234,27 @@
         }
         return r;
       }
-      var Ia = r.a.createElement("path", {
+      var Ca = r.a.createElement("path", {
           d:
             "M12.164 7.165c-1.15.191-1.702 1.233-1.231 2.328.498 1.155 1.921 1.895 3.094 1.603 1.039-.257 1.519-1.252 1.069-2.295-.471-1.095-1.784-1.827-2.932-1.636zm1.484 2.998l.104.229-.219.045-.097-.219c-.226.041-.482.035-.719-.027l-.065-.387c.195.03.438.058.623.02l.125-.041c.221-.109.152-.387-.176-.453-.245-.054-.893-.014-1.135-.552-.136-.304-.035-.621.356-.766l-.108-.239.217-.045.104.229c.159-.026.345-.036.563-.017l.087.383c-.17-.021-.353-.041-.512-.008l-.06.016c-.309.082-.21.375.064.446.453.105.994.139 1.208.612.173.385-.028.648-.36.774zm10.312 1.057l-3.766-8.22c-6.178 4.004-13.007-.318-17.951 4.454l3.765 8.22c5.298-4.492 12.519-.238 17.952-4.454zm-2.803-1.852c-.375.521-.653 1.117-.819 1.741-3.593 1.094-7.891-.201-12.018 1.241-.667-.354-1.503-.576-2.189-.556l-1.135-2.487c.432-.525.772-1.325.918-2.094 3.399-1.226 7.652.155 12.198-1.401.521.346 1.13.597 1.73.721l1.315 2.835zm2.843 5.642c-6.857 3.941-12.399-1.424-19.5 5.99l-4.5-9.97 1.402-1.463 3.807 8.406-.002.007c7.445-5.595 11.195-1.176 18.109-4.563.294.648.565 1.332.684 1.593z",
         }),
-        Ca = function (e) {
+        Ra = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = wa(e, ["svgRef", "title"]);
+            n = ka(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            Ba({ viewBox: "0 0 24 24", ref: a }, n),
+            Ia({ viewBox: "0 0 24 24", ref: a }, n),
             t ? r.a.createElement("title", null, t) : null,
-            Ia
+            Ca
           );
         },
-        ka = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(Ca, Ba({ svgRef: a }, e));
+        Ga = r.a.forwardRef(function (e, a) {
+          return r.a.createElement(Ra, Ia({ svgRef: a }, e));
         });
       t.p;
-      function Ra() {
-        return (Ra =
+      function La() {
+        return (La =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -5198,7 +5265,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function Ga(e, a) {
+      function Da(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -5222,27 +5289,27 @@
         }
         return r;
       }
-      var Da = r.a.createElement("path", {
+      var Ma = r.a.createElement("path", {
           d:
             "M7.919 17.377l-4.869-13.377h-2.05c-.266 0-.52-.105-.707-.293-.188-.187-.293-.442-.293-.707 0-.552.447-1 1-1h3.45l5.469 15.025c.841.101 1.59.5 2.139 1.088l11.258-4.097.684 1.879-11.049 4.021c.032.19.049.385.049.584 0 1.932-1.569 3.5-3.5 3.5-1.932 0-3.5-1.568-3.5-3.5 0-1.363.781-2.545 1.919-3.123zm1.581 1.811c.724 0 1.312.588 1.312 1.312 0 .724-.588 1.313-1.312 1.313-.725 0-1.313-.589-1.313-1.313s.588-1.312 1.313-1.312zm13.314-6.512l-11.418 4.156-2.736-7.518 11.418-4.156 2.736 7.518zm-8.71-3.215l-2.88 1.048 1.368 3.759 7.659-2.787-1.368-3.759-2.9 1.055.684 1.879-1.879.685-.684-1.88zm2.672-4.165l-8.458 3.078-1.927-5.296 8.457-3.078 1.928 5.296zm-3.123-2.733l-4.699 1.711.56 1.537 4.698-1.71-.559-1.538z",
         }),
-        La = function (e) {
+        Pa = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = Ga(e, ["svgRef", "title"]);
+            n = Da(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            Ra({ viewBox: "0 0 24 24", ref: a }, n),
+            La({ viewBox: "0 0 24 24", ref: a }, n),
             t ? r.a.createElement("title", null, t) : null,
-            Da
+            Ma
           );
         },
         Qa = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(La, Ra({ svgRef: a }, e));
+          return r.a.createElement(Pa, La({ svgRef: a }, e));
         });
       t.p;
-      function Ma() {
-        return (Ma =
+      function Wa() {
+        return (Wa =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -5253,7 +5320,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function Wa(e, a) {
+      function ja(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -5277,27 +5344,27 @@
         }
         return r;
       }
-      var ja = r.a.createElement("path", {
+      var xa = r.a.createElement("path", {
           d:
             "M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v6h-6c-1.104 0-2 .896-2 2s.896 2 2 2h6v6h-14v-16zm9 8c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z",
         }),
         Ua = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = Wa(e, ["svgRef", "title"]);
+            n = ja(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            Ma({ viewBox: "0 0 24 24", ref: a }, n),
+            Wa({ viewBox: "0 0 24 24", ref: a }, n),
             t ? r.a.createElement("title", null, t) : null,
-            ja
+            xa
           );
         },
-        xa = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(Ua, Ma({ svgRef: a }, e));
+        Ya = r.a.forwardRef(function (e, a) {
+          return r.a.createElement(Ua, Wa({ svgRef: a }, e));
         });
       t.p;
-      function Pa() {
-        return (Pa =
+      function Ha() {
+        return (Ha =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -5308,7 +5375,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function Ya(e, a) {
+      function Ja(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -5332,30 +5399,30 @@
         }
         return r;
       }
-      var Ja,
-        Fa = r.a.createElement("path", {
+      var Fa,
+        Va = r.a.createElement("path", {
           d:
             "M8 1c0-.552.448-1 1-1h6c.553 0 1 .448 1 1s-.447 1-1 1h-6c-.552 0-1-.448-1-1zm13 20.554c0 1.284-1.023 2.446-2.424 2.446h-13.153c-1.4 0-2.423-1.162-2.423-2.445 0-.35.076-.709.242-1.057l3.743-7.856c1.04-2.186 2.015-4.581 2.015-7.007v-1.635h2l-.006 2c-.087 2.623-1.09 5.092-1.973 7h3.682l4.377 9h1.496c.309 0 .52-.342.377-.644l-3.743-7.854c-1.046-2.197-2.12-4.791-2.21-7.502v-2h2v1.635c0 2.426.975 4.82 2.016 7.006l3.743 7.856c.165.348.241.707.241 1.057zm-12-1.054c0-.829-.671-1.5-1.5-1.5s-1.5.671-1.5 1.5.671 1.5 1.5 1.5 1.5-.671 1.5-1.5zm2-3.5c0-.553-.448-1-1-1-.553 0-1 .447-1 1s.447 1 1 1c.552 0 1-.447 1-1zm3 3c0-.552-.448-1-1-1s-1 .448-1 1 .448 1 1 1 1-.448 1-1z",
         }),
-        Ha = function (e) {
+        qa = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = Ya(e, ["svgRef", "title"]);
+            n = Ja(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            Pa({ width: 24, height: 24, viewBox: "0 0 24 24", ref: a }, n),
+            Ha({ width: 24, height: 24, viewBox: "0 0 24 24", ref: a }, n),
             t ? r.a.createElement("title", null, t) : null,
-            Fa
+            Va
           );
         },
-        Va = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(Ha, Pa({ svgRef: a }, e));
+        Ka = r.a.forwardRef(function (e, a) {
+          return r.a.createElement(qa, Ha({ svgRef: a }, e));
         });
       t.p;
       !(function (e) {
         (e[(e.DECREE = 0)] = "DECREE"), (e[(e.BONUS = 1)] = "BONUS");
-      })(Ja || (Ja = {}));
-      var qa = function (e) {
+      })(Fa || (Fa = {}));
+      var za = function (e) {
           var a = Object(ce.useToasts)().addToast,
             t = e.entityId,
             o = e.data,
@@ -5371,7 +5438,7 @@
                 {
                   onClick: function () {
                     u(!0);
-                    var e = { entityId: t, voteType: Ja.DECREE, data: o };
+                    var e = { entityId: t, voteType: Fa.DECREE, data: o };
                     b("/api/vote", JSON.stringify(e))
                       .then(function (e) {
                         e.status && 200 === e.status
@@ -5403,7 +5470,7 @@
                 "Submit Decree Vote"
               );
         },
-        Ka = function () {
+        Za = function () {
           return r.a.createElement(
             "a",
             { href: "/login" },
@@ -5414,7 +5481,7 @@
             )
           );
         },
-        za = function () {
+        Xa = function () {
           return r.a.createElement(
             "a",
             { href: "/welcome" },
@@ -5425,7 +5492,7 @@
             )
           );
         },
-        Za = function () {
+        _a = function () {
           return r.a.createElement(
             c.b,
             { to: { pathname: "/shop" } },
@@ -5436,7 +5503,7 @@
             )
           );
         },
-        Xa = function (e) {
+        $a = function (e) {
           var a = e.isActive;
           return r.a.createElement(
             "button",
@@ -5445,19 +5512,19 @@
             a ? "ed" : ""
           );
         };
-      function _a(e) {
+      function et(e) {
         return "forbidden_book" === e
-          ? r.a.createElement(xa, { className: "Decrees-Option-Icon" })
+          ? r.a.createElement(Ya, { className: "Decrees-Option-Icon" })
           : "eliminate_team" === e
           ? r.a.createElement(Qa, { className: "Decrees-Option-Icon" })
           : "redistribute_wealth" === e
-          ? r.a.createElement(ka, { className: "Decrees-Option-Icon" })
+          ? r.a.createElement(Ga, { className: "Decrees-Option-Icon" })
           : "four_for_four" === e
           ? r.a.createElement(re.e, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
           ? r.a.createElement(re.g, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
-          ? r.a.createElement(Va, { className: "Decrees-Option-Icon" })
+          ? r.a.createElement(Ka, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
           ? r.a.createElement(re.i, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
@@ -5472,7 +5539,7 @@
           ? r.a.createElement(re.f, { className: "Decrees-Option-Icon" })
           : r.a.createElement("div", null);
       }
-      var $a = function (e) {
+      var at = function (e) {
           var a = e.title,
             t = e.description,
             n = e._id,
@@ -5487,7 +5554,7 @@
                 return i(n);
               },
             },
-            _a(n),
+            et(n),
             r.a.createElement("div", { className: "Decrees-Option-Header" }, a),
             t &&
               r.a.createElement(
@@ -5495,12 +5562,12 @@
                 { className: "Decrees-Option-Description" },
                 t
               ),
-            r.a.createElement(Xa, { isActive: o })
+            r.a.createElement($a, { isActive: o })
           );
         },
-        et = function () {
-          var e = Object(n.useContext)(va.context),
-            a = Object(n.useContext)(P.context),
+        tt = function () {
+          var e = Object(n.useContext)(ya.context),
+            a = Object(n.useContext)(U.context),
             t = a.user,
             o = a.refreshUser,
             i = Object(n.useState)(),
@@ -5510,20 +5577,20 @@
             u = Object(n.useState)(!1),
             d = Object(l.a)(u, 2),
             h = (d[0], d[1]),
-            E = r.a.createElement(Ka, null);
+            E = r.a.createElement(Za, null);
           if (
             (t.isFetching ||
               !t.isSignedIn ||
               t.favoriteTeam ||
-              (E = r.a.createElement(za, null)),
+              (E = r.a.createElement(Xa, null)),
             t.isFetching ||
               !t.isSignedIn ||
               t.votes ||
-              (E = r.a.createElement(Za, null)),
+              (E = r.a.createElement(_a, null)),
             !t.isFetching && t.isSignedIn && t.favoriteTeam && t.votes)
           ) {
             var p = { team1: t.favoriteTeam };
-            E = r.a.createElement(qa, {
+            E = r.a.createElement(za, {
               entityId: c,
               data: p,
               onSubmit: function () {
@@ -5549,7 +5616,7 @@
               { className: "Decrees-Container" },
               e.decrees.map(function (e, a) {
                 return r.a.createElement(
-                  $a,
+                  at,
                   Object.assign({ key: a }, e, {
                     isActive: c === e._id,
                     onSelect: function (e) {
@@ -5563,9 +5630,9 @@
           );
         };
       t(154);
-      function at() {
+      function nt() {
         var e,
-          a = Object(n.useContext)(A.context),
+          a = Object(n.useContext)(f.context),
           t = Object(n.useState)({
             recap: {
               name: "",
@@ -5599,11 +5666,11 @@
           m = Object(l.a)(c, 2),
           u = m[0],
           d = m[1],
-          h = Object(n.useContext)(He.context);
+          h = Object(n.useContext)(Fe.context);
         function E() {
           return (E = Object(g.a)(
             v.a.mark(function e() {
-              var t, n, r, o, i, l, c, m, u, d, E, p, A, f, g;
+              var t, n, r, o, i, l, c, m, u, d, E, p, f, A, g;
               return v.a.wrap(function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -5638,7 +5705,7 @@
                         c++
                       )
                         l(c);
-                      return (e.next = 14), k(n.decreeResults);
+                      return (e.next = 14), C(n.decreeResults);
                     case 14:
                       for (o = e.sent, m = 0; m < i.length; m++)
                         for (
@@ -5648,12 +5715,12 @@
                         )
                           h.teams[E]._id === u &&
                             ((p = h.teams[E]),
-                            (A = p.mainColor),
-                            (f = p.emoji),
+                            (f = p.mainColor),
+                            (A = p.emoji),
                             (g = p.nickname),
                             (i[m].team = {
-                              mainColor: A,
-                              emoji: f,
+                              mainColor: f,
+                              emoji: A,
                               nickname: g,
                             })),
                             h.teams[E]._id === d &&
@@ -5723,7 +5790,7 @@
                         r.a.createElement(
                           "div",
                           { className: "Recap-Decree-Icon" },
-                          _a(e.decreeId)
+                          et(e.decreeId)
                         ),
                         r.a.createElement(
                           "div",
@@ -5744,7 +5811,7 @@
                   })
                 )
               : null,
-          f =
+          A =
             i.recap.bonusResults.length > 0
               ? r.a.createElement(
                   "div",
@@ -5845,7 +5912,7 @@
                 )
               : null,
           y =
-            null === f && null === p
+            null === A && null === p
               ? r.a.createElement(
                   "div",
                   { className: "Recap-Note" },
@@ -5870,24 +5937,24 @@
                   { className: "Recap-Name" },
                   i.recap.name
                 ),
-                r.a.createElement("div", { className: "Recap-Body" }, p, f, y)
+                r.a.createElement("div", { className: "Recap-Body" }, p, A, y)
               )
         );
       }
-      function tt() {
-        var e = Object(n.useContext)(P.context).user,
-          a = Object(n.useContext)(A.context);
+      function rt() {
+        var e = Object(n.useContext)(U.context).user,
+          a = Object(n.useContext)(f.context);
         return a && a.sim
           ? 0 === a.sim.phase
-            ? r.a.createElement(at, null)
-            : e.unlockedElection
             ? r.a.createElement(nt, null)
-            : r.a.createElement(ot, null)
+            : e.unlockedElection
+            ? r.a.createElement(ot, null)
+            : r.a.createElement(lt, null)
           : null;
       }
-      function nt() {
+      function ot() {
         var e,
-          a = Object(n.useContext)(A.context),
+          a = Object(n.useContext)(f.context),
           t = void 0 !== a.sim && void 0 !== a.sim.season ? a.sim.season : -1;
         return r.a.createElement(
           "div",
@@ -5911,7 +5978,7 @@
               { className: "Offseason-Description" },
               "Votes are counted up and changes are made at the end of every week, between seasons of Blaseball. This Election ends in..."
             ),
-            r.a.createElement(Ue, {
+            r.a.createElement(je, {
               dateString:
                 null === (e = a.sim) || void 0 === e
                   ? void 0
@@ -5922,26 +5989,26 @@
             "div",
             { className: "Offseason-Body" },
             r.a.createElement(
-              va,
+              ya,
               { value: { bonuses: [], decrees: [], decreesToPass: 0 } },
-              r.a.createElement(rt, null)
+              r.a.createElement(it, null)
             )
           )
         );
       }
-      function rt() {
-        var e = Object(n.useContext)(va.context);
+      function it() {
+        var e = Object(n.useContext)(ya.context);
         return void 0 === e || 0 === e.bonuses.length || 0 === e.decrees.length
           ? r.a.createElement(Ee, null)
           : r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(et, null),
+              r.a.createElement(tt, null),
               r.a.createElement(Oa, null)
             );
       }
-      function ot() {
-        Object(n.useContext)(A.context);
+      function lt() {
+        Object(n.useContext)(f.context);
         return r.a.createElement(
           "div",
           { className: "Offseason" },
@@ -5974,10 +6041,39 @@
         );
       }
       t(155);
-      function it(e) {
-        e.season;
-        var a,
-          t = Object(n.useContext)(A.context);
+      function st(e) {
+        var a = Object(n.useContext)(Fe.context),
+          t = Object(n.useContext)(f.context);
+        if (void 0 === a || void 0 === t) return null;
+        var o = a.teams.find(function (e) {
+          var a;
+          return (
+            e._id ===
+            (null === (a = t.postseason.playoffs) || void 0 === a
+              ? void 0
+              : a.winner)
+          );
+        });
+        if (void 0 === o) return null;
+        var i = void 0 !== t.sim ? t.sim.season : -1,
+          l = void 0 !== o ? o.mainColor : "#ffffff",
+          s = void 0 !== o ? o.fullName : "",
+          c =
+            void 0 !== o
+              ? r.a.createElement(
+                  "div",
+                  { className: "PlayoffsEnd-Body" },
+                  "Your Season ",
+                  i + 1,
+                  " champions are the ",
+                  r.a.createElement(
+                    "span",
+                    { className: "PlayoffsEnd-Callout", style: { color: l } },
+                    s,
+                    "!"
+                  )
+                )
+              : null;
         return r.a.createElement(
           "div",
           null,
@@ -5989,23 +6085,18 @@
               { className: "GodsDay-Header" },
               "Blaseball Gods' Day"
             ),
-            r.a.createElement(Ue, {
-              dateString:
-                null === (a = t.sim) || void 0 === a
-                  ? void 0
-                  : a.nextSeasonStart,
-            }),
+            c,
             r.a.createElement(
               "div",
               { className: "GodsDay-Body" },
-              "Welcome to Blaseball. The season will begin soon. Check the Election page for the results of last season's voting."
+              "Welcome to Blaseball. We're taking a brief break. Check the Election page for the results of last season's voting, and we hope to see you again when Blaseball is back."
             )
           ),
           r.a.createElement(qe, null)
         );
       }
       t(156);
-      var lt = function () {
+      var ct = function () {
           return r.a.createElement(
             "div",
             { className: "Privacy" },
@@ -6684,7 +6775,7 @@
             )
           );
         },
-        st =
+        mt =
           (t(157),
           function () {
             return r.a.createElement(
@@ -7217,8 +7308,8 @@
               )
             );
           });
-      function ct() {
-        return (ct =
+      function ut() {
+        return (ut =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -7229,7 +7320,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function mt(e, a) {
+      function dt(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -7253,7 +7344,7 @@
         }
         return r;
       }
-      var ut = r.a.createElement("image", {
+      var ht = r.a.createElement("image", {
           id: "Ball",
           x: 87,
           y: 75,
@@ -7262,24 +7353,24 @@
           xlinkHref:
             "data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxAAAAOPCAYAAABbySdrAAAgAElEQVR4nOzdB7hdVZn/8V8qCQmEEkqAkAChdylSBUQcRRBBGbGAUlR01BHBgg7j+Ld3xRlBumAvIE2QGqQ36T20JBA6CQmE1Pt/Fr4XTm5uOWWXd631/TzPeW5CuWftVfZe715tUFdXlwAApRkpaZSk5e0zyj5jJC1nf17W/rsR9udl7J8PlzRa0jD7b4c2JHKI/b5Gw+y/bzTCfncwX9LLvVzoYkmzGv4+W9JC+/NQ++5uId2De/kd3ekN5kp6tce/nyNpQY9/9pKkRQ1/X2jfvcD+++70zpP0iv3Oufbnl+2/nWV/ftl+30v257lUaQAoBwEEAAxsrKSVJa3Y8Fmhjz93/7sx/XS2Ub7uoCh8Zkp6seEzs48/h8/zkp6jfACgbwQQAHIUgoFVLTBYRdLq9ufuv69mP7v/PoRakpWFFkSEz7OSnrafvf39GQs6ACAbBBAAUhKm2qxlAUD4OU7SmpLWsM84+zmCUkeBwtSqJyXNsJ/h84T9fboFHNNtyhUARI8AAkAswtz+CZLWljTePhPs5+r2cxSlCcfC2oxpkp6yn4/bz/CZan+fQwEC8I4AAoAXofM/UdI69nNd+9n9WZGSQgbCOozHGj6PNnwe62MRPABUigACQJXC2oP1JE2yTwgS1rd/tholAQworLmYIukhSY/Yn8PnYdZiAKgKAQSAooUtQzewTwgONrTPBowiAKUKoxcPSnrAPg/Z3x9kW1sARSKAANCusCZhY0mbSdrEfm5saxQGkauAG122xuI+SXdLutd+3seaCwDtIIAAMJCRFhhsap/ugGEigQIQtS5bV9EdUNxjf76XEQsA/SGAANAtnDi8kaTN7dM9urAuh6EBWVls6yu6Rynuss/9DSeUA8gYAQSQpzD9aAtJW9lnawsWOB8BQF9etaDiNkm32+dOpkEB+SGAANK3vKRt7LOtBQuTGFUAUIAu2wHqVkm32M/weYnMBdJFAAGkZVSPYGEb2/2ItQoAqtJlOz/1DCo4wwJIBAEEELewPmEH++wkaUtbywAAnoS1E3dIuk7SDfZ5hBIC4kQAAcQjrE94k6QdJe1sP1en/ABE6ilJ10u61n7exu5PQBwIIAC/1rRRhZ0sWAjBwzDKC0CiFkj6pwUT19nnCQob8IcAAvBhkO2CtJukt9iUpPGUDYDMTbPpTv+QdJXtAkXHBagZAQRQj8F21kIIGHaXtKuksZQFAPTrOUlXS5psAcVddm4FgAoRQADVCac3v03SWy1gWIm8B4COvGABxRWSLrfTtAGUjAACKE9Yw7CnBQ3hM468BoBSzZB0mQUTl7GGAigHAQRQnGVtdOHtFjBsTN4CQK3us2DiEvv5CsUBdI4AAujMOpLeZZ/dbatVAIA/r9q6iQsk/Y1zKID2EUAArRkuaRdJ75S0j6SNyD8AiNL9ki60YOIaSfMpRqA5BBDAwFa3gOFdNjVpDHkGAEmZZWsm/mafpyheoG8EEMDSwhar20ja1wKHbeycBgBA+kLH6FZJF9l0p1vYKhZYEgEE8C8jJe0laX8baViFfAEASHrWpjqdI+lSSXPJFOSOAAI5W07S3pLeaz9HURsAAP142aY4/cVGKF4is5AjAgjkZmVJ77agIaxnWIYaAABowzxbNxGCifPtlGwgCwQQyMEKkg6Q9O92sNtQSh0AUKCFds7EH22q04tkLlJGAIFULWcjDe+3g90YaQAAVCFsB/t3SX+QdJ6k2eQ6UkMAgZSMtLUMB9lC6JGULgCgRnNtrcTvbCE2C7CRBAIIxC5sr7qrpEMkvY8zGgAAToWzJv4s6Uw7uI6tYREtAgjEKpwA/SELHNamFAEAEZkq6SxJv7YTsYGoEEAgJitJ+qAFDdtRcgCABNxsoxJhmtPzFChiQAAB7wbbdqtH2KJoFkMDAFI0zxZdn2LbwzLFCW4RQMCrMC3pMEmHMkUJAJCZMMXpdEmn2Z8BVwgg4MkyNsrwMTuvYTClAwDIWBiFuELSSTY6MY/KAA8IIODBREkfl3S4pFUpEQAAlvKMpFMtmHiM7EGdCCBQlzC68A5Jn7SzGxhtAABgYGFU4m+STpB0MWslUAcCCFRtrK1rCIHDOuQ+AABte1TSL21k4jmyEVUhgEBVtpL0n5I+wE5KAAAUap5tA3u8pNvIWpSNAAJlCtOS9pX0OUm7k9MAAJRusqSfSjqf6U0oCwEEyrCcTVP6jKRJ5DAAAJV72EYkwnaws8l+FIkAAkWaYEFDOPRtDDkLAEDtZtkaiRBMPE5xoAgEECjCZpK+KOkgScPIUQAA3Fkg6feSvi/pbooHnSCAQCd2lvQlSfuEukROAgDgXuj4XSjpe5KuobjQDgIItCoECu+ywGEXcg8AgGhdY4HEhRZYAE0hgECzwo5K75f0FZuyBAAA0hCmNH1b0h/YuQnNIIDAQAbb2objJG1EbgEAkKz7JX3TzpQgkECfCCDQlyENgcOG5BIAANl4QNI3bNH1IoodPRFAoKcQOHxQ0lcJHAAAyFoIJL4l6bcEEmhEAIFug2yNw9clbUCuAAAA86Ckr9kaCTqOIIDAa95hi6e2JjsAAEAfbrMZCheRQXkjgMjbDpK+K2m33DMCAAA07SpJx0q6nizL0+DcMyBTm0r6qzV8ggcAANCK0He4zvoSm5Jz+SGAyMvakk6TdKek/XLPDAAA0JH9rE9xuvUxkAmmMOVhtKQvS/q8pJG5ZwYAACjcXEk/tqnRc8jetBFApC2MMB1uOyuNyz0zAABA6WZYv+NkDqNLFwFEuna3NwHsrAQAAKp2m818mEzOp4c1EOlZR9LZkq4keAAAADXZ2voioU+yLoWQFkYg0jFC0hdsWzXWOQAAAC/m2tqI70t6lVKJHwFEGt4p6XhJk3LPCAAA4NYUSZ/lILr4MYUpbmHLtL9I+hvBAwAAcG6S9VnOZtvXuBFAxGm4TVW6V9IBuWcGAACIyv6S7rO+zHCKLj5MYYrPLpJOkbRh7hkBAACi94Ckj0m6mqKMByMQ8Vhe0i8k/YPgAQAAJCL0aa6yPs7yFGocGIGIwz6STpC0Vu4ZAQAAkjVd0qcknU8R+8YIhG+rSvqdNSSCBwAAkLLQ1znP+j6rUtJ+EUD49WFbJH1Q7hkBAACycpD1gQ6m2H1iCpM/q0k6WdK+uWcEAADI3gWSjpD0dO4Z4QkjEL6ELVnvJngAAAB4zT7WN2LbekcIIHwYI+lXdijc2NwzAwAAoMFY6yOdaX0m1IwpTPV7q6TTOZERAABgQNMkfVTSFWRVfRiBqM9IST+VdBnBAwAAQFPGW9/pZ9aXQg0YgajHJpL+IGmzHC8eAACgAHfbjk33kJnVYgSieodLupngAQAAoCOhL3WT7dKECjECUZ1wPPuJkj6QywUDAABU5PeSPiHpJTK8fAQQ1djWTlWclMPFAgAA1OBhm9J0C5lfLqYwlWuQpKMkXUPwAAAAUKr1JF1rfa9BZHV5GIEoT9in+AxJ70n1AgEAAJw6T9JHJM2kgIpHAFGOLST9WdL6KV4cAABABKZIep+kOyisYjGFqXgHS7qe4AEAAKBWYfr4dZIOoRiKRQBRnKF2MFw4Zn3ZVC4KAAAgYqFP9itJx1tfDQVgClMxVrGD4fZI4WIAAAASdJWkAyU9S+F2hgCic1tJ+qukCbFfCAAAQOKmStpP0u0UdPuYwtSZfSVdTfAAAAAQhbWt77YvxdU+Aoj2hT2Gz5E0OtYLAAAAyNBo68MdReG3hylMrQsLcH4u6cjYEg4AAIAlnCjpM5IWki3NI4BoTTgc7o+S3h5TogEAANCnSyT9u6RZZFFzCCCat46k8yVtGkuCAQAA0JT7Je0j6WGya2CsgWjO9pJuIHgAAABI0kZ2EPD2FO/ACCAGtrekKySt6j2hAAAAaNsq1ufbmyzsHwFE/w6VdK6kUZ4TCQAAgEKMsr7foWRn3wgg+vYlSady7DkAAEBWhlof8EsUe+9YRL20QZK+J+kL3hIGAACASv3AAgk6zA0IIJY0RNIJkj7mKVEAAACozSl2/tciiuBfCCDeMEzSWZLe7yVBAAAAcCGcA/ZhSQsoDgKIbsOtYuznIzkAAABw5lw7cG5+7gVDACEtK+kvkt7hIC0AAADw62JJ75X0Ss5llHsAEYKH8yTt6SAtAAAA8O9ySe/OOYjIeRtXggcAAAC0ak/rQy6ba87lGkAsa/PYCB4AAADQqj2tL5llEJHjFKZlJJ0vaS8HaQEAAEC8LpW0r6R5OZVhbiMQYbelPxM8AAAAoAB7Wd9yeE6ZmVMAEQ6J+7WkfRykBQAAAGkIfcvfWF8zC7kEEIMknSbpQAdpAQAAQFreZ33NQTmUay4BxI8lHeIgHQAAAEhT6Gv+JIeyzSGAOFbS5xykAwAAAGn7T0lfSf0iU9+F6ZOSfuEgHQAAAMjHpySdkOrVphxAhBMCz85pQQsAAABcWCTpADtwLjmpBhBvlnRFzicEAgAAoFavSHqrpBtTK4YUA4hJkq6TtIqDtAAAACBfz0raSdKUlHIgtUXUIWi4iOABAAAADiTZN00pgAgnAJ5rIxAAAACAB5Osj5rMadWpBBDdB8Xt6CAtAAAAQKMdUzpoLpUA4jhJH3KQDgAAAKA3H7I+a/RSWET9HtuuNYujwwEAABCtLtve9a8xX0TsAcTmtuPSaAdpAQAAAAYyx3ZmuivWnIo5gFjZ9tVdz0FaAAAAgGY9LGkHSc/FmGOxroEIp0v/huABAAAAEQp92F9bnzY6sQYQ/yPp3xykAwAAAGjHv1mfNjoxTmF6ty08YdE0AAAAYtZlGwKdF9M1xBZATJR0u6QxDtICAAAAdGqWpDdJeiSWnIxpCtMwSb8jeAAAAEBCQt/2jzGdVB1TAPENW60OAAAApGQbST+K5XpimcL0dkkXs+4BAAAACXufpL94v7wYAojVJN1hPwEAAIBUvShpK0lTPV+f9ylMYcThTIIHAAAAZGBF6/u6Ph/CewDxRZu+BAAAAORgN0lf9nydnqcwbS/pGtt9CQAAAMjFQkk7S7rJ4/V6DSBGSrpN0oYO0gIAAABU7QFJW0ua6y3nvU5h+g7BAwAAADIW+sLf9Xj5Hkcg9pB0OVu2AgAAIHOho/42SVd4ygZvAcRoSXdKWsdBWgAAAIC6PS5pM0lzvJSEtylM3yV4AAAAAF43wdtUJk8jELtIuiqCrWUBAACAKoUO+1tsh9LaeQkgRtjUpfUdpAUAAADw5iFJW0h6te50DXWSMccRPABA216WNEPSM5KelfScpBclzezxmWd/D/uLv2QPocbtAef28mAaYVtrdxtp/2x5e4asIGkZ+9n4CaepjpW0iqRVJY2TNIoiBoC2rW995q/WnYUeRiA2lnS7pOF1JwQAHAqL5h6xRXRTJU23z2OSnpD0tKRXIim4ZSWtJmlNm9M7XtJakta2z3q2mQYAoHfz7WyIe+vMn7oDiLBV62Sb0wUAuVpoQ9P32sFBU+wT/tlTmeXJ6vaWbZJ9wj7om9g/8zJqDgB1ulrSbrYuohZ1BxCHSTq1zgQAQMXCqMGtku6QdJek+yQ9aG+V0LcwSr2BjVpvLmlLSdvYaAYA5OaIOvvQdQYQK9hDc5W6EgAAJQvBwo32uc2maz5LphcqPEO2siH9N9uHoAJA6p61lyoz67jOOgOI4yV9pq4vB4CCLZB0s6TrJd1gn+lkci3Cuood7LOjpO0kDcswHwCk7QRJn6rjCusKIMLbolskDanjywGgAGHHopvs/Jp/WOAQy2Lm3CxrwcRu9tm+x85SABCjRZK2tdHtStUVQISH7a5UVQARWWzrFi61zzUe9uJGW0bY4aV72WdLDjEFEKlaFlTXEUC8V9Kfq/5SAGjD85IukvQ3SZexfiFZYR3F2yTtLemdklbOPUMAROXAqvvWVQcQy9g2hetW+aUA0IK7JV0g6UKblrSIzMvKEJvutI99Nss9QwC494htdz2vqoRWHUAcI+kHVX4hAAygy9Zk/cU+U8gwNJhkI+fvtbnGg8gcAA59QdIPq0pWlQHEWDsUaYWqvhAA+hBufNfZkO/ZdsIzMJBwWvYBkt4naSeCCQCOzLQDN5+rIklVBhA/kvT5qr4MAHoRpif9TtJvJT1GBqEDEyV9QNIHmeYEwIkfSzq6iqRUFUCMt0PjRlTxZQDQ4ElJZ1nQcCcZgxJsYYHEwZLWIIMB1CTsDLhhFaPqVQUQp0v6aBVfBAB2qFvYOekkSX9nITQqEhZg/5ukI2wBNofXAajaGZIOLfs7qwggNrG3fhwaB6Bs91vQ8BtJz5DbqNGqkj4s6eP2RhAAqrDIRkXvLfO7qggg/iDp38v+EgDZmm8LoU+0U6EBT8JC6z0kHSnpPYxKAKjAHyW9v8yvKTuA2NyO1+aETwBFmyHpF5JOkfQUuYsIrG7Tmz4laRwFBqAkiyVtJemusr6g7ADiT7bdHQAU5VZJP7H7y3xyFREabifHfs7OlgCAop1t59eUoswAYgsbfWCfbACdCm9T/mqBwzXkJhKyi6SjbHoTo/UAihI6+FtLuqOMHC3zZvVfBA8AOhRGGE61zRjeS/CABF1jdXtjq+uMqgEowiDri5eirBGIDW31N29TALRjtqRf2ojDk+QgMrKGjUh8QtJyFDyADiy2F3APFJ2JZXXwv0TwAKANL0n6lqR1JH2B4AEZetLq/kRrCy9RCQC0abD1yQtXxgjE2pIeskViANCMWZKOl/RTSS+QY8DrVrLF1p+VNIZsAdCicLDqpKJPpy5jlODzBA8AmjRH0rdtxOG/CR6ApbxgbWMdG5GYQxYBaEE4e+boojOs6BGIFSRNkzS6yF8KIDnzbY1D6BA9TfECTVtN0lfsYDpe1gFoRnjxMF7SzKJyq+gRiCMIHgD0Iyzo+pWkDWxKBsED0JrQZv7T2tCvrE0BQH9GWx+9MEWOQAy3tQ9rU4QAenG5LQ69jcwBChP2ef++pLeRpQD6Mc3WQhSyVXSRIxDvI3gA0IuwpfM7rYND8AAUK7SpvayN3UveAujDeOurF6LIAOIzlBiABmHx539I2lLSxWQMUKqLra2FNvc8WQ2gF4X11YuawhSGUP9ZxC8CEL0wJ/skScdJeo7iBCo3VtI3JH2cM5kA9LBNEX32om4sny3o9wCI2/WStpX0SYIHoDbPWRvc1tokAHQrpM9exAjEyrYwY2QRCQIQpedtgfQZkgo/nRJA2wZJ+qikH9jzGkDe5tp6iI6mOhYxAnEIwQOQrRAsnClpY0mnEzwA7nRZ29zI2iptFMjbSOu7d6SIEYh7rfMAIC8P2jSJKyh3IBpvlXSCnSMBIE/3SdqkkyvvdARiF4IHIDsLJX3PdnwheADicoW13e9ZWwaQn42tD9+2TgOIj1HpgKzcJWknSV+W9CpFD0TpVWvDO1qbBpCfj3dyxZ1MYVpe0gxJy1LpgOQtkPQdSd8q6hRLAC4Ml/RVScdKGkaRANl4RdI4SS+1c8GdjEC8j+AByMK99qbyawQPQHLmW9vegZOsgayEPvyB7V5wJwHER6hnQNLC8OTPbC/5WylqIGn/tAOmfsZOTUA22t6Nqd0pTOtIetj2lwaQnnC2y6GSLqdsgezsaVu/jqfogaSFIGA9SY+2epHtjkB8mOABSNY5krYieACydbnt1HQ2VQBIWujLH9zOBbYbQHyQ+gQkJ+zM8ilJB0h6geIFsvaipPfaWS9zc88MIGEfaOfS2pnCFN5K3E5NApJyj6SDJN1NsQLoYTNJv7OfANKzdat9+3ZGIA6i4gBJOUPS9gQPAPoQ7g1vtnsFgPS8v9UranUEYpAtnl6HygNEL0xZ+oykUyhKAE06XNL/ShpBhgHJeEzSuq3swNZqALGdpJuoL0D0HrazXJiOCKBVYZOFP0maRM4ByQgzEW5u9mJancJ0APUEiN75drYDwQOAdtxuLxTPJ/eAZLTUxyeAAPIRhhu/Kek9kmZS7gA6MNPuJd/g4DkgCS318VuZwrQpiyyBaM2xEyfPoQgBFGx/SWdKGk3GAlHbzHZlHFArIxCMPgBxCusddiB4AFCSc2yXpofJYCBqTff1Wwkg3kWdAKJztQUPTb1RAIA23WuLMCeTgUC0mu7rNzuFaVVJMzo4uRpA9cKe7Z+QNJ+8B1CRYZJ+IekIMhyIzmJJ4yQ9M1DCmw0I3knwAEQjvBX4iqRDCR4AVGyBpI9J+iKLq4HohL7+3s0kutmggOlLQBzm2Wnx36G8ANToB3a67TwKAYjKfs0ktpkpTGE48llJYyh/wLUXbTeUqygmAE68RdJfJa1IgQBRmC1pZRtN7FMzIxBvJngA3Hta0q4EDwCc+Yfdm56iYIAoLGebr/SrmQBiL8obcG8VW7Q4iqIC4MgouzetSqEA0Xj7QAklgADSENry5yTdRZsF4MRedk/6HBuxAFF520CJHWgNxAqSnpM0hHIHohEa9WmSjrK5jABQpTAF4ieSDgv9DHIeiM4im9nwYl8JH+iNwO4ED0B0wgP7cEm3SdqR4gNQoR3t3nM4wQMQrSEWA/SpmQACQJzWswWMX5c0lDIEUKKhdq/5h917AMRtt/5SP9AUpn9K2poKAETvejsfYipFCaBga0v6PSOeQFJu7y8G6C+AWNHWP7DwCUjD85I+IulCyhNAQcJBs7+yfeMBpGOxpLF9rYPoLzjYheABSEp4wJ8n6f+xtglAh4bYveQ8ggcgSYPtDJdeDRRAAEhLaPPHSbrUdlgAgFatYveQ43jRCCRt574urr+GvxN1AkjWHpJulLQZRQygBZvZvWMPMg1IXp+DCX2tgRguaZakEdQNIGnhnIgPsC4CQBPCeoff2TkPANL3qqQxkub3vNK+RiC2IngAshA6AudKOobiBtCPY+xeQfAA5GOExQRL6SuAYCs2IB9hMeQPJJ3CeREAehhq94YfsPkCkKVeY4K+Aog3U0eA7ISTY8+RNJKiB2D3gnPs3gAgTzv0dtV9BRDbUEmALO0j6RI7BwZAvla0e8E+1AEga73GBL0tol5e0szw73LPMSBjd0t6u6QZVAIgO+MseGCXNgAhUFhB0kuNOdHbCMQ2BA9A9kLH4TpJG+SeEUBmNrC2T/AAQBYTLDUK0VsA8SayC4CkiZKulLQhmQFkYUNr8xMpbgANlooNCCAA9GcNSVcQRADJ29Da+hoUNYAemgogNifXADRYg5EIIGndIw8EDwB6s1Rs0HMR9TBJL9tPAGgUFlTvIekBcgVIRnfwMI4iBdCHBZJG2c/X9ByB2IjgAUAfxllHYxIZBCRhEsEDgCYMsxjhdT0DCKYvAehPdxCxFrkERG0tggcALdiq8T8lgADQqtDxuFzSKuQcEKVVrA3zIgBAszZp/O96m8IEAAMJe8Wfb3MiAcRjlLVdzngB0Ip+pzCxywqAZr1Z0nmShpNjQBSGW5t9M8UFoEVLxAiNAcRQFkcCaNFbJZ3G6fWAe4Osrb6VogLQhkmNGy01BhDrsQMTgDZ8SNKxZBzg2rHWVgGgHcMsVnhNYwDBfEgA7fqmpP3IPcCl/ayNAkAnXo8Veo5AAEA7wvSI37CTG+DO5tY2mWYIoFO9jkAQQADFOUrSdyTNzihPu3d3YXtXwIdVMtwtbbbde49ykBYgNet2X09jALEOxQwU4nRJP5X0FUkTJf1I0vxMsnaCpLPZmQmo3XBrixMyKYr5dq+daPfen9q9GEBxeg0g1iWDgY7dI+nTDb/kBUnHSNpU0t8yyd5dJJ3gIB1Azk6wtpiDv9k99hi753b7tN2TARTj9cGGQV1dXbK5kXMlLUMGA22ba/ur39XPL3iHvRnL4cyVw3gDCNTiUNuyNXUPSPqcpIv7uc7NJN0kaSRVEejYPGtLXd0jEKsSPAAdO3qA4EH2oNta0g8lLU48y/+359H3AEq3ibW9lC22e+jWAwQPwd2SPk+1AwqxjMUMr09hGk++Ah05p4VpO2Gk4guS3iLpoYSzfVlJf7KfAGhzRXjI7p1fsHtpM060ezSAzq0tAgigENMlHd7GL7pW0laSfpbwaEQOb0MBL1Ie9Vts98qt7N7ZqnCPnlbvJQBJeC1mIIAAOhMWEX1U0ott/pZXbA7vnpKeSLQswnzsgx2kA0jZwdbWUvSE3SM/Z/fMdrxo+dNFKwA6spYaAoi1yEugLcdLuryArJts83kvTbQYwvSujRykA0jRRgnvfHap3RsnF/C7Lrd7NoD2LTECsQYZCbTsXknHFphtz0p6p6RvJPiWLBxk9XvOhwAKN9zaVmqHxXXZvfCddm8syrF27wbQntdihu4AYnUyEWjJAkmHtLCIr1mLJP23pPdJmpNYkWwp6esO0gGk5OvWtlIyx+6B/233xCLNtXv3AloB0JbV1BBArEYeAi35jqRbS8yycILsrpKmJlYsYeeUnR2kA0jBztamUjLV7n1nl3hNt9o9HEDrXht06D5I7hlJq5CJQFPCWQ/bSppfQXaF4P5cO6AuFY9I2kLSy1Q3oG1hytKdktZNKAtvlLSfpKcr+K4w9esWSZtX8F1ASsKUwlXDCMQwSWMpWqApi2w7wCqCB9mDNOw+clFCxRM6PN9ykA4gZt9KLHi4yO51VQQPsnt42JVpYUXfB6QixAzDBtsfBlGsQFN+JOnmirPqZXsrd1ZCRfQZSTs5SAcQo52sDaXiLLvHVT0qGaYy/ZgWALQkxAxjwxSmTe2odwD9e9AWK75aUz4NsgDmqETK6X7bnrGu/ARiNELSbQlti/wTSUfXuPNcyM87JG1Q0/cDMdp8MNOXgKaEh9sna+7shjR8XtL3EyiycKrsZZKGOkgLEJOh1nZSOL3++3ZPq3Pb6nBPP5ID5oCWrBwCiJXIM2BAYYj9CifZ9CVJ33WQjnaFRei72BSM1LaqBco2x9rOLtaWYvVdu5d5cGViU0SBsq0UAogVyWagX89LOsZZFoXDkL7tIB2tCG/6jrMdrK6PJ9mAS6ndKBgAACAASURBVNdbWzouwmmA3y74EM4iHGP3egADW5ERCGBgXyz4JNSifFXSDyMpv6ts/cg3K9zBCkjdfGtTW1obi8EP7d7lzbMJnqkBlOW1EYgVyF6gTzdIOt1x9oTg5jcO0tGXFyUdIWkPW4QOoHgPWhs7wtqcV7+xe5ZXZ9g9H0D/XhuBWI5MAnq12OYae15cF9L2UUnnOUhLT3+QtImkU1mgCJSuy9raJtb2vDnP7lXe76eftvN+APRtdAggRpNBQK9+aSeVehcOQvqApOucpHOqpH0lHSTpKQfpAXLylLW9fa0tenCd3aNiOLQtnA1xkoN0AJ4RQAB9eN4WJ8biFUn7SJpSY3rDiM3xksLZMhdElHdAii6wtnh8zVu+TrF70ysR5fFxLKgG+jWaKUxA774W4QMkzH1+Z00Lvu+UtKOk/+xwa9bhkiYWmC4gZhOtTbRrjrXJHa2NVu1Zuyd5XpfRm3Dv/29/yQLcIIAAenGfTV+KUXjbd2CFOx3NlfQVSdtIuqnD37W/pHsk/cVO3QZyNsjawj3WNjpxk7XRr1ibrcJ8uxfVOSraiZPsWQBgacuHAGJZMgZYwhcimavbl7Cd49EVfM8Vtn3kdzrMrx0kXSPpbEmTJL3J5ksDOfuAtYVJ1jausbbSroXWVres6FDMoyPaWrY3C9nWFejTyBBADCN/gNddLunCBLLjf0vcfvYFSYdKepukhzr4PWF6xm9tgeXOPf7dNzqcugHEbLi1gUY7W1v5bYfT/B6ytnuoteUynG73oNiFZ8FltCRgKcMZgQDesLiiN/dVCdsR3l3wd4XOy8a2X3q72zGuYIdJPWBvWXubrrSupE90mFYgVp+wNtDTIGszD1gbavccpy5rwxtbmy7S3XbvScUxNS9CBzxiBAJoEA45uiOhDAm7nvy7pJcL+F2PSdpb0ockPdPm7whvVT9rb0CPbmKE4cvhJtXmdwGxGml1f6C2dLS1pc92MFr3jLXpva2Nd+plu+fEtOPSQMIz4UzfSQQq99oIxCjyHXhtwd/XEsyGsAjwkx38/2Ee8E8kbSbpog5+T/cC6Z9JGtvk/7NGh2kHYvRJq/vNGGttqtOF1hdZG/9Jh+uZPpnowuP/qXBjCiAGy4YAYihFBby248ajiWbDWZJOa+P/u922f/x8B6MYYdHnPxoWSLfqi7zkQEZGWZ1vVfdC6390sND6ZWvrO1rbb9Vpdq9J0eMcLgcsYdhg8gN47cH5zcSz4TMtLHiea52Y7To4iXvthgXSu7b5O4LVWAuBjHzC6ny7dm1YaL12m7/jFmv7X2xhy9eH7B6Tsm8WNB0USAIBBCD9VNLTiedDmJP8EUmLBvjvLrWpDD9ocypD9wLph/pZIN2qo9iRCRkYbnW9U90LrR/qYKH1QrsHbGb3hP4ssntLSuseevO0PSuA7MkCiNHkBDI2S9KPMrn8622Oc2+es07A2yU90sbvHm47rzS7QLoVa0n6YIG/D/Dog1bXi9K40PrTbbbJR+ye8BG7R/TmJ3ZvycEP7ZkB5O61k6iH5J4LyNrPJb2YUQYc18sixzBveZMOdhrpXiD98xYWSLfqC5xOjYQNKvHQsrHWNjtZaH2m3SN6rnG4z+4puZgp6fiMrhfoy5BBXV1d7e7lDsTuJTuQKacAItje5klPlXSkpEva/D1hseb3JL2l4PT15T2Szq3ou4Aq7SfprxV9X1ho/SVJN7T5/4cRiRNtjcVOkm4qOH3erWgbbozJ7LqBJbAGAjnLbfShW3jgv9vmN7cTPDQukK4qeFCbu9MAMaiybr+lw4XWl9i9490ZBg+yZ8bPHaQDqFUYgVjM1ABkaI6kCZJeoPCbFhZj/pek/5A0oqY0hF1mrqnpu4Ey7CLp6ppy9lVJ/2c7DM2kdJu2kh28t1wk6QUKN9imcQC5OZHgoWnDLWjoXiBdV/AgRiGQoDrr9IiGhdb/wW5nTQvPjl9GklagFGEEYiZz+ZCZcKLoOpKepOAHFBZdfr/NQ+DKENZsbSBpipP0AJ0I7epBR7MAplhAc46DtHg3zkYhCLqQowWsgUCOziJ4GFBYIH1lBydIl2WQLfwGUnCksynE3SdaX9nBida5mNHBznVA7F4JIxBPdXjyJRCTxbYd4QOUWq/CosrvSjrI8dqosB/9eJu/DcQqTB+aVuLWx50Ko32/l/Rl27ENS9vAtrLlZSxyMytU+nkUOzLyV4KHXnWfIH1/gSdIlyV0uA50nD6gGQc6Dh7UcKL1/R2caJ26B5nuhVwRNSM3bL/Xu/fYYsqRHhPXC6YxIXax1OGRdm94j4O0eNTX6f5A0sIUpsfb3AsaiM1tkt5EqfUqnEh/p03visVWku6IKL1Aty0l3R5RbtwraQtJixykxaN/Sto690xAVp5kG1fk5KeUdp9Cx+BYp2nrC6MQiFVsdfdYgod+8WxBbhaGEYjw1nFzih6JCztmTLQtXNG36yPafSUcBriGpNkO0gI0aznbBW50JDl2g6QdHaTDs+G2peu43DMC2ZjCGgjk4hcED035WgRp7DbadosCYnJQRMGDIrsn1GW+PWOAXMwdTKcKGVgg6VQKuimXSLo6gnR2O8RHMoCmxVRnr7Z7AgZ2Cv0pZKQrBBBzKXEk7q82hQnN+WZE+bSzpPUcpANoxnpWZ2MR072gbuFMrXPzzgJk5KXB9nYWSNmJlG5LwhvHmyNJa9ir/mAH6QCacbDzM1Ya3czoQ8tOiCy9QLvmD7aFiECqwqFxV1K6LftWRGn9sIM0AM2Iqa7GdA/wYrIdvAekbs5gdjBB4n4Z5upRyC07P6IHYZgWsr2DdAD92T6i6Xb32z0AremyZw6QutcCiFkUMxIVFrT9msJty2JJP44ove93kAagPzHV0R/bPQCt+w2LqZGBWUxhQsoulPQsJdy2EHw9F0laQ+eMbanh1eCIAojnePHSkfDMOS/i9APNmEMAgZSdRul2ZG5E29+uGdnuNsjLzlZHY3AquzN27IzI0w8MhAACyQrbtl5M8XbshIimMhzgIA1Ab2Kpm4vZSagQf2frcCSOAALJOkvSQoq3Y4/bVLAY7B/RFpnIxyCrmzG40No8OrPQnkFAqgggkCzm8Bbn/yJJ5wRJ2zhIB9BoG6ubMYilrceAZxBSxi5MSNJd9kExLpU0JZK8jOVNL/IRS52cYm0dxeA5hJSxCxOS9DuKtVBhXvRJkaR1XwdpABrFUidPYuvWwv02sesBus0Z1NXVFYZXbyFLkIhwkM8kSY9QoIVaQ9JUSUMiSOsESytQt7UjWVOwyNL6pIO0pCTcix5lbRYStC0jEEjNDQQPpQgdi8siSeu7HKQBUER18TKCh1KE4PHaBK8LeG0NxOzsswEp+SOlWZpYFgUSQMCLWOoiC37L85dULwxZmx2mMI3g0BgkIkxfmsj0ldKMsr3Nl3OeznA/W5n7Gmo2UtLz9tOz8BJxnKSXqTClCFPDHmMaExIzMoxAvCrpFUoWCbiF4KFUoYNxTgTpDB22XRykA3nbJYLgQdamCR7KM5V1pkhMiBleHWzX9DyliwT8mUIs3ZmRpHMvB2lA3mKpg7G06Zj9KfcMQFJeixm6A4jnKFsk4GwKsXSTJT0TQTr/zUEakLcY6uAz1qZRLp5NSMkSAcQLFC0id1dEh53FLGz3eH4E6d9c0qoO0oE8rWp10LvzrU2jXA9zqBwS8lrMQACBVFxISVbmrxGkMSxY3N1BOpCn3SNZNBtDW04FzyikYokAgilMiB035+pcGsn5MQQQqEsMdW+OtWVUg2cUUrHEFKYY5jQDfQnR8PXkTmXmSboognQSQKAuMdS9i6wtoxrXM9sDiXhaBBBIxMXM461cDNu5bixpNQfpQF5Ws7rnXQxtOCWLGIVAIp5VQwDxNKWKiF1A4VXub5LmR5DOnRykAXmJoc7NtzaMasUwcgsM5CkxAoEEhNOnL6cgKzcrkmljOzhIA/ISQ5273towqnWZpMXkOSLHCASScAcBcG0uiSCNBBCoWgx1Loa2m6Jn7ZkFxIwRCCSBB2F9Yhj52VbSUAfpQB6GWp3zjlHb+vDMQuyWGIGYyW4MiBTbENbnFkkvOk/jspK2cJAO5GELq3OevWhtF/XgmYWYzet5DkTwJEWKyLwq6RoKrTZhV5ErI0jndg7SgDzEUNeuZNe6Wl1rzy4gRq/HCgQQiNkt3IhrF8PbNNZBoCox1DXegNcrPLNuzjkDELUZ3YkngEDMrqP0ahfDXOodHaQBeYihrrH+oX48uxCrXkcgnqA4ERmmL9XvIUlTnadxA0krOUgH0raS1TXPplqbRb2uJf8RqendyWYEArHq4i2OG94DuUGStnaQDqRta6trnvHSxYfr7BkGxIY1EIjeA5KepxhdiOFt2pYO0oC0xVDHePPtQ3h23Z97JiBKTGFC9HgQ+hFDWWzlIA1IWwx1jPumH4ygI0avxwqNAcTjFCUiwlC8H3dJmu08jQQQKJv3Ojbb2ip84BmGGL2+5rExgAgLIxZTnIgEb2/8WBzBtoQbSxruIB1I03CrY57dzDPeFUaDEJvFfS2iXtC4vyvgWDhG/UEKyBXvJ9sOlbShg3QgTRtaHfOM06d9ecieZUAsnpI0vzutg3sk2vt2jIB4c+PSTRGkcRMHaUCaYqhbMbTR3DCNCTFZIkYggECMeBD6c2sEadzUQRqQphjqVgxtNDecSI2YEEAgendShO48JulF52lkBAJl8V63XrQ2Cl94liEmS2y21HPOJjcYxICbrk+3S9rDUcoW2Q0v7Ld+n6QbHKQJafq9PT/DQuqNJE2QNMTRld7uIA1YGuWCmCwRI/QMIB6mKOHcC5KmUUgu1RVAzLZF9d2BQvefw895EeQb4vdn+3RbRtIGFkxs0BBYhD8vV8PV0lH16Ql7pq2Ue0YgCkvECD0DCHa2gXfsY+5X2SNDU/sIFKY38f8CVZpn96re7ldr9RFYrF1i+hi19SvUkd1yzwRE4aHGRPYMIKbZdq7DKEs4RQDh1z0FpOxVSQ/0ESi8nGrGISvT7XNZj4se1UdgEbaIHdFhBhXRNlEOAgjEYEHPddI9A4iFNsdpfYoTThFA+BU6+12SBjWRwmck3dtLoPAYh10hUy/bTkk9d0sKm51M7CWwCAu3V20iq7qsfcEnnmmIweMWI7yut4NvphBAwDFutn7NsZvMREtheGPxSEOg8EDDn73v2AR4sdjaUfhc3CNNKzYEExs2/HndhpkEj1vbhE93UC6IwJSeSewtgGAhNbxazFxe975gbylCoPCoBREAyhEC8Rvt0ygED+tYMOH9hOzc3W3Ptp7b6gOeLBUb9DUCAXj0CPPg3ftz5OkHUrDARvrYGMW/l+3ZNin3jIBrD/VMXG8RLyMQ8IrpSwCA1PBsg3dNjUAQQMCreykZtGC0Heg1wbbI7P78h6RZZCQKMEbS/9nuJN2fx1l3gBaFZ9v+ZBocazqAYD4ePGJ6HRqN6xEYrG0LuLv/3NfhTN/jjR8KEurZh/r4VS80BBWP9QgywmcGhQCz1PQQwJHFzQYQ8+08iAmUHpwhgMhHOMl3fEMw0NtIwjJt5sZ4AggUZHw/v2Yl+2zVx7+f18fIRfffp3GSejaY+QHPpllssIS+dmeYQgABh7jJpmPFPkYNuoOF1Zs8T6Ida+We+ShMJ3VpGdsyva9t08P5DU/1CCp6jmawHXIaeDkGz3rte/UXQOxJccKROQz5R2OITS/qbdSgO1hYrsaLWTOy/IRfZdalQdaOwmeHPv6b2X1MkeoezQj3zEXUH/eesmfc6NwzAi71GuD2FUDcTxnCGUYf4nGypEMdp3YNB2lAGuquSyEQ39Q+vTld0mH1JhFNCs+4LcksONTrSfZ9LZS+hxKEM49TINGY7jyhqzlIA9LgvS55b4t4A884eNXrDph9BRBslwlveBDGw3tZjXOQBqTBe13ivhmPablnANzqdVChrwDiCfZJhzNTKZBoMAKBXDACgaIQQMCjWRYTLKW/sx7upijhCDfXeDztPKVjHaQBafBel7y3RbyBl2TwqM9YoL8AgnUQ8IQAIh69vq1wZKSkEbkXEjo2wuqSZ97bIt7AaBE86jMW6C+AYB0EPHmS0ojGsxFsHdnXKdVAKnVokbVFxIEAAh71GQswAoFYcAZEPELH5XnnqWUaEzrlvQ49zxkQUXkq9wyAS4xAIGrhgJ1XKMKoeA8gVnaQBsTNex3y3gaxpLn2rAM8aSuAeJJj8uEEb2bi433xJlOY0CnvdYgF1PHhWQdPXuxv9kd/AYSYxgQnmMcbH+9vPwkg0CnvdYgRiPjwrIMn/cYABBCIAW9l4uN99JIpTOiU9zrEDIL48KyDJwQQiN4LFGF0ZjpP8BgHaUDcvNch720QS+NZB08IIBA9HoTx8f72c7SDNCBu3usQIxDx4VkHTzoKIO6kKOEAN9X4eO+8eD8ADP55r0MEEPHhWQdP7ugvLQMFEM9xuAkc4EEYH+/b7hJAoFPe6xBbX8eHAAJeTB9oI4aBAojgNooTNeOmGh/vnRfWQKBT3usQAUR8eFkGLwbs+zcTQNxOcaJmBBDx8d55WdZBGhA373WIACI+POvgxYB9fwIIxIDTOePzkvMUM4UJnfJeh7y3QSztZfIEThBAIAnzKcboeH/7OcpBGhA373WIEYj4zMs9A+BGvwuo1WQA8aikWZQpasQIRHy8d16Wd5AGxM17HSKAiA/POngQRi8fGSgdzQQQXZJupUhRIx6E8fE+FD/IQRoQN+91iOkw8eFZBw9utb5/v5oJIIJ/UqSoEcO6AIDU8ayDB00NGjQbQNxMkaJGs8n86HgfiuckanTKex1iOkx8eNbBg6b6/M0GEExhAtCKRc5za4iDNCBu3uuQ9zYIwKemZh01G0A8wgEnAAAAQLJCX//hZi6u2QCChdSo00JyHwCQOLYsR93+2cwCarUQQIgAAjViN5H4eC8zzoFAp7zXIe6b8Zmbewagdrc0m4BWAogbKVcATfI+ajTUQRoQN+91iJFbAK1quq/fSgBxA8UAAAAAJKmUAGKGpOnUFwAAACApoY//ZLMX1EoAIUYhUBPmq8eHLS6ROrYqRtFGkqOoUUtLFVoNIDhQDnVgvnp8OGQLqeOwRBRtODmKGt3UylczAgEAAADkraU+fqsBxC3s7AAAAAAkY2GrxzW0GkC8IukO6gsqthwZDgBIHM861OWOVs+OaTWACK6leFGxZcjw6HDIFlLHYYkoGs861OW6Vr+3nQDieooXFVuWDI8Oh2whdRyWiKLxrENdKgkgGIFA1XiTFh92gAHqRRuMD2WGulQSQEzjQDlUjGHd+IxwnuJZDtKAuHmvQ97bIJbGsw51CH36qa1+bzsBhBiFQMV4KxMf70Pxix2kAXHzXoeYDhMfRttRh7b69AQQiMEKlFJ0vAd9sx2kAXHzXod48RIfnnWoQ6UBxNUUMSrETTU+3ofiX3WQBsTNex1iOkx8eNahDm316dsNIO6UNJNiRkVWJKOj430o/hUHaUDcvNchpsPEh2cdqjbT+vQtazeAWMw0JlSItzLx8X4g0hwHaUDcvNchDiWLD886VO3adtdztRtAiGlMqBA31fh4f5PGGgh0ynsd4m12fHjWoWpt9+U7CSD+QTGjIiuR0dEhgEDqCCBQNJ51qFotAcStzCNGRVYno6PjvfPCGi50ynsdIoCID886VGmupFva/b5OAoj5km6gqFGBVcjk6Hgfin/RQRoQN+91iOkw8eFZhypdb335tnQSQARXUtSoAG9l4uP97ScBBDrlvQ4xAhEfnnWoUkd9+E4DiMkUNSowmlNVo8MIBFLHCASKNJLD/1CxjvrwnQYQN7EOAhUZR0ZHZazzxLIGAp3yXoe8t0EsidEHVOkV68O3rdMAIsyduoYiRwXWIJOj4v1hyAgEOuW9DtEhjctauWcAKnVtJ+sfVEAAIdZBoCLjyehohKkTI5wnlhEIdMp7HRrBNKaoEECgSh0vQSgigGAdBKpAABGP1ZyntEvS8w7Sgbg9b3XJM+9tEW9Ym7xAhVwEEDdLmlXlVSNLBBDx8L5e5TlJCx2kA3FbaHXJM9aOxYNnHKoS+uw3dvpdRQQQiyRdUdllI1fcXOOxqvOUPu0gDUiD97rkvS3iDTzjUJXJ1nfvyNCCEnuppP0pepRoApkbjamSTrOF72Fe75rO9qR/ykEakIZQlzZzdCVhYfcTkqZLetLaIuLAFCZU5ZIivqfIAAIo03rkbjRu6OWU+pEWTIyzB+W4huBiDXv7FuZrD6vgIhmBQFGqqksL7LumWWDQHSTMsCBhhv19LiUbrUm5ZwAqU0ifvagAYoqkRyWtU9DvA3oabZ3OGeRMlELH5iH79GWwBRGNQcU4+7lGwz9brsMMIIBAUYqoS7MbAoMn7c8zegQL4XsWU2rJWp1D5FCRxwZ4DjetqABCNiTyCWoASrQeAUTSFlv5DlTGoxuCijUbRjYa/9nq/azxog6hKP3VpcU2xemJHoHB9B7/bA6lkT1GH1CVQqYvqeAA4lICCJRsEgcXwjpc99mnL0NtNKNxulR3cHEnmYiChLr064aAoHFa0dPs9oUmMUUXVSlsyUGRAcQVtqp7SIG/E2jEWxo0a6F16p4gx1CiS4p8o4dsrU/RowKF7ppaxDau3cLuD7cW+PuAnjYhRwAAieHZhiqEPvoLRX1PkQGE2I0JJducDAYAJIZnG6pQaB99UFdXoSfxv0XSVUX+QqBBWJS4vKSXyRS3Pibps7Yz28P2mWKfacwJB0ox1DYRmGSf9ewT/ny8pJPJdrdGSXqphBe6QE+7SfpHUblS5BqI4Hpb4Mh2ZCjDYHtT0/OMAfixhR2s1dvhWgtsC7nG4OIh+xm2gZ5HOQJ9Wsa2Sl/P5sw3BgkT+zlDZQuy1LVNCR5QgTnWRy9M0QHEAjsiex9qA0qyBQGEa/0tdB9mHZ/eFgwuthGKEFw80jBq0R1osNUlcjC6R2AQPuvaz/FtdjTZfMK3rXLPAFRisvXRC1N0ACHbkYIAAmVhrqhvG7aZutAxmmCfPXv590/ZaEVvwUVhi8KACqzUR5Cwvp1fUrR22ySqwTMNVSh8t7ii10DIbopTiv6lgAlrbHYnM1waYSMFVW/l/EIfIxdTLPAAqrZ6w1qEniMJK1WclkU2svEqtcClyTY3HSjTJHsuFqaMAEJ2wNNGVAWUIHQWVyZjXQpD8bc5S9icHou5j+dsCBRsTds4oHHxsrd1gFtLut1BOrC052sIKpGXB8rok5cxhUk2VEIAgTKsZKcKTyd33dnUYZpCR25L+wS/qDk9SE94jn7R+VVtSgDh0poED6jA38v4irJW/l9Y0u8F1NAZhC+97bzkyau2UBso0rQIpgd5b5u54lmGKpTSJy8rgLiKXVNQIrYl9Ml7J2WK7fYEFGlxBOv+CCB84lmGss0p63y2sgKIsJ/7ZSX9bmCb7HPAJ+/bET7kIA1Ik/e6xVahPvEsQ9kuL+uMpTIPL/lbib8beXtz7hng0Fhbm+LZA7kXEkrjvW6tZW0UvuxAeaBkF5X168sMIMKcq1K2eEL21oqgs5qbGN5w3u0gDUhTDHWLUQhfeI6hbKEPfn5Z31FmAPGkwy0dkQ7e3PgSQ+fkXgdpQJpiqFsEEL7wDEPZbrO+eCnKDCCC86geKMmOZKwr3qeVhcO07neQDqTpfqtjnjH10xcCCJSt1D542QFEaUMnyB4BhC/bOU/fo5LmOkgH0jTX6phn3ttobgggULZS++BlBxClDp8ga2H3imVzzwQnVpM0wXka73SQBqTNex2bYG0V9VuWgA4lK30ZQdkBRFjAcUHJ34E8DWcUwo3tI0gjp/CibDHUsRjaag52sGcYUJbzy97IqOwAQqyDQIl2I3Nd2DmCNN7hIA1IWwx1LIa2mgOeXShb6X3vKgKIyziVGiXZlYx1IYZOCTvCoWwx1DECCB/eknsGoFRz7AC5UlURQMwr8yALZC0MAy+TeybULAzDb+s8jc9LmuYgHUjbNKtrnm3L1JnaLcOOWCjZRWWdPt2oigAiOLei70FeRkjahTKv1fZWDp7dkmfRoAbe69oI1kHULjyzRmaeByhXJX3uqgKIsJB6QUXfhbzsRXnXavcI0nizgzQgDzHUtRjabMp4ZqFMC6ravKiqAGKWpMkVfRfy8nbKu1Z7RJBGRiBQlRjqWgxtNmU8s1CmydbnLl1VAUTwV6oMSrClpFXI2FosE8lWujc5SAPyEENd25G1Y7VZxZ5ZQFkqWzJQdQCxuMLvQx5CHX4bZV2L3SKYyztV0gwH6UAeZlid82wk24jW5m0V97uQl8VVvqyvsiKHU/FurPD7kI+9Keta/FsEabzOQRqQlxjqXAxtN0XvyD0DUKrQx36iqiyuOhL+c8XfhzyEAGIIZV25GAK3GxykAXmJoc7x0qV64Rm1T24XjUr9pcovqzqAOLvi70MeVopkLn5KJkraKILrudZBGpCXGOrcRtaGUZ0d7VkFlKXSPnbVAcRjkm6t+DuRh3dRzpV6ZwRpfFnS7Q7SgbzcbnXPuxjacEp4RqFMoW/9aJU5XMdiHkYhUAZuztWKofMR5qIvdJAO5GVhJOsgCCCqxTMKZTqn6tytI4CodI4WsrG5pEkUdyWWiWQv+ascpAF5iqHu7cF2rpVZz55RQFkqX2NcRwDxgKQ7a/hepO8AyrgS4STV0RGkkwACdYmh7o3mVOTK8GxCme6yvnWl6tqPmN2YUIb3kauViCGf50q62UE6kKebrQ56xz2zGuQzyvSnOnK3rgDiDzV9L9K2raS1KeNSDZe0XwTpDG+A5zlIB/I0L5JRiP2sTaM84yVtR/6iRH+sI3PrCiAeZBoTSjCIoeLShZNUV4ggnX93kAbkLYY6uAIn+ZfuvfZsAspwZx3Tl1Tzkeq1RExI3nsp4lLFkr8EEKhbLHWQe2a5yF+UPMzvJwAAIABJREFUqZbpS8Ggrq6uur57g7qiJiQtVOh1JD1OMRdumKQZklZ2ns6pkiY4SAfweATTKp+XNE7SAgdpSc0E25ufEQiUZUOb1VO5OkcgwgXfVuP3I03hRv0ByrYUe0YQPIjRBzgSQ11c2do2ivcBggeU6I66ggfVHECIaUwoyQfJ2FJ8OJJ0EkDAi1jqYixtOzY8i1Cm39eZu3VOYQomSnqECB0l2ML2RkYxlrPpS6Oc5+cie6M6y0FagDE2RWiI85x42aYxzXaQllRszmYxKFHovK8r6bG6MrnuEYhw4TfUnAakiTdqxXpvBMFDcD3BAxyZZXXSu1Es9i3chxK7HvhyQ53BgxwEEKp7CAbJOljSUIq3MIdFks6LHKQBaBRLnYyljccgPHsOyT0TUKraz1OrewpTsLqk6REM8SI++0i6kHLrWNjl4b5IphpuxO5ucCa0n/sjKJTQGdiY9lOId0m6IIHrgE9hqu5akp6qM3UeRiBCBkx2kA6k53DKtBCHRRI83EvnBw49YHXTu0GMQhTmo4lcB3y6qu7gQU4CiOB3DtKA9IS3QKtQrh0ZHlGn4s8O0gD0Jpa6eZi1ebRvrKR3k38o0W89ZK6XACKcpPeqg3QgLcNZyNaxA+2BGINz4s1mJC6WujnW2jza92GCMJTo1TpPn27kJYB4SdK5DtKB9BzJNsEd+WQk6QzbQd/uIB1Ab263OhqDWNq8R+FZ8/HcMwGlOs/6zLXzEkAEv3GQBqQnLGDcg3Jty9aSdo4krX9xkAagP7HU0Z2t7aN1u9tCdKAsv/aSs54CiIslPesgHUjPkZRpWz4XUVrPdpAGoD8x1dGY2r4nn8g9A1Cq56yv7IKnAGKBh31tkaT9bLtgNC+cSntQJPk1TdKNDtIB9OdGq6sxOMjuAWheeMbsT36hRL+3vrILngKI4CwHaUB6woK2IyjXlnw+ooWAv7c97AHPuiI6OHW43QPQvCNYPI2SuZm+JCcHyfUU9szewFeSkIAZkiZKmk9hDmgFOyJ/jPN0dttS0p0+kgL0awtJd0SSRbPsnjnTQVq8G273TEZtUJYHbU2nG95GIMQoBEoS05Scuh0ZUfBwF8EDInKn1dkYjGH9WNOY8oWyuRp9kNMA4rdMR0BJWBg4sFGRTV1wd1MFBhBTnf283RPQv0+TPyhRl8edSj0GEGGv7GsdpAPpCVsT7kC59uvIiE7vXsiIJSJ0ltXdGKzCKMSAwjNlO+dpRNyu9XiOjMcAQnQKUKJjyNx+ha0mT/W000M//m5rW4CYzLC6690CuxewRXL/WGyOsrkctfS4iDpY0W6yyzhIC9Ky2A76eZBy7dc6kv5L0sGShjlN4wGSznGQDqBV+zvumC+wl3jflPSog/R4Nsk2fvH6MhbxmydpDUkveLsSr5X+RUkXOkgH0hPq/Bco1wGFjsPhtuvDaQ6nXDzLPQIRu9DhwakLra1vaG2f4GFgRxM8oGQXegwe5Lzin+EgDUjTIeyY0TSvgcRpbMmLiM23OuwBgUN7wsFxH4kx4YiK276w5wDiIklPO0gH0sMhSa17pCGQOL3mQCJMQzupxu8HinCS1eW6LLS23B04uFuk6VzY1W9k7pmAUj1tfWGXPAcQ7LCCMoWdRVYih1sWOhmHWafjjJoCiUvo7CABj1hdrtpCa7sbWlumLbUurNP8ZGyJRnRc79jmfe4e05hQltGMQrwmbNM4tI3/L3Q6Dq0pkDixwu8CylRlXW4MHA5tM3AYGtE2z2UKz47l0708OOG6D+x1F6ZGN0ra3k9ykJCXJE20Rfu5ukLSarYY8OIO8mA927Xpw20GJM161HY+qXPqB1CU8BJviu16VpaFtg1k2FXp4Q6+4x2SfmTTKt6acQ1Y0e5DsZzWjzjdJOnNnlMew+4BjEKgLOEN0lEZ5+6BkvaQtInNs7zIOufteNjeaoYtcn9V4ojELwgekJDFVqfLsNDa4sbWNtsNHiY13B82sXvGgRlXws8RPKAC7vu+MYxAhGj/CRYroSSzbBRiZmYZHKZw3SNp7R7/POwO83N7W9lJnoROx3GSPljgiMQcSeMzLCukbQVJ06xNFiEEDr+V9A0b3WjXCjaq+BnbeKLRVEmbWpvMyQo2+rACbRIletXOfnA9OyKGEYgXOSwKJRqT6enUX+sleJB1FMJ0pockfaqDzv8U2+IwvP08s6ARidMJHpCgmVa3O7XQ2trG1vbaDR6GWtt/yO4FPYMH2b3jaxlWxmMIHlCBs2OYWh3DCIRsyPQKB+lAml62Ofy5bBu8paRbmgwO7i1gfUSwvr3NbHdEInSONupwDjfgVbj/3N9B2/itjRo+1OH1da9z2KTJ791W0h0dfmcsVrX7T1EjRUBfwhqjK73nTiwnKE6m44ASjbLObQ6GSDq5hY5K9/qICztYHyHr2HzEpj20MyJxNvcAJOxhq+Ot6B5x2NTaVifBwyRr4xc1GTzI7iEn2z0lB18heEAFHrE+r3uxBBBhmORUB+lAuj4maUIG5RsWAG7Xxv+3t62Z+GGHQ/gPNgQSYY/rRU3+f9/v4DuBGDRbxxdZ2+kOHB7s4NpWsDZ9j7XxVm1n95TUTbCzg4CynWp9XvdimcIUrCnpsZK3iETezrDdSlK1vk036HRDguds/vNJBaxt2KBhalNfbzIvl/S2Dr8HiMFlkvbsI52LGqYqdRI0yJ6jH5f0dUljO/xdc21aZKfTpzwLa1Q+mvD1wYeFtqnLEzGUR0wBRHC+pH0cpANpClsqvinROb2hc361pB0L/J1FrY+QHW711T4Cid0lXVXAdwDe7dbL9IXuwOFbkh4oIP2trHNo1vWSdm1hRDEmW0i6LaIZG4jXBZL2jSX1sTWIkx2kAekabMP5KTq24OBBDesjzu9wfYSsY3SITcv4dUNH5GqCB2TkKqvzsjbwa2sThxQQPEyyttrKOodm7Wj3mBT9iOABFTklpoyObQRiqO3BvJaDtCBd+9iCwlSEnVKukzSsxOsp6vyIbhvaORLhIKxLi0kiEIW9bG3DNwoacejvPIciLZC0k+3wloq9E3sWwK/pdiJ9WYewFi62AEI29/p/HKQD6brPhq2jacj9WE7Srbb+oQpFro8A0L4i1zk0K6yD2EbS7ATKbahNZy16tAbozddj69vGOCx3Kh0TlGxje/Cm4IQKgwdZR+X/7MH7DioqUIt3WBv8vwqDB9m95oREivzjBA+oyMLYpi8p0hGI4FxJ73aQDqTreZtG83zEV/gxGwmo03m20LrdU3EBNG+Szdmv+/n48cjXLK5s08dWdpAWpC88J/eL7SpjXRj0SwdpQNpWtjnIsQq7SR3vIO3vLuj8CAB9azzPwcPLtePtHhSrbxA8oEJR9mljHYEYbCd3TnSQFqRrkS1Avj2yK1xF0s0OD8ZjfQRQrDrWOTTrcTto7tnIynwrWwieywnbqFc432w920Y+KrGOQCxmS1dUIDxAfhEC7YgyO+yy8henp2qzPgIoTl3rHJo1we5FZe78VLRBtpscwQOqcnKMwYMi39v4dNs2DijTjpGdQPoLO9DJs+7zI84u4PwIIDeTrO2UcZ5D0Xa1e1Iswr1+F1oUKrLA+rJRijmAmGELT4Cy/cDpG76e/lPS4b6S1K/9WR8BNK1xncP+EWXb4XZv8i7c478fQTqRjvOsLxulWNdAdHsbh0yhIr9yPhLxbnsrGevQe1gf8XZJtzlIC+DN1pIuieRFRm/CerIDnL/0O8MO8AOqEg6NvCzW3I49gBhkB9es5yAtSFtoKHtKutLhVb5Z0hWSlnWQlnaFLRO3lDQvzuQDpVrG1jtsGHE2vyLprZJudJCWnna3e2hM690Qt7C1+QbWt4hSzFOYZBlf9z73yMMgOyBphLOr3VzS3yMPHoJPEzwAfZpnbSRmy9q9anNn1xCCsxMJHlCxk2MOHpRAABGcJmm+g3QgfeHt33GOrnItSX+TNMZBWjrxx5iHcYGKXGZtJWZj7J61lqNr+O/IR3YQn/nWd41a7FOYuoX56Yf4SAoSF84v2EHSrTVf5po2nWr9yLN7jqSNJD3hIC2Ad6Hd3y9pdOQlFaYe7+Gg3W8j6QY7TwOoypkprLdJYQRCtg82UIWhtu1anXubr2HzdWMPHmQHYBE8AM15wtpM7Na3e9gaNV7HcLuXEzygakn0WVMJIG6ytwhAFcIc3q/WlNPj7MG7QQIlfbeknzlIBxCTn1nbid0Gdi8bV9N1fNXhegyk7wbrs0YvlQBCtsAVqMqxNvxdpbXtgZvCfN0uWxTKYZBAaxZY20lh/vGGdk9bu+LvfZPdw4GqxXSwYr9SWQMhG46cJmlVB2lBHu6VtK2kuRVc7Ua2D/z4RHL2VElHOEgHEKtTIjs4sj/T7ByY+yv4rhG2hs37Kd5Iz9MWLCex8U9KIxDz2dIVFQsPoO9U8JXbSbo6oeBhuqSjHaQDiNnR1pZSMN7ucdtVcC3fIXhATU5OadfQlEYgZFvDPcqiKFSoy06TvLykr9xb0u8lLZdQoe4j6UIH6QBi9y5JFyRUirMlHWRbvZbhrbYdLmc+oGphB8eJKW0aktIIhOxtzNkO0oF8DLKdPFYs4YqPknReYsHDmQQPQGEutDaViuXsnndUCdcT7tFnEDygJmentuNgagGEWEyNGoy3+chFGWb1+MeShiRUoI9L+qyDdAAp+ay1rVQMsXvfCXYvLMrJCU0DRXySWTzdLcUAYrKkOx2kA3k5QNKRBVxx9zatRfwuTxZLOlTSrMSuC6jbLGtbixMriSML3OY1/K73FvB7gHbcIemq1HIuxQAi+F8HaUB+wluzzTq46l0l/VPSLgnm3E/s5GwAxbvS2lhqdrF74q4dXNemdm8G6pLkYcepLaLutqzNNVvBR3KQkXskbS/plRYueYgdanRcohsA3GQdgGR2nwAcGm47GW2fYOGEBajfkPQtSYta+P+WtfvPpiWmDejPTDtxvYrt3iuV6gjEKwXPSQeatWmLI2Dr2LS7rycaPISb5/sJHoDSzbe2NjPBrB5q98jJds9s1s8JHlCzU1IMHpRwACG7cSx0kA7kJ8xHPmyAqw6jDp+TdFeiU5ZkW9yGfHjMQVqAHDxmbS7JqQV2r7zL7p0DbTBxWBP3YaBMC60vmqSUA4ipbOmKGoVRiK36+PotJF1nc5ZHJVxIIQ/OcZAOICfnJL4OcJTdO6+ze2lvtkq544ZonG190SSlugai2w6SrveRFGToYUnbNOw8NFrSVyQdU/D2hB7dKmknpi4BtRhuHextEs/+BZJ+KOnbkubYPxsj6RZJk2pOG7CjpBtSzYXUAwhZALGDg3QgT+dLOlDSEbZQuogtCb0LAdObJD1CnQdqs67tYDQmgyKYYQusw3zzP0p6t4M0IW83WACRrBwCiH+X9AcH6UC+nrRdGHIQdkjZR9LF1Hegdu+QdEFiB1L2J6d7LXx7vwWzycohgBhqU0nWdpAWIHVHs+c64MrnJf2IIgEqE9Y9rJf6Rj4pL6LulvQqeMCRMwgeAHd+bG0TQDWy2AU0hxEI2YFy02wRK4DihQWbe7BoGnBpuJ1WvRPFA5QqLOYfn+h5LEvIYQRCVpCnO0gHkKLpkt5D8AC4Nd/a6HSKCCjV6TkED8poBEK2pdsDGQVNQBXCjku72uFOAHzbXNLVmezMBFRtsaQNJU3JIedz6kxPsS01ARQjvNU8gOABiMZd1mYZLQSKd34uwYMyfBv/QwdpAFIQhi4Pk3QFpQlE5Qpru9lMPwAq8tOcMjq3AOKalE8FBCoUTtT+DRkOROk31oYBFOMmSZNzyssc1wP8xEEagJh91z4A4kU7BoqT3VkrOS2i7hYOlrvPFlUDaM1Jko5k+gOQhEGSTpT0cYoTaFtY97BxDmc/NMpxBGIhoxBAW04leACS0mVt+lSKFWjbT3MLHpTpCEQw0o4aH+sgLUAMTpN0BMEDkKQwEnGKLa4G0LznJK0taW5ueZbrmQihoH/mIB1ADM6wKQ4ED0CauqyNn0H5Ai05PsfgQRmPQAQrS3pM0mgHaQG8OtPeSi6ihIDkDbHRxkMoamBAcyStY6MQ2cn5VObn7UYJoHcnEjwAWVlkbf5Eih0Y0Om5Bg/KfARCNm/tYduZCcAbvi3pq+QHkK1vcVYE0KewaHo9W0+bpZxHIGQF/wcH6QC8CG8UjiZ4ALL3VbsXsPYJWNofcg4exAjEa7aS9E/bhQLIWZi+8DEblgWA4FBJJ9v6CAD/CqrfJOn2nPMi9xEIWQW4xEE6gDrNlrQvwQOAHk63e8NsMgZ4TegzZh08iADidd9zkg6gDmEYdmdJF5H7AHpxkd0jsp6yAZjvkxFMYWp0s6Rt/SQHqMRNkvaT9BTZDWAAq0s6V9L2ZBQydSt9xX9hBOIN3/WSEKAiYRHY7gQPAJr0lN0z2HwEufoOJf8vjEC8IQRTd0va2EuCgJKE7ee+LOnH7LACoA1h05HP24s3tkFHLu6TtJmkxZQ4IxCNFtve90DKnpG0l6QfETwAaFOX3UP2snsKkINvEzy8gRGIJYU3KQ9IWtdTooCCXC/pQElPkKEACrKmpD9J2pEMRcIekbShjeBnT4xALGUhq+uRoO7RtbcQPAAo2BN2b+HtLFL2A4KHJTECsbThkh6VtIa3hAFtmC7pYEmTyTwAJQsLrM+StBYZjYQ8aTNT5lGob2AEYmnzJf3QW6KANvzJTloneABQhcl2z/kTuY2E/JDgYWmMQPRulKTHJI31mDhgALMkfYyHOIAahfVWJ0saQyEgYs9Jmij9//buBOiyqjwX8EsYREQmwRBBiaIiCFEERcU4oYmYq4leg1EjAhKZonj1JlrtlEmDUgbRCyrRRAIxAdEoiSOIEwoNrWBaBhFRxhAZpBkaaGi4tXQRgZ7+4Qx77/U8VafapLTqP993zt77PWvKLZp4X0YgVq58UI7o4h8GM7BRkkcrFDBFv1mvRdBnRwgPK2cEYtU2qWshNunqHwhr8IkkB9RpeQCTsG6So5Psr9r03JIahG/QyBUZgVi1G+pFEPpqnySnmooHTMhmSb4iPDAQRwsPq2YEYvXKg9elSTbo8h8Ja/DjJL+f5DyFAsZkhyQnJ9lWgRmApXX04RrNXDkjEKtXFs8c0+U/EGag3NDPTPISxQLGoFxbFgoPDMgxwsPqGYFYs3IexMVJHtj1PxTWoHzZ/ybJXzjwCRiB8iPku5K8ozxPKCgDcVsNw1dp6KoZgViz8gH6WNf/SJiBteqN/rO2VgTmaeN6LXmn8MDA/L3wsGZGIGZmqzoKsX4f/liYgR8l2SvJuYoFzFI5LO7EJI9ROAbmtroN+pUau3pGIGbmSqMQDEy58Z+RZF+NBWZh33rtEB4Yoo8LDzNjBGLmjEIwVOW8iEPqrhMAK1N2Izyqbg8NQ3R7XfsgQMyAEYiZu7ImUxiafeoOKjvqLLASj6/XCOGBITP6MAtGIGZn6zoK8YA+/dEwQ7cmeVOSjygYUJXT7P/OeUgM3O117cMVGj0zRiBm5wqjEAxY2ar4w0k+nWRTjYambZLkpPqDgvDA0P2D8DA7RiBmb+t6su96ffvDYRYur4slv6po0Jzn1rVRD9d6GrCsrn0QIGbBCMTsGYWgBeXB4ZQkH3CIIjSjbBJyRJJThQca8nHhYfaMQMzNw+taCKMQtOD8JHsn+a5uw2A9KclxSXbQYhqyrG5JfJmmz44RiLm5vM6XgxbsUPd9/0uhGQanfKf/IsmZwgMN+gfhYW6MQMzdI+ppvh6oaMniJPslWaTr0Hu7JPnHJDtpJQ0qow+PTXKp5s+eEYi5u8zp1DRopzoa8bcOVYTeWr9+h88UHmjYx4SHuTMCMT8Pq2shLDKlRT9MclCSr+k+9MZz6nbN22kZDbu1rn1wcNwcGYGYn6uSHN3nNwDzsF3d5vXYJJsrJHTa5vW7+lXhAX4RooWHeTACMX8PredCbNj3NwLzcF2SP6t7x7uoQHeslWSfJIcneYi+QG6u5z78TCnmzgjE/JUP4Af7/iZgnh5Sd7P4dpKdFRM6oXwXT6/fTeEBfumDwsP8GYEYjU2T/CTJxkN4MzBPdyU5Jsk7klyrmDBxZbrSXyU5wA+FcB9Lkjwyyc+VZX5cWEajfBDfP4Q3AiNQrisHJrkgycFJ1lFUmIh16nfugrrBgXs83Nf7hYfRMAIxOg9OconFpLCCcpL1m5N8SWlgbF5QH44cBgcrV9bqPSrJjeozf36dGJ2bkrxvKG8GRqg80HwxySnWR8DIle/UV+p3THiAVXuv8DA6RiBGa4O6I9OWQ3pTMEJlfcRxSd7lAB+Yl22S/EWSvf0YCGt0dd15aalSjYaLzmiVD+Z7hvSGYMTKNec1SS5KcmSSX1dgmJWH1u/ORXV7VvdxWLP3CA+jZQRi9B6Q5EdJHj60NwZjUPbj/kCdu32DAsMqbVLXEr3RuUMwK5fXU6dvV7bR8cvF6JUP6F8P7U3BmJQHobcn+WmSv6xbIgO/smn9bvy0fleEB5idvxEeRs8IxHiUrfR+kGS7Ib45GKMb6yE/RyS5XqFp2GZ1tOHQJBv5IMCc/KhuLnCn8o2WADE+L0vyqaG+ORizEiQ+Wqc3XaXYNORhNTgcIDjAvP1hkpOUcfQEiPFZK8lZSXYd6huECbi97tp0eF00CkP12CR/luTVdS0dMD+LkjwliQfdMRAgxuv5dX9uYH7K9q+frVObTldLBmT3JG9K8gfWJcJI/U49f4gxECDG79Qkewz9TcIELapTm8oUwWUKTw+tV6dWvNEoNYzFaZ69xkuAGL9d61SmtYb+RmHCytqIo5N8vB4SBF1XDhl9bZKD61oHYPTKg+1uSc5W2/ERICbjU3VRNTB6dyT5tyQfSfJ1813pmPLj0bOTHJjkJUnW1SAYq5PqCB9jJEBMxuOSLK7buwLj88O6e9PxSa5RZ6boIUn2TvK6eg8Axq9s17pTkgvVerwEiMn5WB26Bsav7N50cpJPJPlykuVqzgSsneR3k+yT5MV2U4KJK1Na91f28RMgJmereqDJA1t5w9ARV9WtYP+5jgTCqO2Y5I/rFqzWNsB03FoP8L1c/cdPgJis99V9voHpKAHiX5J8MsmlesA8bJPkFUleWadMANNVzgv6cz2YDAFisjZLckmSjVt609BB5cL37SQnJvlckss0iRnYui6E3que32B3PeiGJUkeleR6/ZgMAWLy3prkb1t709Bhd9ezJT5dXxdrFvfy6CQvrcFhN6EBOmmBZ6vJEiAm74F1p5iHt/bGoSd+kOQ/knw+yRkWYDenLIR+apL/VV87tl4Q6LjL69qHWzVqcgSI6XhN3R0G6LbrknwxyRfqqfK2hh2mLZI8L8kLk+xZt2AF+mFfz1STJ0BMx68lOSfJb7X45qGn7kry/SSn1NfpSW7TzF5aP8kzkjy/vp5Qr8tAv/xnkp3r9ZkJEiCm53fq/vRAP5Xh8rPq6dffTHJmkqV62Ukb1GlJz6ynQj/FltowCOXcla9o5eQJENP1lfrrF9B/d9RAcUYNE+V1pb5OxVY1MJTX05I8Ocl6DdYBhuyU+mMsUyBATNcTk3zX0DkMVgkQC+urTFs81zqKkduiXkt3rrsk7VYDBDBcZcrSLvWayhQIENP3ibqoGmjD5fcKE2XHp/OTXFRHMFi1dZM8NskOdWeke0KDHe2gPccm2Uffp0eAmL5H1G1d12+9ENCwO+r5E+clubD+5/L6cZKrGyvLlkm2recvPLpuz7hj/c/rduDvA6brtnpdcADoFAkQ3XBYkre0XgRgpW6uYaLcLC9NckV9XVb//e8e7X9eFi7/ej3R+RH13/Lapv7fJSRs2IG/E+iu99ZDeZkiAaIbNq6/NNp7HJiLEjL+K8nP6hqL8rphJa/b6//vjvq/ufV+W9EuWcl2iL9Wr1H3WL8GgQ3riMAmSR5Q/73/a4v6emiS3xAOgHm6tv7QsEQhp0uA6I43Jjmi9SIAAKzC/0nyAcWZPgGiO9ariym3bb0QAAD38+O6icIyhZk+24d2R/lC/HnrRQAAWIk/Fx66wwhE93yjnpYKAMAvT/t/ljp0hwDRPbvU02yNDgEArSsbOzylHrxLR3hI7Z7yBTmu9SIAANRnIuGhY4xAdNNW9WTaDVovBADQrKX1BPorfQS6xQhEN5UvyvtaLwIA0LT3CQ/dZASiuzaooxBbtV4IAKA5V9bRh6Va3z1GILqrfGEWtF4EAKBJC4SH7jIC0W0l4C1MsmvrhQAAmrEoyW51ByY6yAhEt5UvzptbLwIA0JQ3Cw/dJkB0Xzk85dOtFwEAaMKn67MPHWYKUz9sm+S8JA9ovRAAwGDdnuTxSX6sxd1mBKIfyhfpyNaLAAAM2geEh34wAtEfGyX5YZItWy8EADA4VyfZLsmNWtt9RiD6o3yh3t56EQCAQXqr8NAfRiD6xbauAMDQnF23bfVQ2hNGIPqlbGn2Jl8wAGAgyjPNGzzb9IsA0T/fSnJC60UAAAbhuCRnamW/mMLUT49IckGSDVovBADQWzcneVySK7WwX4xA9NNlSQ5rvQgAQK+9W3joJyMQ/bV+kvOTPLL1QgAAvfOTJNvXw+PoGSMQ/XVbXVANANA3bxIe+ssIRP+dluQ5rRcBAOiNU5M8X7v6S4Dovx2TnJNkndYLAQB03p1Jdk7yA63qL1OY+q98AY9uvQgAQC8cLTz0nxGIYdgoyQ+TbNl6IQCAzrq6btu6RIv6zQjEMNyY5K2tFwEA6LS3Cg/DYARiONZKcnqSp7deCACgc85IsnsSD54DIEAMyxOTLEqyduuFAAA6Y3mSXZOcqyXDYArTsJQv5jGtFwEA6JRjhIdhMQIxPJsluTDJFq0XAgCYumvqidPXacVwGIEYnuuTLGi9CABAJywQHobHCMQwlWC4sM43BACYhrIuc7ckd6n+sBiBGKbyRT3IFxYAmJLyDHKwZ5EG0X1HAAAXmklEQVRhEiCGq6T+f2i9CADAVJRnkLOVfphMYRq2LeoJ1Zu2XggAYGJ+nmS7uoCaATICMWzli/u21osAAEzUAuFh2IxADJ8F1QDApJyV5GnWPgybEYjhu2dB9fLWCwEAjNVym7i0QYBowyInVAMAY/bhJN9T5OEzhakdmyS5yAnVAMAYXJ3kcUmWKO7wGYFoxw1J/qz1IgAAY/Fm4aEdRiDaslaSryd5ZuuFAABG5mtJ9kjiobIRAkR7Hp/knCTrtl4IAGDeliV5QpILlbIdpjC157wkf9d6EQCAkXi/8NAeIxBtelANEtu0XggAYM5+Wmc2LFXCthiBaNMtSV7fehEAgHl5g/DQJgGiXf+e5OTWiwAAzMnJ9VmCBpnC1LaHJzk/yYatFwIAmLGbk+yQ5HIla5MRiLaVL/47Wy8CADAr7xIe2mYEgrWTnJ1k5+YrAQCsSdkK/slJlqtUu4xAUC4Ar3MhAADWwDMDvyBAUCxKcrRKAACrcXR9ZqBxpjBxjwcnuSDJVioCANzPlUm2T3KTwmAEgnvc5GwIAGAVXi88cA8jENxf2df5RaoCAFTlvIcXKwb3ECC4P2dDAAD3cOYDKzCFifu7vO7vDADgzAdWYASClVknyVnOhgCApjnzgZUyAsHK3GmfZwBomjMfWCUBglUp+zwfqToA0KQPOvOBVTGFidV5UJLFSR6pSgDQjEuT7FgXUMMKjECwOrckOUiFAKApBwkPrI4AwZp8OclxqgQATfhkki9qNatjChMzsXmSC+q/AMAwXZ9k+yQ/019WxwgEM3FtkjeqFAAM2puEB2bCCASz8aUkv6tiADA4p9R7vAdD1kiAYDZ+s+7KtKGqAcBglE1TfivJJVrKTJjCxGz8NMk7VQwABuVdwgOzYQSC2Vo7yRn1aHsAoN/KYXFPdeI0syFAMBdPSHJ2knVVDwB6644kuyb5Ty1kNkxhYi6+n+S9KgcAvXaY8MBcGIFgrh6Q5LtJHq+CANA75yXZJcntWsdsGYFgrsoF50/MmQSA3in37v2FB+ZKgGA+ymLqI1UQAHql3LvP1DLmyhQm5utBdU3EtioJAJ3347oZyi1axVwZgWC+bqlTmSRRAOi2u+s9W3hgXgQIRuFrSY5RSQDotGPqPRvmxRQmRmWjuqPD1ioKAJ1zRZIdkyzRGubLCASjcmOSA1QTADrpQOGBUREgGKUvJDleRQGgU8q9+fNawqiYwsSoPSTJ+UkeqrIAMHU/S7JDkuu0glExAsGolQvUIaoKAJ1wiPDAqAkQjMNJSf5VZQFgqk6o92QYKVOYGJfN665MpjIBwOSVqUuPT3Kt2jNqRiAYl2tNZQKAqTlEeGBcBAjGyVQmAJi8E01dYpxMYWLcTGUCgMkxdYmxMwLBuJnKBACTY+oSYydAMAkn1Z0gAIDxMXWJiTCFiUkxlQkAxsfUJSbGCASTYioTAIyPqUtMjADBJJnKBACj9ylTl5gkU5iYtDKVaXGSLVUeAObt6iQ7GX1gkoxAMGnlAnegqgPASBwoPDBpAgTT8Lkkx6o8AMzLsfWeChNlChPTskmdyrS1DgDArF1Rpy7doHRMmhEIpqVc8PZLIsECwOyUe+drhQemRYBgmk5J8hEdAIBZ+WiSrygZ02IKE9O2YZJzk2yrEwCwRpckeUKSm5WKaTECwbSVC+C+Se7SCQBYrbvqPVN4YKoECLrgW0k+oBMAsFrlXvlNJWLaTGGiK9ZP8r0k2+sIAKzggiRPSnKb0jBtRiDoinJB3CfJnToCAPdxZ71HCg90ggBBl5yV5N06AgD38Z56j4ROMIWJrlk3ybeTPFlnACBnJ9k9yR1KQVcIEHTR4+p6iAfqDgANu7Wue7jQh4AuMYWJLioXyrfoDACNe4vwQBcZgaCr1qqnbD5PhwBo0KlJfieJBzU6R4Cgy7ZO8p9JNtUlABry8yS/leQKTaeLTGGiy8qF8xAdAqAxhwgPdJkRCPrghCR76RQADSj3vD/SaLpMgKAPNkuyOMnDdAuAAbsqyU5JrtdkuswUJvqgXEj3s5AMgAG7u97rhAc6T4CgL76c5CjdAmCgjqr3Oug8U5jok3Kw3KIkO+gaAANyfpJd68Fx0HlGIOiTcmHdO8kyXQNgIMo97VXCA30iQNA3303yLl0DYCDemeRczaRPTGGij9ZO8tUkz9I9AHrsG0n2SLJcE+kTAYK+2qb+YrOJDgLQQzckeWKSSzWPvjGFib661CnVAPTYIcIDfSVA0GefrC8A6BP3L3rNFCb6bpM6lWkbnQSgBy6tU5du0Cz6yggEfVcuwK+xAA2AHlhe71nCA70mQDAEZReLw3USgI47vN6zoNdMYWIo1kvy7XqSJwB0zaIkuzsMlSEQIBiSx9aD5jbUVQA65OYkuyS5SFMYAlOYGJJyYT5URwHomEOFB4bECARDdGKSP9RZADrgU0n20giGRIBgiDatW7s+QncBmKLL6patP9cEhsQUJoaoXKj3trUrAFO0vN6LhAcGR4BgqMo2eX+ruwBMyWG2bGWoTGFiyNZJ8q0kT9VlACZoYZJnJLlT0RkiAYKhe1SSc5JspNMATMBNdd3DJYrNUJnCxNCVC/ghugzAhBwsPDB0AgQtOL6+AGCc3G9ogilMtOLB9ZTqx+g4AGPwo3ra9E2Ky9AZgaAV5YL+yiTLdByAEVtW7zHCA00QIGjJoiQLdByAEVtQ7zHQBFOYaM1aST6fZE+dB2AEvpjk95J4oKIZAgQtemiS7yfZUvcBmIer65at/62ItMQUJlr0sySvTnKX7gMwR3fXe4nwQHMECFp1apLDdR+AOXpfvZdAc0xhomXrJvlWkt18CgCYhbOSPCPJHYpGiwQIWvfIJOck2bj1QgAwI0uS7JzkJ8pFq0xhonXlBnBA60UAYMYOEB5onQAByQlJjlEHANbgI/WeAU0zhQl+aYMkC5PsqB4ArMTiumbuVsWhdQIE/Mr29STRDdQEgHu5JcmuSS5UFDCFCe7tgiRvUBEA7ucQ4QF+xQgErOj4JK9SFwCSHJdkb4WAXxEgYEUPTnJ2ku3UBqBpP6xTl25uvRBwb6YwwYpuSvJHSW5TG4BmlXvAy4UHWJEAASt3bpI3qQ1As8o94PvaDysyhQlWr+z3vZcaATTlxDr6AKyEAAGrt1FdD/FYdQJowkVJnpzkRu2GlTOFCVbvxvorlIODAIbv1nrNFx5gNQQIWLOyHuL16gQweIfWaz6wGqYwwcwday9wgMH6pySv0V5YMwECZm6Duh5iBzUDGJTz67qHpdoKa2YKE8xcubG8LMktagYwGLfUa7vwADMkQMDsXJDkQDUDGIwD67UdmCEBAmbv+CR/r24Avff39ZoOzII1EDA36yf5TpKd1Q+gl85J8vQkt2kfzI4AAXP36CSLkmyshgC9siTJrkku1jaYPVOYYO7KjWd/9QPonf2FB5g7AQLm56QkH1JDgN74UL12A3NkChPM33pJTq97iAPQXeUsn2ckWaZHMHcCBIzGbyb5bpLN1BOgk65P8qQkl2oPzI8pTDAaP03ymiQSOUD33F2v0cIDjIAAAaPzH0kOV0+Azjm8XqOBETCFCUZrnSRfq3NsAZi+skbtOUnu1AsYDQECRm+rekDRFmoLMFXX1AM/r9QGGB1TmGD0yo3qj5IsV1uAqSnX4JcLDzB6AgSMx2lJ3qa2AFOzoE4pBUbMFCYYn7XqYUUvVWOAifpMkpfZGQ/GQ4CA8do4yVlJHqvOABNxUZKnJFmi3DAepjDBeC2pIxBL1Rlg7G6p11zhAcZIgIDxOy/Ja9UZYOz2r9dcYIwECJiMf01ypFoDjM2R9VoLjJk1EDA569XdmXZXc4CRKofF7ZFkmbLC+AkQMFkPS/LdJFuqO8BIXJ1klyRXKSdMhilMMFlX1YON7lR3gHm7s15ThQeYIAECJu+bSd6i7gDz9pZ6TQUmyBQmmI5yyNwJSf5Q/QHm5FN19MGDDEyYAAHT8+AkC5NsrwcAs3JBkt2S3KRsMHmmMMH0lBvf/3YDBJgV106YMgECpqv8irafIXiAGbm7Hsx5gXLB9AgQMH0nJTlCHwDW6Ii69gGYImsgoBvWSfLVJM/UD4CV+mY9LM422DBlAgR0x0PrIXNb6wnAfVxRD4v7mbLA9JnCBN1RbowvTXKbngD8j9vqtVF4gI4QIKBbzk5ykJ4A/I+D67UR6AgBArrnE0k+qC8A+VCSf1QG6BZrIKCb1ktyikXVQMPKounnJ1nmQwDdIkBAd22R5HsWVQMNKoumn5TkGs2H7jGFCbqr3DhfkuRWPQIacs+iaeEBOkqAgG5bVBcQArTiIIumodsECOg+i6qBVnywXvOADrMGAvph3bqo+ln6BQzUN+qi6Ts0GLpNgID+2KKeVP1wPQMGxqJp6BFTmKA/rqkLCy2qBobk1rphhPAAPSFAQL8sclI1MDAH1Wsb0BMCBPTPsUmO1DdgAI6s1zSgR6yBgH5apy6qfrb+AT1l0TT0lAAB/WVRNdBXlyfZxboH6CdTmKC/yo33D5Is1UOgR5bWa5fwAD0lQEC/fS/JvkkMJQJ9UK5V+9VrF9BTAgT034lJ3q2PQA+Ua9UJGgX9Zg0EDMNaST5TpwUAdNHn6nkPHjyg5wQIGI4Nk3wnyU56CnTM4iS7J7lJY6D/BAgYlkclObPu0ATQBWWx9FOTXKIbMAzWQMCwlBv0XkmW6SvQAeVa9HLhAYZFgIDh+XqSQ/UV6IByLfqaRsCwCBAwTB9JcrTeAlP04XotAgbGGggYrvWSfCnJc/QYmLAy6vAC0ylhmAQIGLaymPqMJNvqMzAhl9RF006ahoEyhQmG7Zq677qtE4FJuKmeRyM8wIAJEDB8Zf/1P3Z4EzBm5Rrz6nrNAQZMgIA2nJzkHXoNjNE76mnTwMBZAwHtWCvJv9Q92QFG6YQkrzDSCW0QIKAtGyQ5Lclu+g6MyMIkz02yVEGhDQIEtGerJGcm2VrvgXm6IsnT6r9AI6yBgPZcmeRFfi0E5mlpvZYID9AYAQLadK75ysA83F2vIecqIrRHgIB2lZ2ZFug/MAcL6jUEaJA1EMCxSfZuvgrATP1TkteoFrRLgADWS3Jqkt9uvhLAmnwryfOSLFMpaJcAARRbJPlOkkerBrAKFyd5epJrFAjaZg0EkPpA8JIkS1QDWIkl9RohPAACBPA/flBPqV6uJMC9LK/Xhh8oChABArifLyc5VFGAezm0XhsAfkGAAO7vqCQfVhWgXguOUgjg3iyiBlZm7fqL4x6qA80qu7O9wLRG4P4ECGBVNk5yRpLtVQiac37dccnGCsAKTGECVqU8OLzYrivQnPKd/33hAVgVAQJYnbLv+4uSLFUlaMLS+p2/WLuBVREggDVZmGS/JOY7wrCV7/i+9TsPsEoCBDATJyRZoFIwaOU7fqIWA2tiETUwGx9N8joVg8E5JskB2grMhAABzMZ6Sb6Y5LmqBoNxWpI9kyzTUmAmBAhgtsr2rt9KspPKQe8tTvLbdlwCZkOAAOZimyRnJ9lC9aC3ynatT05yqRYCs2ERNTAXl9reFXrtnu1ahQdg1gQIYK7KVo+vsL0r9E75zr7Sdq3AXAkQwHycbHtX6J3ynf2ctgFzZQ0EMApHJzlIJaHzPpzkYG0C5kOAAEZh7SSfSfJi1YTOKiOGL02yXIuA+RAggFHZoO4nv5uKQueUXdOebeMDYBQECGCUfiPJWUm2VlXojCuSPK3+CzBvFlEDo/RfSV7oUCrojCX1Oyk8ACMjQACjtrjOs16msjBVy+p3cbE2AKMkQADjUNZC7OeMCJiau+t38DQtAEZNgADG5Z+dEQFTs6B+BwFGziJqYNycEQGT5awHYKwECGDcnBEBk+OsB2DsBAhgEpwRAeO3MMlznfUAjJsAAUzKFkm+k+TRKg4jd3GSpye5RmmBcbOIGpiU8mCzpwccGDnfLWCiBAhgksqvpC9Kcouqw0gsrd+pi5UTmBQBApi0hXVBtYPmYH6W1e/SQnUEJkmAAKbBQXMwP/ccFPdVdQQmTYAApsVBczB3DooDpkaAAKbpsPoCZu69vjfANNnGFZi2tZIcl+RVOgFrVEYdXm36HzBNAgTQBesl+WI9BAtYudPqdq02IACmSoAAusJp1bBqZaelPWyBDHSBAAF0idOqYUVOmQY6xSJqoEucqAv35TsBdI4AAXTNxXWqxhKdoXHlO/B8p0wDXSNAAF20OMlLLRalYcvqd+D7PgRA1wgQQFc5rZpW3XPK9Gk+AUAXCRBAl5U97/9Uh2jM650yDXSZAAF03dFO3aUh5bN+lIYDXWYbV6APymnVx9YTeGGojk+yt2l7QNcJEEBfrJ3kM0lerGMM0Ml10fRyzQW6ToAA+uQBSb6Q5Lm6xoCUxdIvTHK7pgJ9IEAAffPgJKck2U3nGICF9ayHmzQT6AsBAuijzeuvtjvpHj22uB6a6JRpoFcECKCvtk7y9STb6iA99OMkz05yheYBfWMbV6CvyoPXC5JcpYP0zFX1sys8AL0kQAB9dnF9ELteF+mJn9fP7MUaBvSVAAH03eK6g80tOknHLU2yZ/3MAvSWAAEMwcJ6PsQy3aSjymfzRfWzCtBrAgQwFGVXppc7iIsOWl4/m6dpDjAEAgQwJJ9N8toktpejK8pncf/62QQYBAECGJpjkxwiRNAB5TP4p0k+oRnAkAgQwBB9OMn/1VmmrHwGj9YEYGgECGCo/i7JO3WXKXlX/QwCDI6TqIGh+5skb9NlJug9PnPAkAkQQAsOS/IWnWYC3pvkrQoNDJkpTEALygPd23WaMXu78AC0wAgE0JKDk3zIjyeMWLmRvj7JUQoLtECAAFrzqrqt5jo6zwjcmWSfJP+smEArBAigRS9KcmKS9XWfebgtyV5J/l0RgZYIEECrdq+nA2/uE8AcXJfkD5KcrnhAawQIoGWPSfL5+i/M1I+S/F79F6A5FhICLSsPgE/3KzKzcHr9zAgPQLMECKB11yZ5XpKPtV4I1ujj9bNyrVIBLRMgAJLbk/xJkjfUXXXg3u6sn43962cFoGnWQADc13PqDk0WV5M62lB2WvqaagD8khEIgPsqD4q7JDlTXZp3Zv0sCA8A9yJAAKzosiTPTHJEPWWYttxde//M+lkA4F5MYQJYvbLX/z8m2USdmnBDkn3rGSEArIQAAbBmj0zyySRPVatBK1OWXpnkJ60XAmB1TGECWLPyQPnbSd6R5A71GpzS03fWHgsPAGtgBAJgdnZN8k9Jtle3QbgwyauTLGq9EAAzZQQCYHYW1Z15/p8F1r12d+3hk4QHgNkxAgEwd89K8tEk26lhr/wwyQFJvtF6IQDmwggEwNyVB9AnJPnrJMvUsfOW1V49UXgAmDsjEACjsUMdjXiGenbS6XXU4fzWCwEwX0YgAEbj/HrwWHlIvVZNO6P04sDaG+EBYASMQACM3mZ1qszrkqyjvlNxZ5Jj6vas1zX4/gHGRoAAGJ8yren9SV6gxhP1pSRvNuIAMB6mMAGMT3mA3TPJ85Kco85jd06t9Z7CA8D4CBAA4/fVegDdXh5sx+L8Wttda60BGCNTmAAmq/xw84okb3Oa9bxdkOTdSf4lyV09fy8AvSFAAExHCRIvSfLW+ss5M1dOjj4syb8JDgCTJ0AATF+Zt39okheaWrpKJSh8IcmRSU7t6N8I0AQBAqA7HpPkDUlenWRjffmFJUmOr8HhRx34ewCaJ0AAdM8GdVFwOUfiaY3254x6jsOnktzSgb8HgEqAAOi2xyX54ySvTPLIgffqJ0k+WUccLuzA3wPASggQAP2wVh2NeFmS30/yqIH0rYSGzyb5dJLvJHFTAug4AQKgn56Q5MVJfjfJbknW6cm7uDPJwiRfTnJyku934G8CYBYECID+2yjJc5LskeSpSZ6YZN2OvKs7kpyb5Mx6yNvX68JoAHpKgAAYngfWsyWenGSn+np8kvXH/E5vS3JeksX1dXY9s+FWnzGA4RAgANqwdpJH1IXY97y2SvKQJJvX16b1v7dekgfVqpQdkJYlWZ7k50mura/rklyZ5KdJLqn/Xlr/ewAMVZL/DxvSTcJYoM3kAAAAAElFTkSuQmCC",
         }),
-        dt = function (e) {
+        Et = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = mt(e, ["svgRef", "title"]);
+            n = dt(e, ["svgRef", "title"]);
           return r.a.createElement(
             "svg",
-            ct(
+            ut(
               { width: 959, height: 1065, viewBox: "0 0 959 1065", ref: a },
               n
             ),
             t ? r.a.createElement("title", null, t) : null,
-            ut
+            ht
           );
         },
-        ht = r.a.forwardRef(function (e, a) {
-          return r.a.createElement(dt, ct({ svgRef: a }, e));
+        pt = r.a.forwardRef(function (e, a) {
+          return r.a.createElement(Et, ut({ svgRef: a }, e));
         }),
-        Et =
+        ft =
           (t.p,
           t(158),
           {
@@ -7302,8 +7393,8 @@
               };
             })(),
           }),
-        pt = Object(n.createContext)(Et),
-        At = function (e) {
+        At = Object(n.createContext)(ft),
+        vt = function (e) {
           var a = e.children,
             t = Object(n.useState)([]),
             o = Object(l.a)(t, 2),
@@ -7392,12 +7483,12 @@
                 });
             }, []);
           var E = { notes: i, refreshNotes: u };
-          return r.a.createElement(pt.Provider, { value: E }, a);
+          return r.a.createElement(At.Provider, { value: E }, a);
         };
-      At.context = pt;
-      var ft = At;
+      vt.context = At;
+      var gt = vt;
       t(159);
-      function vt() {
+      function yt() {
         return r.a.createElement(
           "div",
           { className: "TheBook-All" },
@@ -7413,9 +7504,9 @@
             r.a.createElement(
               "span",
               { className: "TheBook-Subheader-Group" },
-              r.a.createElement(gt, { str: "||||||||||||||||||" }),
+              r.a.createElement(bt, { str: "||||||||||||||||||" }),
               " and ",
-              r.a.createElement(gt, { str: "|||||||||||||" })
+              r.a.createElement(bt, { str: "|||||||||||||" })
             )
           ),
           r.a.createElement(
@@ -7432,9 +7523,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Each season of Blaseball shall last 99 games. In the case of ",
-            r.a.createElement(gt, { str: "the Ultimate ||||||||" }),
+            r.a.createElement(bt, { str: "the Ultimate ||||||||" }),
             ", seasons shall ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "|||||||||||||||||, or at least until the ||||||| have ||||||||.",
             })
@@ -7443,20 +7534,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Every day of Blaseball shall last one ",
-            r.a.createElement(gt, { str: "|||||" }),
+            r.a.createElement(bt, { str: "|||||" }),
             " hour."
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. If any games last longer than one ",
-            r.a.createElement(gt, { str: "|||||" }),
+            r.a.createElement(bt, { str: "|||||" }),
             " hour, a Spillover shall occur, and all games shall be delayed until the next ",
-            r.a.createElement(gt, { str: "|||||" }),
+            r.a.createElement(bt, { str: "|||||" }),
             " hour. In the case of a game lasting two ",
-            r.a.createElement(gt, { str: "|||||" }),
+            r.a.createElement(bt, { str: "|||||" }),
             " hours, the ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "entire season should be ||||||||| and both teams should be ||||||||| ||||||||| |||||||| |||| for |||||| |||||||||||.",
             })
@@ -7475,17 +7566,17 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Each Postseason of Blaseball shall consist of 8 teams. These teams shall be the 4 best teams from each league, regardless of division. Teams will be ranked by their total wins over the season. In the case of ties, teams shall be chosen based on their ",
-            r.a.createElement(gt, { str: "Divine Favor" }),
+            r.a.createElement(bt, { str: "Divine Favor" }),
             ". ",
             r.a.createElement("i", null, "See: "),
             " ",
-            r.a.createElement(gt, { str: "Divine Favor" })
+            r.a.createElement(bt, { str: "Divine Favor" })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             'b. The Postseason should start early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
             })
@@ -7499,7 +7590,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. The home team in each Postseason game shall be ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "the |||||||||||, if the |||||||||||||||||||.",
             })
           ),
@@ -7512,7 +7603,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Participants should be allowed to Vote on the rules, rosters, and other effects of the game of Blaseball. ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "The content of such Votes shall be ||||||||||||||| ||||||||||||||||||| ||||||||| entertainment",
             }),
@@ -7526,7 +7617,7 @@
               null,
               "b. Decrees will be decided by popular vote."
             ),
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "It is understood that ||||||||||||||||| will be a ||||||||||| |||||||||||, and the others shall ||||||||||||||| ||||||||||||||| ||||||||| |||||||||||||.",
             })
@@ -7535,20 +7626,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Blessings will be decided by a raffle. ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "It is understood that each of these",
             }),
             " should give players ",
-            r.a.createElement(gt, { str: "||||||||||||| |||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||||| |||||||||||" }),
             " control of the league. All won Blessings shall be processed & applied in order of the standings. "
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. ",
-            r.a.createElement(gt, { str: "||||||||||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||||||||||" }),
             " may occur at the end of an Election, before Decrees and Blessings are processed. ",
-            r.a.createElement(gt, { str: "Anything can happen here" }),
+            r.a.createElement(bt, { str: "Anything can happen here" }),
             ". Good luck."
           ),
           r.a.createElement(
@@ -7570,34 +7661,34 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Each game should take place ",
-            r.a.createElement(gt, { str: "at the home team's stadium" }),
+            r.a.createElement(bt, { str: "at the home team's stadium" }),
             " on the immaterial plane."
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Weather: ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "The home team's stadium should determine the weather.",
             }),
             " In the case that ",
-            r.a.createElement(gt, { str: "||||||||||||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||||||||||||" }),
             ", a Solar Eclipse shall last until ",
-            r.a.createElement(gt, { str: "||||||||||||||||||||" })
+            r.a.createElement(bt, { str: "||||||||||||||||||||" })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. There are ",
-            r.a.createElement(gt, { str: "two positions" }),
+            r.a.createElement(bt, { str: "two positions" }),
             " in Blaseball, ",
-            r.a.createElement(gt, { str: "||||||||||||||||||||." })
+            r.a.createElement(bt, { str: "||||||||||||||||||||." })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "e. When a team is on Defense, ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "all of the team's ||||||| will stand ||||||||| out in the field. Doesn't really matter where.",
             })
@@ -7606,18 +7697,18 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. The pitcher must throw the ball ",
-            r.a.createElement(gt, { str: "with their hands." })
+            r.a.createElement(bt, { str: "with their hands." })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "g. Once the ball is in play, ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "||| |||| || ||| |||||||||| ||||| |||||||||| the outcome of the play. ||| |||| ||||||| || ||||||||||||||||",
             }),
             " immaterial plane ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "|||||||||||||| ||||||| ||||||| ||||||||| ||||||||||||||| |||||||||||||||| |||||||| |||||||| unfathomable.",
             })
@@ -7636,38 +7727,38 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "j. ",
-            r.a.createElement(gt, { str: "||||||||||||||||||||||" })
+            r.a.createElement(bt, { str: "||||||||||||||||||||||" })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "k. Crying in Blaseball is ",
-            r.a.createElement(gt, { str: "||||||||||." })
+            r.a.createElement(bt, { str: "||||||||||." })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "5. ",
-            r.a.createElement(gt, { str: "The Gods" }),
+            r.a.createElement(bt, { str: "The Gods" }),
             " and You"
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Should the Participants open the Forbidden Book, ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "The Discipline Era should begin||||||||||||||||||||||",
             }),
             " suffering ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "upon the league. Players shall be ",
             }),
             " banished ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "at the ||||||||||| ||||||||| |||| ||||||||||||||||.",
             }),
             " The Discipline Era shall last until ",
-            r.a.createElement(gt, { str: "the Participants have" }),
+            r.a.createElement(bt, { str: "the Participants have" }),
             " atoned."
           ),
           r.a.createElement(
@@ -7679,9 +7770,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. When teams are sent to ",
-            r.a.createElement(gt, { str: "||||||||||| |||||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||| |||||||||||||" }),
             ", they shall return once ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "|||||||||||||||| |||||||||||||||||||||| |||||||||||||",
             })
           ),
@@ -7689,11 +7780,11 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. ",
-            r.a.createElement(gt, { str: "Divine Favor" }),
+            r.a.createElement(bt, { str: "Divine Favor" }),
             ": the ",
-            r.a.createElement(gt, { str: "||||" }),
+            r.a.createElement(bt, { str: "||||" }),
             " have an internal ranking ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "of favored teams. When a team wins a Divine Favor blessing, they will be",
             }),
@@ -7703,16 +7794,16 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "e. If at any time, ",
-            r.a.createElement(gt, { str: "||||||||||||||| |||||||||||||||," }),
+            r.a.createElement(bt, { str: "||||||||||||||| |||||||||||||||," }),
             " atone ",
-            r.a.createElement(gt, { str: "they may |||||||||||||||" }),
+            r.a.createElement(bt, { str: "they may |||||||||||||||" }),
             " one million Peanuts."
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. Sunglasses ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "shall be |||||||||| ||||||||||||| |||||||||||||||||. They shall provide |||||||||||||| may be ||||||||||||||||||||.",
             })
@@ -7720,19 +7811,19 @@
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "g. Splortsmanship, splortsmanship, is DEAD."
+            "g. Splortsmanship, splortsmanship, is BACK."
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "6. ",
-            r.a.createElement(gt, { str: "||||||||||||" })
+            r.a.createElement(bt, { str: "||||||||||||" })
           ),
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. It is known ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str:
                 "that the intention of the game of Blaseball |||||||||||||||||||||||| |||||||||||||||||||| |||||||||||||| |||||||||||||||||| ||||||||||| |||||||||| would be diminished.",
             })
@@ -7741,13 +7832,13 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. ",
-            r.a.createElement(gt, { str: "|||||||" }),
+            r.a.createElement(bt, { str: "|||||||" }),
             ": Several entities in the ",
-            r.a.createElement(gt, { str: "||||||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||||||" }),
             " shall be chosen ",
-            r.a.createElement(gt, { str: "||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||" }),
             " to bring Blaseball to the people ",
-            r.a.createElement(gt, {
+            r.a.createElement(bt, {
               str: "|||||||||||||||||| ||||||||||||||||||",
             })
           ),
@@ -7759,47 +7850,47 @@
           r.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            r.a.createElement(gt, { str: "||||" }),
+            r.a.createElement(bt, { str: "||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||" }),
+            r.a.createElement(bt, { str: "||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||||" }),
+            r.a.createElement(bt, { str: "||||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "|||||||" }),
+            r.a.createElement(bt, { str: "|||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||||" }),
+            r.a.createElement(bt, { str: "||||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "|||||||||" }),
+            r.a.createElement(bt, { str: "|||||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "|||||||" }),
+            r.a.createElement(bt, { str: "|||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||" }),
+            r.a.createElement(bt, { str: "||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||" }),
+            r.a.createElement(bt, { str: "||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||||||" }),
+            r.a.createElement(bt, { str: "||||||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||" }),
+            r.a.createElement(bt, { str: "||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "|||||||" }),
+            r.a.createElement(bt, { str: "|||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||| ||||" }),
+            r.a.createElement(bt, { str: "||||| ||||" }),
             ", \xa0A",
-            r.a.createElement(gt, { str: "|||||| ||||||" }),
+            r.a.createElement(bt, { str: "|||||| ||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||" }),
+            r.a.createElement(bt, { str: "||||" }),
             ", \xa0N",
-            r.a.createElement(gt, { str: "||||||" }),
+            r.a.createElement(bt, { str: "||||||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||" }),
+            r.a.createElement(bt, { str: "||" }),
             ", \xa0",
-            r.a.createElement(gt, { str: "||||||" }),
+            r.a.createElement(bt, { str: "||||||" }),
             ", \xa0M",
-            r.a.createElement(gt, { str: "|| ||||||" })
+            r.a.createElement(bt, { str: "|| ||||||" })
           )
         );
       }
-      function gt(e) {
+      function bt(e) {
         var a = e.str.split(" ");
         return r.a.createElement(
           "span",
@@ -7816,9 +7907,9 @@
         );
       }
       t(160);
-      function yt() {
+      function Nt() {
         var e,
-          a = Object(n.useContext)(ma.context);
+          a = Object(n.useContext)(da.context);
         return r.a.createElement(
           "div",
           { className: "BigDeal-All" },
@@ -7840,10 +7931,770 @@
           )
         );
       }
-      function bt() {
-        var e = Object(n.useContext)(P.context).user,
-          a = Object(n.useContext)(A.context),
-          t = Object(n.useContext)(ma.context),
+      t(161);
+      var Tt,
+        St,
+        wt = t(167);
+      !(function (e) {
+        (e[(e.SingleA = 0)] = "SingleA"),
+          (e[(e.TripleA = 1)] = "TripleA"),
+          (e[(e.DoubleA = 2)] = "DoubleA"),
+          (e[(e.Acid = 3)] = "Acid"),
+          (e[(e.Base = 4)] = "Base"),
+          (e[(e.Oh = 5)] = "Oh"),
+          (e[(e.OhNo = 6)] = "OhNo"),
+          (e[(e.Water = 7)] = "Water"),
+          (e[(e.Electric = 8)] = "Electric"),
+          (e[(e.Love = 9)] = "Love"),
+          (e[(e.Fire = 10)] = "Fire"),
+          (e[(e.Psychic = 11)] = "Psychic"),
+          (e[(e.Grass = 12)] = "Grass");
+      })(Tt || (Tt = {})),
+        (function (e) {
+          (e[(e.Black = 0)] = "Black"),
+            (e[(e.LightAndSweet = 1)] = "LightAndSweet"),
+            (e[(e.Macchiato = 2)] = "Macchiato"),
+            (e[(e.CreamAndSugar = 3)] = "CreamAndSugar"),
+            (e[(e.ColdBrew = 4)] = "ColdBrew"),
+            (e[(e.FlatWhite = 5)] = "FlatWhite"),
+            (e[(e.Americano = 6)] = "Americano"),
+            (e[(e.Espresso = 7)] = "Espresso"),
+            (e[(e.Foam = 8)] = "Foam"),
+            (e[(e.Latte = 9)] = "Latte"),
+            (e[(e.Decaf = 10)] = "Decaf"),
+            (e[(e.MilkSubstitute = 11)] = "MilkSubstitute"),
+            (e[(e.PlentyOfSugar = 12)] = "PlentyOfSugar"),
+            (e[(e.Anything = 13)] = "Anything");
+        })(St || (St = {}));
+      function Bt(e) {
+        for (
+          var a = e / 0.2,
+            t = Math.round(2 * a) / 2,
+            n = Math.floor(t),
+            o = Math.ceil(t),
+            i = [],
+            l = 0;
+          l < n;
+          l++
+        )
+          i.push(r.a.createElement(ta.a, null));
+        return (
+          n !== o && i.push(r.a.createElement(ta.b, null)),
+          r.a.createElement("span", null, i)
+        );
+      }
+      function Ot(e) {
+        return (
+          Math.pow(e.omniscience, 0.2) *
+          Math.pow(e.tenaciousness, 0.2) *
+          Math.pow(e.watchfulness, 0.1) *
+          Math.pow(e.anticapitalism, 0.1) *
+          Math.pow(e.chasiness, 0.1)
+        );
+      }
+      var It = function (e) {
+        var a,
+          t = Object(s.h)().id,
+          o = Object(n.useContext)(f.context),
+          i = Object(n.useContext)(Fe.context),
+          c = Object(n.useState)(void 0),
+          m = Object(l.a)(c, 2),
+          u = m[0],
+          d = m[1];
+        function h(e) {
+          for (var a = 0; a < i.teams.length; a++) {
+            for (var t = i.teams[a], n = 0; n < t.lineup.length; n++)
+              if (t.lineup[n] === e._id) return t;
+            for (var r = 0; r < t.rotation.length; r++)
+              if (t.rotation[r] === e._id) return t;
+            for (var o = 0; o < t.bench.length; o++)
+              if (t.bench[o] === e._id) return t;
+            for (var l = 0; l < t.bullpen.length; l++)
+              if (t.bullpen[l] === e._id) return t;
+          }
+        }
+        Object(n.useEffect)(function () {
+          (function () {
+            var e = Object(g.a)(
+              v.a.mark(function e() {
+                var a, n, r;
+                return v.a.wrap(function (e) {
+                  for (;;)
+                    switch ((e.prev = e.next)) {
+                      case 0:
+                        return (e.next = 2), D([t]);
+                      case 2:
+                        void 0 !== (a = e.sent) &&
+                          1 == a.length &&
+                          ((n = a[0]), (r = h(n)), d({ player: n, team: r }));
+                      case 4:
+                      case "end":
+                        return e.stop();
+                    }
+                }, e);
+              })
+            );
+            return function () {
+              return e.apply(this, arguments);
+            };
+          })()();
+        }, []);
+        var E =
+          void 0 === (null === u || void 0 === u ? void 0 : u.player)
+            ? r.a.createElement(Ee, null)
+            : r.a.createElement(
+                r.a.Fragment,
+                null,
+                r.a.createElement(
+                  "div",
+                  { className: "Player-Info" },
+                  r.a.createElement(
+                    "div",
+                    { className: "Player-Header" },
+                    u.player.name
+                  ),
+                  r.a.createElement(
+                    "div",
+                    { className: "Player-Team-Line" },
+                    r.a.createElement(
+                      "div",
+                      {
+                        className: "Player-Team-Logo",
+                        style: {
+                          background:
+                            void 0 !== u.team ? u.team.mainColor : "#999999",
+                        },
+                      },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Team-Emoji" },
+                        String.fromCodePoint(
+                          Number(void 0 !== u.team ? u.team.emoji : "0x2753")
+                        )
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Team-Name" },
+                      void 0 !== u.team ? u.team.fullName : "Null Team"
+                    )
+                  )
+                ),
+                r.a.createElement(
+                  "div",
+                  { className: "Player-Content" },
+                  r.a.createElement(
+                    "ul",
+                    { className: "Player-Info-Stats" },
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Current Vibe"
+                      ),
+                      (function (e, a) {
+                        var t = (function (e, a) {
+                          var t = 6 + Math.round(10 * e.buoyancy),
+                            n = Math.PI * ((2 / t) * a + 0.5);
+                          return (
+                            0.5 *
+                              (e.pressurization + e.cinnamon) *
+                              Math.sin(n) -
+                            0.5 * e.pressurization +
+                            0.5 * e.cinnamon
+                          );
+                        })(e, a);
+                        if (t > 0.8)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className:
+                                "Player-VibeLine Player-Vibe-MostExcellent",
+                            },
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Most Excellent"
+                            )
+                          );
+                        if (t > 0.4)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className:
+                                "Player-VibeLine Player-Vibe-Excellent",
+                            },
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Excellent"
+                            )
+                          );
+                        if (t > 0.1)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className: "Player-VibeLine Player-Vibe-Quality",
+                            },
+                            r.a.createElement(wt.c, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Quality"
+                            )
+                          );
+                        if (t > -0.1)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className: "Player-VibeLine Player-Vibe-Neutral",
+                            },
+                            r.a.createElement(wt.a, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Neutral"
+                            )
+                          );
+                        if (t > -0.4)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className:
+                                "Player-VibeLine Player-Vibe-LessThanIdeal",
+                            },
+                            r.a.createElement(wt.b, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Less Than Ideal"
+                            )
+                          );
+                        if (t > -0.8)
+                          return r.a.createElement(
+                            "span",
+                            {
+                              className:
+                                "Player-VibeLine Player-Vibe-FarLessThanIdeal",
+                            },
+                            r.a.createElement(wt.b, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(wt.b, {
+                              className: "Player-VibeLine-Arrow",
+                            }),
+                            r.a.createElement(
+                              "div",
+                              { className: "Player-VibeLine-Text" },
+                              "Far Less Than Ideal"
+                            )
+                          );
+                        return r.a.createElement(
+                          "span",
+                          { className: "Player-VibeLine Player-Vibe-Terrible" },
+                          r.a.createElement(wt.b, {
+                            className: "Player-VibeLine-Arrow",
+                          }),
+                          r.a.createElement(wt.b, {
+                            className: "Player-VibeLine-Arrow",
+                          }),
+                          r.a.createElement(wt.b, {
+                            className: "Player-VibeLine-Arrow",
+                          }),
+                          r.a.createElement(
+                            "div",
+                            { className: "Player-VibeLine-Text" },
+                            "Honestly Terrible"
+                          )
+                        );
+                      })(
+                        u.player,
+                        void 0 !==
+                          (null === (a = o.sim) || void 0 === a
+                            ? void 0
+                            : a.day)
+                          ? o.sim.day
+                          : -1
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Batting"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Ratings" },
+                        Bt(
+                          (function (e) {
+                            return (
+                              Math.pow(1 - e.tragicness, 0.01) *
+                              Math.pow(e.buoyancy, 0) *
+                              Math.pow(e.thwackability, 0.35) *
+                              Math.pow(e.moxie, 0.075) *
+                              Math.pow(e.divinity, 0.35) *
+                              Math.pow(e.musclitude, 0.075) *
+                              Math.pow(1 - e.patheticism, 0.05) *
+                              Math.pow(e.martyrdom, 0.02)
+                            );
+                          })(u.player)
+                        )
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Pitching"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Ratings" },
+                        (function (e) {
+                          return Bt(
+                            (function (e) {
+                              return (
+                                Math.pow(e.shakespearianism, 0.1) *
+                                Math.pow(e.suppression, 0) *
+                                Math.pow(e.unthwackability, 0.5) *
+                                Math.pow(e.coldness, 0.025) *
+                                Math.pow(e.overpowerment, 0.15) *
+                                Math.pow(e.ruthlessness, 0.4)
+                              );
+                            })(e)
+                          );
+                        })(u.player)
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Baserunning"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Ratings" },
+                        (function (e) {
+                          return Bt(Ot(e));
+                        })(u.player)
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Defense"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Ratings" },
+                        (function (e) {
+                          return Bt(Ot(e));
+                        })(u.player)
+                      )
+                    )
+                  ),
+                  r.a.createElement(
+                    "div",
+                    { className: "Player-Info-Items" },
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Items-Box" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Items-Header" },
+                        "Item"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Items-Details" },
+                        r.a.createElement(
+                          "div",
+                          { className: "Player-Info-Items-Name" },
+                          (function (e) {
+                            return void 0 === e ||
+                              void 0 === e.bat ||
+                              "" === e.bat
+                              ? "None"
+                              : e.bat;
+                          })(u.player)
+                        ),
+                        r.a.createElement(
+                          "div",
+                          { className: "Player-Info-Items-Icon" },
+                          (function (e) {
+                            return (
+                              void 0 === e || void 0 === e.bat || e.bat, null
+                            );
+                          })(u.player)
+                        )
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Items-Box" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Items-Header" },
+                        "Armor"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Items-Details" },
+                        r.a.createElement(
+                          "div",
+                          { className: "Player-Info-Items-Name" },
+                          (function (e) {
+                            return void 0 === e ||
+                              void 0 === e.armor ||
+                              "" === e.armor
+                              ? "None"
+                              : e.armor;
+                          })(u.player)
+                        ),
+                        r.a.createElement(
+                          "div",
+                          { className: "Player-Info-Items-Icon" },
+                          (function (e) {
+                            return (
+                              void 0 === e || void 0 === e.armor || e.armor,
+                              null
+                            );
+                          })(u.player)
+                        )
+                      )
+                    )
+                  ),
+                  r.a.createElement(
+                    "ul",
+                    { className: "Player-Info-Bio" },
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Evolution"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Body" },
+                        "Base"
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Pregame Ritual"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Body" },
+                        u.player.ritual
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Coffee Style"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Body" },
+                        (function (e) {
+                          switch (e) {
+                            case St.Black:
+                              return "Black";
+                            case St.LightAndSweet:
+                              return "Light & Sweet";
+                            case St.Macchiato:
+                              return "Macchiato";
+                            case St.CreamAndSugar:
+                              return "Cream & Sugar";
+                            case St.ColdBrew:
+                              return "Cold Brew";
+                            case St.FlatWhite:
+                              return "Flat White";
+                            case St.Americano:
+                              return "Americano";
+                            case St.Foam:
+                              return "Heavy Foam";
+                            case St.Latte:
+                              return "Latte";
+                            case St.Decaf:
+                              return "Decaf";
+                            case St.MilkSubstitute:
+                              return "Milk Substitute";
+                            case St.PlentyOfSugar:
+                              return "Plenty of Sugar";
+                            case St.Anything:
+                              return "Anything";
+                          }
+                          return "Coffee?";
+                        })(u.player.coffee)
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Blood Type"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Body" },
+                        (function (e) {
+                          switch (e) {
+                            case Tt.SingleA:
+                              return "A";
+                            case Tt.DoubleA:
+                              return "AA";
+                            case Tt.TripleA:
+                              return "AAA";
+                            case Tt.Acid:
+                              return "Acidic";
+                            case Tt.Base:
+                              return "Basic";
+                            case Tt.Oh:
+                              return "O";
+                            case Tt.OhNo:
+                              return "O No";
+                            case Tt.Water:
+                              return "H\u2082O";
+                            case Tt.Electric:
+                              return "Electric";
+                            case Tt.Love:
+                              return "Love";
+                            case Tt.Fire:
+                              return "Fire";
+                            case Tt.Psychic:
+                              return "Psychic";
+                            case Tt.Grass:
+                              return "Grass";
+                          }
+                          return "Blood?";
+                        })(u.player.blood)
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Fate"
+                      ),
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Body" },
+                        u.player.fate
+                      )
+                    ),
+                    r.a.createElement(
+                      "div",
+                      { className: "Player-Info-Line" },
+                      r.a.createElement(
+                        "div",
+                        { className: "Player-Info-Line-Header" },
+                        "Soulscream"
+                      ),
+                      (function (e) {
+                        for (
+                          var a = "",
+                            t = [
+                              "A",
+                              "E",
+                              "I",
+                              "O",
+                              "U",
+                              "X",
+                              "H",
+                              "A",
+                              "E",
+                              "I",
+                            ],
+                            n = [
+                              e.pressurization,
+                              e.divinity,
+                              e.tragicness,
+                              e.shakespearianism,
+                              e.ruthlessness,
+                            ],
+                            o = 0;
+                          o < e.soul;
+                          o++
+                        )
+                          for (var i = 0; i < 11; i++) {
+                            var l = 1 / Math.pow(10, o),
+                              s = n[i % n.length] % l,
+                              c = Math.floor((s / l) * 10);
+                            a += t[c];
+                          }
+                        return r.a.createElement(
+                          "div",
+                          { className: "Player-Soulscream" },
+                          r.a.createElement(
+                            "div",
+                            { className: "Player-Soulscream-Body" },
+                            a
+                          )
+                        );
+                      })(u.player)
+                    )
+                  )
+                )
+              );
+        return r.a.createElement(
+          se,
+          Object.assign({}, e, { className: "Player" }),
+          E
+        );
+      };
+      t(162);
+      function kt() {
+        return r.a.createElement(
+          "div",
+          { className: "Hiatus-All" },
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Header" },
+            "Blaseball is taking an ",
+            r.a.createElement(
+              "span",
+              { className: "Hiatus-NoWrap" },
+              "Extended Siesta."
+            )
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "Blaseball began as a small side project that we decided would be fun to share. We've been overjoyed -- and honestly overwhelmed -- to watch it explode the way it has. We LOVE this community -- from the fan art to the wiki, to the team chants, rituals and personalities that sprang forth. This is way, way bigger than we expected. Your creativity continues to fuel and inspire us."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            r.a.createElement(
+              "span",
+              { className: "Stubs-Serif" },
+              "BLASEBALL WILL BE BACK."
+            ),
+            " We plan to bring you more exciting action every week. But to do that, we need some time to fix bugs, add some features, make the machines bigger, and breathe. Our team is exhausted and overworked. We need a little time to recoup so Blaseball can come back stronger than ever."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "But we will be back. The Peanut demands it. It's not finished with you yet."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "We really appreciate your patience. We\u2019re expanding the team right now so we can be ready to relaunch, hopefully in a week or two. Follow us on ",
+            r.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href: "https://twitter.com/blaseballcomms",
+                className: "Hiatus-Serif",
+              },
+              "Twitter"
+            ),
+            " and ",
+            r.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href: "https://discord.gg/3uFgJhu",
+                className: "Hiatus-Serif",
+              },
+              "Discord"
+            ),
+            " to stay in the loop as we prepare for Blaseball\u2019s return."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "And a very special thank you goes out to everyone who has supported us on ",
+            r.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href: "https://www.patreon.com/blaseball",
+                className: "Hiatus-Serif",
+              },
+              "Patreon"
+            ),
+            ". For those that can donate, any help goes a long way. Blaseball was created and self-published by a very small team, and it's going to be independence that keeps Blaseball\u2019s spirit alive."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "Thank you again, Blaseball fans. We will see you very soon."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            "We can't wait to see what you create next."
+          ),
+          r.a.createElement(
+            "div",
+            { className: "Hiatus-Body" },
+            r.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href: "https://twitter.com/thegameband",
+                className: "Hiatus-Serif",
+              },
+              "- The Game Band"
+            )
+          )
+        );
+      }
+      function Ct() {
+        var e = Object(n.useContext)(U.context).user,
+          a = Object(n.useContext)(f.context),
+          t = Object(n.useContext)(da.context),
           o = Object(n.useState)(!1),
           i = Object(l.a)(o, 2),
           s = i[0],
@@ -7856,21 +8707,21 @@
             [e]
           ),
           (void 0 !== e && e.isFetching) || void 0 === a || void 0 === a.sim
-            ? r.a.createElement(Nt, null)
+            ? r.a.createElement(Gt, null)
             : t && t.doc && t.doc.epsilon
-            ? r.a.createElement(St, null)
+            ? r.a.createElement(Lt, null)
             : s
-            ? r.a.createElement(Ot, null)
-            : r.a.createElement(Tt, null)
+            ? r.a.createElement(Dt, null)
+            : r.a.createElement(Rt, null)
         );
       }
-      function Tt() {
+      function Rt() {
         var e = Object(s.g)(),
           a = e.state && e.state.background;
         return r.a.createElement(
           "div",
           null,
-          r.a.createElement(Qe, null),
+          r.a.createElement(Me, null),
           r.a.createElement(
             "div",
             { className: "Main-Body-Intro" },
@@ -7880,22 +8731,22 @@
               r.a.createElement(
                 s.a,
                 { path: "/tos" },
-                r.a.createElement(st, null)
+                r.a.createElement(mt, null)
               ),
               r.a.createElement(
                 s.a,
                 { path: "/privacy" },
-                r.a.createElement(lt, null)
+                r.a.createElement(ct, null)
               ),
               r.a.createElement(
                 s.a,
                 { path: "/login" },
-                r.a.createElement(Ea, { isLogin: !0 })
+                r.a.createElement(fa, { isLogin: !0 })
               ),
               r.a.createElement(
                 s.a,
                 { path: "/signup/:code?" },
-                r.a.createElement(Ea, null)
+                r.a.createElement(fa, null)
               ),
               r.a.createElement(s.a, { path: "/" }, r.a.createElement(ea, null))
             ),
@@ -7905,22 +8756,22 @@
                 null,
                 r.a.createElement(s.a, {
                   path: "/signup",
-                  children: r.a.createElement(Ea, { isModal: !0 }),
+                  children: r.a.createElement(fa, { isModal: !0 }),
                 }),
                 r.a.createElement(s.a, {
                   path: "/login",
-                  children: r.a.createElement(Ea, { isModal: !0, isLogin: !0 }),
+                  children: r.a.createElement(fa, { isModal: !0, isLogin: !0 }),
                 }),
                 r.a.createElement(s.a, {
                   path: "/team/:nickname",
-                  children: r.a.createElement(la, { isModal: !0 }),
+                  children: r.a.createElement(ca, { isModal: !0 }),
                 }),
                 r.a.createElement(s.a, {
                   path: "/bet/:gameId",
-                  children: r.a.createElement(Ae, { isModal: !0 }),
+                  children: r.a.createElement(fe, { isModal: !0 }),
                 })
               ),
-            r.a.createElement(ha, { isModal: !0, dismissable: !1 })
+            r.a.createElement(pa, { isModal: !0, dismissable: !1 })
           ),
           r.a.createElement(
             "footer",
@@ -7940,7 +8791,7 @@
               ),
               r.a.createElement(
                 "a",
-                { className: "Main-Footer-Link", href: Bt() },
+                { className: "Main-Footer-Link", href: Mt() },
                 "Advertise"
               )
             ),
@@ -7951,49 +8802,43 @@
                 target: "_blank",
                 className: "Main-Footer-Logo",
               },
-              r.a.createElement(ht, null)
+              r.a.createElement(pt, null)
             )
           )
         );
       }
-      function Nt() {
+      function Gt() {
         return r.a.createElement(
           "div",
           null,
-          r.a.createElement(Me, null),
+          r.a.createElement(Pe, null),
           r.a.createElement("div", { className: "Main-Body" })
         );
       }
-      function St() {
+      function Lt() {
         return r.a.createElement(
           "div",
           null,
-          r.a.createElement(Me, null),
+          r.a.createElement(Pe, null),
           r.a.createElement(
             "div",
             { className: "Main-Body" },
-            r.a.createElement(yt, null)
+            r.a.createElement(Nt, null)
           )
         );
       }
-      function Ot() {
-        var e = Object(n.useContext)(A.context),
+      function Dt() {
+        var e = Object(n.useContext)(f.context),
           a = Object(s.g)(),
           t = a.state && a.state.background,
           o = function (a, t) {
             var n,
               o,
-              i,
-              l =
+              i =
                 void 0 !== e.sim && void 0 !== e.sim.season ? e.sim.season : -1;
             switch (a) {
               case 0:
-                return r.a.createElement(it, {
-                  season:
-                    null === (n = e.season) || void 0 === n
-                      ? void 0
-                      : n.seasonNumber,
-                });
+                return r.a.createElement(st, null);
               case 1:
                 return r.a.createElement(
                   "div",
@@ -8007,17 +8852,17 @@
                         { className: "Stubs-Header" },
                         "It's the Pre-Season."
                       ),
-                      r.a.createElement(Ue, {
+                      r.a.createElement(je, {
                         dateString:
-                          null === (o = e.sim) || void 0 === o
+                          null === (n = e.sim) || void 0 === n
                             ? void 0
-                            : o.nextPhaseTime,
+                            : n.nextPhaseTime,
                       }),
                       r.a.createElement(
                         "div",
                         { className: "Stubs-Body" },
                         "Season ",
-                        l + 1,
+                        i + 1,
                         " will begin soon."
                       )
                     ),
@@ -8026,7 +8871,7 @@
                   r.a.createElement(qe, null)
                 );
               case 2:
-                return r.a.createElement(Pe, { path: t });
+                return r.a.createElement(Ue, { path: t });
               case 3:
                 return r.a.createElement(
                   "div",
@@ -8040,17 +8885,17 @@
                         { className: "Stubs-Header" },
                         "The Season is Over!"
                       ),
-                      r.a.createElement(Ue, {
+                      r.a.createElement(je, {
                         dateString:
-                          null === (i = e.sim) || void 0 === i
+                          null === (o = e.sim) || void 0 === o
                             ? void 0
-                            : i.nextPhaseTime,
+                            : o.nextPhaseTime,
                       }),
                       r.a.createElement(
                         "div",
                         { className: "Stubs-Body" },
                         "Postseason ",
-                        l + 1,
+                        i + 1,
                         " will begin soon."
                       )
                     ),
@@ -8067,12 +8912,12 @@
             return r.a.createElement("div", null);
           };
         return r.a.createElement(
-          ft,
+          gt,
           null,
           r.a.createElement(
-            F,
+            J,
             null,
-            r.a.createElement(De, { state: e }),
+            r.a.createElement(Le, { state: e }),
             r.a.createElement(
               "div",
               { className: "Main-Body" },
@@ -8082,12 +8927,12 @@
                 r.a.createElement(
                   s.a,
                   { path: "/tos" },
-                  r.a.createElement(st, null)
+                  r.a.createElement(mt, null)
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/privacy" },
-                  r.a.createElement(lt, null)
+                  r.a.createElement(ct, null)
                 ),
                 r.a.createElement(
                   s.a,
@@ -8097,12 +8942,12 @@
                 r.a.createElement(
                   s.a,
                   { path: "/shop" },
-                  r.a.createElement(ua, null)
+                  r.a.createElement(ha, null)
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/thebook" },
-                  r.a.createElement(vt, null)
+                  r.a.createElement(yt, null)
                 ),
                 r.a.createElement(
                   s.a,
@@ -8112,33 +8957,51 @@
                 r.a.createElement(
                   s.a,
                   { path: "/offseason" },
-                  r.a.createElement(tt, null)
+                  r.a.createElement(rt, null)
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/login" },
-                  r.a.createElement(Ea, { isLogin: !0 })
+                  r.a.createElement(fa, { isLogin: !0 })
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/signup" },
-                  r.a.createElement(Ea, null)
+                  r.a.createElement(fa, null)
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/team/:nickname" },
-                  r.a.createElement(la, null)
+                  r.a.createElement(ca, null)
+                ),
+                r.a.createElement(
+                  s.a,
+                  { path: "/player/:id" },
+                  r.a.createElement(It, null)
                 ),
                 r.a.createElement(
                   s.a,
                   { path: "/upcoming" },
                   e.sim && o(e.sim.phase, "/upcoming")
                 ),
-                r.a.createElement(
-                  s.a,
-                  { path: "/" },
-                  e.sim && o(e.sim.phase, "/")
-                )
+                e.sim && e.sim.unlockedInterviews
+                  ? r.a.createElement(
+                      s.a,
+                      { path: "/league" },
+                      e.sim && o(e.sim.phase, "/")
+                    )
+                  : r.a.createElement(
+                      s.a,
+                      { path: "/" },
+                      e.sim && o(e.sim.phase, "/")
+                    ),
+                e.sim && e.sim.unlockedInterviews
+                  ? r.a.createElement(
+                      s.a,
+                      { path: "/" },
+                      r.a.createElement(kt, null)
+                    )
+                  : null
               ),
               t &&
                 r.a.createElement(
@@ -8146,25 +9009,29 @@
                   null,
                   r.a.createElement(s.a, {
                     path: "/signup",
-                    children: r.a.createElement(Ea, { isModal: !0 }),
+                    children: r.a.createElement(fa, { isModal: !0 }),
                   }),
                   r.a.createElement(s.a, {
                     path: "/login",
-                    children: r.a.createElement(Ea, {
+                    children: r.a.createElement(fa, {
                       isModal: !0,
                       isLogin: !0,
                     }),
                   }),
                   r.a.createElement(s.a, {
                     path: "/team/:nickname",
-                    children: r.a.createElement(la, { isModal: !0 }),
+                    children: r.a.createElement(ca, { isModal: !0 }),
+                  }),
+                  r.a.createElement(s.a, {
+                    path: "/player/:id",
+                    children: r.a.createElement(It, { isModal: !0 }),
                   }),
                   r.a.createElement(s.a, {
                     path: "/bet/:gameId",
-                    children: r.a.createElement(Ae, { isModal: !0 }),
+                    children: r.a.createElement(fe, { isModal: !0 }),
                   })
                 ),
-              r.a.createElement(ha, { isModal: !0, dismissable: !1 })
+              r.a.createElement(pa, { isModal: !0, dismissable: !1 })
             ),
             r.a.createElement(
               "footer",
@@ -8184,7 +9051,7 @@
                 ),
                 r.a.createElement(
                   "a",
-                  { className: "Main-Footer-Link", href: Bt() },
+                  { className: "Main-Footer-Link", href: Mt() },
                   "Advertise"
                 )
               ),
@@ -8195,22 +9062,22 @@
                   target: "_blank",
                   className: "Main-Footer-Logo",
                 },
-                r.a.createElement(ht, null)
+                r.a.createElement(pt, null)
               )
             )
           )
         );
       }
-      function Bt() {
+      function Mt() {
         return "mailto:sponsors@thegameband.com?subject=".concat(
           encodeURIComponent("I\u2019d like to sponsor a season of Blaseball")
         );
       }
-      var wt = function () {
+      var Pt = function () {
         return r.a.createElement(
           "div",
           { className: "Main" },
-          r.a.createElement(P, null, r.a.createElement(bt, null))
+          r.a.createElement(U, null, r.a.createElement(Ct, null))
         );
       };
       Boolean(
@@ -8220,7 +9087,7 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var It = { sim: void 0, standings: void 0, season: void 0 };
+      var Qt = { sim: void 0, standings: void 0, season: void 0 };
       "serviceWorker" in navigator &&
         navigator.serviceWorker.ready
           .then(function (e) {
@@ -8241,15 +9108,15 @@
                 placement: "bottom-right",
               },
               r.a.createElement(
-                A,
-                { value: It },
+                f,
+                { value: Qt },
                 r.a.createElement(
-                  He,
+                  Fe,
                   { value: {} },
                   r.a.createElement(
-                    ma,
+                    da,
                     { value: {} },
-                    r.a.createElement(c.a, null, r.a.createElement(wt, null))
+                    r.a.createElement(c.a, null, r.a.createElement(Pt, null))
                   )
                 )
               )
@@ -8362,9 +9229,9 @@
         ],
       };
     },
-    40: function (e, a, t) {},
+    41: function (e, a, t) {},
     84: function (e, a, t) {
-      e.exports = t(161);
+      e.exports = t(163);
     },
     89: function (e, a, t) {},
     90: function (e, a, t) {},
