@@ -5635,7 +5635,7 @@
           ? o.a.createElement(M.a, { className: "Decrees-Option-Icon" })
           : "alternate_reality" === e
           ? o.a.createElement(aa.d, { className: "Decrees-Option-Icon" })
-          : "shame_pit" === e
+          : "targeted_shame" === e
           ? o.a.createElement(M.k, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(ea.a, { className: "Decrees-Option-Icon" })
