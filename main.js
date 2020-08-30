@@ -157,6 +157,7 @@
             attr: "SOUNDPROOF",
           },
           { id: "ENGLAND_MEMORABILIA", name: "Bangers & Smash", attr: "NONE" },
+          { id: "ARM_CANNON", name: "Literal Arm Cannon", attr: "NONE" },
         ],
       };
     },
@@ -454,9 +455,9 @@
       b.context = y;
       var N = b,
         T = t(3),
-        S = t.n(T),
-        O = t(6),
-        B = {
+        O = t.n(T),
+        S = t(6),
+        I = {
           id: "",
           email: "",
           isSignedIn: !1,
@@ -472,13 +473,13 @@
           peanuts: 10,
           squirrels: 0,
         },
-        I = {
-          user: B,
+        B = {
+          user: I,
           clearUser: function () {},
           initUser: function () {},
           setUser: function () {},
         },
-        w = Object(r.createContext)(I),
+        w = Object(r.createContext)(B),
         C = function (e) {
           var a = Object(d.a)(
             Object(d.a)({}, e),
@@ -498,14 +499,14 @@
         },
         k = function (e) {
           var a = e.children,
-            t = Object(r.useState)(B),
+            t = Object(r.useState)(I),
             n = Object(s.a)(t, 2),
             l = n[0],
             i = n[1],
             c = Object(r.useCallback)(
-              Object(O.a)(
-                S.a.mark(function e() {
-                  return S.a.wrap(function (e) {
+              Object(S.a)(
+                O.a.mark(function e() {
+                  return O.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
@@ -517,10 +518,10 @@
                               })
                               .then(
                                 (function () {
-                                  var e = Object(O.a)(
-                                    S.a.mark(function e(a) {
+                                  var e = Object(S.a)(
+                                    O.a.mark(function e(a) {
                                       var t;
-                                      return S.a.wrap(function (e) {
+                                      return O.a.wrap(function (e) {
                                         for (;;)
                                           switch ((e.prev = e.next)) {
                                             case 0:
@@ -569,7 +570,7 @@
             initUser: c,
             setUser: i,
             clearUser: function () {
-              i(B);
+              i(I);
             },
           };
           return o.a.createElement(w.Provider, { value: m }, a);
@@ -762,10 +763,10 @@
         return z.apply(this, arguments);
       }
       function z() {
-        return (z = Object(O.a)(
-          S.a.mark(function e() {
+        return (z = Object(S.a)(
+          O.a.mark(function e() {
             var a, t;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -797,10 +798,10 @@
         return X.apply(this, arguments);
       }
       function X() {
-        return (X = Object(O.a)(
-          S.a.mark(function e() {
+        return (X = Object(S.a)(
+          O.a.mark(function e() {
             var a, t;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -832,10 +833,10 @@
         return $.apply(this, arguments);
       }
       function $() {
-        return ($ = Object(O.a)(
-          S.a.mark(function e(a) {
+        return ($ = Object(S.a)(
+          O.a.mark(function e(a) {
             var t, n;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -871,10 +872,10 @@
         return ae.apply(this, arguments);
       }
       function ae() {
-        return (ae = Object(O.a)(
-          S.a.mark(function e(a) {
+        return (ae = Object(S.a)(
+          O.a.mark(function e(a) {
             var t, n;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -908,10 +909,10 @@
         return ne.apply(this, arguments);
       }
       function ne() {
-        return (ne = Object(O.a)(
-          S.a.mark(function e(a) {
+        return (ne = Object(S.a)(
+          O.a.mark(function e(a) {
             var t, n;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -945,10 +946,10 @@
         return oe.apply(this, arguments);
       }
       function oe() {
-        return (oe = Object(O.a)(
-          S.a.mark(function e(a) {
+        return (oe = Object(S.a)(
+          O.a.mark(function e(a) {
             var t, n;
-            return S.a.wrap(
+            return O.a.wrap(
               function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
@@ -994,7 +995,7 @@
             { className: "LoadingSpinner" },
             100 * Math.random() < 99
               ? o.a.createElement(U.a, null)
-              : o.a.createElement(j.q, null)
+              : o.a.createElement(j.r, null)
           );
         };
       t(97), t(59);
@@ -1023,11 +1024,11 @@
             y = Object(r.useState)(""),
             b = Object(s.a)(y, 2),
             T = b[0],
-            S = b[1],
-            O = Object(r.useState)(void 0),
-            B = Object(s.a)(O, 2),
-            I = B[0],
-            w = B[1],
+            O = b[1],
+            S = Object(r.useState)(void 0),
+            I = Object(s.a)(S, 2),
+            B = I[0],
+            w = I[1],
             C = Object(r.useContext)(N.context),
             k = function (e) {
               var a = e.target.value;
@@ -1052,15 +1053,15 @@
                       })),
                 t && w(t);
             }, []),
-            void 0 === I)
+            void 0 === B)
           )
             return o.a.createElement(me, null);
           var L = Math.min(se.maxBetTiers[n.maxBetTier].amount, n.coins),
             G = function () {
-              return I ? (T === I.homeTeam ? I.homeOdds : I.awayOdds) : 0.5;
+              return B ? (T === B.homeTeam ? B.homeOdds : B.awayOdds) : 0.5;
             },
             D = function (e) {
-              S(e);
+              O(e);
             };
           var P = function (e) {
               var a = e.id,
@@ -1213,18 +1214,18 @@
                   ie.a.Group,
                   { className: "Bet-Form-Teams", controlId: "team" },
                   o.a.createElement(P, {
-                    id: I.homeTeam,
-                    color: I.homeTeamColor,
+                    id: B.homeTeam,
+                    color: B.homeTeamColor,
                     modifier: "Home",
-                    name: I.homeTeamNickname,
-                    odds: I.homeOdds,
+                    name: B.homeTeamNickname,
+                    odds: B.homeOdds,
                   }),
                   o.a.createElement(P, {
-                    id: I.awayTeam,
-                    color: I.awayTeamColor,
+                    id: B.awayTeam,
+                    color: B.awayTeamColor,
                     modifier: "Away",
-                    name: I.awayTeamNickname,
-                    odds: I.awayOdds,
+                    name: B.awayTeamNickname,
+                    odds: B.awayOdds,
                   })
                 ),
                 o.a.createElement(
@@ -1244,7 +1245,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Bet-Coin-Wrapper" },
-                      o.a.createElement(j.w, { className: "Bet-Coin-Icon" }),
+                      o.a.createElement(j.C, { className: "Bet-Coin-Icon" }),
                       n.coins
                     ),
                     o.a.createElement(ie.a.Control, {
@@ -1359,7 +1360,7 @@
           },
           {
             name: "Peanuts",
-            icon: o.a.createElement(j.q, null),
+            icon: o.a.createElement(j.r, null),
             background: "#c4aa70",
             color: "#423822",
           },
@@ -1371,7 +1372,7 @@
           },
           {
             name: "Feedback",
-            icon: o.a.createElement(j.n, null),
+            icon: o.a.createElement(j.o, null),
             background: "#383838",
             color: "#ff007b",
           },
@@ -1588,7 +1589,7 @@
             g > v && l.gameComplete
               ? { border: 2, borderColor: "#fffffff", borderStyle: "solid" }
               : {});
-        var S = (function (e) {
+        var O = (function (e) {
             for (
               var a = {
                   onFirst: !1,
@@ -1616,12 +1617,12 @@
             }
             return a;
           })(l),
-          O = "";
-        S.onFirst && (O += " first"),
-          S.onSecond && (O += " second"),
-          S.onThird && (O += " third");
-        var B = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
-          I = Object(c.g)(),
+          S = "";
+        O.onFirst && (S += " first"),
+          O.onSecond && (S += " second"),
+          O.onThird && (S += " third");
+        var I = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
+          B = Object(c.g)(),
           w =
             h.complete || !h.started
               ? o.a.createElement("div", null)
@@ -1649,7 +1650,7 @@
                       o.a.createElement(
                         u,
                         {
-                          background: I,
+                          background: B,
                           path: "/player/".concat(
                             l.topOfInning ? l.homePitcher : l.awayPitcher
                           ),
@@ -1681,7 +1682,7 @@
                         ? o.a.createElement(
                             u,
                             {
-                              background: I,
+                              background: B,
                               path: "/player/".concat(
                                 l.topOfInning ? l.awayBatter : l.homeBatter
                               ),
@@ -1714,7 +1715,7 @@
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
-                    o.a.createElement(j.w, null),
+                    o.a.createElement(j.C, null),
                     " ",
                     G > 0
                       ? "".concat(M.amount, " on ").concat(k)
@@ -1726,7 +1727,7 @@
                     { className: "GameWidget-Button", variant: "success" },
                     o.a.createElement(
                       u,
-                      { background: I, path: "/bet/".concat(l.id) },
+                      { background: B, path: "/bet/".concat(l.id) },
                       "Place a Bet"
                     )
                   )
@@ -1771,7 +1772,7 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet-Bet" },
-                    o.a.createElement(j.w, null),
+                    o.a.createElement(j.C, null),
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
@@ -1796,7 +1797,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Bet" },
-                      o.a.createElement(j.w, null),
+                      o.a.createElement(j.C, null),
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
@@ -1885,7 +1886,7 @@
                   o.a.createElement(
                     "span",
                     { className: "GameWidget-Outcome-Callout" },
-                    o.a.createElement(j.w, null),
+                    o.a.createElement(j.C, null),
                     "\xa0",
                     H.amount
                   ),
@@ -1907,7 +1908,7 @@
                         o.a.createElement(
                           "span",
                           { className: "GameWidget-Outcome-Callout" },
-                          o.a.createElement(j.w, null),
+                          o.a.createElement(j.C, null),
                           "\xa0",
                           ue(H.odds, H.amount)
                         ),
@@ -1942,10 +1943,10 @@
                       o.a.createElement(
                         o.a.Fragment,
                         null,
-                        ((J = S),
+                        ((J = O),
                         o.a.createElement(
                           "div",
-                          { className: "GameWidget-Bases" + O },
+                          { className: "GameWidget-Bases" + S },
                           o.a.createElement("div", {
                             id: "tooltip",
                             style: { display: "none", position: "absolute" },
@@ -2048,7 +2049,7 @@
                             )
                           )
                         )),
-                        B,
+                        I,
                         w,
                         o.a.createElement(
                           "div",
@@ -2100,7 +2101,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: I,
+                                background: B,
                                 path: "/player/".concat(l.awayPitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2120,7 +2121,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: I,
+                                background: B,
                                 path: "/player/".concat(l.homePitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2280,7 +2281,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: I,
+                    background: B,
                     path: "/team/".concat(l.awayTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2358,7 +2359,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: I,
+                    background: B,
                     path: "/team/".concat(l.homeTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2440,7 +2441,7 @@
           )
         );
       }
-      function Se(e) {
+      function Oe(e) {
         var a = (function (e, a) {
           var t = void 0;
           if (void 0 !== a)
@@ -2463,9 +2464,9 @@
         return o.a.createElement(Te, { data: e.data, metaInfo: a });
       }
       t(101);
-      var Oe = t(68),
-        Be = t(44),
-        Ie =
+      var Se = t(68),
+        Ie = t(44),
+        Be =
           (t(102),
           function (e) {
             var a,
@@ -2489,7 +2490,7 @@
                 }, 100);
               },
               g = o.a.createElement(
-                Be.a,
+                Ie.a,
                 { target: t.current, show: p, placement: "bottom" },
                 function (e) {
                   e.placement,
@@ -2497,7 +2498,7 @@
                     e.arrowProps,
                     e.outOfBoundaries,
                     e.show;
-                  var a = Object(Oe.a)(e, [
+                  var a = Object(Se.a)(e, [
                     "placement",
                     "scheduleUpdate",
                     "arrowProps",
@@ -2659,12 +2660,12 @@
               return e.id === a.favoriteTeam;
             });
             if (T) {
-              var B = String.fromCodePoint(Number(T.emoji)),
-                I = encodeURIComponent(
-                  "".concat(T.slogan || "", " ").concat(B, " #blaseball")
+              var I = String.fromCodePoint(Number(T.emoji)),
+                B = encodeURIComponent(
+                  "".concat(T.slogan || "", " ").concat(I, " #blaseball")
                 ),
                 w = "http://twitter.com/intent/tweet?text=".concat(
-                  I,
+                  B,
                   "&url=https%3A%2F%2Fblaseball.com"
                 );
               b = o.a.createElement(
@@ -2675,7 +2676,7 @@
                   style: { background: T.mainColor },
                   className: "Navigation-FavoriteTeamEmoji",
                 },
-                B
+                I
               );
             }
           }
@@ -2683,27 +2684,27 @@
             o.a.Fragment,
             null,
             o.a.createElement(
-              Ie,
+              Be,
               {
                 className: "CoinOverlay",
                 buttonClassname: "Navigation-CurrencyButton",
                 content: v,
                 url: "/upcoming",
               },
-              o.a.createElement(j.w, null),
+              o.a.createElement(j.C, null),
               "\xa0",
               a.coins
             ),
             a.unlockedElection
               ? o.a.createElement(
-                  Ie,
+                  Be,
                   {
                     className: "CoinOverlay",
                     buttonClassname: "Navigation-CurrencyButton",
                     content: g,
                     url: "/shop",
                   },
-                  o.a.createElement(j.v, null),
+                  o.a.createElement(j.B, null),
                   "\xa0",
                   a.votes
                 )
@@ -2712,7 +2713,7 @@
               "div",
               { className: "Peanut-Container" },
               o.a.createElement(
-                Ie,
+                Be,
                 {
                   className: "CoinOverlay",
                   buttonClassname: "Navigation-CurrencyButton",
@@ -2721,10 +2722,10 @@
                     ? void 0
                     : function () {
                         (function () {
-                          var e = Object(O.a)(
-                            S.a.mark(function e() {
+                          var e = Object(S.a)(
+                            O.a.mark(function e() {
                               var n, r, o;
-                              return S.a.wrap(function (e) {
+                              return O.a.wrap(function (e) {
                                 for (;;)
                                   switch ((e.prev = e.next)) {
                                     case 0:
@@ -2756,9 +2757,9 @@
                                           JSON.stringify({ amount: o })
                                         )
                                           .then(
-                                            Object(O.a)(
-                                              S.a.mark(function e() {
-                                                return S.a.wrap(function (e) {
+                                            Object(S.a)(
+                                              O.a.mark(function e() {
+                                                return O.a.wrap(function (e) {
                                                   for (;;)
                                                     switch ((e.prev = e.next)) {
                                                       case 0:
@@ -2785,9 +2786,9 @@
                                             h(e, { appearance: "error" });
                                           })
                                           .finally(
-                                            Object(O.a)(
-                                              S.a.mark(function e() {
-                                                return S.a.wrap(function (e) {
+                                            Object(S.a)(
+                                              O.a.mark(function e() {
+                                                return O.a.wrap(function (e) {
                                                   for (;;)
                                                     switch ((e.prev = e.next)) {
                                                       case 0:
@@ -2854,7 +2855,7 @@
                   o.a.createElement(
                     "span",
                     { className: "Peanut-Icon" },
-                    m ? "" : o.a.createElement(j.q, null)
+                    m ? "" : o.a.createElement(j.r, null)
                   ),
                   "\xa0",
                   a.peanuts
@@ -2863,7 +2864,7 @@
               o.a.createElement(
                 "div",
                 { className: m ? "Peanut-Eating" : "Peanut" },
-                o.a.createElement(j.q, null)
+                o.a.createElement(j.r, null)
               )
             ),
             b,
@@ -3192,12 +3193,12 @@
         }
         if (!f.sim) return null;
         var T = y() === xe.Live ? f.schedule : f.tomorrowSchedule,
-          S =
+          O =
             (y() === xe.Live ? f.sim.day : f.sim.day,
             y() === xe.Live
               ? f.postseason.matchups
               : f.postseason.tomorrowMatchups),
-          O =
+          S =
             void 0 === T || (void 0 !== T && T.length <= 0)
               ? null
               : o.a.createElement(
@@ -3244,14 +3245,14 @@
                     })(T)) || void 0 === a
                     ? void 0
                     : a.map(function (e, a) {
-                        return o.a.createElement(Se, {
+                        return o.a.createElement(Oe, {
                           key: a,
                           data: e,
-                          matchups: S,
+                          matchups: O,
                         });
                       })
                 ),
-          B =
+          I =
             void 0 !==
             (null === f ||
             void 0 === f ||
@@ -3270,7 +3271,7 @@
                 ? void 0
                 : i.roundNumber
               : -1,
-          I =
+          B =
             void 0 !==
             (null === f ||
             void 0 === f ||
@@ -3289,7 +3290,7 @@
                 ? void 0
                 : u.roundNumber
               : -1,
-          w = (y() === xe.Live ? B : I) + 1;
+          w = (y() === xe.Live ? I : B) + 1;
         return o.a.createElement(
           "div",
           null,
@@ -3345,7 +3346,7 @@
             : o.a.createElement(
                 "div",
                 null,
-                null !== O
+                null !== S
                   ? o.a.createElement(
                       "div",
                       null,
@@ -3358,7 +3359,7 @@
                             })
                           : null
                       ),
-                      o.a.createElement("ul", null, O)
+                      o.a.createElement("ul", null, S)
                     )
                   : o.a.createElement(
                       "div",
@@ -3657,10 +3658,10 @@
           return d.apply(this, arguments);
         }
         function d() {
-          return (d = Object(O.a)(
-            S.a.mark(function e() {
+          return (d = Object(S.a)(
+            O.a.mark(function e() {
               var a, t, r;
-              return S.a.wrap(function (e) {
+              return O.a.wrap(function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
                     case 0:
@@ -3921,7 +3922,7 @@
           o.a.createElement(
             u,
             { background: e, path: "/signup", className: "About-Ticket" },
-            o.a.createElement(j.v, null)
+            o.a.createElement(j.B, null)
           ),
           o.a.createElement(
             "a",
@@ -4053,7 +4054,7 @@
       function oa(e) {
         switch (e.id) {
           case "EXTRA_STRIKE":
-            return o.a.createElement(j.m, null);
+            return o.a.createElement(j.n, null);
           case "SHAME_PIT":
             return o.a.createElement(j.b, null);
           case "HOME_FIELD":
@@ -4063,7 +4064,7 @@
           case "ALTERNATE":
             return o.a.createElement(j.l, null);
           case "SHELLED":
-            return o.a.createElement(j.q, null);
+            return o.a.createElement(j.r, null);
           case "SOUNDPROOF":
             return o.a.createElement(j.k, null);
           case "REVERBERATING":
@@ -4333,10 +4334,10 @@
             p();
           }, []);
           var p = (function () {
-            var e = Object(O.a)(
-              S.a.mark(function e() {
+            var e = Object(S.a)(
+              O.a.mark(function e() {
                 var a, t, n, r, o, l, i, s, c, m;
-                return S.a.wrap(function (e) {
+                return O.a.wrap(function (e) {
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
@@ -4506,7 +4507,7 @@
             })(E.id, null === t || void 0 === t ? void 0 : t.standings),
             b = y[1],
             T = y[0],
-            B =
+            I =
               E.permAttr.length > 0 ||
               E.seasAttr.length > 0 ||
               E.weekAttr.length > 0 ||
@@ -4595,7 +4596,7 @@
                   )
                 )
               ),
-              B,
+              I,
               o.a.createElement(
                 "div",
                 { className: "Team-Content" },
@@ -4671,9 +4672,9 @@
           return A.apply(this, arguments);
         }
         function A() {
-          return (A = Object(O.a)(
-            S.a.mark(function e(t) {
-              return S.a.wrap(function (e) {
+          return (A = Object(S.a)(
+            O.a.mark(function e(t) {
+              return O.a.wrap(function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
                     case 0:
@@ -4690,9 +4691,9 @@
                         q(t.buyUrl, JSON.stringify(t.buyParams))
                           .then(
                             (function () {
-                              var e = Object(O.a)(
-                                S.a.mark(function e(n) {
-                                  return S.a.wrap(function (e) {
+                              var e = Object(S.a)(
+                                O.a.mark(function e(n) {
+                                  return O.a.wrap(function (e) {
                                     for (;;)
                                       switch ((e.prev = e.next)) {
                                         case 0:
@@ -4732,9 +4733,9 @@
                             a(e, { appearance: "error" });
                           })
                           .finally(
-                            Object(O.a)(
-                              S.a.mark(function e() {
-                                return S.a.wrap(function (e) {
+                            Object(S.a)(
+                              O.a.mark(function e() {
+                                return O.a.wrap(function (e) {
                                   for (;;)
                                     switch ((e.prev = e.next)) {
                                       case 0:
@@ -4798,7 +4799,7 @@
                           e.votes + 1
                         ),
                         available: !0,
-                        icon: o.a.createElement(j.v, null),
+                        icon: o.a.createElement(j.B, null),
                         buyUrl: "/api/buyVote",
                         userUpdate: function () {
                           a(
@@ -4821,7 +4822,7 @@
                           e.votes,
                           " Vote already from signing up."
                         ),
-                        icon: o.a.createElement(j.v, null),
+                        icon: o.a.createElement(j.B, null),
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
@@ -5145,7 +5146,7 @@
                       o.a.createElement(
                         "div",
                         { className: "Shop-Item-Checkout" },
-                        o.a.createElement(j.w, {
+                        o.a.createElement(j.C, {
                           className: "Shop-Item-Coins",
                         }),
                         o.a.createElement(
@@ -5212,9 +5213,9 @@
             m = c[0],
             u = c[1],
             h = (function () {
-              var a = Object(O.a)(
-                S.a.mark(function a() {
-                  return S.a.wrap(function (a) {
+              var a = Object(S.a)(
+                O.a.mark(function a() {
+                  return O.a.wrap(function (a) {
                     for (;;)
                       switch ((a.prev = a.next)) {
                         case 0:
@@ -5350,9 +5351,9 @@
               ? o.a.createElement(
                   pa,
                   Object.assign({}, e, {
-                    dismiss: Object(O.a)(
-                      S.a.mark(function e() {
-                        return S.a.wrap(function (e) {
+                    dismiss: Object(S.a)(
+                      O.a.mark(function e() {
+                        return O.a.wrap(function (e) {
                           for (;;)
                             switch ((e.prev = e.next)) {
                               case 0:
@@ -5527,10 +5528,10 @@
             l = n[0],
             i = n[1];
           function c() {
-            return (c = Object(O.a)(
-              S.a.mark(function e() {
+            return (c = Object(S.a)(
+              O.a.mark(function e() {
                 var a;
-                return S.a.wrap(function (e) {
+                return O.a.wrap(function (e) {
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
@@ -5583,7 +5584,7 @@
             )
           );
         },
-        Sa = function () {
+        Oa = function () {
           return o.a.createElement(
             "a",
             { href: "/shop" },
@@ -5594,7 +5595,7 @@
             )
           );
         },
-        Oa = function (e) {
+        Sa = function (e) {
           var a = e.isActive;
           return o.a.createElement(
             "button",
@@ -5603,7 +5604,7 @@
             a ? "ed" : ""
           );
         },
-        Ba = function (e) {
+        Ia = function (e) {
           var a = e.title,
             t = e.description,
             n = e.id,
@@ -5628,10 +5629,10 @@
               { className: "Blessings-Option-Description" },
               t
             ),
-            o.a.createElement(Oa, { isActive: r })
+            o.a.createElement(Sa, { isActive: r })
           );
         },
-        Ia = function () {
+        Ba = function () {
           var e = Object(r.useContext)(ba.context),
             a = Object(r.useContext)(R.context).user,
             t = Object(r.useState)(),
@@ -5648,7 +5649,7 @@
             a.isFetching ||
               !a.isSignedIn ||
               a.votes ||
-              (d = o.a.createElement(Sa, null)),
+              (d = o.a.createElement(Oa, null)),
             !a.isFetching &&
               a.isSignedIn &&
               a.favoriteTeam &&
@@ -5690,7 +5691,7 @@
                 { className: "Blessings-Container" },
                 e.blessings.map(function (e, a) {
                   return o.a.createElement(
-                    Ba,
+                    Ia,
                     Object.assign({ key: a }, e, {
                       isActive: l === e.id,
                       onSelect: function (e) {
@@ -5979,13 +5980,13 @@
           : "redistribute_wealth" === e
           ? o.a.createElement(La, { className: "Decrees-Option-Icon" })
           : "four_for_four" === e || "fourth_strike" === e
-          ? o.a.createElement(j.m, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.n, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
-          ? o.a.createElement(j.q, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.r, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
           ? o.a.createElement(Ka, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
-          ? o.a.createElement(j.s, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.u, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
           ? o.a.createElement(j.f, { className: "Decrees-Option-Icon" })
           : "blaserunning" === e
@@ -5993,21 +5994,33 @@
           : "eat_the_rich" === e
           ? o.a.createElement(j.g, { className: "Decrees-Option-Icon" })
           : "eat_the_crust" === e
-          ? o.a.createElement(j.r, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.s, { className: "Decrees-Option-Icon" })
           : "interviews" === e
-          ? o.a.createElement(j.n, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.o, { className: "Decrees-Option-Icon" })
           : "random_realignment" === e
           ? o.a.createElement(j.a, { className: "Decrees-Option-Icon" })
           : "alternate_reality" === e
           ? o.a.createElement(na.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
-          ? o.a.createElement(j.u, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(j.x, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(ta.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
           ? o.a.createElement(U.b, { className: "Decrees-Option-Icon" })
           : "team_punish" === e
+          ? o.a.createElement(j.E, { className: "Decrees-Option-Icon" })
+          : "do_nothing" === e
+          ? o.a.createElement(j.t, { className: "Decrees-Option-Icon" })
+          : "confuse_good" === e
+          ? o.a.createElement(j.z, { className: "Decrees-Option-Icon" })
+          : "confuse_evil" === e
           ? o.a.createElement(j.y, { className: "Decrees-Option-Icon" })
+          : "parallel_world" === e
+          ? o.a.createElement(j.v, { className: "Decrees-Option-Icon" })
+          : "diagonal_world" === e
+          ? o.a.createElement(j.A, { className: "Decrees-Option-Icon" })
+          : "high_filter" === e
+          ? o.a.createElement(j.m, { className: "Decrees-Option-Icon" })
           : o.a.createElement("div", null);
       }
       var et = function (e) {
@@ -6130,10 +6143,10 @@
           u = c[1],
           d = Object(r.useContext)(ke.context);
         function h() {
-          return (h = Object(O.a)(
-            S.a.mark(function a() {
+          return (h = Object(S.a)(
+            O.a.mark(function a() {
               var t, n, r, o, i, s, c;
-              return S.a.wrap(function (a) {
+              return O.a.wrap(function (a) {
                 for (;;)
                   switch ((a.prev = a.next)) {
                     case 0:
@@ -6468,7 +6481,7 @@
               o.a.Fragment,
               null,
               o.a.createElement(at, null),
-              o.a.createElement(Ia, null)
+              o.a.createElement(Ba, null)
             );
       }
       function lt() {
@@ -6526,11 +6539,11 @@
             var a = e.target.value;
             A(a);
           },
-          B = n.votes,
-          I = o.a.createElement(me, null);
+          I = n.votes,
+          B = o.a.createElement(me, null);
         return (
           y ||
-            (I = o.a.createElement(
+            (B = o.a.createElement(
               Q.a,
               { className: "Vote-Submit", type: "submit", variant: "success" },
               "Submit"
@@ -6548,8 +6561,8 @@
               {
                 className: "Vote-Form",
                 onSubmit: function (e) {
-                  if ((e.preventDefault(), b(!0), f > B))
-                    a("Max vote is ".concat(B, "!"), { appearance: "error" });
+                  if ((e.preventDefault(), b(!0), f > I))
+                    a("Max vote is ".concat(I, "!"), { appearance: "error" });
                   else {
                     var t = { amount: f, entityId: h, voteType: u, data: N };
                     q("/api/vote", JSON.stringify(t))
@@ -6569,9 +6582,9 @@
                             });
                       })
                       .finally(
-                        Object(O.a)(
-                          S.a.mark(function e() {
-                            return S.a.wrap(function (e) {
+                        Object(S.a)(
+                          O.a.mark(function e() {
+                            return O.a.wrap(function (e) {
                               for (;;)
                                 switch ((e.prev = e.next)) {
                                   case 0:
@@ -6601,7 +6614,7 @@
                   o.a.createElement(
                     "div",
                     { className: "Vote-Ticket-Wrapper" },
-                    o.a.createElement(j.v, { className: "Vote-Ticket-Icon" }),
+                    o.a.createElement(j.B, { className: "Vote-Ticket-Icon" }),
                     n.votes
                   ),
                   o.a.createElement(ie.a.Control, {
@@ -6613,7 +6626,7 @@
                     type: "range",
                     className: "Vote-Range",
                     min: 1,
-                    max: Math.min(n.votes, B),
+                    max: Math.min(n.votes, I),
                     value: f,
                     onChange: T,
                     step: "1",
@@ -6623,15 +6636,15 @@
                     {
                       className: "Vote-Form-Inputs-Amount-MaxVote",
                       onClick: function (e) {
-                        e.preventDefault(), A(Math.min(n.votes, B));
+                        e.preventDefault(), A(Math.min(n.votes, I));
                       },
                     },
                     "Max Vote: ",
-                    B
+                    I
                   )
                 )
               ),
-              o.a.createElement("div", { className: "Vote-Submit-Wrapper" }, I)
+              o.a.createElement("div", { className: "Vote-Submit-Wrapper" }, B)
             )
           )
         );
@@ -7981,9 +7994,9 @@
       var vt = {
           notes: [],
           refreshNotes: (function () {
-            var e = Object(O.a)(
-              S.a.mark(function e() {
-                return S.a.wrap(function (e) {
+            var e = Object(S.a)(
+              O.a.mark(function e() {
+                return O.a.wrap(function (e) {
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
@@ -8014,9 +8027,9 @@
             f = Object(r.useRef)(void 0),
             A = Object(r.useRef)(),
             v = Object(r.useCallback)(
-              Object(O.a)(
-                S.a.mark(function e() {
-                  return S.a.wrap(function (e) {
+              Object(S.a)(
+                O.a.mark(function e() {
+                  return O.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
@@ -8051,10 +8064,10 @@
               []
             ),
             g = Object(r.useCallback)(
-              Object(O.a)(
-                S.a.mark(function e() {
+              Object(S.a)(
+                O.a.mark(function e() {
                   var a;
-                  return S.a.wrap(function (e) {
+                  return O.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
@@ -8064,10 +8077,10 @@
                               credentials: "include",
                             }).then(
                               (function () {
-                                var e = Object(O.a)(
-                                  S.a.mark(function e(t) {
+                                var e = Object(S.a)(
+                                  O.a.mark(function e(t) {
                                     var r, o, i, s;
-                                    return S.a.wrap(function (e) {
+                                    return O.a.wrap(function (e) {
                                       for (;;)
                                         switch ((e.prev = e.next)) {
                                           case 0:
@@ -8193,10 +8206,10 @@
               );
             },
             b = (function () {
-              var e = Object(O.a)(
-                S.a.mark(function e() {
+              var e = Object(S.a)(
+                O.a.mark(function e() {
                   var a;
-                  return S.a.wrap(function (e) {
+                  return O.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
@@ -8223,9 +8236,9 @@
               };
             })(),
             T = (function () {
-              var e = Object(O.a)(
-                S.a.mark(function e() {
-                  return S.a.wrap(function (e) {
+              var e = Object(S.a)(
+                O.a.mark(function e() {
+                  return O.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
@@ -8258,8 +8271,8 @@
               },
               [h]
             );
-          var B = { notes: h, refreshNotes: v };
-          return o.a.createElement(gt.Provider, { value: B }, a);
+          var I = { notes: h, refreshNotes: v };
+          return o.a.createElement(gt.Provider, { value: I }, a);
         };
       yt.context = gt;
       var bt = yt;
@@ -8690,7 +8703,7 @@
         );
       }
       t(125);
-      function St() {
+      function Ot() {
         var e,
           a = Object(r.useContext)(ha.context);
         return o.a.createElement(
@@ -8699,7 +8712,7 @@
           o.a.createElement(
             "div",
             { className: "BigDeal-Icon" },
-            o.a.createElement(j.q, null)
+            o.a.createElement(j.r, null)
           ),
           o.a.createElement(
             "div",
@@ -8715,8 +8728,8 @@
         );
       }
       t(126);
-      var Ot = t(67),
-        Bt = (function (e) {
+      var St = t(67),
+        It = (function (e) {
           var a,
             t = [];
           for (; t.length <= 2; )
@@ -8905,7 +8918,7 @@
           "1298718347463258112",
           "1298714979516858368",
         ]);
-      function It() {
+      function Bt() {
         var e,
           a,
           t,
@@ -8920,10 +8933,10 @@
           E = h[0],
           p = h[1];
         function f() {
-          return (f = Object(O.a)(
-            S.a.mark(function e() {
+          return (f = Object(S.a)(
+            O.a.mark(function e() {
               var a, t, n;
-              return S.a.wrap(function (e) {
+              return O.a.wrap(function (e) {
                 for (;;)
                   switch ((e.prev = e.next)) {
                     case 0:
@@ -8966,7 +8979,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#deae00" },
                 },
-                o.a.createElement(j.o, null)
+                o.a.createElement(j.p, null)
               ),
               o.a.createElement(
                 "div",
@@ -9132,7 +9145,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#32c775" },
                 },
-                o.a.createElement(j.x, null)
+                o.a.createElement(j.D, null)
               ),
               o.a.createElement(
                 "div",
@@ -9175,7 +9188,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#c23284" },
                 },
-                o.a.createElement(j.t, null)
+                o.a.createElement(j.w, null)
               ),
               o.a.createElement(
                 "div",
@@ -9235,7 +9248,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#1b95e0" },
                 },
-                o.a.createElement(j.p, null)
+                o.a.createElement(j.q, null)
               ),
               o.a.createElement(
                 "div",
@@ -9246,8 +9259,8 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents Bulletin-Item-ImageGrid" },
-              Bt.map(function (e) {
-                return o.a.createElement(Ot.a, {
+              It.map(function (e) {
+                return o.a.createElement(St.a, {
                   id: e,
                   options: { theme: "dark", conversation: "none", dnt: !0 },
                   className: "Bulletin-Tweet",
@@ -9419,10 +9432,10 @@
         }
         Object(r.useEffect)(function () {
           (function () {
-            var e = Object(O.a)(
-              S.a.mark(function e() {
+            var e = Object(S.a)(
+              O.a.mark(function e() {
                 var a, n, r;
-                return S.a.wrap(function (e) {
+                return O.a.wrap(function (e) {
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
@@ -10226,7 +10239,7 @@
           o.a.createElement(
             "div",
             { className: "Main-Body" },
-            o.a.createElement(St, null)
+            o.a.createElement(Ot, null)
           )
         );
       }
@@ -10345,7 +10358,7 @@
                 o.a.createElement(
                   c.a,
                   { path: "/bulletin" },
-                  o.a.createElement(It, null)
+                  o.a.createElement(Bt, null)
                 ),
                 o.a.createElement(
                   c.a,
