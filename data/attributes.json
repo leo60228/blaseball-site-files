@@ -1,1 +1,66 @@
-[]
+[
+    {
+        "id": "EXTRA_STRIKE",
+        "color": "#f77c9f",
+        "textColor": "#f77c9f",
+        "background": "#8c1839",
+        "title": "The Fourth Strike",
+        "description": "Those with the Fourth Strike will get an extra strike in each at bat."
+    },
+    {
+        "id": "SHAME_PIT",
+        "color": "#b96dbd",
+        "textColor": "#b96dbd",
+        "background": "#3d1539",
+        "title": "Targeted Shame",
+        "description": "Teams with Targeted Shame will start with negative runs the game after being shamed."
+    },
+    {
+        "id": "HOME_FIELD",
+        "color": "#ecffb8",
+        "textColor": "#4f9c30",
+        "background": "#4f9c30",
+        "title": "Home Field Advantage",
+        "description": "Teams with Home Field Advantage will start each home game with one run."
+    },
+    {
+        "id": "FIREPROOF",
+        "color": "#a5c5f0",
+        "textColor": "#a5c5f0",
+        "background": "#4c77b0",
+        "title": "Fireproof",
+        "description": "A Fireproof player can not be incinerated."
+    },
+    {
+        "id": "ALTERNATE",
+        "color": "#fffd85",
+        "textColor": "#fffd85",
+        "background": "#404040",
+        "title": "Alternate",
+        "description": "This player is an Alternate..."
+    },
+    {
+        "id": "SOUNDPROOF",
+        "color": "#c92080",
+        "textColor": "#c92080",
+        "background": "#000000",
+        "title": "Soundproof",
+        "description": "A Soundproof player can not be caught in Feedback's reality flickers."
+    },
+    {
+        "id": "SHELLED",
+        "color": "#fffd85",
+        "textColor": "#fffd85",
+        "background": "#404040",
+        "title": "Shelled",
+        "description": "A Shelled player is Shelled."
+    },
+    {
+        "id": "REVERBERATING",
+        "color": "#61b3ff",
+        "textColor": "#61b3ff",
+        "background": "#756773",
+        "title": "Reverberating",
+        "description": "A Reverberating player has a small chance of batting again after each of their At-Bats end."
+    }
+]
