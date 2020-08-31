@@ -457,7 +457,7 @@
         T = t(3),
         O = t.n(T),
         S = t(6),
-        I = {
+        B = {
           id: "",
           email: "",
           isSignedIn: !1,
@@ -473,13 +473,13 @@
           peanuts: 10,
           squirrels: 0,
         },
-        B = {
-          user: I,
+        I = {
+          user: B,
           clearUser: function () {},
           initUser: function () {},
           setUser: function () {},
         },
-        w = Object(r.createContext)(B),
+        w = Object(r.createContext)(I),
         C = function (e) {
           var a = Object(d.a)(
             Object(d.a)({}, e),
@@ -499,7 +499,7 @@
         },
         k = function (e) {
           var a = e.children,
-            t = Object(r.useState)(I),
+            t = Object(r.useState)(B),
             n = Object(s.a)(t, 2),
             l = n[0],
             i = n[1],
@@ -570,7 +570,7 @@
             initUser: c,
             setUser: i,
             clearUser: function () {
-              i(I);
+              i(B);
             },
           };
           return o.a.createElement(w.Provider, { value: m }, a);
@@ -1026,9 +1026,9 @@
             T = b[0],
             O = b[1],
             S = Object(r.useState)(void 0),
-            I = Object(s.a)(S, 2),
-            B = I[0],
-            w = I[1],
+            B = Object(s.a)(S, 2),
+            I = B[0],
+            w = B[1],
             C = Object(r.useContext)(N.context),
             k = function (e) {
               var a = e.target.value;
@@ -1053,12 +1053,12 @@
                       })),
                 t && w(t);
             }, []),
-            void 0 === B)
+            void 0 === I)
           )
             return o.a.createElement(me, null);
           var L = Math.min(se.maxBetTiers[n.maxBetTier].amount, n.coins),
             G = function () {
-              return B ? (T === B.homeTeam ? B.homeOdds : B.awayOdds) : 0.5;
+              return I ? (T === I.homeTeam ? I.homeOdds : I.awayOdds) : 0.5;
             },
             D = function (e) {
               O(e);
@@ -1214,18 +1214,18 @@
                   ie.a.Group,
                   { className: "Bet-Form-Teams", controlId: "team" },
                   o.a.createElement(P, {
-                    id: B.homeTeam,
-                    color: B.homeTeamColor,
+                    id: I.homeTeam,
+                    color: I.homeTeamColor,
                     modifier: "Home",
-                    name: B.homeTeamNickname,
-                    odds: B.homeOdds,
+                    name: I.homeTeamNickname,
+                    odds: I.homeOdds,
                   }),
                   o.a.createElement(P, {
-                    id: B.awayTeam,
-                    color: B.awayTeamColor,
+                    id: I.awayTeam,
+                    color: I.awayTeamColor,
                     modifier: "Away",
-                    name: B.awayTeamNickname,
-                    odds: B.awayOdds,
+                    name: I.awayTeamNickname,
+                    odds: I.awayOdds,
                   })
                 ),
                 o.a.createElement(
@@ -1621,8 +1621,8 @@
         O.onFirst && (S += " first"),
           O.onSecond && (S += " second"),
           O.onThird && (S += " third");
-        var I = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
-          B = Object(c.g)(),
+        var B = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
+          I = Object(c.g)(),
           w =
             h.complete || !h.started
               ? o.a.createElement("div", null)
@@ -1650,7 +1650,7 @@
                       o.a.createElement(
                         u,
                         {
-                          background: B,
+                          background: I,
                           path: "/player/".concat(
                             l.topOfInning ? l.homePitcher : l.awayPitcher
                           ),
@@ -1682,7 +1682,7 @@
                         ? o.a.createElement(
                             u,
                             {
-                              background: B,
+                              background: I,
                               path: "/player/".concat(
                                 l.topOfInning ? l.awayBatter : l.homeBatter
                               ),
@@ -1727,7 +1727,7 @@
                     { className: "GameWidget-Button", variant: "success" },
                     o.a.createElement(
                       u,
-                      { background: B, path: "/bet/".concat(l.id) },
+                      { background: I, path: "/bet/".concat(l.id) },
                       "Place a Bet"
                     )
                   )
@@ -2049,7 +2049,7 @@
                             )
                           )
                         )),
-                        I,
+                        B,
                         w,
                         o.a.createElement(
                           "div",
@@ -2101,7 +2101,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: B,
+                                background: I,
                                 path: "/player/".concat(l.awayPitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2121,7 +2121,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: B,
+                                background: I,
                                 path: "/player/".concat(l.homePitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2281,7 +2281,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: B,
+                    background: I,
                     path: "/team/".concat(l.awayTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2359,7 +2359,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: B,
+                    background: I,
                     path: "/team/".concat(l.homeTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2465,8 +2465,8 @@
       }
       t(101);
       var Se = t(68),
-        Ie = t(44),
-        Be =
+        Be = t(44),
+        Ie =
           (t(102),
           function (e) {
             var a,
@@ -2490,7 +2490,7 @@
                 }, 100);
               },
               g = o.a.createElement(
-                Ie.a,
+                Be.a,
                 { target: t.current, show: p, placement: "bottom" },
                 function (e) {
                   e.placement,
@@ -2660,12 +2660,12 @@
               return e.id === a.favoriteTeam;
             });
             if (T) {
-              var I = String.fromCodePoint(Number(T.emoji)),
-                B = encodeURIComponent(
-                  "".concat(T.slogan || "", " ").concat(I, " #blaseball")
+              var B = String.fromCodePoint(Number(T.emoji)),
+                I = encodeURIComponent(
+                  "".concat(T.slogan || "", " ").concat(B, " #blaseball")
                 ),
                 w = "http://twitter.com/intent/tweet?text=".concat(
-                  B,
+                  I,
                   "&url=https%3A%2F%2Fblaseball.com"
                 );
               b = o.a.createElement(
@@ -2676,7 +2676,7 @@
                   style: { background: T.mainColor },
                   className: "Navigation-FavoriteTeamEmoji",
                 },
-                I
+                B
               );
             }
           }
@@ -2684,7 +2684,7 @@
             o.a.Fragment,
             null,
             o.a.createElement(
-              Be,
+              Ie,
               {
                 className: "CoinOverlay",
                 buttonClassname: "Navigation-CurrencyButton",
@@ -2697,7 +2697,7 @@
             ),
             a.unlockedElection
               ? o.a.createElement(
-                  Be,
+                  Ie,
                   {
                     className: "CoinOverlay",
                     buttonClassname: "Navigation-CurrencyButton",
@@ -2713,7 +2713,7 @@
               "div",
               { className: "Peanut-Container" },
               o.a.createElement(
-                Be,
+                Ie,
                 {
                   className: "CoinOverlay",
                   buttonClassname: "Navigation-CurrencyButton",
@@ -2972,14 +2972,36 @@
           { className: "Advertisement-SiteHeader" },
           "This season is brought to you by ",
           o.a.createElement(
-            "a",
-            {
-              className: "Advertisement-SiteHeader-Callout",
-              href:
-                "http://friendsatthetable.net/bonus-episode-sports-are-just-numerology",
-              target: "_blank",
-            },
-            "Friends at the Table"
+            "span",
+            { className: "Advertisement-SiteHeader-Callout" },
+            o.a.createElement(
+              "a",
+              { href: "https://zombiesrungame.com", target: "_blank" },
+              "Zombies, Run!"
+            ),
+            " (",
+            o.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href:
+                  "https://apps.apple.com/us/app/zombies-run/id503519713?mt=8",
+                style: { color: "#ede06d" },
+              },
+              "iPhone"
+            ),
+            ", ",
+            o.a.createElement(
+              "a",
+              {
+                target: "_blank",
+                href:
+                  "https://play.google.com/store/apps/details?id=com.sixtostart.zombiesrunclient&hl=en_GB",
+                style: { color: "#f0dd37" },
+              },
+              "Android"
+            ),
+            ")"
           )
         );
       }
@@ -3252,7 +3274,7 @@
                         });
                       })
                 ),
-          I =
+          B =
             void 0 !==
             (null === f ||
             void 0 === f ||
@@ -3271,7 +3293,7 @@
                 ? void 0
                 : i.roundNumber
               : -1,
-          B =
+          I =
             void 0 !==
             (null === f ||
             void 0 === f ||
@@ -3290,7 +3312,7 @@
                 ? void 0
                 : u.roundNumber
               : -1,
-          w = (y() === xe.Live ? I : B) + 1;
+          w = (y() === xe.Live ? B : I) + 1;
         return o.a.createElement(
           "div",
           null,
@@ -4507,7 +4529,7 @@
             })(E.id, null === t || void 0 === t ? void 0 : t.standings),
             b = y[1],
             T = y[0],
-            I =
+            B =
               E.permAttr.length > 0 ||
               E.seasAttr.length > 0 ||
               E.weekAttr.length > 0 ||
@@ -4596,7 +4618,7 @@
                   )
                 )
               ),
-              I,
+              B,
               o.a.createElement(
                 "div",
                 { className: "Team-Content" },
@@ -4838,16 +4860,14 @@
                     i.delta &&
                     l.push({
                       id: 5,
-                      name: "Friends at the Table",
+                      name: "Zombies, Run!",
                       description:
-                        "Perfect for your next Blaseball siesta \ud83d\udecf\ufe0f. Check out the new merch!",
+                        'Zombies, Run! -- Now featuring "Home Run", an audio Blaseball experience. Play for free on iPhone and Android',
                       amount: 0,
                       toast: "Have a great time listening.",
                       available: !0,
                       handleComplete: function () {
-                        window.open(
-                          "https://www.fangamer.com/collections/friends-at-the-table"
-                        );
+                        window.open("https://zombiesrungame.com");
                       },
                     });
                   var s =
@@ -5604,7 +5624,7 @@
             a ? "ed" : ""
           );
         },
-        Ia = function (e) {
+        Ba = function (e) {
           var a = e.title,
             t = e.description,
             n = e.id,
@@ -5632,7 +5652,7 @@
             o.a.createElement(Sa, { isActive: r })
           );
         },
-        Ba = function () {
+        Ia = function () {
           var e = Object(r.useContext)(ba.context),
             a = Object(r.useContext)(R.context).user,
             t = Object(r.useState)(),
@@ -5691,7 +5711,7 @@
                 { className: "Blessings-Container" },
                 e.blessings.map(function (e, a) {
                   return o.a.createElement(
-                    Ia,
+                    Ba,
                     Object.assign({ key: a }, e, {
                       isActive: l === e.id,
                       onSelect: function (e) {
@@ -6481,7 +6501,7 @@
               o.a.Fragment,
               null,
               o.a.createElement(at, null),
-              o.a.createElement(Ba, null)
+              o.a.createElement(Ia, null)
             );
       }
       function lt() {
@@ -6539,11 +6559,11 @@
             var a = e.target.value;
             A(a);
           },
-          I = n.votes,
-          B = o.a.createElement(me, null);
+          B = n.votes,
+          I = o.a.createElement(me, null);
         return (
           y ||
-            (B = o.a.createElement(
+            (I = o.a.createElement(
               Q.a,
               { className: "Vote-Submit", type: "submit", variant: "success" },
               "Submit"
@@ -6561,8 +6581,8 @@
               {
                 className: "Vote-Form",
                 onSubmit: function (e) {
-                  if ((e.preventDefault(), b(!0), f > I))
-                    a("Max vote is ".concat(I, "!"), { appearance: "error" });
+                  if ((e.preventDefault(), b(!0), f > B))
+                    a("Max vote is ".concat(B, "!"), { appearance: "error" });
                   else {
                     var t = { amount: f, entityId: h, voteType: u, data: N };
                     q("/api/vote", JSON.stringify(t))
@@ -6626,7 +6646,7 @@
                     type: "range",
                     className: "Vote-Range",
                     min: 1,
-                    max: Math.min(n.votes, I),
+                    max: Math.min(n.votes, B),
                     value: f,
                     onChange: T,
                     step: "1",
@@ -6636,15 +6656,15 @@
                     {
                       className: "Vote-Form-Inputs-Amount-MaxVote",
                       onClick: function (e) {
-                        e.preventDefault(), A(Math.min(n.votes, I));
+                        e.preventDefault(), A(Math.min(n.votes, B));
                       },
                     },
                     "Max Vote: ",
-                    I
+                    B
                   )
                 )
               ),
-              o.a.createElement("div", { className: "Vote-Submit-Wrapper" }, B)
+              o.a.createElement("div", { className: "Vote-Submit-Wrapper" }, I)
             )
           )
         );
@@ -8271,8 +8291,8 @@
               },
               [h]
             );
-          var I = { notes: h, refreshNotes: v };
-          return o.a.createElement(gt.Provider, { value: I }, a);
+          var B = { notes: h, refreshNotes: v };
+          return o.a.createElement(gt.Provider, { value: B }, a);
         };
       yt.context = gt;
       var bt = yt;
@@ -8729,7 +8749,7 @@
       }
       t(126);
       var St = t(67),
-        It = (function (e) {
+        Bt = (function (e) {
           var a,
             t = [];
           for (; t.length <= 2; )
@@ -8918,7 +8938,7 @@
           "1298718347463258112",
           "1298714979516858368",
         ]);
-      function Bt() {
+      function It() {
         var e,
           a,
           t,
@@ -9232,7 +9252,7 @@
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(wt, null),
-                "Thomas Dracaena hit a goundout to Edric Tosser."
+                "Thomas Dracaena hit a ground out to Edric Tosser."
               )
             )
           )),
@@ -9259,7 +9279,7 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents Bulletin-Item-ImageGrid" },
-              It.map(function (e) {
+              Bt.map(function (e) {
                 return o.a.createElement(St.a, {
                   id: e,
                   options: { theme: "dark", conversation: "none", dnt: !0 },
@@ -10358,7 +10378,7 @@
                 o.a.createElement(
                   c.a,
                   { path: "/bulletin" },
-                  o.a.createElement(Bt, null)
+                  o.a.createElement(It, null)
                 ),
                 o.a.createElement(
                   c.a,
