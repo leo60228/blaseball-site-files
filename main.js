@@ -143,24 +143,25 @@
         idolHitsTiers: [
           { price: 50, amount: 5 },
           { price: 100, amount: 10 },
-          { price: 200, amount: 15 },
-          { price: 300, amount: 20 },
-          { price: 400, amount: 25 },
-          { price: 500, amount: 30 },
-          { price: 700, amount: 35 },
-          { price: 800, amount: 40 },
-          { price: 900, amount: 45 },
-          { price: 1000, amount: 50 },
-          { price: 1100, amount: 55 },
-          { price: 1200, amount: 60 },
-          { price: 1300, amount: 65 },
-          { price: 1400, amount: 70 },
-          { price: 1500, amount: 75 },
-          { price: 1600, amount: 80 },
-          { price: 1700, amount: 85 },
-          { price: 1800, amount: 90 },
-          { price: 1900, amount: 95 },
-          { price: 2000, amount: 100 },
+          { price: 200, amount: 20 },
+          { price: 300, amount: 30 },
+          { price: 400, amount: 40 },
+          { price: 500, amount: 50 },
+          { price: 700, amount: 60 },
+          { price: 800, amount: 70 },
+          { price: 900, amount: 80 },
+          { price: 1000, amount: 90 },
+          { price: 1100, amount: 100 },
+          { price: 1200, amount: 110 },
+          { price: 1300, amount: 120 },
+          { price: 1400, amount: 130 },
+          { price: 1500, amount: 140 },
+          { price: 1600, amount: 150 },
+          { price: 1700, amount: 160 },
+          { price: 1800, amount: 170 },
+          { price: 1900, amount: 180 },
+          { price: 2000, amount: 190 },
+          { price: 2000, amount: 200 },
         ],
         idolHomersTiers: [
           { price: 100, amount: 50 },
@@ -530,8 +531,8 @@
         },
         d = t(3),
         h = t.n(d),
-        E = t(6),
-        p =
+        p = t(6),
+        E =
           (null ===
             (n = Object({
               NODE_ENV: "production",
@@ -577,7 +578,7 @@
           i = n[1];
         return (
           Object(r.useEffect)(function () {
-            var e = new EventSource(p + "streamData");
+            var e = new EventSource(E + "streamData");
             y(e, i),
               (e.onmessage = function (e) {
                 var a = JSON.parse(e.data).value,
@@ -589,14 +590,14 @@
                 i(t), A.dispatch(t);
               });
             setInterval(
-              Object(E.a)(
+              Object(p.a)(
                 h.a.mark(function a() {
                   return h.a.wrap(function (a) {
                     for (;;)
                       switch ((a.prev = a.next)) {
                         case 0:
                           e.close(),
-                            y((e = new EventSource(p + "streamData")), i);
+                            y((e = new EventSource(E + "streamData")), i);
                         case 3:
                         case "end":
                           return a.stop();
@@ -716,7 +717,7 @@
             l = n[0],
             i = n[1],
             s = Object(r.useCallback)(
-              Object(E.a)(
+              Object(p.a)(
                 h.a.mark(function e() {
                   return h.a.wrap(function (e) {
                     for (;;)
@@ -730,7 +731,7 @@
                               })
                               .then(
                                 (function () {
-                                  var e = Object(E.a)(
+                                  var e = Object(p.a)(
                                     h.a.mark(function e(a) {
                                       var t;
                                       return h.a.wrap(function (e) {
@@ -929,17 +930,17 @@
               transform: n ? "translate(-50%, -40%)" : "none",
             },
           }),
-          E = "Modal";
+          p = "Modal";
         switch (m) {
           case H.GENERIC:
-            E += " Modal--Generic";
+            p += " Modal--Generic";
         }
-        var p = o.a.createElement(
+        var E = o.a.createElement(
           V.a.div,
           {
             style: h,
             className:
-              E + (n ? "" : " Modal--Static") + (l ? " ".concat(l) : ""),
+              p + (n ? "" : " Modal--Static") + (l ? " ".concat(l) : ""),
             ref: u,
           },
           c &&
@@ -965,10 +966,10 @@
                 !c || (u && u.current && u.current.contains(e.target)) || d();
               },
             },
-            p
+            E
           );
         }
-        return p;
+        return E;
       };
       K.defaultProps = { dismissable: !0, style: H.GENERIC };
       var q,
@@ -1003,7 +1004,7 @@
         return $.apply(this, arguments);
       }
       function $() {
-        return ($ = Object(E.a)(
+        return ($ = Object(p.a)(
           h.a.mark(function e() {
             var a, t;
             return h.a.wrap(
@@ -1038,7 +1039,7 @@
         return ae.apply(this, arguments);
       }
       function ae() {
-        return (ae = Object(E.a)(
+        return (ae = Object(p.a)(
           h.a.mark(function e() {
             var a, t;
             return h.a.wrap(
@@ -1073,7 +1074,7 @@
         return ne.apply(this, arguments);
       }
       function ne() {
-        return (ne = Object(E.a)(
+        return (ne = Object(p.a)(
           h.a.mark(function e(a) {
             var t, n;
             return h.a.wrap(
@@ -1112,7 +1113,7 @@
         return oe.apply(this, arguments);
       }
       function oe() {
-        return (oe = Object(E.a)(
+        return (oe = Object(p.a)(
           h.a.mark(function e(a) {
             var t, n;
             return h.a.wrap(
@@ -1149,7 +1150,7 @@
         return ie.apply(this, arguments);
       }
       function ie() {
-        return (ie = Object(E.a)(
+        return (ie = Object(p.a)(
           h.a.mark(function e(a) {
             var t, n;
             return h.a.wrap(
@@ -1186,7 +1187,7 @@
         return se.apply(this, arguments);
       }
       function se() {
-        return (se = Object(E.a)(
+        return (se = Object(p.a)(
           h.a.mark(function e(a) {
             var t, n;
             return h.a.wrap(
@@ -1229,17 +1230,17 @@
               o.a.createElement(J.a, null)
             );
           }),
-        Ee = function () {
+        pe = function () {
           return o.a.createElement(
             "div",
             { className: "LoadingSpinner" },
             100 * Math.random() < 99
               ? o.a.createElement(J.a, null)
-              : o.a.createElement(Y.v, null)
+              : o.a.createElement(Y.u, null)
           );
         };
       t(98), t(61);
-      function pe(e, a) {
+      function Ee(e, a) {
         return 0.5 === e
           ? Math.round(2 * a)
           : e < 0.5
@@ -1256,9 +1257,9 @@
             u = Object(c.a)(m, 2),
             d = u[0],
             h = u[1],
-            E = Object(s.h)().gameId,
-            p = Object(r.useState)(1),
-            f = Object(c.a)(p, 2),
+            p = Object(s.h)().gameId,
+            E = Object(r.useState)(1),
+            f = Object(c.a)(E, 2),
             v = f[0],
             A = f[1],
             g = Object(r.useState)(""),
@@ -1282,20 +1283,20 @@
                   null === (e = C.schedule) || void 0 === e
                     ? void 0
                     : e.find(function (e) {
-                        return E === e.id;
+                        return p === e.id;
                       });
               void 0 === t &&
                 (t =
                   null === (a = C.tomorrowSchedule) || void 0 === a
                     ? void 0
                     : a.find(function (e) {
-                        return E === e.id;
+                        return p === e.id;
                       })),
                 t && w(t);
             }, []),
             void 0 === S)
           )
-            return o.a.createElement(Ee, null);
+            return o.a.createElement(pe, null);
           var R = Math.min(de.maxBetTiers[n.maxBetTier].amount, n.coins),
             L = function () {
               return S ? (b === S.homeTeam ? S.homeOdds : S.awayOdds) : 0.5;
@@ -1373,7 +1374,7 @@
             j = o.a.createElement(
               "span",
               { className: "Bet-Outcome-Winnings" },
-              pe(L(), v)
+              Ee(L(), v)
             ),
             x = o.a.createElement(
               "div",
@@ -1413,7 +1414,7 @@
                         (null === (t = C.tomorrowSchedule) || void 0 === t
                           ? void 0
                           : t.find(function (e) {
-                              return E === e.id;
+                              return p === e.id;
                             }))
                       )
                         return (
@@ -1424,7 +1425,7 @@
                         );
                       h(!0);
                       var r = {
-                        gameId: E,
+                        gameId: p,
                         amount: v,
                         userId: n.id,
                         entityId: b,
@@ -1485,7 +1486,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Bet-Coin-Wrapper" },
-                      o.a.createElement(Y.K, { className: "Bet-Coin-Icon" }),
+                      o.a.createElement(Y.J, { className: "Bet-Coin-Icon" }),
                       n.coins
                     ),
                     o.a.createElement(ue.a.Control, {
@@ -1520,7 +1521,7 @@
                   "div",
                   { className: "Bet-Submit-Wrapper" },
                   d
-                    ? o.a.createElement(Ee, null)
+                    ? o.a.createElement(pe, null)
                     : o.a.createElement(
                         U.a,
                         {
@@ -1600,7 +1601,7 @@
           },
           {
             name: "Peanuts",
-            icon: o.a.createElement(Y.v, null),
+            icon: o.a.createElement(Y.u, null),
             background: "#c4aa70",
             color: "#423822",
           },
@@ -1697,7 +1698,7 @@
             strikesNeeded: a.topOfInning ? a.awayStrikes : a.homeStrikes,
             weather: a.weather,
           },
-          E = (function (e) {
+          p = (function (e) {
             var a, t;
             if (e.complete)
               (t = "Complete"),
@@ -1725,7 +1726,7 @@
               e.started ? o.a.createElement(ge, { type: e.weather }) : null
             );
           })(h),
-          p = (function (e) {
+          E = (function (e) {
             for (var a = [], t = 0; t < 3; t++)
               a.push(
                 o.a.createElement(
@@ -1861,7 +1862,7 @@
         O.onFirst && (S += " first"),
           O.onSecond && (S += " second"),
           O.onThird && (S += " third");
-        var I = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
+        var I = o.a.createElement("div", { className: "GameWidget-Outs" }, E),
           B = Object(s.g)(),
           w =
             h.complete || !h.started
@@ -1955,7 +1956,7 @@
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
-                    o.a.createElement(Y.K, null),
+                    o.a.createElement(Y.J, null),
                     " ",
                     L > 0
                       ? "".concat(D.amount, " on ").concat(k)
@@ -2003,7 +2004,7 @@
               ? W[0]
               : void 0;
         if (h.started) {
-          var H = void 0 !== Q ? pe(Q.odds, Q.amount) : 0;
+          var H = void 0 !== Q ? Ee(Q.odds, Q.amount) : 0;
           (P =
             void 0 !== Q && Q.entityId === l.homeTeam
               ? o.a.createElement(
@@ -2012,7 +2013,7 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet-Bet" },
-                    o.a.createElement(Y.K, null),
+                    o.a.createElement(Y.J, null),
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
@@ -2037,7 +2038,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Bet" },
-                      o.a.createElement(Y.K, null),
+                      o.a.createElement(Y.J, null),
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
@@ -2126,7 +2127,7 @@
                   o.a.createElement(
                     "span",
                     { className: "GameWidget-Outcome-Callout" },
-                    o.a.createElement(Y.K, null),
+                    o.a.createElement(Y.J, null),
                     "\xa0",
                     Q.amount
                   ),
@@ -2148,9 +2149,9 @@
                         o.a.createElement(
                           "span",
                           { className: "GameWidget-Outcome-Callout" },
-                          o.a.createElement(Y.K, null),
+                          o.a.createElement(Y.J, null),
                           "\xa0",
-                          pe(Q.odds, Q.amount)
+                          Ee(Q.odds, Q.amount)
                         ),
                         "."
                       )
@@ -2505,7 +2506,7 @@
               o.a.createElement(
                 "div",
                 { className: "GameWidget-Header" },
-                E,
+                p,
                 o.a.createElement(
                   "div",
                   {
@@ -2720,19 +2721,19 @@
               u = e.handleClick,
               d = Object(r.useState)(!1),
               h = Object(c.a)(d, 2),
-              E = h[0],
-              p = h[1],
+              p = h[0],
+              E = h[1],
               f = function () {
-                clearTimeout(a), p(!0);
+                clearTimeout(a), E(!0);
               },
               v = function () {
                 a = setTimeout(function () {
-                  p(!1);
+                  E(!1);
                 }, 100);
               },
               A = o.a.createElement(
                 Re.a,
-                { target: t.current, show: E, placement: "bottom" },
+                { target: t.current, show: p, placement: "bottom" },
                 function (e) {
                   e.placement,
                     e.scheduleUpdate,
@@ -2855,7 +2856,7 @@
             i = Object(c.a)(l, 2),
             m = i[0],
             d = i[1],
-            p = Object(me.useToasts)().addToast,
+            E = Object(me.useToasts)().addToast,
             f = [
               "PEANUTS",
               "EVERYONE LOVES PEANUTS",
@@ -2928,7 +2929,7 @@
                 path: "/player/".concat(a.idol),
                 className: "Navigation-IdolizedPlayer",
               },
-              o.a.createElement(Y.G, null)
+              o.a.createElement(Y.F, null)
             ));
           return o.a.createElement(
             o.a.Fragment,
@@ -2944,7 +2945,7 @@
                   content: y,
                   url: "/upcoming",
                 },
-                o.a.createElement(Y.K, null),
+                o.a.createElement(Y.J, null),
                 "\xa0",
                 a.coins
               ),
@@ -2957,7 +2958,7 @@
                       content: b,
                       url: "/shop",
                     },
-                    o.a.createElement(Y.J, null),
+                    o.a.createElement(Y.I, null),
                     "\xa0",
                     a.votes
                   )
@@ -2975,7 +2976,7 @@
                       ? void 0
                       : function () {
                           (function () {
-                            var e = Object(E.a)(
+                            var e = Object(p.a)(
                               h.a.mark(function e() {
                                 var n, r, o;
                                 return h.a.wrap(function (e) {
@@ -3010,7 +3011,7 @@
                                             JSON.stringify({ amount: o })
                                           )
                                             .then(
-                                              Object(E.a)(
+                                              Object(p.a)(
                                                 h.a.mark(function e() {
                                                   return h.a.wrap(function (e) {
                                                     for (;;)
@@ -3038,10 +3039,10 @@
                                               )
                                             )
                                             .catch(function (e) {
-                                              p(e, { appearance: "error" });
+                                              E(e, { appearance: "error" });
                                             })
                                             .finally(
-                                              Object(E.a)(
+                                              Object(p.a)(
                                                 h.a.mark(function e() {
                                                   return h.a.wrap(function (e) {
                                                     for (;;)
@@ -3062,7 +3063,7 @@
                                                               }
                                                             )
                                                           ),
-                                                            p(
+                                                            E(
                                                               "You consumed "
                                                                 .concat(
                                                                   o,
@@ -3093,7 +3094,7 @@
                                         e.next = 10;
                                         break;
                                       case 9:
-                                        p("You have no peanuts.", {
+                                        E("You have no peanuts.", {
                                           appearance: "error",
                                         });
                                       case 10:
@@ -3115,7 +3116,7 @@
                     o.a.createElement(
                       "span",
                       { className: "Peanut-Icon" },
-                      m ? "" : o.a.createElement(Y.v, null)
+                      m ? "" : o.a.createElement(Y.u, null)
                     ),
                     "\xa0",
                     a.peanuts
@@ -3124,7 +3125,7 @@
                 o.a.createElement(
                   "div",
                   { className: m ? "Peanut-Eating" : "Peanut" },
-                  o.a.createElement(Y.v, null)
+                  o.a.createElement(Y.u, null)
                 )
               )
             ),
@@ -3455,7 +3456,7 @@
           function () {
             for (var e = [], a = 0; a <= t.length - 1; a++) e.push(t[a].id);
             (function () {
-              var a = Object(E.a)(
+              var a = Object(p.a)(
                 h.a.mark(function a() {
                   var n, r, o, l;
                   return h.a.wrap(function (a) {
@@ -3513,17 +3514,17 @@
         if (!u || !u.sim) return null;
         void 0 !== u.sim.season && u.sim.season;
         var d = (null === (e = u.sim) || void 0 === e ? void 0 : e.phase) >= 3,
-          p =
+          E =
             i.length < 1 || void 0 === i
-              ? o.a.createElement(Ee, null)
+              ? o.a.createElement(pe, null)
               : o.a.createElement(aa, { info: i, playoffs: d });
-        return o.a.createElement(o.a.Fragment, null, p);
+        return o.a.createElement(o.a.Fragment, null, E);
       }
       function aa(e) {
         var a = [],
           t = [];
         if (void 0 === e.info || e.info.length < 1)
-          return o.a.createElement(Ee, null);
+          return o.a.createElement(pe, null);
         for (var n = 0; n < e.info.length; n++)
           n < 3
             ? a.push(
@@ -3626,7 +3627,7 @@
                     (null === (n = e.info.player) || void 0 === n
                       ? void 0
                       : n.id)
-                    ? o.a.createElement(Y.G, null)
+                    ? o.a.createElement(Y.F, null)
                     : "",
                   " ",
                   null === (l = e.info.player) || void 0 === l ? void 0 : l.name
@@ -3701,7 +3702,7 @@
                 n
               )
             )
-          : o.a.createElement(Ee, null);
+          : o.a.createElement(pe, null);
       }
       function la(e) {
         var a = Object(r.useContext)(Pe.context).subleagues.find(function (a) {
@@ -3921,7 +3922,7 @@
                           return o.a.createElement(Ie, { key: a, data: e });
                         })
                   ),
-            E =
+            p =
               void 0 === u || (void 0 !== u && u.length <= 0)
                 ? o.a.createElement(
                     "div",
@@ -3942,7 +3943,7 @@
                     ),
                     h
                   ),
-            p = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
+            E = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
           switch (s()) {
             case ra.Leaderboard:
               m = o.a.createElement(ea, null);
@@ -3952,7 +3953,7 @@
               break;
             case ra.Live:
             case ra.Upcoming:
-              m = c ? o.a.createElement(Ee, null) : E;
+              m = c ? o.a.createElement(pe, null) : p;
           }
           return o.a.createElement(
             "div",
@@ -3964,7 +3965,7 @@
               o.a.createElement(
                 "span",
                 { className: "DailySchedule-Number" },
-                p + 1
+                E + 1
               ),
               "Day",
               o.a.createElement(
@@ -3995,15 +3996,15 @@
             u,
             d,
             h,
-            E,
-            p = e.path,
+            p,
+            E = e.path,
             f = Object(r.useContext)(I.context),
             v = Object(r.useContext)(G.context).user,
             A = Object(r.useContext)(M.context),
             g = void 0 === f.schedule;
           if (void 0 === f.postseason.playoffs) return null;
           function y() {
-            switch (p) {
+            switch (E) {
               case "/upcoming":
                 return ma.Upcoming;
               case "/leaderboard":
@@ -4130,7 +4131,7 @@
               break;
             default:
               N = g
-                ? o.a.createElement(Ee, null)
+                ? o.a.createElement(pe, null)
                 : o.a.createElement(
                     "div",
                     null,
@@ -4183,9 +4184,9 @@
                   : "Postseason Round"
               ),
               (
-                null === (E = f.postseason.round) || void 0 === E
+                null === (p = f.postseason.round) || void 0 === p
                   ? void 0
-                  : E.special
+                  : p.special
               )
                 ? null
                 : o.a.createElement(
@@ -4273,9 +4274,9 @@
                 : o.a.createElement(oa, null)
             );
           }),
-        Ea = t(44);
+        pa = t(44);
       t(110);
-      function pa() {
+      function Ea() {
         var e = Object(r.useState)([]),
           a = Object(c.a)(e, 2),
           t = a[0],
@@ -4291,7 +4292,7 @@
           return d.apply(this, arguments);
         }
         function d() {
-          return (d = Object(E.a)(
+          return (d = Object(p.a)(
             h.a.mark(function e() {
               var a, t, r;
               return h.a.wrap(function (e) {
@@ -4316,11 +4317,11 @@
             })
           )).apply(this, arguments);
         }
-        var p = "EventTicker-Group";
+        var E = "EventTicker-Group";
         if (s) {
           for (var f = 0, v = 0; v < t.length; v++) f += t[v].length;
           var A = f / 5;
-          p +=
+          E +=
             A > 300
               ? " EventTicker-Group-Animating-300"
               : A > 240
@@ -4341,7 +4342,7 @@
             o.a.createElement(
               "div",
               {
-                className: p,
+                className: E,
                 onAnimationEnd: function () {
                   m(!1), u();
                 },
@@ -4432,7 +4433,7 @@
                       href: "https://discord.gg/3uFgJhu",
                       target: "_blank",
                     },
-                    o.a.createElement(Ea.b, null)
+                    o.a.createElement(pa.b, null)
                   ),
                   o.a.createElement(
                     "a",
@@ -4441,7 +4442,7 @@
                       href: "https://twitter.com/blaseball",
                       target: "_blank",
                     },
-                    o.a.createElement(Ea.d, null)
+                    o.a.createElement(pa.d, null)
                   )
                 ),
                 o.a.createElement("div", {
@@ -4451,7 +4452,7 @@
             )
           ),
           (null === n || void 0 === n ? void 0 : n.isSignedIn) &&
-            o.a.createElement(pa, null)
+            o.a.createElement(Ea, null)
         );
       };
       t(112);
@@ -4555,7 +4556,7 @@
           o.a.createElement(
             u,
             { background: e, path: "/signup", className: "About-Ticket" },
-            o.a.createElement(Y.J, null)
+            o.a.createElement(Y.I, null)
           ),
           o.a.createElement(
             "a",
@@ -4691,19 +4692,19 @@
           case "ALTERNATE":
             return o.a.createElement(Y.o, null);
           case "SHELLED":
-            return o.a.createElement(Y.v, null);
+            return o.a.createElement(Y.u, null);
           case "SOUNDPROOF":
             return o.a.createElement(Y.n, null);
           case "REVERBERATING":
             return o.a.createElement(Y.d, null);
           case "BLOOD_THIEF":
-            return o.a.createElement(Y.B, null);
+            return o.a.createElement(Y.A, null);
           case "BLOOD_DONOR":
-            return o.a.createElement(Y.t, null);
+            return o.a.createElement(Y.s, null);
           case "BLOOD_WINNER":
-            return o.a.createElement(Y.x, null);
+            return o.a.createElement(Y.w, null);
           case "BLOOD_PITY":
-            return o.a.createElement(Y.H, null);
+            return o.a.createElement(Y.G, null);
           case "BLOOD_FAITH":
           case "BLOOD_LAW":
           case "BLOOD_CHAOS":
@@ -4965,7 +4966,7 @@
             }),
             m = Object(c.a)(i, 2),
             d = m[0],
-            p = m[1],
+            E = m[1],
             f = Object(r.useContext)(G.context).user,
             v = n.teams.find(function (e) {
               return e.id === a;
@@ -4974,7 +4975,7 @@
             A();
           }, []);
           var A = (function () {
-            var e = Object(E.a)(
+            var e = Object(p.a)(
               h.a.mark(function e() {
                 var a, t, n, r, o, l, i, c, s, m;
                 return h.a.wrap(function (e) {
@@ -5022,7 +5023,7 @@
                           m++
                         )
                           s(m);
-                        p({ lineup: o, rotation: c, bench: [], bullpen: [] });
+                        E({ lineup: o, rotation: c, bench: [], bullpen: [] });
                       case 15:
                       case "end":
                         return e.stop();
@@ -5039,7 +5040,7 @@
           if (void 0 === v) return null;
           var g,
             y = v.emoji;
-          if (void 0 === d) return o.a.createElement(Ee, null);
+          if (void 0 === d) return o.a.createElement(pe, null);
           var b = d.lineup.map(function (e) {
               var a;
               return o.a.createElement(
@@ -5059,7 +5060,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(Y.G, null) : "",
+                  f.idol === e.id ? o.a.createElement(Y.F, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -5112,7 +5113,7 @@
                         ? " Team-Player-Shelled"
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(Y.G, null) : "",
+                  f.idol === e.id ? o.a.createElement(Y.F, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -5319,14 +5320,14 @@
           d = Object(r.useContext)(Pe.context).teams.find(function (e) {
             return e.id === m.favoriteTeam;
           }),
-          p = Object(r.useContext)(I.context),
+          E = Object(r.useContext)(I.context),
           f = Object(r.useContext)(Ra.context),
           v = Object(r.useContext)(Pe.context);
         function A(e) {
           return g.apply(this, arguments);
         }
         function g() {
-          return (g = Object(E.a)(
+          return (g = Object(p.a)(
             h.a.mark(function e(t) {
               return h.a.wrap(function (e) {
                 for (;;)
@@ -5345,7 +5346,7 @@
                         X(t.buyUrl, JSON.stringify(t.buyParams))
                           .then(
                             (function () {
-                              var e = Object(E.a)(
+                              var e = Object(p.a)(
                                 h.a.mark(function e(n) {
                                   return h.a.wrap(function (e) {
                                     for (;;)
@@ -5387,7 +5388,7 @@
                             a(e, { appearance: "error" });
                           })
                           .finally(
-                            Object(E.a)(
+                            Object(p.a)(
                               h.a.mark(function e() {
                                 return h.a.wrap(function (e) {
                                   for (;;)
@@ -5447,8 +5448,8 @@
                     u,
                     d,
                     h,
-                    E,
                     p,
+                    E,
                     f,
                     v,
                     A,
@@ -5464,7 +5465,7 @@
                           e.votes + 1
                         ),
                         available: !0,
-                        icon: o.a.createElement(Y.J, null),
+                        icon: o.a.createElement(Y.I, null),
                         buyUrl: "/api/buyVote",
                         userUpdate: function () {
                           a(
@@ -5487,7 +5488,7 @@
                           e.votes,
                           " Vote already from signing up."
                         ),
-                        icon: o.a.createElement(Y.J, null),
+                        icon: o.a.createElement(Y.I, null),
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
@@ -5782,7 +5783,7 @@
                     ("" != e.idol && null != e.idol) ||
                       ((j += " Go to a Player page to choose an Idol."),
                       (x = !1)),
-                      (E = {
+                      (p = {
                         id: 14,
                         name: "Strikeout Pendant",
                         description: j,
@@ -5809,7 +5810,7 @@
                       U = D.amount,
                       F = Object.create(e.relics);
                     (F.Idol_Strikeouts = F.Idol_Strikeouts + 1),
-                      (E = {
+                      (p = {
                         id: 14,
                         name: "Strikeout Pendant",
                         description: "Adorn yourself. When your Idol strikes a Batter out, you'll earn "
@@ -5835,7 +5836,7 @@
                       });
                   } else {
                     var J = G.amount;
-                    E = {
+                    p = {
                       id: 14,
                       name: "Strikeout Pendant",
                       icon: o.a.createElement(Y.m, null),
@@ -5867,7 +5868,7 @@
                     ("" != e.idol && null != e.idol) ||
                       ((Z += " Go to a Player page to choose an Idol."),
                       (X = !1)),
-                      (p = {
+                      (E = {
                         id: 12,
                         name: "Shutout Pendant",
                         description: Z,
@@ -5894,7 +5895,7 @@
                       $ = K.amount,
                       ee = Object.create(e.relics);
                     (ee.Idol_Shutouts = ee.Idol_Shutouts + 1),
-                      (p = {
+                      (E = {
                         id: 12,
                         name: "Shutout Pendant",
                         description: "Adorn yourself. When your Idol pitches a Shutout, you'll earn "
@@ -5920,7 +5921,7 @@
                       });
                   } else {
                     var ae = V.amount;
-                    p = {
+                    E = {
                       id: 12,
                       name: "Shutout Pendant",
                       description: "Adorn yourself. When your Idol pitches a Shutout, you earn ".concat(
@@ -6022,13 +6023,13 @@
                           de.idolHitsTiers.length - 1
                         )
                       ],
-                    Ee = de.idolHitsTiers[e.relics.Idol_Hits + 1];
+                    pe = de.idolHitsTiers[e.relics.Idol_Hits + 1];
                   if (void 0 === e.relics.Idol_Hits) {
-                    var pe = de.idolHitsTiers[0],
+                    var Ee = de.idolHitsTiers[0],
                       fe = Object.create(e.relics);
                     fe.Idol_Hits = 0;
                     var ve = "Adorn yourself. When your Idol gets a Hit, you'll earn ".concat(
-                        pe.amount,
+                        Ee.amount,
                         " coins."
                       ),
                       Ae = !0;
@@ -6039,8 +6040,8 @@
                         id: 11,
                         name: "Hits Pendant",
                         description: ve,
-                        amount: pe.price,
-                        toast: "Coins per Idol hit is now ".concat(pe.amount),
+                        amount: Ee.price,
+                        toast: "Coins per Idol hit is now ".concat(Ee.amount),
                         available: Ae,
                         buyUrl: "/api/buyRelic",
                         icon: o.a.createElement(Y.m, null),
@@ -6050,14 +6051,14 @@
                             Object(B.a)(
                               Object(B.a)({}, e),
                               {},
-                              { coins: e.coins - pe.price, relics: fe }
+                              { coins: e.coins - Ee.price, relics: fe }
                             )
                           );
                         },
                       });
-                  } else if (void 0 !== Ee) {
+                  } else if (void 0 !== pe) {
                     var ge = he.amount,
-                      ye = Ee.amount,
+                      ye = pe.amount,
                       be = Object.create(e.relics);
                     (be.Idol_Hits = be.Idol_Hits + 1),
                       (d = {
@@ -6066,8 +6067,8 @@
                         description: "Adorn yourself. When your Idol gets a hit, you'll earn "
                           .concat(ye, " coins. You currently earn ")
                           .concat(ge, " coins per hit."),
-                        amount: Ee.price,
-                        toast: "Coins per Idol hit is now ".concat(Ee.amount),
+                        amount: pe.price,
+                        toast: "Coins per Idol hit is now ".concat(pe.amount),
                         available: !0,
                         buyUrl: "/api/buyRelic",
                         icon: o.a.createElement(Y.m, null),
@@ -6077,7 +6078,7 @@
                             Object(B.a)(
                               Object(B.a)({}, e),
                               {},
-                              { coins: e.coins - Ee.price, relics: be }
+                              { coins: e.coins - pe.price, relics: be }
                             )
                           );
                         },
@@ -6097,9 +6098,9 @@
                     };
                   }
                   return W(t, "UNLOCKED_IDOLS")
-                    ? [s, d, E, i, h, p, m, u, c, f, v, A]
+                    ? [s, d, p, i, h, E, m, u, c, f, v, A]
                     : [s, i, m, u, c, f, v, A];
-                })(m, u, p.sim, v, f, d)
+                })(m, u, E.sim, v, f, d)
               : (function (e, a) {
                   var t = [];
                   return (
@@ -6184,7 +6185,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Shop-Item-Checkout" },
-                            o.a.createElement(Y.K, {
+                            o.a.createElement(Y.J, {
                               className: "Shop-Item-Coins",
                             }),
                             o.a.createElement(
@@ -6236,7 +6237,7 @@
                         );
                   })
                 )
-              : o.a.createElement(Ee, null)
+              : o.a.createElement(pe, null)
           )
         );
       }
@@ -6251,7 +6252,7 @@
             m = s[0],
             u = s[1],
             d = (function () {
-              var a = Object(E.a)(
+              var a = Object(p.a)(
                 h.a.mark(function a() {
                   return h.a.wrap(function (a) {
                     for (;;)
@@ -6351,7 +6352,7 @@
                       o.a.createElement(
                         "div",
                         { className: "Welcome-Team-Overlay" },
-                        o.a.createElement(Ea.a, null)
+                        o.a.createElement(pa.a, null)
                       )
                     );
                   })
@@ -6390,7 +6391,7 @@
               ? o.a.createElement(
                   Ga,
                   Object.assign({}, e, {
-                    dismiss: Object(E.a)(
+                    dismiss: Object(p.a)(
                       h.a.mark(function e() {
                         return h.a.wrap(function (e) {
                           for (;;)
@@ -6424,22 +6425,22 @@
                 d.state && d.state.background
                   ? d.state.background.pathname
                   : "",
-              E = e.isModal,
-              p = e.isLogin,
+              p = e.isModal,
+              E = e.isLogin,
               f = Object(r.useRef)(null),
               v = Object(r.useRef)(null),
               A = Object(s.h)().code;
             return o.a.createElement(
               "div",
-              { className: "".concat(E ? "" : "Auth-SignupWrapper") },
-              !E && o.a.createElement(Aa, null),
+              { className: "".concat(p ? "" : "Auth-SignupWrapper") },
+              !p && o.a.createElement(Aa, null),
               o.a.createElement(
                 z,
                 Object.assign({}, e, { className: "Auth" }),
                 o.a.createElement(
                   "header",
                   { className: "Auth-Header" },
-                  p ? "Login to Blaseball" : "Signup for Blaseball"
+                  E ? "Login to Blaseball" : "Signup for Blaseball"
                 ),
                 o.a.createElement(
                   "form",
@@ -6450,12 +6451,12 @@
                         username: f.current.value,
                         password: v.current.value,
                         code: A,
-                        isLogin: p,
+                        isLogin: E,
                       };
                       X("/auth/local", JSON.stringify(r)).then(function (e) {
                         u(!1),
                           e.ok && e.status && 200 === e.status
-                            ? (p ||
+                            ? (E ||
                                 n("Account Created", { appearance: "success" }),
                               a(),
                               t.push("/"))
@@ -6491,7 +6492,7 @@
                     "div",
                     null,
                     m
-                      ? o.a.createElement(Ee, null)
+                      ? o.a.createElement(pe, null)
                       : o.a.createElement("input", {
                           className: "Auth-Submit",
                           type: "submit",
@@ -6524,7 +6525,7 @@
                   o.a.createElement(
                     "div",
                     { className: "Auth-SocialAuth-Icon-Container" },
-                    o.a.createElement(Ea.c, null)
+                    o.a.createElement(pa.c, null)
                   ),
                   " Continue with Facebook"
                 ),
@@ -6545,8 +6546,8 @@
                 ),
                 o.a.createElement(
                   "a",
-                  { className: "Auth-CTA", href: p ? "/signup" : "/login" },
-                  p
+                  { className: "Auth-CTA", href: E ? "/signup" : "/login" },
+                  E
                     ? "Not on Blaseball yet? Signup"
                     : "Already a member? Log in"
                 )
@@ -6567,7 +6568,7 @@
             l = n[0],
             i = n[1];
           function s() {
-            return (s = Object(E.a)(
+            return (s = Object(p.a)(
               h.a.mark(function e() {
                 var a;
                 return h.a.wrap(function (e) {
@@ -7001,13 +7002,13 @@
         }
         return r;
       }
-      var Et = o.a.createElement("path", {
+      var pt = o.a.createElement("path", {
           d:
             "M493.7 21.59C426.6 127.6 339.2 100.6 373.6 32.06c-35.2 10.26-57.7 31.88-60.5 65.67-9.7-2.3-29.4-25.97-18.4-69.83-26.7 39.32-50.8 91.8-42.6 127.1-24 .2-64-39.7-54.5-87.89-46.5 81.29-34 172.89-25 193.79-24.9 0-63.4-70.9-64-118.9-36.72 82.1-48.45 147.1-18.33 194.3-33.05-3.8-53.82-28.3-66.86-69.6C-9.266 485.7 110.2 515 312.6 475.5c55.9-10.9 125.3-40.5 158.7-99.5-69.8 40-121.4 7.4-140.5-6.3 45.8-10.4 112.2-31.6 133.6-92-42 35.7-74.1 13.8-85.6 6.2 54.4-9.1 97.3-71.6 111-127.5-37.5 31.1-69.9 31.9-83.8 22.4 34.5-11.2 92.1-68.8 87.7-157.21zM331.5 113.8c8.7-.2 17.6 2.1 26.1 6.4 2.3 1 4.6 2.3 6.9 3.9 6.9 4.8 12.7 11 15.6 19.3l3.5 10-10 3c-18.8 5.6-29.1 16.9-37.9 32.5l-17.1-10c8.3-14.6 19.9-28.1 36.8-36.5-1.9-1.6-4.2-3.2-6.6-4.5-6.6-3.1-14.4-4.6-18.8-4.1l-2.2-19.8c1.2-.1 2.5-.2 3.7-.2zM294 186.1c9.4 0 19.8 3.5 28.8 9.1 16.8 10.7 28.5 28.9 19.7 45.3C285 379.8 197.1 433.7 91.64 443.8c99.46-49 139.16-153.9 177.46-241.5 4.8-11.4 14.2-16.1 24.9-16.2z",
           fill: "#fff",
           fillOpacity: 1,
         }),
-        pt = function (e) {
+        Et = function (e) {
           var a = e.svgRef,
             t = e.title,
             n = ht(e, ["svgRef", "title"]);
@@ -7015,11 +7016,11 @@
             "svg",
             dt({ viewBox: "0 0 512 512", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            Et
+            pt
           );
         },
         ft = o.a.forwardRef(function (e, a) {
-          return o.a.createElement(pt, dt({ svgRef: a }, e));
+          return o.a.createElement(Et, dt({ svgRef: a }, e));
         });
       t.p;
       function vt() {
@@ -7135,11 +7136,11 @@
           : "four_for_four" === e || "fourth_strike" === e
           ? o.a.createElement(Y.q, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
-          ? o.a.createElement(Y.v, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.u, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
           ? o.a.createElement(ut, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
-          ? o.a.createElement(Y.z, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.y, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
           ? o.a.createElement(Y.g, { className: "Decrees-Option-Icon" })
           : "blaserunning" === e
@@ -7147,7 +7148,7 @@
           : "eat_the_rich" === e
           ? o.a.createElement(Y.h, { className: "Decrees-Option-Icon" })
           : "eat_the_crust" === e
-          ? o.a.createElement(Y.w, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.v, { className: "Decrees-Option-Icon" })
           : "interviews" === e
           ? o.a.createElement(Y.r, { className: "Decrees-Option-Icon" })
           : "random_realignment" === e
@@ -7155,23 +7156,23 @@
           : "alternate_reality" === e
           ? o.a.createElement(ba.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
-          ? o.a.createElement(Y.D, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.C, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(ya.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
           ? o.a.createElement(J.b, { className: "Decrees-Option-Icon" })
           : "team_punish" === e
-          ? o.a.createElement(Y.M, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.L, { className: "Decrees-Option-Icon" })
           : "do_nothing" === e
-          ? o.a.createElement(Y.y, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.x, { className: "Decrees-Option-Icon" })
           : "confuse_good" === e
-          ? o.a.createElement(Y.F, { className: "Decrees-Option-Icon" })
-          : "confuse_evil" === e
           ? o.a.createElement(Y.E, { className: "Decrees-Option-Icon" })
+          : "confuse_evil" === e
+          ? o.a.createElement(Y.D, { className: "Decrees-Option-Icon" })
           : "parallel_world" === e
-          ? o.a.createElement(Y.A, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.z, { className: "Decrees-Option-Icon" })
           : "diagonal_world" === e
-          ? o.a.createElement(Y.I, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.H, { className: "Decrees-Option-Icon" })
           : "high_filter" === e
           ? o.a.createElement(Y.p, { className: "Decrees-Option-Icon" })
           : "new_kids" === e
@@ -7301,8 +7302,8 @@
           m = s[0],
           u = s[1],
           d = Object(r.useContext)(Pe.context);
-        function p() {
-          return (p = Object(E.a)(
+        function E() {
+          return (E = Object(p.a)(
             h.a.mark(function a() {
               var t, n, r, o, i, c, s;
               return h.a.wrap(function (a) {
@@ -7364,7 +7365,7 @@
           (Object(r.useEffect)(function () {
             u(!0),
               (function () {
-                return p.apply(this, arguments);
+                return E.apply(this, arguments);
               })().then(function () {
                 u(!1);
               });
@@ -7562,7 +7563,7 @@
             "The Results are in."
           ),
           m
-            ? o.a.createElement(Ee, null)
+            ? o.a.createElement(pe, null)
             : o.a.createElement(
                 "div",
                 null,
@@ -7635,7 +7636,7 @@
         return void 0 === e ||
           0 === e.blessings.length ||
           0 === e.decrees.length
-          ? o.a.createElement(Ee, null)
+          ? o.a.createElement(pe, null)
           : o.a.createElement(
               o.a.Fragment,
               null,
@@ -7685,8 +7686,8 @@
           m = Object(s.h)(),
           u = m.voteType,
           d = m.entityId,
-          p = Object(r.useState)(1),
-          f = Object(c.a)(p, 2),
+          E = Object(r.useState)(1),
+          f = Object(c.a)(E, 2),
           v = f[0],
           A = f[1],
           g = Object(r.useState)(!1),
@@ -7699,7 +7700,7 @@
             A(a);
           },
           S = n.votes,
-          I = o.a.createElement(Ee, null);
+          I = o.a.createElement(pe, null);
         return (
           b ||
             (I = o.a.createElement(
@@ -7741,7 +7742,7 @@
                             });
                       })
                       .finally(
-                        Object(E.a)(
+                        Object(p.a)(
                           h.a.mark(function e() {
                             return h.a.wrap(function (e) {
                               for (;;)
@@ -7773,7 +7774,7 @@
                   o.a.createElement(
                     "div",
                     { className: "Vote-Ticket-Wrapper" },
-                    o.a.createElement(Y.J, { className: "Vote-Ticket-Icon" }),
+                    o.a.createElement(Y.I, { className: "Vote-Ticket-Icon" }),
                     n.votes
                   ),
                   o.a.createElement(ue.a.Control, {
@@ -9153,7 +9154,7 @@
         Jt = {
           notes: [],
           refreshNotes: (function () {
-            var e = Object(E.a)(
+            var e = Object(p.a)(
               h.a.mark(function e() {
                 return h.a.wrap(function (e) {
                   for (;;)
@@ -9181,10 +9182,10 @@
             m = s[0],
             u = s[1],
             d = Object(me.useToasts)().addToast,
-            p = Object(r.useRef)(void 0),
+            E = Object(r.useRef)(void 0),
             f = Object(r.useRef)(),
             v = Object(r.useCallback)(
-              Object(E.a)(
+              Object(p.a)(
                 h.a.mark(function e() {
                   return h.a.wrap(function (e) {
                     for (;;)
@@ -9221,7 +9222,7 @@
               []
             ),
             A = Object(r.useCallback)(
-              Object(E.a)(
+              Object(p.a)(
                 h.a.mark(function e() {
                   var a;
                   return h.a.wrap(function (e) {
@@ -9234,9 +9235,9 @@
                               credentials: "include",
                             }).then(
                               (function () {
-                                var e = Object(E.a)(
+                                var e = Object(p.a)(
                                   h.a.mark(function e(t) {
-                                    var r, o, i, c, s, m, u, E, p, f, v, A, g;
+                                    var r, o, i, c, s, m, u, p, E, f, v, A, g;
                                     return h.a.wrap(function (e) {
                                       for (;;)
                                         switch ((e.prev = e.next)) {
@@ -9318,8 +9319,8 @@
                                               ((s = 0),
                                               (m = 0),
                                               (u = 0),
-                                              (E = 0),
                                               (p = 0),
+                                              (E = 0),
                                               (f = 0),
                                               (v = 0),
                                               (A = 0),
@@ -9331,10 +9332,10 @@
                                                     s++, (m += e.amount);
                                                     break;
                                                   case ze.IdolHit:
-                                                    u++, (E += e.amount);
+                                                    u++, (p += e.amount);
                                                     break;
                                                   case ze.IdolStrikeout:
-                                                    p++, (f += e.amount);
+                                                    E++, (f += e.amount);
                                                     break;
                                                   case ze.IdolShutout:
                                                     v++, (A += e.amount);
@@ -9342,14 +9343,14 @@
                                               }),
                                               (g = r.idolName) ||
                                                 (g = "your Idol"),
-                                              p > 0 &&
+                                              E > 0 &&
                                                 d(
                                                   "You earned "
                                                     .concat(f, " coins from ")
                                                     .concat(g, " pitching ")
                                                     .concat(
-                                                      p > 1
-                                                        ? p + " Strikeouts"
+                                                      E > 1
+                                                        ? E + " Strikeouts"
                                                         : "a Strikeout"
                                                     ),
                                                   {
@@ -9375,7 +9376,7 @@
                                               u > 0 &&
                                                 d(
                                                   "You earned "
-                                                    .concat(E, " coins from ")
+                                                    .concat(p, " coins from ")
                                                     .concat(g, " getting ")
                                                     .concat(
                                                       u > 1
@@ -9430,16 +9431,16 @@
               g() &&
                 (void 0 !== f.current && clearTimeout(f.current),
                 (f.current = setTimeout(b, 5e3))),
-                (p.current = N);
+                (E.current = N);
             },
             [N]
           );
           var g = function () {
               var e,
                 a,
-                t = null === (e = p.current) || void 0 === e ? void 0 : e.sim,
+                t = null === (e = E.current) || void 0 === e ? void 0 : e.sim,
                 n =
-                  null === (a = p.current) || void 0 === a
+                  null === (a = E.current) || void 0 === a
                     ? void 0
                     : a.schedule,
                 r = null === N || void 0 === N ? void 0 : N.sim,
@@ -9460,7 +9461,7 @@
               );
             },
             y = (function () {
-              var e = Object(E.a)(
+              var e = Object(p.a)(
                 h.a.mark(function e() {
                   var a;
                   return h.a.wrap(function (e) {
@@ -9490,7 +9491,7 @@
               };
             })(),
             b = (function () {
-              var e = Object(E.a)(
+              var e = Object(p.a)(
                 h.a.mark(function e() {
                   return h.a.wrap(function (e) {
                     for (;;)
@@ -9970,7 +9971,7 @@
           o.a.createElement(
             "div",
             { className: "BigDeal-Icon" },
-            o.a.createElement(Y.v, null)
+            o.a.createElement(Y.u, null)
           ),
           o.a.createElement(
             "div",
@@ -10245,11 +10246,11 @@
           m,
           u = Object(r.useContext)(I.context),
           d = Object(r.useState)([]),
-          p = Object(c.a)(d, 2),
-          f = p[0],
-          v = p[1];
+          E = Object(c.a)(d, 2),
+          f = E[0],
+          v = E[1];
         function A() {
-          return (A = Object(E.a)(
+          return (A = Object(p.a)(
             h.a.mark(function e() {
               var a, t, n;
               return h.a.wrap(function (e) {
@@ -10295,12 +10296,12 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#deae00" },
                 },
-                o.a.createElement(Y.s, null)
+                o.a.createElement(Y.F, null)
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Header-Title" },
-                "Meet the Bulletin Board!"
+                "IDOLS"
               )
             ),
             o.a.createElement(
@@ -10309,7 +10310,7 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                "Watch this page for the latest in Blaseball. League Announcements, #BlaseballCares, Current Events, and more!"
+                "Idols have been introduced to the ILB. Who will tlopp the leaderboard?"
               )
             )
           ));
@@ -10431,7 +10432,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#32c775" },
                 },
-                o.a.createElement(Y.L, null)
+                o.a.createElement(Y.K, null)
               ),
               o.a.createElement(
                 "div",
@@ -10446,19 +10447,19 @@
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "The Hades Tigers became the second Back-to-Back Champion in the history of Internet League Blaseball with a sweep of the New York Millennials in the Internet Series."
+                "The Chicago Firefighters captured their first championship with a Game 5 win over the Breckenridge Jazz Hands."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "Feedback was deafening across the ILB as a mysterious force caused players to suddenly switch teams. No one has yet been able to determine the source."
+                "The Unlimited Tacos completed a historic Regular Season Speed Run, reaching #PARTYTIME faster than any team ever before."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "The Wave is washing over the Bridge. Are you hearing an Echo?"
+                "The High Filter Decree dunked the ILB in The Tub, restructuring the league according to past performance."
               )
             )
           )),
@@ -10474,7 +10475,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#c23284" },
                 },
-                o.a.createElement(Y.C, null)
+                o.a.createElement(Y.B, null)
               ),
               o.a.createElement(
                 "div",
@@ -10491,34 +10492,19 @@
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "The community reached ",
-                o.a.createElement(
-                  "a",
-                  {
-                    href: "https://www.patreon.com/blaseball",
-                    target: "_blank",
-                  },
-                  o.a.createElement("strong", null, "THE FIRST PATREON GOAL")
-                ),
-                " and found the 5-BLOOD BLAGONBALL!"
+                "Declan Suzanne ate a stray peanut, suffered a horrific allergic reaction, and somehow still managed to bat in the winning run of Internet Series Game 4."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "Sandie Turner stole THREE BASES in ONE INNING and found the 3-BLOOD BLAGONBALL!"
+                "The Jazz Hands stole newly 6-starred Nagomi Mcdaniel from the Baltimore Crabs."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(ln, null),
-                "Waves broke over the league, resulting in SERIOUS COINAGE for the fans and leaving SIXPACK DOGWALKER confused."
-              ),
-              o.a.createElement(
-                "div",
-                { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(ln, null),
-                "Thomas Dracaena hit a ground out to Edric Tosser."
+                "The Baltimore Crabs won FOUR blessings in Season 5\u2019s Election, earning the contempt of most of the league."
               )
             )
           )),
@@ -10534,7 +10520,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#1b95e0" },
                 },
-                o.a.createElement(Y.u, null)
+                o.a.createElement(Y.t, null)
               ),
               o.a.createElement(
                 "div",
@@ -10748,7 +10734,7 @@
           m = Object(r.useContext)(Pe.context),
           u = Object(r.useState)(void 0),
           d = Object(c.a)(u, 2),
-          p = d[0],
+          E = d[0],
           f = d[1],
           v = Object(me.useToasts)().addToast;
         function A(e) {
@@ -10765,7 +10751,7 @@
         }
         Object(r.useEffect)(function () {
           (function () {
-            var e = Object(E.a)(
+            var e = Object(p.a)(
               h.a.mark(function e() {
                 var a, t, n;
                 return h.a.wrap(function (e) {
@@ -10798,7 +10784,7 @@
               return a.id === e.bat;
             });
             return void 0 === a ? "NONE" : a.attr;
-          })(null === p || void 0 === p ? void 0 : p.player),
+          })(null === E || void 0 === E ? void 0 : E.player),
           b = (function (e) {
             if (void 0 === e) return "NONE";
             if (void 0 === e.armor) return "NONE";
@@ -10807,13 +10793,13 @@
               return a.id === e.armor;
             });
             return void 0 === a ? "NONE" : a.attr;
-          })(null === p || void 0 === p ? void 0 : p.player),
+          })(null === E || void 0 === E ? void 0 : E.player),
           N =
-            void 0 !== (null === p || void 0 === p ? void 0 : p.player) &&
-            (p.player.permAttr.length > 0 ||
-              p.player.seasAttr.length > 0 ||
-              p.player.weekAttr.length > 0 ||
-              p.player.gameAttr.length > 0 ||
+            void 0 !== (null === E || void 0 === E ? void 0 : E.player) &&
+            (E.player.permAttr.length > 0 ||
+              E.player.seasAttr.length > 0 ||
+              E.player.weekAttr.length > 0 ||
+              E.player.gameAttr.length > 0 ||
               "NONE" !== y ||
               "NONE" !== b)
               ? o.a.createElement(
@@ -10822,28 +10808,28 @@
                   o.a.createElement(
                     "div",
                     { className: "AttributeBar" },
-                    p.player.permAttr.map(function (e, a) {
+                    E.player.permAttr.map(function (e, a) {
                       return o.a.createElement(Sa, {
                         id: e,
                         type: ga.Permanent,
                         key: a,
                       });
                     }),
-                    p.player.seasAttr.map(function (e, a) {
+                    E.player.seasAttr.map(function (e, a) {
                       return o.a.createElement(Sa, {
                         id: e,
                         type: ga.Season,
                         key: a,
                       });
                     }),
-                    p.player.weekAttr.map(function (e, a) {
+                    E.player.weekAttr.map(function (e, a) {
                       return o.a.createElement(Sa, {
                         id: e,
                         type: ga.Weekly,
                         key: a,
                       });
                     }),
-                    p.player.gameAttr.map(function (e, a) {
+                    E.player.gameAttr.map(function (e, a) {
                       return o.a.createElement(Sa, {
                         id: e,
                         type: ga.Game,
@@ -10863,7 +10849,7 @@
           O = T.user,
           S = T.setUser,
           w = (function () {
-            var e = Object(E.a)(
+            var e = Object(p.a)(
               h.a.mark(function e(a) {
                 return h.a.wrap(function (e) {
                   for (;;)
@@ -10871,7 +10857,7 @@
                       case 0:
                         if (
                           (a.preventDefault(),
-                          !p || !p.player || p.player.id === O.idol)
+                          !E || !E.player || E.player.id === O.idol)
                         ) {
                           e.next = 10;
                           break;
@@ -10892,12 +10878,12 @@
                           X(
                             "/api/chooseIdol",
                             JSON.stringify({
-                              playerId: p.player.id,
-                              playerName: p.player.name,
+                              playerId: E.player.id,
+                              playerName: E.player.name,
                             })
                           ).then(
                             (function () {
-                              var e = Object(E.a)(
+                              var e = Object(p.a)(
                                 h.a.mark(function e(a) {
                                   return h.a.wrap(function (e) {
                                     for (;;)
@@ -10906,15 +10892,15 @@
                                           a.ok &&
                                           a.status &&
                                           200 === a.status &&
-                                          p &&
-                                          p.player
+                                          E &&
+                                          E.player
                                             ? (!1,
                                               "" === O.idol || null === O.idol
                                                 ? (S(
                                                     Object(B.a)(
                                                       Object(B.a)({}, O),
                                                       {},
-                                                      { idol: p.player.id }
+                                                      { idol: E.player.id }
                                                     )
                                                   ),
                                                   !0)
@@ -10925,13 +10911,13 @@
                                                       {},
                                                       {
                                                         coins: O.coins - 200,
-                                                        idol: p.player.id,
+                                                        idol: E.player.id,
                                                       }
                                                     )
                                                   ),
                                                   !0),
                                               v(
-                                                p.player.name +
+                                                E.player.name +
                                                   " is now your idol.",
                                                 { appearance: "success" }
                                               ))
@@ -10981,8 +10967,8 @@
           });
         var k = O.idol,
           R =
-            void 0 === (null === p || void 0 === p ? void 0 : p.player)
-              ? o.a.createElement(Ee, null)
+            void 0 === (null === E || void 0 === E ? void 0 : E.player)
+              ? o.a.createElement(pe, null)
               : o.a.createElement(
                   o.a.Fragment,
                   null,
@@ -10995,7 +10981,7 @@
                       o.a.createElement(
                         "div",
                         { className: "Player-Header-Name" },
-                        p.player.name
+                        E.player.name
                       ),
                       o.a.createElement(
                         "div",
@@ -11009,8 +10995,8 @@
                               className: "Player-Team-Logo",
                               style: {
                                 background:
-                                  void 0 !== p.team
-                                    ? p.team.mainColor
+                                  void 0 !== E.team
+                                    ? E.team.mainColor
                                     : "#999999",
                               },
                             },
@@ -11019,7 +11005,7 @@
                               { className: "Player-Team-Emoji" },
                               String.fromCodePoint(
                                 Number(
-                                  void 0 !== p.team ? p.team.emoji : "0x2753"
+                                  void 0 !== E.team ? E.team.emoji : "0x2753"
                                 )
                               )
                             )
@@ -11027,14 +11013,14 @@
                           o.a.createElement(
                             "div",
                             { className: "Player-Team-Name" },
-                            void 0 !== p.team ? p.team.fullName : "Null Team"
+                            void 0 !== E.team ? E.team.fullName : "Null Team"
                           )
                         ),
                         W(i.sim, "UNLOCKED_IDOLS")
                           ? o.a.createElement(
                               F.a,
                               { className: "Player-Button" },
-                              C && k !== p.player.id
+                              C && k !== E.player.id
                                 ? o.a.createElement(
                                     "div",
                                     { className: "Idol-Disabled-Tooltip" },
@@ -11066,14 +11052,14 @@
                                             ? o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(Y.G, null),
+                                                o.a.createElement(Y.F, null),
                                                 " ",
                                                 " Choose Idol"
                                               )
                                             : o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(Y.K, null),
+                                                o.a.createElement(Y.J, null),
                                                 " ",
                                                 "200 New Idol"
                                               ),
@@ -11082,11 +11068,11 @@
                                       )
                                     )
                                   )
-                                : k === p.player.id
+                                : k === E.player.id
                                 ? o.a.createElement(
                                     "div",
                                     { className: "Player-Button-Idol-Current" },
-                                    o.a.createElement(Y.G, null),
+                                    o.a.createElement(Y.F, null),
                                     " Your Idol"
                                   )
                                 : o.a.createElement(
@@ -11106,14 +11092,14 @@
                                         ? o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(Y.G, null),
+                                            o.a.createElement(Y.F, null),
                                             " ",
                                             " Choose Idol"
                                           )
                                         : o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(Y.K, null),
+                                            o.a.createElement(Y.J, null),
                                             " ",
                                             "200 New Idol"
                                           ),
@@ -11281,7 +11267,7 @@
                             )
                           );
                         })(
-                          p.player,
+                          E.player,
                           void 0 !==
                             (null === (n = i.sim) || void 0 === n
                               ? void 0
@@ -11313,7 +11299,7 @@
                                 Math.pow(1 - e.patheticism, 0.05) *
                                 Math.pow(e.martyrdom, 0.02)
                               );
-                            })(p.player)
+                            })(E.player)
                           )
                         )
                       ),
@@ -11341,7 +11327,7 @@
                                 );
                               })(e)
                             );
-                          })(p.player)
+                          })(E.player)
                         )
                       ),
                       o.a.createElement(
@@ -11367,7 +11353,7 @@
                                 );
                               })(e)
                             );
-                          })(p.player)
+                          })(E.player)
                         )
                       ),
                       o.a.createElement(
@@ -11393,7 +11379,7 @@
                                 );
                               })(e)
                             );
-                          })(p.player)
+                          })(E.player)
                         )
                       )
                     ),
@@ -11422,7 +11408,7 @@
                                 return a.id === e.bat;
                               });
                               return void 0 === a ? "None?" : a.name;
-                            })(p.player)
+                            })(E.player)
                           ),
                           o.a.createElement(
                             "div",
@@ -11431,7 +11417,7 @@
                               return (
                                 void 0 === e || void 0 === e.bat || e.bat, null
                               );
-                            })(p.player)
+                            })(E.player)
                           )
                         )
                       ),
@@ -11457,7 +11443,7 @@
                                 return a.id === e.armor;
                               });
                               return void 0 === a ? "None?" : a.name;
-                            })(p.player)
+                            })(E.player)
                           ),
                           o.a.createElement(
                             "div",
@@ -11467,7 +11453,7 @@
                                 void 0 === e || void 0 === e.armor || e.armor,
                                 null
                               );
-                            })(p.player)
+                            })(E.player)
                           )
                         )
                       )
@@ -11500,7 +11486,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Player-Info-Line-Body" },
-                          p.player.ritual
+                          E.player.ritual
                         )
                       ),
                       o.a.createElement(
@@ -11544,7 +11530,7 @@
                                 return "Anything";
                             }
                             return "Coffee?";
-                          })(p.player.coffee)
+                          })(E.player.coffee)
                         )
                       ),
                       o.a.createElement(
@@ -11588,7 +11574,7 @@
                                 return "Grass";
                             }
                             return "Blood?";
-                          })(p.player.blood)
+                          })(E.player.blood)
                         )
                       ),
                       o.a.createElement(
@@ -11602,7 +11588,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Player-Info-Line-Body" },
-                          p.player.fate
+                          E.player.fate
                         )
                       ),
                       o.a.createElement(
@@ -11654,7 +11640,7 @@
                               a
                             )
                           );
-                        })(p.player)
+                        })(E.player)
                       )
                     )
                   )
@@ -11671,7 +11657,7 @@
           ? e.element
           : o.a.createElement("div", { className: "Stubs-Header" }, e.text);
       }
-      var En = function (e) {
+      var pn = function (e) {
           var a,
             t = e.path,
             n = Object(r.useContext)(I.context),
@@ -11710,7 +11696,7 @@
               : o.a.createElement(oa, null)
           );
         },
-        pn =
+        En =
           (t(132),
           function (e) {
             var a,
@@ -11898,11 +11884,11 @@
               case 0:
                 return o.a.createElement(Mt, { path: a });
               case 1:
-                return o.a.createElement(En, { path: a });
+                return o.a.createElement(pn, { path: a });
               case 2:
                 return o.a.createElement(ua, { path: a });
               case 3:
-                return o.a.createElement(pn, { path: a });
+                return o.a.createElement(En, { path: a });
               case 4:
                 return o.a.createElement(da, { path: a });
               case 5:
