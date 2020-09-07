@@ -515,8 +515,8 @@
         o = t.n(r),
         l = t(20),
         i = t.n(l),
-        s = (t(76), t(7)),
-        c = t(15),
+        c = (t(76), t(7)),
+        s = t(15),
         m = (t(47), t(77), t(13)),
         u = function (e) {
           var a = e.path,
@@ -572,7 +572,7 @@
             leagues: void 0,
             temporal: void 0,
           }),
-          n = Object(s.a)(t, 2),
+          n = Object(c.a)(t, 2),
           l = n[0],
           i = n[1];
         return (
@@ -646,7 +646,7 @@
                 tomorrowRound: void 0,
               },
             }),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
           return (
@@ -712,10 +712,10 @@
         L = function (e) {
           var a = e.children,
             t = Object(r.useState)(w),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1],
-            c = Object(r.useCallback)(
+            s = Object(r.useCallback)(
               Object(E.a)(
                 h.a.mark(function e() {
                   return h.a.wrap(function (e) {
@@ -773,13 +773,13 @@
             );
           Object(r.useEffect)(
             function () {
-              c();
+              s();
             },
-            [c]
+            [s]
           );
           var m = {
             user: l,
-            initUser: c,
+            initUser: s,
             setUser: i,
             clearUser: function () {
               i(w);
@@ -792,9 +792,9 @@
         D = o.a.createContext([]),
         P = function (e) {
           var a = e.children,
-            t = Object(c.g)().pathname,
+            t = Object(s.g)().pathname,
             n = Object(r.useState)({}),
-            l = Object(s.a)(n, 2),
+            l = Object(c.a)(n, 2),
             i = l[0],
             m = l[1];
           return (
@@ -825,7 +825,7 @@
         };
       P.context = D;
       var M = P;
-      function W(e) {
+      function j(e) {
         var a,
           t =
             arguments.length > 1 && void 0 !== arguments[1]
@@ -859,7 +859,7 @@
         }
         return a;
       }
-      function j(e, a) {
+      function W(e, a) {
         if (void 0 === e) return !1;
         for (var t = 0; t < e.attr.length; t++) if (e.attr[t] === a) return !0;
         return !1;
@@ -897,12 +897,12 @@
         e[(e.GENERIC = 1)] = "GENERIC";
       })(H || (H = {}));
       var K = function (e) {
-        var a = Object(c.f)(),
-          t = Object(c.g)(),
+        var a = Object(s.f)(),
+          t = Object(s.g)(),
           n = (t.state && t.state.background, e.isModal),
           l = e.className,
           i = e.children,
-          s = e.dismissable,
+          c = e.dismissable,
           m = e.style,
           u = Object(r.useRef)(null),
           d = function () {
@@ -942,7 +942,7 @@
               E + (n ? "" : " Modal--Static") + (l ? " ".concat(l) : ""),
             ref: u,
           },
-          s &&
+          c &&
             n &&
             o.a.createElement(
               "button",
@@ -962,7 +962,7 @@
             {
               className: "Modal-Background",
               onClick: function (e) {
-                !s || (u && u.current && u.current.contains(e.target)) || d();
+                !c || (u && u.current && u.current.contains(e.target)) || d();
               },
             },
             p
@@ -1182,11 +1182,11 @@
           })
         )).apply(this, arguments);
       }
-      function se(e) {
-        return ce.apply(this, arguments);
+      function ce(e) {
+        return se.apply(this, arguments);
       }
-      function ce() {
-        return (ce = Object(E.a)(
+      function se() {
+        return (se = Object(E.a)(
           h.a.mark(function e(a) {
             var t, n;
             return h.a.wrap(
@@ -1235,7 +1235,7 @@
             { className: "LoadingSpinner" },
             100 * Math.random() < 99
               ? o.a.createElement(J.a, null)
-              : o.a.createElement(Y.u, null)
+              : o.a.createElement(Y.v, null)
           );
         };
       t(98), t(61);
@@ -1251,22 +1251,22 @@
             t = Object(r.useContext)(G.context),
             n = t.user,
             l = t.setUser,
-            i = Object(c.f)(),
+            i = Object(s.f)(),
             m = Object(r.useState)(!1),
-            u = Object(s.a)(m, 2),
+            u = Object(c.a)(m, 2),
             d = u[0],
             h = u[1],
-            E = Object(c.h)().gameId,
+            E = Object(s.h)().gameId,
             p = Object(r.useState)(1),
-            f = Object(s.a)(p, 2),
+            f = Object(c.a)(p, 2),
             v = f[0],
             A = f[1],
             g = Object(r.useState)(""),
-            y = Object(s.a)(g, 2),
+            y = Object(c.a)(g, 2),
             b = y[0],
             N = y[1],
             T = Object(r.useState)(void 0),
-            O = Object(s.a)(T, 2),
+            O = Object(c.a)(T, 2),
             S = O[0],
             w = O[1],
             C = Object(r.useContext)(I.context),
@@ -1370,7 +1370,7 @@
               Math.round(100 * L()),
               "%"
             ),
-            W = o.a.createElement(
+            j = o.a.createElement(
               "span",
               { className: "Bet-Outcome-Winnings" },
               pe(L(), v)
@@ -1388,7 +1388,7 @@
                 "You'll have a ",
                 M,
                 " chance to win ",
-                W,
+                j,
                 " coins."
               )),
             o.a.createElement(
@@ -1485,7 +1485,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Bet-Coin-Wrapper" },
-                      o.a.createElement(Y.J, { className: "Bet-Coin-Icon" }),
+                      o.a.createElement(Y.K, { className: "Bet-Coin-Icon" }),
                       n.coins
                     ),
                     o.a.createElement(ue.a.Control, {
@@ -1600,7 +1600,7 @@
           },
           {
             name: "Peanuts",
-            icon: o.a.createElement(Y.u, null),
+            icon: o.a.createElement(Y.v, null),
             background: "#c4aa70",
             color: "#423822",
           },
@@ -1612,7 +1612,7 @@
           },
           {
             name: "Feedback",
-            icon: o.a.createElement(Y.q, null),
+            icon: o.a.createElement(Y.r, null),
             background: "#383838",
             color: "#ff007b",
           },
@@ -1683,7 +1683,7 @@
           n,
           l = e.data,
           i = e.metaInfo,
-          s = Object(r.useContext)(G.context).user,
+          c = Object(r.useContext)(G.context).user,
           d = Object(r.useContext)(M.context),
           h = {
             started: (a = l).gameStart,
@@ -1862,7 +1862,7 @@
           O.onSecond && (S += " second"),
           O.onThird && (S += " third");
         var I = o.a.createElement("div", { className: "GameWidget-Outs" }, p),
-          B = Object(c.g)(),
+          B = Object(s.g)(),
           w =
             h.complete || !h.started
               ? o.a.createElement("div", null)
@@ -1885,7 +1885,7 @@
                       "div",
                       {
                         className: "GameWidget-PlayerLineNameWrapper",
-                        style: { background: W(v, 0.5) },
+                        style: { background: j(v, 0.5) },
                       },
                       o.a.createElement(
                         u,
@@ -1916,7 +1916,7 @@
                       "div",
                       {
                         className: "GameWidget-PlayerLineNameWrapper",
-                        style: { background: W(f, 0.5) },
+                        style: { background: j(f, 0.5) },
                       },
                       l.homeBatterName || l.awayBatterName
                         ? o.a.createElement(
@@ -1939,9 +1939,9 @@
                   )
                 ),
           C = null;
-        if (h.started && s.isSignedIn) C = null;
+        if (h.started && c.isSignedIn) C = null;
         else if (h.started) C = o.a.createElement("div", null);
-        else if (s.isSignedIn) {
+        else if (c.isSignedIn) {
           var k,
             R = d[l.id],
             L = (null === R || void 0 === R ? void 0 : R.length) || 0,
@@ -1955,13 +1955,13 @@
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
-                    o.a.createElement(Y.J, null),
+                    o.a.createElement(Y.K, null),
                     " ",
                     L > 0
                       ? "".concat(D.amount, " on ").concat(k)
                       : "No active bets"
                   )
-                : s.coins
+                : c.coins
                 ? o.a.createElement(
                     U.a,
                     { className: "GameWidget-Button", variant: "success" },
@@ -1997,10 +1997,10 @@
           );
         var P = null,
           x = null,
-          j = d[l.id],
+          W = d[l.id],
           Q =
-            ((null === j || void 0 === j ? void 0 : j.length) || 0) > 0
-              ? j[0]
+            ((null === W || void 0 === W ? void 0 : W.length) || 0) > 0
+              ? W[0]
               : void 0;
         if (h.started) {
           var H = void 0 !== Q ? pe(Q.odds, Q.amount) : 0;
@@ -2012,7 +2012,7 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet-Bet" },
-                    o.a.createElement(Y.J, null),
+                    o.a.createElement(Y.K, null),
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
@@ -2037,7 +2037,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Bet" },
-                      o.a.createElement(Y.J, null),
+                      o.a.createElement(Y.K, null),
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
@@ -2126,7 +2126,7 @@
                   o.a.createElement(
                     "span",
                     { className: "GameWidget-Outcome-Callout" },
-                    o.a.createElement(Y.J, null),
+                    o.a.createElement(Y.K, null),
                     "\xa0",
                     Q.amount
                   ),
@@ -2148,7 +2148,7 @@
                         o.a.createElement(
                           "span",
                           { className: "GameWidget-Outcome-Callout" },
-                          o.a.createElement(Y.J, null),
+                          o.a.createElement(Y.K, null),
                           "\xa0",
                           pe(Q.odds, Q.amount)
                         ),
@@ -2336,7 +2336,7 @@
                             "div",
                             {
                               className: "GameWidget-Upcoming-Pitchers-Wrapper",
-                              style: { background: W(l.awayTeamColor, 0.5) },
+                              style: { background: j(l.awayTeamColor, 0.5) },
                             },
                             o.a.createElement(
                               u,
@@ -2356,7 +2356,7 @@
                             "div",
                             {
                               className: "GameWidget-Upcoming-Pitchers-Wrapper",
-                              style: { background: W(l.homeTeamColor, 0.5) },
+                              style: { background: j(l.homeTeamColor, 0.5) },
                             },
                             o.a.createElement(
                               u,
@@ -2715,11 +2715,11 @@
               n = e.content,
               l = e.children,
               i = e.url,
-              c = e.className,
+              s = e.className,
               m = e.buttonClassname,
               u = e.handleClick,
               d = Object(r.useState)(!1),
-              h = Object(s.a)(d, 2),
+              h = Object(c.a)(d, 2),
               E = h[0],
               p = h[1],
               f = function () {
@@ -2754,7 +2754,7 @@
                         {},
                         { top: "12px" }
                       ),
-                      className: "Overlay ".concat(c),
+                      className: "Overlay ".concat(s),
                       onMouseOver: f,
                       onMouseOut: v,
                     }),
@@ -2824,7 +2824,7 @@
               teams: [],
               players: [],
             }),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
           return (
@@ -2851,8 +2851,8 @@
             n =
               (Object(r.useContext)(I.context),
               Object(r.useContext)(Pe.context)),
-            l = (Object(c.f)(), Object(r.useState)(!1)),
-            i = Object(s.a)(l, 2),
+            l = (Object(s.f)(), Object(r.useState)(!1)),
+            i = Object(c.a)(l, 2),
             m = i[0],
             d = i[1],
             p = Object(me.useToasts)().addToast,
@@ -2918,7 +2918,7 @@
               );
             }
           }
-          var k = Object(c.g)(),
+          var k = Object(s.g)(),
             R = null;
           null !== a.idol &&
             (R = o.a.createElement(
@@ -2928,7 +2928,7 @@
                 path: "/player/".concat(a.idol),
                 className: "Navigation-IdolizedPlayer",
               },
-              o.a.createElement(Y.F, null)
+              o.a.createElement(Y.G, null)
             ));
           return o.a.createElement(
             o.a.Fragment,
@@ -2944,7 +2944,7 @@
                   content: y,
                   url: "/upcoming",
                 },
-                o.a.createElement(Y.J, null),
+                o.a.createElement(Y.K, null),
                 "\xa0",
                 a.coins
               ),
@@ -2957,7 +2957,7 @@
                       content: b,
                       url: "/shop",
                     },
-                    o.a.createElement(Y.I, null),
+                    o.a.createElement(Y.J, null),
                     "\xa0",
                     a.votes
                   )
@@ -3115,7 +3115,7 @@
                     o.a.createElement(
                       "span",
                       { className: "Peanut-Icon" },
-                      m ? "" : o.a.createElement(Y.u, null)
+                      m ? "" : o.a.createElement(Y.v, null)
                     ),
                     "\xa0",
                     a.peanuts
@@ -3124,7 +3124,7 @@
                 o.a.createElement(
                   "div",
                   { className: m ? "Peanut-Eating" : "Peanut" },
-                  o.a.createElement(Y.u, null)
+                  o.a.createElement(Y.v, null)
                 )
               )
             ),
@@ -3141,19 +3141,19 @@
             )
           );
         },
-        We = function () {
+        je = function () {
           return o.a.createElement(
             o.a.Fragment,
             null,
-            o.a.createElement(je, { isModal: !0, path: "/signup" }, "Signup"),
-            o.a.createElement(je, { isModal: !0, path: "/login" }, "Login")
+            o.a.createElement(We, { isModal: !0, path: "/signup" }, "Signup"),
+            o.a.createElement(We, { isModal: !0, path: "/login" }, "Login")
           );
         };
       function xe(e) {
         Object(r.useContext)(I.context);
         var a = Object(r.useContext)(G.context).user,
           t = Object(r.useState)(!1),
-          n = Object(s.a)(t, 2),
+          n = Object(c.a)(t, 2),
           l = (n[0], n[1], []);
         l.push({
           text: "League",
@@ -3174,7 +3174,7 @@
           ? null
           : a.isSignedIn
           ? o.a.createElement(Me, null)
-          : o.a.createElement(We, null);
+          : o.a.createElement(je, null);
         return o.a.createElement(
           "nav",
           { className: "Navigation" },
@@ -3183,7 +3183,7 @@
             { className: "Navigation-Main" },
             l.map(function (e, a) {
               return o.a.createElement(
-                je,
+                We,
                 { key: a, path: e.path, subpaths: e.subpaths },
                 e.text,
                 " ",
@@ -3194,14 +3194,14 @@
           o.a.createElement("div", { className: "Navigation-User" }, i)
         );
       }
-      function je(e) {
+      function We(e) {
         var a = e.path,
           t = e.isModal,
           n = e.subpaths,
-          r = Object(c.g)(),
+          r = Object(s.g)(),
           l = r.pathname,
           i = !("/login" === l || "/signup" === l),
-          s =
+          c =
             l === a ||
             void 0 !==
               (null === n || void 0 === n
@@ -3215,7 +3215,7 @@
             background: i && t && r,
             path: a,
             className:
-              "Navigation-Button" + (s ? " Navigation-Button-Current" : ""),
+              "Navigation-Button" + (c ? " Navigation-Button-Current" : ""),
           },
           e.children
         );
@@ -3227,7 +3227,7 @@
           o.a.createElement(
             "div",
             { className: "Navigation-User" },
-            o.a.createElement(We, null)
+            o.a.createElement(je, null)
           )
         );
       }
@@ -3278,41 +3278,13 @@
             o.a.createElement(
               "a",
               {
-                href: "https://zombiesrungame.com",
+                href: "multitude.productions/blaseball",
                 onClick: function () {
-                  return Ye("Zombies Run (MainPage/Title");
+                  return Ye("Multitude (MainPage/Title");
                 },
                 target: "_blank",
               },
-              "Zombies, Run!"
-            ),
-            " (",
-            o.a.createElement(
-              "a",
-              {
-                target: "_blank",
-                onClick: function () {
-                  return Ye("Zombies Run (MainPage/iPhone)");
-                },
-                href:
-                  "https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?mt=8&path=apps%2fzombiesrun",
-                style: { color: "#ede06d" },
-              },
-              "iPhone"
-            ),
-            ", ",
-            o.a.createElement(
-              "a",
-              {
-                target: "_blank",
-                onClick: function () {
-                  return Ye("Zombies Run (MainPage/Android)");
-                },
-                href:
-                  "https://play.google.com/store/apps/details?id=com.sixtostart.zombiesrunclient&hl=en_GB",
-                style: { color: "#f0dd37" },
-              },
-              "Android"
+              "the Multitude Podcast Collective"
             ),
             ")"
           )
@@ -3328,25 +3300,25 @@
           o.a.createElement(
             "div",
             { className: "LeagueNavigation-Nav" },
-            o.a.createElement(je, { path: "/" }, "Watch Live"),
-            o.a.createElement(je, { path: "/upcoming" }, "Place Bets"),
-            o.a.createElement(je, { path: "/standings" }, "Standings"),
-            j(e.sim, "UNLOCKED_IDOLS")
-              ? o.a.createElement(je, { path: "/leaderboard" }, "Idols")
+            o.a.createElement(We, { path: "/" }, "Watch Live"),
+            o.a.createElement(We, { path: "/upcoming" }, "Place Bets"),
+            o.a.createElement(We, { path: "/standings" }, "Standings"),
+            W(e.sim, "UNLOCKED_IDOLS")
+              ? o.a.createElement(We, { path: "/leaderboard" }, "Idols")
               : null
           )
         );
       }
       function Ke() {
-        return j(Object(r.useContext)(I.context).sim, "UNLOCKED_IDOLS")
+        return W(Object(r.useContext)(I.context).sim, "UNLOCKED_IDOLS")
           ? o.a.createElement(
               o.a.Fragment,
               null,
               o.a.createElement(
                 "div",
                 { className: "LeagueNavigation-Nav" },
-                o.a.createElement(je, { path: "/" }, "Standings"),
-                o.a.createElement(je, { path: "/leaderboard" }, "Idols")
+                o.a.createElement(We, { path: "/" }, "Standings"),
+                o.a.createElement(We, { path: "/leaderboard" }, "Idols")
               )
             )
           : null;
@@ -3357,7 +3329,7 @@
         Ze = function (e) {
           var a = e.dateString,
             t = Object(r.useState)(),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
           return (
@@ -3427,9 +3399,9 @@
       var Xe = o.a.createContext([{ id: "", place: 0 }]),
         _e = function (e) {
           var a = e.children,
-            t = Object(c.g)().pathname,
+            t = Object(s.g)().pathname,
             n = Object(r.useState)([{ id: "", place: 0 }]),
-            l = Object(s.a)(n, 2),
+            l = Object(c.a)(n, 2),
             i = l[0],
             m = l[1];
           return (
@@ -3464,9 +3436,9 @@
           a = Object(r.useContext)(Pe.context),
           t = Object(r.useContext)($e.context),
           n = Object(r.useState)([]),
-          l = Object(s.a)(n, 2),
+          l = Object(c.a)(n, 2),
           i = l[0],
-          c = l[1];
+          s = l[1];
         function m(e) {
           for (var t = 0; t < a.teams.length; t++) {
             for (var n = a.teams[t], r = 0; r < n.lineup.length; r++)
@@ -3494,7 +3466,7 @@
                             a.next = 6;
                             break;
                           }
-                          return (a.next = 3), se(e);
+                          return (a.next = 3), ce(e);
                         case 3:
                           if (((n = a.sent), (r = []), void 0 !== n)) {
                             for (
@@ -3517,7 +3489,7 @@
                               l--
                             )
                               o();
-                            c(
+                            s(
                               r.sort(function (e, a) {
                                 return e.place > a.place ? 1 : -1;
                               })
@@ -3613,8 +3585,8 @@
           t,
           n,
           l,
-          i = Object(c.g)(),
-          s = Object(r.useContext)(G.context).user;
+          i = Object(s.g)(),
+          c = Object(r.useContext)(G.context).user;
         return void 0 !== e.info
           ? o.a.createElement(
               u,
@@ -3650,11 +3622,11 @@
                 o.a.createElement(
                   "div",
                   { className: "Leaderboard-Player-Name" },
-                  s.idol ===
+                  c.idol ===
                     (null === (n = e.info.player) || void 0 === n
                       ? void 0
                       : n.id)
-                    ? o.a.createElement(Y.F, null)
+                    ? o.a.createElement(Y.G, null)
                     : "",
                   " ",
                   null === (l = e.info.player) || void 0 === l ? void 0 : l.name
@@ -3765,29 +3737,29 @@
         });
         if (void 0 === a) return null;
         for (
-          var t = [], n = [], l = [], i = [], s = 0;
-          s < a.teams.length;
-          s++
+          var t = [], n = [], l = [], i = [], c = 0;
+          c < a.teams.length;
+          c++
         ) {
           for (
-            var c = sa(a.teams[s], e.standings), m = !1, u = 0;
+            var s = ca(a.teams[c], e.standings), m = !1, u = 0;
             u < n.length;
             u++
           ) {
             var d = l[u];
-            if (c[0] > d) {
-              n.splice(u, 0, a.teams[s]),
-                l.splice(u, 0, c[0]),
-                i.splice(u, 0, c[1]),
+            if (s[0] > d) {
+              n.splice(u, 0, a.teams[c]),
+                l.splice(u, 0, s[0]),
+                i.splice(u, 0, s[1]),
                 (m = !0);
               break;
             }
           }
-          m || (n.push(a.teams[s]), l.push(c[0]), i.push(c[1]));
+          m || (n.push(a.teams[c]), l.push(s[0]), i.push(s[1]));
         }
         for (var h = 0; h < n.length; h++)
           t.push(
-            o.a.createElement(ca, {
+            o.a.createElement(sa, {
               key: h,
               team: n[h],
               wins: l[h],
@@ -3805,7 +3777,7 @@
           o.a.createElement("ul", { className: "Standings-Team-Container" }, t)
         );
       }
-      function sa(e, a) {
+      function ca(e, a) {
         var t = 0,
           n = 0;
         if (void 0 !== a) {
@@ -3822,8 +3794,8 @@
         }
         return [t, n];
       }
-      function ca(e) {
-        var a = Object(c.g)(),
+      function sa(e) {
+        var a = Object(s.g)(),
           t = Object(r.useContext)(Pe.context).teams.find(function (a) {
             return a.id === e.team;
           });
@@ -3882,8 +3854,8 @@
             n = Object(r.useContext)(I.context),
             l = Object(r.useContext)(G.context).user,
             i = Object(r.useContext)(M.context),
-            s = void 0 === n.schedule;
-          function c() {
+            c = void 0 === n.schedule;
+          function s() {
             switch (t) {
               case "/upcoming":
                 return ra.Upcoming;
@@ -3897,8 +3869,8 @@
           }
           if (!n.sim) return null;
           var m,
-            u = c() === ra.Upcoming ? n.tomorrowSchedule : n.schedule,
-            d = c() === ra.Live ? n.sim.day : n.sim.day + 1,
+            u = s() === ra.Upcoming ? n.tomorrowSchedule : n.schedule,
+            d = s() === ra.Live ? n.sim.day : n.sim.day + 1,
             h =
               void 0 === u
                 ? null
@@ -3928,11 +3900,11 @@
                             if (e.gameComplete && !a.gameComplete) return 1;
                             var r = void 0 !== i[e.id] && i[e.id].length > 0,
                               o = void 0 !== i[a.id] && i[a.id].length > 0,
-                              s = r ? i[e.id][0] : void 0,
-                              c = o ? i[a.id][0] : void 0;
+                              c = r ? i[e.id][0] : void 0,
+                              s = o ? i[a.id][0] : void 0;
                             if (r && o) {
-                              if (s.amount > c.amount) return -1;
-                              if (c.amount > s.amount) return 1;
+                              if (c.amount > s.amount) return -1;
+                              if (s.amount > c.amount) return 1;
                             } else {
                               if (r) return -1;
                               if (o) return 1;
@@ -3964,14 +3936,14 @@
                     o.a.createElement(
                       "div",
                       { className: "DailySchedule-Countdown" },
-                      c() === ra.Upcoming
+                      s() === ra.Upcoming
                         ? o.a.createElement(Ze, { dateString: x().toString() })
                         : null
                     ),
                     h
                   ),
             p = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
-          switch (c()) {
+          switch (s()) {
             case ra.Leaderboard:
               m = o.a.createElement(ea, null);
               break;
@@ -3980,7 +3952,7 @@
               break;
             case ra.Live:
             case ra.Upcoming:
-              m = s ? o.a.createElement(Ee, null) : E;
+              m = c ? o.a.createElement(Ee, null) : E;
           }
           return o.a.createElement(
             "div",
@@ -4017,8 +3989,8 @@
             n,
             l,
             i,
-            s,
             c,
+            s,
             m,
             u,
             d,
@@ -4133,12 +4105,12 @@
               void 0 !==
               (null === f ||
               void 0 === f ||
-              null === (s = f.postseason) ||
-              void 0 === s ||
-              null === (c = s.tomorrowRound) ||
-              void 0 === c
+              null === (c = f.postseason) ||
+              void 0 === c ||
+              null === (s = c.tomorrowRound) ||
+              void 0 === s
                 ? void 0
-                : c.roundNumber)
+                : s.roundNumber)
                 ? null === f ||
                   void 0 === f ||
                   null === (m = f.postseason) ||
@@ -4252,8 +4224,8 @@
             });
             if (void 0 === l) return null;
             var i = void 0 !== l ? l.mainColor : "#ffffff",
-              s = void 0 !== l ? l.fullName : "",
-              c =
+              c = void 0 !== l ? l.fullName : "",
+              s =
                 void 0 !== l
                   ? o.a.createElement(
                       "div",
@@ -4265,7 +4237,7 @@
                           className: "PlayoffsEnd-Callout",
                           style: { color: i },
                         },
-                        s,
+                        c,
                         "!"
                       )
                     )
@@ -4283,7 +4255,7 @@
                   t.sim.season + 1,
                   " is over."
                 ),
-                c,
+                s,
                 o.a.createElement(
                   "div",
                   { className: "PlayoffsEnd-End" },
@@ -4305,12 +4277,12 @@
       t(110);
       function pa() {
         var e = Object(r.useState)([]),
-          a = Object(s.a)(e, 2),
+          a = Object(c.a)(e, 2),
           t = a[0],
           n = a[1],
           l = Object(r.useState)(!1),
-          i = Object(s.a)(l, 2),
-          c = i[0],
+          i = Object(c.a)(l, 2),
+          s = i[0],
           m = i[1];
         Object(r.useEffect)(function () {
           u();
@@ -4345,7 +4317,7 @@
           )).apply(this, arguments);
         }
         var p = "EventTicker-Group";
-        if (c) {
+        if (s) {
           for (var f = 0, v = 0; v < t.length; v++) f += t[v].length;
           var A = f / 5;
           p +=
@@ -4571,7 +4543,7 @@
         );
       }
       function Aa() {
-        var e = Object(c.g)();
+        var e = Object(s.g)();
         return o.a.createElement(
           "div",
           { className: "About-All" },
@@ -4583,7 +4555,7 @@
           o.a.createElement(
             u,
             { background: e, path: "/signup", className: "About-Ticket" },
-            o.a.createElement(Y.I, null)
+            o.a.createElement(Y.J, null)
           ),
           o.a.createElement(
             "a",
@@ -4709,7 +4681,7 @@
       function Ta(e) {
         switch (e.id) {
           case "EXTRA_STRIKE":
-            return o.a.createElement(Y.p, null);
+            return o.a.createElement(Y.q, null);
           case "SHAME_PIT":
             return o.a.createElement(Y.b, null);
           case "HOME_FIELD":
@@ -4717,21 +4689,21 @@
           case "FIREPROOF":
             return o.a.createElement(Y.k, null);
           case "ALTERNATE":
-            return o.a.createElement(Y.n, null);
+            return o.a.createElement(Y.o, null);
           case "SHELLED":
-            return o.a.createElement(Y.u, null);
+            return o.a.createElement(Y.v, null);
           case "SOUNDPROOF":
-            return o.a.createElement(Y.m, null);
+            return o.a.createElement(Y.n, null);
           case "REVERBERATING":
             return o.a.createElement(Y.d, null);
           case "BLOOD_THIEF":
-            return o.a.createElement(Y.A, null);
+            return o.a.createElement(Y.B, null);
           case "BLOOD_DONOR":
-            return o.a.createElement(Y.s, null);
+            return o.a.createElement(Y.t, null);
           case "BLOOD_WINNER":
-            return o.a.createElement(Y.w, null);
+            return o.a.createElement(Y.x, null);
           case "BLOOD_PITY":
-            return o.a.createElement(Y.G, null);
+            return o.a.createElement(Y.H, null);
           case "BLOOD_FAITH":
           case "BLOOD_LAW":
           case "BLOOD_CHAOS":
@@ -4981,17 +4953,17 @@
             );
       }
       var wa = function (e) {
-          var a = Object(c.h)().nickname,
+          var a = Object(s.h)().nickname,
             t = Object(r.useContext)(I.context),
             n = Object(r.useContext)(Pe.context),
-            l = Object(c.g)(),
+            l = Object(s.g)(),
             i = Object(r.useState)({
               lineup: [],
               rotation: [],
               bullpen: [],
               bench: [],
             }),
-            m = Object(s.a)(i, 2),
+            m = Object(c.a)(i, 2),
             d = m[0],
             p = m[1],
             f = Object(r.useContext)(G.context).user,
@@ -5004,7 +4976,7 @@
           var A = (function () {
             var e = Object(E.a)(
               h.a.mark(function e() {
-                var a, t, n, r, o, l, i, s, c, m;
+                var a, t, n, r, o, l, i, c, s, m;
                 return h.a.wrap(function (e) {
                   for (;;)
                     switch ((e.prev = e.next)) {
@@ -5019,7 +4991,7 @@
                           a.push(v.lineup[t]);
                         for (n = 0; n < v.rotation.length; n++)
                           a.push(v.rotation[n]);
-                        return (e.next = 7), se(a);
+                        return (e.next = 7), ce(a);
                       case 7:
                         for (
                           r = e.sent,
@@ -5037,9 +5009,9 @@
                         )
                           l(i);
                         for (
-                          s = [],
-                            c = function (e) {
-                              s.push(
+                          c = [],
+                            s = function (e) {
+                              c.push(
                                 r.find(function (a) {
                                   return v.rotation[e] === a.id;
                                 })
@@ -5049,8 +5021,8 @@
                           m < v.rotation.length;
                           m++
                         )
-                          c(m);
-                        p({ lineup: o, rotation: s, bench: [], bullpen: [] });
+                          s(m);
+                        p({ lineup: o, rotation: c, bench: [], bullpen: [] });
                       case 15:
                       case "end":
                         return e.stop();
@@ -5087,7 +5059,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(Y.F, null) : "",
+                  f.idol === e.id ? o.a.createElement(Y.G, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -5140,7 +5112,7 @@
                         ? " Team-Player-Shelled"
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(Y.F, null) : "",
+                  f.idol === e.id ? o.a.createElement(Y.G, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -5314,7 +5286,7 @@
         ka = function (e) {
           var a = e.children,
             t = Object(r.useState)({ doc: void 0 }),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
           return (
@@ -5338,12 +5310,12 @@
         var e,
           a = Object(me.useToasts)().addToast,
           t = Object(r.useState)(),
-          n = Object(s.a)(t, 2),
+          n = Object(c.a)(t, 2),
           l = n[0],
           i = n[1],
-          c = Object(r.useContext)(G.context),
-          m = c.user,
-          u = c.setUser,
+          s = Object(r.useContext)(G.context),
+          m = s.user,
+          u = s.setUser,
           d = Object(r.useContext)(Pe.context).teams.find(function (e) {
             return e.id === m.favoriteTeam;
           }),
@@ -5469,8 +5441,8 @@
               : m.unlockedShop
               ? (function (e, a, t, n, r, l) {
                   var i,
-                    s,
                     c,
+                    s,
                     m,
                     u,
                     d,
@@ -5492,7 +5464,7 @@
                           e.votes + 1
                         ),
                         available: !0,
-                        icon: o.a.createElement(Y.I, null),
+                        icon: o.a.createElement(Y.J, null),
                         buyUrl: "/api/buyVote",
                         userUpdate: function () {
                           a(
@@ -5515,7 +5487,7 @@
                           e.votes,
                           " Vote already from signing up."
                         ),
-                        icon: o.a.createElement(Y.I, null),
+                        icon: o.a.createElement(Y.J, null),
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
@@ -5529,18 +5501,33 @@
                       };
                   g &&
                     g.delta &&
-                    (c = {
+                    (s = {
                       id: 5,
-                      name: "Zombies, Run!",
-                      description:
-                        'Zombies, Run! -- Now featuring "Home Run", an audio Blaseball experience. Play for free on iPhone and Android',
+                      name: "The Multitude Podcast Collective",
+                      description: "",
+                      isSponsor: !0,
+                      sponsorText: o.a.createElement(
+                        o.a.Fragment,
+                        null,
+                        "Multitude has the perfect podcast for each team. Click ",
+                        o.a.createElement(
+                          "a",
+                          {
+                            href: "https://multitude.productions/blaseball",
+                            onClick: function () {
+                              return Ye("Multitude (ShopItem)");
+                            },
+                            target: "_blank",
+                            className: "Shop-Item-Link",
+                          },
+                          o.a.createElement("strong", null, "HERE")
+                        ),
+                        " to find yours!"
+                      ),
                       amount: 0,
                       toast: "Have a great time listening.",
                       available: !0,
-                      handleComplete: function () {
-                        window.open("https://zombiesrungame.com"),
-                          Ye("Zombies Run (ShopItem)");
-                      },
+                      handleComplete: function () {},
                     });
                   var y =
                       de.maxBetTiers[
@@ -5629,7 +5616,7 @@
                           maxed: !0,
                           amount: 0,
                         };
-                  if (j(t, "UNLOCKED_PEANUTS") && r) {
+                  if (W(t, "UNLOCKED_PEANUTS") && r) {
                     if (
                       ((f = {
                         id: 6,
@@ -5731,7 +5718,7 @@
                     }
                   }
                   if (
-                    ((s = {
+                    ((c = {
                       id: 4,
                       name: "Beg",
                       description:
@@ -5787,25 +5774,25 @@
                     var P = de.idolStrikeoutsTiers[0],
                       M = Object.create(e.relics);
                     M.Idol_Strikeouts = 0;
-                    var W = "Adorn yourself. When your Idol strikes a batter out, you'll earn ".concat(
+                    var j = "Adorn yourself. When your Idol strikes a batter out, you'll earn ".concat(
                         P.amount,
                         " coins."
                       ),
                       x = !0;
                     ("" != e.idol && null != e.idol) ||
-                      ((W += " Go to a Player page to choose an Idol."),
+                      ((j += " Go to a Player page to choose an Idol."),
                       (x = !1)),
                       (E = {
                         id: 14,
                         name: "Strikeout Pendant",
-                        description: W,
+                        description: j,
                         amount: P.price,
                         toast: "Coins per Idol strikeout is now ".concat(
                           P.amount
                         ),
                         available: x,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
@@ -5834,7 +5821,7 @@
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
@@ -5851,7 +5838,7 @@
                     E = {
                       id: 14,
                       name: "Strikeout Pendant",
-                      icon: o.a.createElement(Y.l, null),
+                      icon: o.a.createElement(Y.m, null),
                       description: "Adorn yourself. When your Idol strikes out a batter, you earn ".concat(
                         J,
                         " coins. You are maxed out."
@@ -5890,7 +5877,7 @@
                         ),
                         available: X,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
@@ -5919,7 +5906,7 @@
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
@@ -5941,7 +5928,7 @@
                         " coins. You are maxed out."
                       ),
                       maxed: !0,
-                      icon: o.a.createElement(Y.l, null),
+                      icon: o.a.createElement(Y.m, null),
                       amount: 0,
                     };
                   }
@@ -5973,7 +5960,7 @@
                         toast: "Coins per Idol homer is now ".concat(re.amount),
                         available: ie,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
@@ -5986,23 +5973,23 @@
                         },
                       });
                   } else if (void 0 !== ne) {
-                    var se = te.amount,
-                      ce = ne.amount,
+                    var ce = te.amount,
+                      se = ne.amount,
                       me = Object.create(e.relics);
                     (me.Idol_Homers = me.Idol_Homers + 1),
                       (h = {
                         id: 13,
                         name: "Home Run Pendant",
                         description: "Adorn yourself. When your Idol hits a Home Run, you'll earn "
-                          .concat(ce, " coins. You currently earn ")
-                          .concat(se, " coins per Home Run."),
+                          .concat(se, " coins. You currently earn ")
+                          .concat(ce, " coins per Home Run."),
                         amount: ne.price,
                         toast: "Coins per Idol home run is now ".concat(
                           ne.amount
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
@@ -6019,7 +6006,7 @@
                     h = {
                       id: 13,
                       name: "Home Run Pendant",
-                      icon: o.a.createElement(Y.l, null),
+                      icon: o.a.createElement(Y.m, null),
                       description: "Adorn yourself. When your Idol hits a Home Run, you earn ".concat(
                         ue,
                         " coins. You are maxed out."
@@ -6056,7 +6043,7 @@
                         toast: "Coins per Idol hit is now ".concat(pe.amount),
                         available: Ae,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
@@ -6083,7 +6070,7 @@
                         toast: "Coins per Idol hit is now ".concat(Ee.amount),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(Y.l, null),
+                        icon: o.a.createElement(Y.m, null),
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
@@ -6105,13 +6092,13 @@
                         " coins. You are maxed out."
                       ),
                       maxed: !0,
-                      icon: o.a.createElement(Y.l, null),
+                      icon: o.a.createElement(Y.m, null),
                       amount: 0,
                     };
                   }
-                  return j(t, "UNLOCKED_IDOLS")
-                    ? [c, d, E, i, h, p, m, u, s, f, v, A]
-                    : [c, i, m, u, s, f, v, A];
+                  return W(t, "UNLOCKED_IDOLS")
+                    ? [s, d, E, i, h, p, m, u, c, f, v, A]
+                    : [s, i, m, u, c, f, v, A];
                 })(m, u, p.sim, v, f, d)
               : (function (e, a) {
                   var t = [];
@@ -6153,6 +6140,29 @@
                   e.map(function (e, a) {
                     return void 0 === e
                       ? null
+                      : e.isSponsor
+                      ? o.a.createElement(
+                          "div",
+                          { className: "Shop-Item Shop-Item-Sponsor", key: a },
+                          o.a.createElement(
+                            "div",
+                            { className: "Shop-Item-Header" },
+                            e.name,
+                            o.a.createElement(
+                              "span",
+                              { className: "Shop-Item-Icon" },
+                              e.icon
+                            )
+                          ),
+                          o.a.createElement(
+                            "div",
+                            {
+                              className:
+                                "Shop-Item-Body Shop-Item-Body-Sponsor",
+                            },
+                            e.sponsorText
+                          )
+                        )
                       : o.a.createElement(
                           "div",
                           { className: "Shop-Item", key: a },
@@ -6174,7 +6184,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Shop-Item-Checkout" },
-                            o.a.createElement(Y.J, {
+                            o.a.createElement(Y.K, {
                               className: "Shop-Item-Coins",
                             }),
                             o.a.createElement(
@@ -6237,9 +6247,9 @@
             n = a.setUser,
             l = Object(r.useContext)(Pe.context),
             i = Object(r.useState)(),
-            c = Object(s.a)(i, 2),
-            m = c[0],
-            u = c[1],
+            s = Object(c.a)(i, 2),
+            m = s[0],
+            u = s[1],
             d = (function () {
               var a = Object(E.a)(
                 h.a.mark(function a() {
@@ -6367,7 +6377,7 @@
         Da = function (e) {
           var a = Object(r.useContext)(G.context).user,
             t = Object(r.useState)(!1),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
           return (
@@ -6403,13 +6413,13 @@
           (t(116),
           function (e) {
             var a = Object(r.useContext)(G.context).initUser,
-              t = Object(c.f)(),
+              t = Object(s.f)(),
               n = Object(me.useToasts)().addToast,
               l = Object(r.useState)(!1),
-              i = Object(s.a)(l, 2),
+              i = Object(c.a)(l, 2),
               m = i[0],
               u = i[1],
-              d = Object(c.g)(),
+              d = Object(s.g)(),
               h =
                 d.state && d.state.background
                   ? d.state.background.pathname
@@ -6418,7 +6428,7 @@
               p = e.isLogin,
               f = Object(r.useRef)(null),
               v = Object(r.useRef)(null),
-              A = Object(c.h)().code;
+              A = Object(s.h)().code;
             return o.a.createElement(
               "div",
               { className: "".concat(E ? "" : "Auth-SignupWrapper") },
@@ -6546,18 +6556,18 @@
         Ma =
           (t(117),
           o.a.createContext({ blessings: [], decrees: [], decreesToPass: 0 })),
-        Wa = function (e) {
+        ja = function (e) {
           var a = e.children,
             t = Object(r.useState)({
               blessings: [],
               decrees: [],
               decreesToPass: 0,
             }),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1];
-          function c() {
-            return (c = Object(E.a)(
+          function s() {
+            return (s = Object(E.a)(
               h.a.mark(function e() {
                 var a;
                 return h.a.wrap(function (e) {
@@ -6578,15 +6588,15 @@
           return (
             Object(r.useEffect)(function () {
               !(function () {
-                c.apply(this, arguments);
+                s.apply(this, arguments);
               })();
             }, []),
             o.a.createElement(Ma.Provider, { value: l }, a)
           );
         };
-      Wa.context = Ma;
+      ja.context = Ma;
       var xa,
-        ja = Wa;
+        Wa = ja;
       t(118);
       !(function (e) {
         (e[(e.DECREE = 0)] = "DECREE"), (e[(e.BONUS = 1)] = "BONUS");
@@ -6662,13 +6672,13 @@
           );
         },
         Ja = function () {
-          var e = Object(r.useContext)(ja.context),
+          var e = Object(r.useContext)(Wa.context),
             a = Object(r.useContext)(G.context).user,
             t = Object(r.useState)(),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1],
-            m = Object(c.g)(),
+            m = Object(s.g)(),
             d = o.a.createElement(Qa, null);
           return (
             a.isFetching ||
@@ -6912,7 +6922,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function st(e, a) {
+      function ct(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -6936,30 +6946,144 @@
         }
         return r;
       }
-      var ct,
-        mt = o.a.createElement("path", {
+      var st = o.a.createElement("path", {
           d:
             "M8 1c0-.552.448-1 1-1h6c.553 0 1 .448 1 1s-.447 1-1 1h-6c-.552 0-1-.448-1-1zm13 20.554c0 1.284-1.023 2.446-2.424 2.446h-13.153c-1.4 0-2.423-1.162-2.423-2.445 0-.35.076-.709.242-1.057l3.743-7.856c1.04-2.186 2.015-4.581 2.015-7.007v-1.635h2l-.006 2c-.087 2.623-1.09 5.092-1.973 7h3.682l4.377 9h1.496c.309 0 .52-.342.377-.644l-3.743-7.854c-1.046-2.197-2.12-4.791-2.21-7.502v-2h2v1.635c0 2.426.975 4.82 2.016 7.006l3.743 7.856c.165.348.241.707.241 1.057zm-12-1.054c0-.829-.671-1.5-1.5-1.5s-1.5.671-1.5 1.5.671 1.5 1.5 1.5 1.5-.671 1.5-1.5zm2-3.5c0-.553-.448-1-1-1-.553 0-1 .447-1 1s.447 1 1 1c.552 0 1-.447 1-1zm3 3c0-.552-.448-1-1-1s-1 .448-1 1 .448 1 1 1 1-.448 1-1z",
         }),
-        ut = function (e) {
+        mt = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = st(e, ["svgRef", "title"]);
+            n = ct(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
             it({ width: 24, height: 24, viewBox: "0 0 24 24", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            mt
+            st
           );
         },
-        dt = o.a.forwardRef(function (e, a) {
-          return o.a.createElement(ut, it({ svgRef: a }, e));
+        ut = o.a.forwardRef(function (e, a) {
+          return o.a.createElement(mt, it({ svgRef: a }, e));
+        });
+      t.p;
+      function dt() {
+        return (dt =
+          Object.assign ||
+          function (e) {
+            for (var a = 1; a < arguments.length; a++) {
+              var t = arguments[a];
+              for (var n in t)
+                Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+            }
+            return e;
+          }).apply(this, arguments);
+      }
+      function ht(e, a) {
+        if (null == e) return {};
+        var t,
+          n,
+          r = (function (e, a) {
+            if (null == e) return {};
+            var t,
+              n,
+              r = {},
+              o = Object.keys(e);
+            for (n = 0; n < o.length; n++)
+              (t = o[n]), a.indexOf(t) >= 0 || (r[t] = e[t]);
+            return r;
+          })(e, a);
+        if (Object.getOwnPropertySymbols) {
+          var o = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < o.length; n++)
+            (t = o[n]),
+              a.indexOf(t) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, t) &&
+                  (r[t] = e[t]));
+        }
+        return r;
+      }
+      var Et = o.a.createElement("path", {
+          d:
+            "M493.7 21.59C426.6 127.6 339.2 100.6 373.6 32.06c-35.2 10.26-57.7 31.88-60.5 65.67-9.7-2.3-29.4-25.97-18.4-69.83-26.7 39.32-50.8 91.8-42.6 127.1-24 .2-64-39.7-54.5-87.89-46.5 81.29-34 172.89-25 193.79-24.9 0-63.4-70.9-64-118.9-36.72 82.1-48.45 147.1-18.33 194.3-33.05-3.8-53.82-28.3-66.86-69.6C-9.266 485.7 110.2 515 312.6 475.5c55.9-10.9 125.3-40.5 158.7-99.5-69.8 40-121.4 7.4-140.5-6.3 45.8-10.4 112.2-31.6 133.6-92-42 35.7-74.1 13.8-85.6 6.2 54.4-9.1 97.3-71.6 111-127.5-37.5 31.1-69.9 31.9-83.8 22.4 34.5-11.2 92.1-68.8 87.7-157.21zM331.5 113.8c8.7-.2 17.6 2.1 26.1 6.4 2.3 1 4.6 2.3 6.9 3.9 6.9 4.8 12.7 11 15.6 19.3l3.5 10-10 3c-18.8 5.6-29.1 16.9-37.9 32.5l-17.1-10c8.3-14.6 19.9-28.1 36.8-36.5-1.9-1.6-4.2-3.2-6.6-4.5-6.6-3.1-14.4-4.6-18.8-4.1l-2.2-19.8c1.2-.1 2.5-.2 3.7-.2zM294 186.1c9.4 0 19.8 3.5 28.8 9.1 16.8 10.7 28.5 28.9 19.7 45.3C285 379.8 197.1 433.7 91.64 443.8c99.46-49 139.16-153.9 177.46-241.5 4.8-11.4 14.2-16.1 24.9-16.2z",
+          fill: "#fff",
+          fillOpacity: 1,
+        }),
+        pt = function (e) {
+          var a = e.svgRef,
+            t = e.title,
+            n = ht(e, ["svgRef", "title"]);
+          return o.a.createElement(
+            "svg",
+            dt({ viewBox: "0 0 512 512", ref: a }, n),
+            t ? o.a.createElement("title", null, t) : null,
+            Et
+          );
+        },
+        ft = o.a.forwardRef(function (e, a) {
+          return o.a.createElement(pt, dt({ svgRef: a }, e));
+        });
+      t.p;
+      function vt() {
+        return (vt =
+          Object.assign ||
+          function (e) {
+            for (var a = 1; a < arguments.length; a++) {
+              var t = arguments[a];
+              for (var n in t)
+                Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+            }
+            return e;
+          }).apply(this, arguments);
+      }
+      function At(e, a) {
+        if (null == e) return {};
+        var t,
+          n,
+          r = (function (e, a) {
+            if (null == e) return {};
+            var t,
+              n,
+              r = {},
+              o = Object.keys(e);
+            for (n = 0; n < o.length; n++)
+              (t = o[n]), a.indexOf(t) >= 0 || (r[t] = e[t]);
+            return r;
+          })(e, a);
+        if (Object.getOwnPropertySymbols) {
+          var o = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < o.length; n++)
+            (t = o[n]),
+              a.indexOf(t) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, t) &&
+                  (r[t] = e[t]));
+        }
+        return r;
+      }
+      var gt,
+        yt = o.a.createElement("path", {
+          d:
+            "M122.7 23.32l1.7 21.87-16.7 14.25 21.4 5.17 8.4 20.25L149 66.18l21.8-1.75-14.2-16.71 5.1-21.32-20.3 8.35-18.7-11.43zM464 32a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zM239.8 42.5a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zm183.9 6.84c-9.2 1.74-17.7 7.18-25.9 14.28-7.6 6.53-14.7 14.66-20.7 23.45-18.8 3.01-37.6 10.67-50.2 21.13-16.1 13.2-30.4 35.8-38.2 59.1-7.4 3.1-14.4 6.8-20.1 10.8-15.5 10.9-23.5 31.8-29.4 50-5.9 18.3-8.8 34.3-8.8 34.3l17.8 3.2s2.7-15 8.1-31.9c5.5-16.9 14.8-35.3 22.7-40.8 1.3-.9 3-1.9 4.5-2.8-.6 5.7-.6 11.4.3 16.8 1.8 11.4 8 22.3 19 28.2 7.8 4.2 16.6 3.2 24 .2 7.4-3.1 14-8.2 19.7-14.2 5.7-6 10.4-13.1 13.2-20.6 2.8-7.5 3.8-16 .2-23.9h-.1c-3.9-8.4-11.4-13.8-19.4-16.1-8-2.3-16.6-2.2-25.2-.9-1.5.2-2.9.7-4.4 1 7.4-15.8 18-30.7 27.5-38.6 6.2-5.1 16.6-10 27.7-13.6-1.4 3.8-2.5 7.6-3 11.5-1.6 10.5.7 21.9 9.1 29.7 6.1 5.6 14.3 6.5 21.5 5.3 7.1-1.2 14-4.4 20.2-8.5 6.2-4.2 11.7-9.4 15.6-15.5 3.9-6.1 6.5-13.9 4-21.7v-.1c-3.3-10.07-11.5-16.99-20.6-20.27-3.9-1.4-8-2.19-12.2-2.66 2.9-3.26 5.9-6.31 8.9-8.92 6.8-5.84 13.7-9.5 17.6-10.23l-3.4-17.68zM174.8 84.39l-15.2 9.56 34.5 55.25-56.4 2.9 26.5 57.8 16.4-7.6-15.5-33.6 60.6-3.1-50.9-81.21zm216.4 19.31c6.1-.1 11.5.6 15.5 2.1 5.4 1.9 8.1 4.3 9.5 8.8.4 1.1.2 3.3-1.9 6.6-2.2 3.4-6.1 7.2-10.5 10.2-4.5 3-9.5 5.1-13.2 5.7-3.8.7-5.5 0-6.3-.7-3.5-3.2-4.5-7.2-3.5-13.9.8-5.4 3.3-11.9 7-18.6 1.2 0 2.3-.2 3.4-.2zM94.99 123a16 16 0 0 0-16 16 16 16 0 0 0 16 16A16 16 0 0 0 111 139a16 16 0 0 0-16.01-16zm356.11 37.2l-14.4 16.6-21.8-1.8 11.4 18.8-8.5 20.2 21.4-5 16.6 14.3 1.9-21.9 18.7-11.4-20.2-8.5-5.1-21.3zm-123.5 16.5c2.9.1 5.6.5 7.7 1.1 4.3 1.2 6.6 3 8.2 6.4.9 1.9 1 5.4-.7 10-1.7 4.7-5.2 10.1-9.4 14.6s-9.3 8.1-13.5 9.8c-4.2 1.7-6.8 1.6-8.5.7h-.1c-5.8-3.2-8.6-7.8-9.7-15.2-1-6.3-.3-14.3 1.8-22.9 4.9-1.7 9.8-3.1 14.5-3.8 3.5-.5 6.7-.7 9.7-.7zm-202.4 51.9c-7.2-.2-11.7 1.5-14.5 4.3-2.8 2.8-4.5 7.3-4.3 14.5.2 7.3 2.6 16.9 7.2 27.6 9.2 21.5 27.3 47.4 51.6 71.8 24.3 24.3 50.3 42.3 71.8 51.5 10.6 4.6 20.2 7 27.5 7.2 7.3.3 11.7-1.5 14.5-4.3 2.8-2.8 4.6-7.2 4.3-14.5-.2-7.3-2.6-16.9-7.2-27.6-9.2-21.4-27.2-47.4-51.5-71.7-24.3-24.4-50.3-42.4-71.8-51.6-10.7-4.6-20.3-7-27.6-7.2zm232 31.3l-33 54-29.1-27.9-12.4 13 45.1 43.3 33.8-55.2 38.7 32.3 89.3-38.2-7-16.6-79.3 34-46.1-38.7zM93.43 272.6l-17.64 57.9c41.41 49.1 89.71 76.7 142.11 94.7l21.6-6.6c-3.1-1.1-6.4-2.4-9.7-3.8-24.4-10.4-51.7-29.6-77.3-55.3-25.7-25.7-44.9-53-55.34-77.4-1.41-3.2-2.65-6.4-3.73-9.5zm-23.82 78.2l-14.01 46c28.89 27 59 39.2 90.6 50.2l43.4-13.2c-43.2-17.6-84-43.3-119.99-83zM368 352a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zM49.81 415.9l-20.29 66.6 88.28-26.9c-22.77-9.1-45.78-20.7-67.99-39.7z",
+          fill: "#fff",
+          fillOpacity: 1,
+        }),
+        bt = function (e) {
+          var a = e.svgRef,
+            t = e.title,
+            n = At(e, ["svgRef", "title"]);
+          return o.a.createElement(
+            "svg",
+            vt({ viewBox: "0 0 512 512", ref: a }, n),
+            t ? o.a.createElement("title", null, t) : null,
+            yt
+          );
+        },
+        Nt = o.a.forwardRef(function (e, a) {
+          return o.a.createElement(bt, vt({ svgRef: a }, e));
         });
       t.p;
       !(function (e) {
         (e[(e.DECREE = 0)] = "DECREE"), (e[(e.BONUS = 1)] = "BONUS");
-      })(ct || (ct = {}));
-      var ht = function () {
+      })(gt || (gt = {}));
+      var Tt = function () {
           return o.a.createElement(
             "a",
             { href: "/login" },
@@ -6970,7 +7094,7 @@
             )
           );
         },
-        Et = function () {
+        Ot = function () {
           return o.a.createElement(
             "a",
             { href: "/welcome" },
@@ -6981,7 +7105,7 @@
             )
           );
         },
-        pt = function () {
+        St = function () {
           return o.a.createElement(
             m.b,
             { to: { pathname: "/shop" } },
@@ -6992,7 +7116,7 @@
             )
           );
         },
-        ft = function (e) {
+        It = function (e) {
           var a = e.isActive;
           return o.a.createElement(
             "button",
@@ -7001,7 +7125,7 @@
             a ? "ed" : ""
           );
         };
-      function vt(e) {
+      function Bt(e) {
         return "forbidden_book" === e
           ? o.a.createElement(lt, { className: "Decrees-Option-Icon" })
           : "eliminate_team" === e
@@ -7009,13 +7133,13 @@
           : "redistribute_wealth" === e
           ? o.a.createElement(Za, { className: "Decrees-Option-Icon" })
           : "four_for_four" === e || "fourth_strike" === e
-          ? o.a.createElement(Y.p, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.q, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
-          ? o.a.createElement(Y.u, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.v, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
-          ? o.a.createElement(dt, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(ut, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
-          ? o.a.createElement(Y.y, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.z, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
           ? o.a.createElement(Y.g, { className: "Decrees-Option-Icon" })
           : "blaserunning" === e
@@ -7023,36 +7147,42 @@
           : "eat_the_rich" === e
           ? o.a.createElement(Y.h, { className: "Decrees-Option-Icon" })
           : "eat_the_crust" === e
-          ? o.a.createElement(Y.v, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.w, { className: "Decrees-Option-Icon" })
           : "interviews" === e
-          ? o.a.createElement(Y.q, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.r, { className: "Decrees-Option-Icon" })
           : "random_realignment" === e
           ? o.a.createElement(Y.a, { className: "Decrees-Option-Icon" })
           : "alternate_reality" === e
           ? o.a.createElement(ba.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
-          ? o.a.createElement(Y.C, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.D, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(ya.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
           ? o.a.createElement(J.b, { className: "Decrees-Option-Icon" })
           : "team_punish" === e
-          ? o.a.createElement(Y.L, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.M, { className: "Decrees-Option-Icon" })
           : "do_nothing" === e
-          ? o.a.createElement(Y.x, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.y, { className: "Decrees-Option-Icon" })
           : "confuse_good" === e
-          ? o.a.createElement(Y.E, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.F, { className: "Decrees-Option-Icon" })
           : "confuse_evil" === e
-          ? o.a.createElement(Y.D, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.E, { className: "Decrees-Option-Icon" })
           : "parallel_world" === e
-          ? o.a.createElement(Y.z, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.A, { className: "Decrees-Option-Icon" })
           : "diagonal_world" === e
-          ? o.a.createElement(Y.H, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.I, { className: "Decrees-Option-Icon" })
           : "high_filter" === e
-          ? o.a.createElement(Y.o, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Y.p, { className: "Decrees-Option-Icon" })
+          : "new_kids" === e
+          ? o.a.createElement(Y.l, { className: "Decrees-Option-Icon" })
+          : "hot_sauce" === e
+          ? o.a.createElement(ft, { className: "Decrees-Option-Icon" })
+          : "enhanced_party_time" === e
+          ? o.a.createElement(Nt, { className: "Decrees-Option-Icon" })
           : o.a.createElement("div", null);
       }
-      var At = function (e) {
+      var wt = function (e) {
           var a = e.title,
             t = e.description,
             n = e.id,
@@ -7067,7 +7197,7 @@
                 return l(n);
               },
             },
-            vt(n),
+            Bt(n),
             o.a.createElement("div", { className: "Decrees-Option-Header" }, a),
             t &&
               o.a.createElement(
@@ -7075,27 +7205,27 @@
                 { className: "Decrees-Option-Description" },
                 t
               ),
-            o.a.createElement(ft, { isActive: r })
+            o.a.createElement(It, { isActive: r })
           );
         },
-        gt = function () {
-          var e = Object(r.useContext)(ja.context),
+        Ct = function () {
+          var e = Object(r.useContext)(Wa.context),
             a = Object(r.useContext)(G.context).user,
             t = Object(r.useState)(),
-            n = Object(s.a)(t, 2),
+            n = Object(c.a)(t, 2),
             l = n[0],
             i = n[1],
-            m = Object(c.g)(),
-            d = o.a.createElement(ht, null);
+            m = Object(s.g)(),
+            d = o.a.createElement(Tt, null);
           return (
             a.isFetching ||
               !a.isSignedIn ||
               a.favoriteTeam ||
-              (d = o.a.createElement(Et, null)),
+              (d = o.a.createElement(Ot, null)),
             a.isFetching ||
               !a.isSignedIn ||
               a.votes ||
-              (d = o.a.createElement(pt, null)),
+              (d = o.a.createElement(St, null)),
             !a.isFetching &&
               a.isSignedIn &&
               a.favoriteTeam &&
@@ -7114,7 +7244,7 @@
                   u,
                   {
                     background: m,
-                    path: "/vote/".concat(ct.DECREE, "/").concat(l),
+                    path: "/vote/".concat(gt.DECREE, "/").concat(l),
                   },
                   "Submit Decree Vote"
                 )
@@ -7141,7 +7271,7 @@
                 { className: "Decrees-Container" },
                 e.decrees.map(function (e, a) {
                   return o.a.createElement(
-                    At,
+                    wt,
                     Object.assign({ key: a }, e, {
                       isActive: l === e.id,
                       onSelect: function (e) {
@@ -7156,25 +7286,25 @@
           );
         };
       t(120);
-      function yt() {
+      function kt() {
         var e = Object(r.useContext)(I.context),
           a = Object(r.useState)({
             recap: void 0,
             blessingResults: void 0,
             decreeResults: void 0,
           }),
-          t = Object(s.a)(a, 2),
+          t = Object(c.a)(a, 2),
           n = t[0],
           l = t[1],
           i = Object(r.useState)(!1),
-          c = Object(s.a)(i, 2),
-          m = c[0],
-          u = c[1],
+          s = Object(c.a)(i, 2),
+          m = s[0],
+          u = s[1],
           d = Object(r.useContext)(Pe.context);
         function p() {
           return (p = Object(E.a)(
             h.a.mark(function a() {
-              var t, n, r, o, i, s, c;
+              var t, n, r, o, i, c, s;
               return h.a.wrap(function (a) {
                 for (;;)
                   switch ((a.prev = a.next)) {
@@ -7201,17 +7331,17 @@
                       for (
                         i = a.sent,
                           r = [],
-                          s = function (e) {
+                          c = function (e) {
                             var a = i.find(function (a) {
                               return a.id === n.bonusResults[e];
                             });
                             a && r.push(a);
                           },
-                          c = 0;
-                        c < n.bonusResults.length;
-                        c++
+                          s = 0;
+                        s < n.bonusResults.length;
+                        s++
                       )
-                        s(c);
+                        c(s);
                     case 13:
                       if (!(n.decreeResults.length > 0)) {
                         a.next = 17;
@@ -7281,7 +7411,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Recap-Decree-Icon" },
-                          vt(e.decreeId)
+                          Bt(e.decreeId)
                         ),
                         o.a.createElement(
                           "div",
@@ -7445,18 +7575,18 @@
               )
         );
       }
-      function bt() {
+      function Rt() {
         var e = Object(r.useContext)(G.context).user,
           a = Object(r.useContext)(I.context);
         return a && a.sim
           ? 0 === a.sim.phase
-            ? o.a.createElement(yt, null)
+            ? o.a.createElement(kt, null)
             : e.unlockedElection
-            ? o.a.createElement(Nt, null)
-            : o.a.createElement(Ot, null)
+            ? o.a.createElement(Lt, null)
+            : o.a.createElement(Dt, null)
           : null;
       }
-      function Nt() {
+      function Lt() {
         var e,
           a = Object(r.useContext)(I.context),
           t = void 0 !== a.sim && void 0 !== a.sim.season ? a.sim.season : -1;
@@ -7493,15 +7623,15 @@
             "div",
             { className: "Offseason-Body" },
             o.a.createElement(
-              ja,
+              Wa,
               { value: { blessings: [], decrees: [], decreesToPass: 0 } },
-              o.a.createElement(Tt, null)
+              o.a.createElement(Gt, null)
             )
           )
         );
       }
-      function Tt() {
-        var e = Object(r.useContext)(ja.context);
+      function Gt() {
+        var e = Object(r.useContext)(Wa.context);
         return void 0 === e ||
           0 === e.blessings.length ||
           0 === e.decrees.length
@@ -7509,11 +7639,11 @@
           : o.a.createElement(
               o.a.Fragment,
               null,
-              o.a.createElement(gt, null),
+              o.a.createElement(Ct, null),
               o.a.createElement(Ja, null)
             );
       }
-      function Ot() {
+      function Dt() {
         return o.a.createElement(
           "div",
           { className: "Offseason" },
@@ -7546,21 +7676,21 @@
         );
       }
       t(121);
-      var St = function (e) {
+      var Pt = function (e) {
         var a = Object(me.useToasts)().addToast,
           t = Object(r.useContext)(G.context),
           n = t.user,
           l = t.setUser,
-          i = Object(c.f)(),
-          m = Object(c.h)(),
+          i = Object(s.f)(),
+          m = Object(s.h)(),
           u = m.voteType,
           d = m.entityId,
           p = Object(r.useState)(1),
-          f = Object(s.a)(p, 2),
+          f = Object(c.a)(p, 2),
           v = f[0],
           A = f[1],
           g = Object(r.useState)(!1),
-          y = Object(s.a)(g, 2),
+          y = Object(c.a)(g, 2),
           b = y[0],
           N = y[1],
           T = { team1: n.favoriteTeam },
@@ -7643,7 +7773,7 @@
                   o.a.createElement(
                     "div",
                     { className: "Vote-Ticket-Wrapper" },
-                    o.a.createElement(Y.I, { className: "Vote-Ticket-Icon" }),
+                    o.a.createElement(Y.J, { className: "Vote-Ticket-Icon" }),
                     n.votes
                   ),
                   o.a.createElement(ue.a.Control, {
@@ -7679,7 +7809,7 @@
         );
       };
       t(122);
-      function It(e) {
+      function Mt(e) {
         var a,
           t = e.path,
           n = Object(r.useContext)(Pe.context),
@@ -7695,8 +7825,8 @@
           );
         });
         if (void 0 === i) return null;
-        var s = void 0 !== l.sim ? l.sim.season : -1,
-          c = void 0 !== i ? i.mainColor : "#ffffff",
+        var c = void 0 !== l.sim ? l.sim.season : -1,
+          s = void 0 !== i ? i.mainColor : "#ffffff",
           m = void 0 !== i ? i.fullName : "",
           u =
             void 0 !== i
@@ -7704,11 +7834,11 @@
                   "div",
                   { className: "PlayoffsEnd-Body" },
                   "Your Season ",
-                  s + 1,
+                  c + 1,
                   " champions are the ",
                   o.a.createElement(
                     "span",
-                    { className: "PlayoffsEnd-Callout", style: { color: c } },
+                    { className: "PlayoffsEnd-Callout", style: { color: s } },
                     m,
                     "!"
                   )
@@ -7745,7 +7875,7 @@
         );
       }
       t(123);
-      var Bt = function () {
+      var jt = function () {
           return o.a.createElement(
             "div",
             { className: "Privacy" },
@@ -8424,7 +8554,7 @@
             )
           );
         },
-        wt =
+        xt =
           (t(124),
           function () {
             return o.a.createElement(
@@ -8957,8 +9087,8 @@
               )
             );
           });
-      function Ct() {
-        return (Ct =
+      function Wt() {
+        return (Wt =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -8969,7 +9099,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function kt(e, a) {
+      function Qt(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -8993,7 +9123,7 @@
         }
         return r;
       }
-      var Rt = o.a.createElement("image", {
+      var Ht = o.a.createElement("image", {
           id: "Ball",
           x: 87,
           y: 75,
@@ -9002,25 +9132,25 @@
           xlinkHref:
             "data:img/png;base64,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",
         }),
-        Lt = function (e) {
+        Ut = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = kt(e, ["svgRef", "title"]);
+            n = Qt(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
-            Ct(
+            Wt(
               { width: 959, height: 1065, viewBox: "0 0 959 1065", ref: a },
               n
             ),
             t ? o.a.createElement("title", null, t) : null,
-            Rt
+            Ht
           );
         },
-        Gt = o.a.forwardRef(function (e, a) {
-          return o.a.createElement(Lt, Ct({ svgRef: a }, e));
+        Ft = o.a.forwardRef(function (e, a) {
+          return o.a.createElement(Ut, Wt({ svgRef: a }, e));
         }),
-        Dt = (t.p, t(125), t(30)),
-        Pt = {
+        Yt = (t.p, t(125), t(30)),
+        Jt = {
           notes: [],
           refreshNotes: (function () {
             var e = Object(E.a)(
@@ -9040,16 +9170,16 @@
             };
           })(),
         },
-        Mt = Object(r.createContext)(Pt),
-        Wt = function (e) {
+        Vt = Object(r.createContext)(Jt),
+        Kt = function (e) {
           var a = e.children,
             t = Object(r.useContext)(G.context),
             n = t.user,
             l = t.setUser,
             i = Object(r.useState)([]),
-            c = Object(s.a)(i, 2),
-            m = c[0],
-            u = c[1],
+            s = Object(c.a)(i, 2),
+            m = s[0],
+            u = s[1],
             d = Object(me.useToasts)().addToast,
             p = Object(r.useRef)(void 0),
             f = Object(r.useRef)(),
@@ -9071,8 +9201,8 @@
                                 e &&
                                   u(
                                     [].concat(
-                                      Object(Dt.a)(m),
-                                      Object(Dt.a)(e.notes)
+                                      Object(Yt.a)(m),
+                                      Object(Yt.a)(e.notes)
                                     )
                                   );
                               })
@@ -9106,7 +9236,7 @@
                               (function () {
                                 var e = Object(E.a)(
                                   h.a.mark(function e(t) {
-                                    var r, o, i, s, c, m, u, E, p, f, v, A, g;
+                                    var r, o, i, c, s, m, u, E, p, f, v, A, g;
                                     return h.a.wrap(function (e) {
                                       for (;;)
                                         switch ((e.prev = e.next)) {
@@ -9165,7 +9295,7 @@
                                             }
                                             return e.abrupt("return");
                                           case 11:
-                                            (s = {
+                                            (c = {
                                               id: "fave_team_win_earns",
                                               message: "You earned "
                                                 .concat(a, " coins from ")
@@ -9179,13 +9309,13 @@
                                                 ),
                                               userId: n.id,
                                             }),
-                                              d(s.message, {
+                                              d(c.message, {
                                                 appearance: "info",
                                                 autoDismiss: !1,
                                               });
                                           case 13:
                                             r.idolRewards &&
-                                              ((c = 0),
+                                              ((s = 0),
                                               (m = 0),
                                               (u = 0),
                                               (E = 0),
@@ -9198,7 +9328,7 @@
                                               ) {
                                                 switch (e.type) {
                                                   case ze.IdolHomer:
-                                                    c++, (m += e.amount);
+                                                    s++, (m += e.amount);
                                                     break;
                                                   case ze.IdolHit:
                                                     u++, (E += e.amount);
@@ -9257,14 +9387,14 @@
                                                     autoDismiss: !1,
                                                   }
                                                 ),
-                                              c > 0 &&
+                                              s > 0 &&
                                                 d(
                                                   "You earned "
                                                     .concat(m, " coins from ")
                                                     .concat(g, " hitting ")
                                                     .concat(
-                                                      c > 1
-                                                        ? c + " Home Runs!"
+                                                      s > 1
+                                                        ? s + " Home Runs!"
                                                         : " a Home Run!"
                                                     ),
                                                   {
@@ -9396,12 +9526,12 @@
               [m]
             );
           var T = { notes: m, refreshNotes: v };
-          return o.a.createElement(Mt.Provider, { value: T }, a);
+          return o.a.createElement(Vt.Provider, { value: T }, a);
         };
-      Wt.context = Mt;
-      var xt = Wt;
+      Kt.context = Vt;
+      var qt = Kt;
       t(126);
-      function jt() {
+      function zt() {
         return o.a.createElement(
           "div",
           { className: "TheBook-All" },
@@ -9417,9 +9547,9 @@
             o.a.createElement(
               "span",
               { className: "TheBook-Subheader-Group" },
-              o.a.createElement(Qt, { str: "||||||||||||||||||" }),
+              o.a.createElement(Zt, { str: "||||||||||||||||||" }),
               " and ",
-              o.a.createElement(Qt, { str: "|||||||||||||" })
+              o.a.createElement(Zt, { str: "|||||||||||||" })
             )
           ),
           o.a.createElement(
@@ -9436,9 +9566,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Each season of Blaseball shall last 99 games. In the case of ",
-            o.a.createElement(Qt, { str: "the Ultimate ||||||||" }),
+            o.a.createElement(Zt, { str: "the Ultimate ||||||||" }),
             ", seasons shall ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "|||||||||||||||||, or at least until the ||||||| have ||||||||.",
             })
@@ -9447,20 +9577,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Every day of Blaseball shall last one ",
-            o.a.createElement(Qt, { str: "|||||" }),
+            o.a.createElement(Zt, { str: "|||||" }),
             " hour."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. If any games last longer than one ",
-            o.a.createElement(Qt, { str: "|||||" }),
+            o.a.createElement(Zt, { str: "|||||" }),
             " hour, a Spillover shall occur, and all games shall be delayed until the next ",
-            o.a.createElement(Qt, { str: "|||||" }),
+            o.a.createElement(Zt, { str: "|||||" }),
             " hour. In the case of a game lasting two ",
-            o.a.createElement(Qt, { str: "|||||" }),
+            o.a.createElement(Zt, { str: "|||||" }),
             " hours, the ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "entire season should be ||||||||| and both teams should be ||||||||| ||||||||| |||||||| |||| for |||||| |||||||||||.",
             })
@@ -9486,7 +9616,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             'b. The Postseason should start early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
             })
@@ -9500,7 +9630,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. The home team in each Postseason game shall be ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "the |||||||||||, if the |||||||||||||||||||.",
             })
           ),
@@ -9513,7 +9643,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Participants should be allowed to Vote on the rules, rosters, and other effects of the game of Blaseball. ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "The content of such Votes shall be ||||||||||||||| ||||||||||||||||||| ||||||||| entertainment",
             }),
@@ -9527,7 +9657,7 @@
               null,
               "b. Decrees will be decided by popular vote."
             ),
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "It is understood that ||||||||||||||||| will be a ||||||||||| |||||||||||, and the others shall ||||||||||||||| ||||||||||||||| ||||||||| |||||||||||||.",
             })
@@ -9536,20 +9666,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Blessings will be decided by a raffle. ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "It is understood that each of these",
             }),
             " should give players ",
-            o.a.createElement(Qt, { str: "||||||||||||| |||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||||| |||||||||||" }),
             " control of the league. All won Blessings shall be processed & applied in order of the standings. "
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. ",
-            o.a.createElement(Qt, { str: "||||||||||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||||||||||" }),
             " may occur at the end of an Election, before Decrees and Blessings are processed. ",
-            o.a.createElement(Qt, { str: "Anything can happen here" }),
+            o.a.createElement(Zt, { str: "Anything can happen here" }),
             ". Good luck."
           ),
           o.a.createElement(
@@ -9571,34 +9701,34 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Each game should take place ",
-            o.a.createElement(Qt, { str: "at the home team's stadium" }),
+            o.a.createElement(Zt, { str: "at the home team's stadium" }),
             " on the immaterial plane."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Weather: ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "The home team's stadium should determine the weather.",
             }),
             " In the case that ",
-            o.a.createElement(Qt, { str: "||||||||||||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||||||||||||" }),
             ", a Solar Eclipse shall last until ",
-            o.a.createElement(Qt, { str: "||||||||||||||||||||" })
+            o.a.createElement(Zt, { str: "||||||||||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. There are ",
-            o.a.createElement(Qt, { str: "two positions" }),
+            o.a.createElement(Zt, { str: "two positions" }),
             " in Blaseball, ",
-            o.a.createElement(Qt, { str: "||||||||||||||||||||." })
+            o.a.createElement(Zt, { str: "||||||||||||||||||||." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "e. When a team is on Defense, ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "all of the team's ||||||| will stand ||||||||| out in the field. Doesn't really matter where.",
             })
@@ -9607,18 +9737,18 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. The pitcher must throw the ball ",
-            o.a.createElement(Qt, { str: "with their hands." })
+            o.a.createElement(Zt, { str: "with their hands." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "g. Once the ball is in play, ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "||| |||| || ||| |||||||||| ||||| |||||||||| the outcome of the play. ||| |||| ||||||| || ||||||||||||||||",
             }),
             " immaterial plane ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "|||||||||||||| ||||||| ||||||| ||||||||| ||||||||||||||| |||||||||||||||| |||||||| |||||||| unfathomable.",
             })
@@ -9637,38 +9767,38 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "j. ",
-            o.a.createElement(Qt, { str: "||||||||||||||||||||||" })
+            o.a.createElement(Zt, { str: "||||||||||||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "k. Crying in Blaseball is ",
-            o.a.createElement(Qt, { str: "||||||||||." })
+            o.a.createElement(Zt, { str: "||||||||||." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "5. ",
-            o.a.createElement(Qt, { str: "The Gods" }),
+            o.a.createElement(Zt, { str: "The Gods" }),
             " and You"
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Should the Participants open the Forbidden Book, ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "The Discipline Era should begin||||||||||||||||||||||",
             }),
             " suffering ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "upon the league. Players shall be ",
             }),
             " banished ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "at the ||||||||||| ||||||||| |||| ||||||||||||||||.",
             }),
             " The Discipline Era shall last until ",
-            o.a.createElement(Qt, { str: "the Participants have" }),
+            o.a.createElement(Zt, { str: "the Participants have" }),
             " atoned."
           ),
           o.a.createElement(
@@ -9680,9 +9810,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. When teams are sent to ",
-            o.a.createElement(Qt, { str: "||||||||||| |||||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||| |||||||||||||" }),
             ", they shall return once ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "|||||||||||||||| |||||||||||||||||||||| |||||||||||||",
             })
           ),
@@ -9690,9 +9820,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. Divine Favor: the ",
-            o.a.createElement(Qt, { str: "||||" }),
+            o.a.createElement(Zt, { str: "||||" }),
             " have an internal ranking ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "of favored teams. When a team wins a Divine Favor blessing, they will be",
             }),
@@ -9718,7 +9848,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "i. Blood Bath: ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "||||| ||||||, ||||||||||| |||||| ||| ||||||||, ||| ||||| |||| |||| ||||||| ||| ||||||. ||||| |||| || |||||||||||| ||||| || |||| |||||| ||||| |||||||||||||",
             })
@@ -9727,7 +9857,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. Sunglasses ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "shall be |||||||||| ||||||||||||| |||||||||||||||||. They shall provide |||||||||||||| may be ||||||||||||||||||||.",
             })
@@ -9741,13 +9871,13 @@
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "6. ",
-            o.a.createElement(Qt, { str: "||||||||||||" })
+            o.a.createElement(Zt, { str: "||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. It is known ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str:
                 "that the intention of the game of Blaseball |||||||||||||||||||||||| |||||||||||||||||||| |||||||||||||| |||||||||||||||||| ||||||||||| |||||||||| would be diminished.",
             })
@@ -9756,13 +9886,13 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. ",
-            o.a.createElement(Qt, { str: "|||||||" }),
+            o.a.createElement(Zt, { str: "|||||||" }),
             ": Several entities in the ",
-            o.a.createElement(Qt, { str: "||||||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||||||" }),
             " shall be chosen ",
-            o.a.createElement(Qt, { str: "||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||" }),
             " to bring Blaseball to the people ",
-            o.a.createElement(Qt, {
+            o.a.createElement(Zt, {
               str: "|||||||||||||||||| ||||||||||||||||||",
             })
           ),
@@ -9774,47 +9904,47 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            o.a.createElement(Qt, { str: "||||" }),
+            o.a.createElement(Zt, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||" }),
+            o.a.createElement(Zt, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "|||||||" }),
+            o.a.createElement(Zt, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "|||||||||" }),
+            o.a.createElement(Zt, { str: "|||||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "|||||||" }),
+            o.a.createElement(Zt, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||" }),
+            o.a.createElement(Zt, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||||" }),
+            o.a.createElement(Zt, { str: "||||||" }),
             ", \xa0H",
-            o.a.createElement(Qt, { str: "||||||||||" }),
+            o.a.createElement(Zt, { str: "||||||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||||" }),
+            o.a.createElement(Zt, { str: "||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "|||||||" }),
+            o.a.createElement(Zt, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||| ||||" }),
+            o.a.createElement(Zt, { str: "||||| ||||" }),
             ", \xa0A",
-            o.a.createElement(Qt, { str: "|||||| ||||||" }),
+            o.a.createElement(Zt, { str: "|||||| ||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||" }),
+            o.a.createElement(Zt, { str: "||||" }),
             ", \xa0N",
-            o.a.createElement(Qt, { str: "||||||" }),
+            o.a.createElement(Zt, { str: "||||||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||" }),
+            o.a.createElement(Zt, { str: "||" }),
             ", \xa0",
-            o.a.createElement(Qt, { str: "||||||" }),
+            o.a.createElement(Zt, { str: "||||||" }),
             ", \xa0M",
-            o.a.createElement(Qt, { str: "|| ||||||" })
+            o.a.createElement(Zt, { str: "|| ||||||" })
           )
         );
       }
-      function Qt(e) {
+      function Zt(e) {
         var a = e.str.split(" ");
         return o.a.createElement(
           "span",
@@ -9831,7 +9961,7 @@
         );
       }
       t(127);
-      function Ht() {
+      function Xt() {
         var e,
           a = Object(r.useContext)(Ra.context);
         return o.a.createElement(
@@ -9840,7 +9970,7 @@
           o.a.createElement(
             "div",
             { className: "BigDeal-Icon" },
-            o.a.createElement(Y.u, null)
+            o.a.createElement(Y.v, null)
           ),
           o.a.createElement(
             "div",
@@ -9856,9 +9986,9 @@
         );
       }
       t(128);
-      var Ut = t(68);
-      function Ft() {
-        return (Ft =
+      var _t = t(68);
+      function $t() {
+        return ($t =
           Object.assign ||
           function (e) {
             for (var a = 1; a < arguments.length; a++) {
@@ -9869,7 +9999,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function Yt(e, a) {
+      function en(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -9893,27 +10023,27 @@
         }
         return r;
       }
-      var Jt = o.a.createElement("path", {
+      var an = o.a.createElement("path", {
           d:
             "M248 15c-18.1 0-33 14.88-33 33 0 18.12 14.9 33 33 33s33-14.88 33-33c0-18.12-14.9-33-33-33zm0 18c8.4 0 15 6.61 15 15s-6.6 15-15 15-15-6.61-15-15 6.6-15 15-15zM64 73c-18.12 0-33 14.88-33 33 0 18.1 14.88 33 33 33 18.12 0 33-14.9 33-33 0-18.12-14.88-33-33-33zm0 18c8.39 0 15 6.61 15 15 0 8.4-6.61 15-15 15s-15-6.6-15-15c0-8.39 6.61-15 15-15zm155.9 39.7c-22.5 0-41 18.5-41 41s18.5 41 41 41 41-18.5 41-41-18.5-41-41-41zm0 18c12.8 0 23 10.2 23 23s-10.2 23-23 23-23-10.2-23-23 10.2-23 23-23zM112 162a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zm223 61.4c-5 .2-10.6 2.4-20 7.1l-98.1 49.1c.1.8.1 1.6.1 2.4 0 27-22 49-49 49-11.9 0-22.7-4.2-31.2-11.3l-23.4 11.7c-8.2 4.8-14.26 8.3-18.01 12.9-3.78 4.7-6.39 11-6.39 24.4v43.1c0 10.4.59 14.7 1.18 15.7.6 1.1 3 3 11.52 7.4l78.7 39.4.3.1c16.3 9.7 36.8 8.8 56.7-1.2l199.3-98.9c9.5-5.3 13.6-9.1 15.6-12.7 2-3.7 2.7-8.7 2.7-18.1v-38.6c0-12.7.2-19.8-.8-22.4-.9-2.7-2.5-4.6-12.3-9.4v-.1l-84.8-42.4-.1-.1c-10.9-5.7-16.9-7.3-22-7.1zM168 251c-17.2 0-31 13.8-31 31s13.8 31 31 31 31-13.8 31-31-13.8-31-31-31zm246.8 34.5l7.8 16.2-154 73.8h-.1c-17 7.8-30.3 14.9-45.3 17.6-14.9 2.6-30.8-.4-49.6-11l.4.3-43.5-21.4 8-16.2 43.7 21.5.2.2c16.6 9.3 26.8 10.7 37.8 8.8 10.9-1.9 23.3-8.2 40.8-16.2l153.8-73.6z",
           fill: "#fff",
           fillOpacity: 1,
         }),
-        Vt = function (e) {
+        tn = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = Yt(e, ["svgRef", "title"]);
+            n = en(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
-            Ft({ viewBox: "0 0 512 512", ref: a }, n),
+            $t({ viewBox: "0 0 512 512", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            Jt
+            an
           );
         },
-        Kt = o.a.forwardRef(function (e, a) {
-          return o.a.createElement(Vt, Ft({ svgRef: a }, e));
+        nn = o.a.forwardRef(function (e, a) {
+          return o.a.createElement(tn, $t({ svgRef: a }, e));
         }),
-        qt =
+        rn =
           (t.p,
           (function (e) {
             var a,
@@ -10104,18 +10234,18 @@
             "1298718347463258112",
             "1298714979516858368",
           ]));
-      function zt() {
+      function on() {
         var e,
           a,
           t,
           n,
           l,
           i,
-          c,
+          s,
           m,
           u = Object(r.useContext)(I.context),
           d = Object(r.useState)([]),
-          p = Object(s.a)(d, 2),
+          p = Object(c.a)(d, 2),
           f = p[0],
           v = p[1];
         function A() {
@@ -10165,7 +10295,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#deae00" },
                 },
-                o.a.createElement(Y.r, null)
+                o.a.createElement(Y.s, null)
               ),
               o.a.createElement(
                 "div",
@@ -10301,7 +10431,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#32c775" },
                 },
-                o.a.createElement(Y.K, null)
+                o.a.createElement(Y.L, null)
               ),
               o.a.createElement(
                 "div",
@@ -10315,24 +10445,24 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "The Hades Tigers became the second Back-to-Back Champion in the history of Internet League Blaseball with a sweep of the New York Millennials in the Internet Series."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "Feedback was deafening across the ILB as a mysterious force caused players to suddenly switch teams. No one has yet been able to determine the source."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "The Wave is washing over the Bridge. Are you hearing an Echo?"
               )
             )
           )),
-          (c = o.a.createElement(
+          (s = o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
@@ -10344,7 +10474,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#c23284" },
                 },
-                o.a.createElement(Y.B, null)
+                o.a.createElement(Y.C, null)
               ),
               o.a.createElement(
                 "div",
@@ -10360,7 +10490,7 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "The community reached ",
                 o.a.createElement(
                   "a",
@@ -10375,19 +10505,19 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "Sandie Turner stole THREE BASES in ONE INNING and found the 3-BLOOD BLAGONBALL!"
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "Waves broke over the league, resulting in SERIOUS COINAGE for the fans and leaving SIXPACK DOGWALKER confused."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Zt, null),
+                o.a.createElement(ln, null),
                 "Thomas Dracaena hit a ground out to Edric Tosser."
               )
             )
@@ -10404,7 +10534,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#1b95e0" },
                 },
-                o.a.createElement(Y.t, null)
+                o.a.createElement(Y.u, null)
               ),
               o.a.createElement(
                 "div",
@@ -10415,8 +10545,8 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents Bulletin-Item-ImageGrid" },
-              qt.map(function (e) {
-                return o.a.createElement(Ut.a, {
+              rn.map(function (e) {
+                return o.a.createElement(_t.a, {
                   id: e,
                   options: { theme: "dark", conversation: "none", dnt: !0 },
                   className: "Bulletin-Tweet",
@@ -10424,7 +10554,7 @@
               })
             )
           )),
-          (m = j(u.sim, "UNLOCKED_IDOLS")
+          (m = W(u.sim, "UNLOCKED_IDOLS")
             ? o.a.createElement(
                 o.a.Fragment,
                 null,
@@ -10452,19 +10582,19 @@
                     "div",
                     { className: "Bulletin-Item-Contents-Text" },
                     "BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" }),
+                    o.a.createElement(nn, { className: "Bulletin-Icon" }),
                     " BATH TIME ",
-                    o.a.createElement(Kt, { className: "Bulletin-Icon" })
+                    o.a.createElement(nn, { className: "Bulletin-Icon" })
                   )
                 )
               )
@@ -10509,7 +10639,7 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item Bulletin-Tall-Middle" },
-              c
+              s
             ),
             o.a.createElement(
               "div",
@@ -10555,10 +10685,10 @@
             )
           : y;
       }
-      function Zt() {
+      function ln() {
         return o.a.createElement(ba.f, { className: "Bulletin-Bullet" });
       }
-      var Xt, _t;
+      var cn, sn;
       t(129);
       !(function (e) {
         (e[(e.SingleA = 0)] = "SingleA"),
@@ -10574,7 +10704,7 @@
           (e[(e.Fire = 10)] = "Fire"),
           (e[(e.Psychic = 11)] = "Psychic"),
           (e[(e.Grass = 12)] = "Grass");
-      })(Xt || (Xt = {})),
+      })(cn || (cn = {})),
         (function (e) {
           (e[(e.Black = 0)] = "Black"),
             (e[(e.LightAndSweet = 1)] = "LightAndSweet"),
@@ -10590,9 +10720,9 @@
             (e[(e.MilkSubstitute = 11)] = "MilkSubstitute"),
             (e[(e.PlentyOfSugar = 12)] = "PlentyOfSugar"),
             (e[(e.Anything = 13)] = "Anything");
-        })(_t || (_t = {}));
-      var $t = t(39);
-      function en(e) {
+        })(sn || (sn = {}));
+      var mn = t(39);
+      function un(e) {
         for (
           var a = e / 0.2,
             t = Math.round(2 * a) / 2,
@@ -10609,15 +10739,15 @@
           o.a.createElement("span", null, l)
         );
       }
-      var an = function (e) {
+      var dn = function (e) {
         var a,
           t,
           n,
-          l = Object(c.h)().id,
+          l = Object(s.h)().id,
           i = Object(r.useContext)(I.context),
           m = Object(r.useContext)(Pe.context),
           u = Object(r.useState)(void 0),
-          d = Object(s.a)(u, 2),
+          d = Object(c.a)(u, 2),
           p = d[0],
           f = d[1],
           v = Object(me.useToasts)().addToast;
@@ -10642,7 +10772,7 @@
                   for (;;)
                     switch ((e.prev = e.next)) {
                       case 0:
-                        return (e.next = 2), se([l]);
+                        return (e.next = 2), ce([l]);
                       case 2:
                         void 0 !== (a = e.sent) &&
                           1 == a.length &&
@@ -10664,7 +10794,7 @@
             if (void 0 === e) return "NONE";
             if (void 0 === e.bat) return "NONE";
             if ("" === e.bat) return "NONE";
-            var a = $t.collection.find(function (a) {
+            var a = mn.collection.find(function (a) {
               return a.id === e.bat;
             });
             return void 0 === a ? "NONE" : a.attr;
@@ -10673,7 +10803,7 @@
             if (void 0 === e) return "NONE";
             if (void 0 === e.armor) return "NONE";
             if ("" === e.armor) return "NONE";
-            var a = $t.collection.find(function (a) {
+            var a = mn.collection.find(function (a) {
               return a.id === e.armor;
             });
             return void 0 === a ? "NONE" : a.attr;
@@ -10900,7 +11030,7 @@
                             void 0 !== p.team ? p.team.fullName : "Null Team"
                           )
                         ),
-                        j(i.sim, "UNLOCKED_IDOLS")
+                        W(i.sim, "UNLOCKED_IDOLS")
                           ? o.a.createElement(
                               F.a,
                               { className: "Player-Button" },
@@ -10936,14 +11066,14 @@
                                             ? o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(Y.F, null),
+                                                o.a.createElement(Y.G, null),
                                                 " ",
                                                 " Choose Idol"
                                               )
                                             : o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(Y.J, null),
+                                                o.a.createElement(Y.K, null),
                                                 " ",
                                                 "200 New Idol"
                                               ),
@@ -10956,7 +11086,7 @@
                                 ? o.a.createElement(
                                     "div",
                                     { className: "Player-Button-Idol-Current" },
-                                    o.a.createElement(Y.F, null),
+                                    o.a.createElement(Y.G, null),
                                     " Your Idol"
                                   )
                                 : o.a.createElement(
@@ -10976,14 +11106,14 @@
                                         ? o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(Y.F, null),
+                                            o.a.createElement(Y.G, null),
                                             " ",
                                             " Choose Idol"
                                           )
                                         : o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(Y.J, null),
+                                            o.a.createElement(Y.K, null),
                                             " ",
                                             "200 New Idol"
                                           ),
@@ -11171,7 +11301,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Player-Ratings" },
-                          en(
+                          un(
                             (function (e) {
                               return (
                                 Math.pow(1 - e.tragicness, 0.01) *
@@ -11199,7 +11329,7 @@
                           "div",
                           { className: "Player-Ratings" },
                           (function (e) {
-                            return en(
+                            return un(
                               (function (e) {
                                 return (
                                   Math.pow(e.shakespearianism, 0.1) *
@@ -11226,7 +11356,7 @@
                           "div",
                           { className: "Player-Ratings" },
                           (function (e) {
-                            return en(
+                            return un(
                               (function (e) {
                                 return (
                                   Math.pow(e.laserlikeness, 0.5) *
@@ -11252,7 +11382,7 @@
                           "div",
                           { className: "Player-Ratings" },
                           (function (e) {
-                            return en(
+                            return un(
                               (function (e) {
                                 return (
                                   Math.pow(e.omniscience, 0.2) *
@@ -11288,7 +11418,7 @@
                               if (void 0 === e) return "None";
                               if (void 0 === e.bat) return "None";
                               if ("" === e.bat) return "None";
-                              var a = $t.collection.find(function (a) {
+                              var a = mn.collection.find(function (a) {
                                 return a.id === e.bat;
                               });
                               return void 0 === a ? "None?" : a.name;
@@ -11323,7 +11453,7 @@
                               if (void 0 === e) return "None";
                               if (void 0 === e.armor) return "None";
                               if ("" === e.armor) return "None";
-                              var a = $t.collection.find(function (a) {
+                              var a = mn.collection.find(function (a) {
                                 return a.id === e.armor;
                               });
                               return void 0 === a ? "None?" : a.name;
@@ -11386,31 +11516,31 @@
                           { className: "Player-Info-Line-Body" },
                           (function (e) {
                             switch (e) {
-                              case _t.Black:
+                              case sn.Black:
                                 return "Black";
-                              case _t.LightAndSweet:
+                              case sn.LightAndSweet:
                                 return "Light & Sweet";
-                              case _t.Macchiato:
+                              case sn.Macchiato:
                                 return "Macchiato";
-                              case _t.CreamAndSugar:
+                              case sn.CreamAndSugar:
                                 return "Cream & Sugar";
-                              case _t.ColdBrew:
+                              case sn.ColdBrew:
                                 return "Cold Brew";
-                              case _t.FlatWhite:
+                              case sn.FlatWhite:
                                 return "Flat White";
-                              case _t.Americano:
+                              case sn.Americano:
                                 return "Americano";
-                              case _t.Foam:
+                              case sn.Foam:
                                 return "Heavy Foam";
-                              case _t.Latte:
+                              case sn.Latte:
                                 return "Latte";
-                              case _t.Decaf:
+                              case sn.Decaf:
                                 return "Decaf";
-                              case _t.MilkSubstitute:
+                              case sn.MilkSubstitute:
                                 return "Milk Substitute";
-                              case _t.PlentyOfSugar:
+                              case sn.PlentyOfSugar:
                                 return "Plenty of Sugar";
-                              case _t.Anything:
+                              case sn.Anything:
                                 return "Anything";
                             }
                             return "Coffee?";
@@ -11430,31 +11560,31 @@
                           { className: "Player-Info-Line-Body" },
                           (function (e) {
                             switch (e) {
-                              case Xt.SingleA:
+                              case cn.SingleA:
                                 return "A";
-                              case Xt.DoubleA:
+                              case cn.DoubleA:
                                 return "AA";
-                              case Xt.TripleA:
+                              case cn.TripleA:
                                 return "AAA";
-                              case Xt.Acid:
+                              case cn.Acid:
                                 return "Acidic";
-                              case Xt.Base:
+                              case cn.Base:
                                 return "Basic";
-                              case Xt.Oh:
+                              case cn.Oh:
                                 return "O";
-                              case Xt.OhNo:
+                              case cn.OhNo:
                                 return "O No";
-                              case Xt.Water:
+                              case cn.Water:
                                 return "H\u2082O";
-                              case Xt.Electric:
+                              case cn.Electric:
                                 return "Electric";
-                              case Xt.Love:
+                              case cn.Love:
                                 return "Love";
-                              case Xt.Fire:
+                              case cn.Fire:
                                 return "Fire";
-                              case Xt.Psychic:
+                              case cn.Psychic:
                                 return "Psychic";
-                              case Xt.Grass:
+                              case cn.Grass:
                                 return "Grass";
                             }
                             return "Blood?";
@@ -11511,9 +11641,9 @@
                           )
                             for (var l = 0; l < 11; l++) {
                               var i = 1 / Math.pow(10, r),
-                                s = n[l % n.length] % i,
-                                c = Math.floor((s / i) * 10);
-                              a += t[c];
+                                c = n[l % n.length] % i,
+                                s = Math.floor((c / i) * 10);
+                              a += t[s];
                             }
                           return o.a.createElement(
                             "div",
@@ -11536,12 +11666,12 @@
         );
       };
       t(130), t(131);
-      function tn(e) {
+      function hn(e) {
         return void 0 !== e.element
           ? e.element
           : o.a.createElement("div", { className: "Stubs-Header" }, e.text);
       }
-      var nn = function (e) {
+      var En = function (e) {
           var a,
             t = e.path,
             n = Object(r.useContext)(I.context),
@@ -11549,7 +11679,7 @@
           return o.a.createElement(
             "div",
             null,
-            o.a.createElement(tn, {
+            o.a.createElement(hn, {
               element: o.a.createElement(
                 "div",
                 { className: "Stubs-All" },
@@ -11580,7 +11710,7 @@
               : o.a.createElement(oa, null)
           );
         },
-        rn =
+        pn =
           (t(132),
           function (e) {
             var a,
@@ -11591,7 +11721,7 @@
             return o.a.createElement(
               "div",
               null,
-              o.a.createElement(tn, {
+              o.a.createElement(hn, {
                 element: o.a.createElement(
                   "div",
                   { className: "Stubs-All" },
@@ -11622,11 +11752,11 @@
                 : o.a.createElement(oa, null)
             );
           });
-      function on() {
+      function fn() {
         var e = Object(r.useContext)(G.context).user,
           a = Object(r.useContext)(Ra.context),
           t = Object(r.useState)(!1),
-          n = Object(s.a)(t, 2),
+          n = Object(c.a)(t, 2),
           l = n[0],
           i = n[1];
         return (
@@ -11637,16 +11767,16 @@
             [e]
           ),
           void 0 !== e && e.isFetching
-            ? o.a.createElement(sn, null)
+            ? o.a.createElement(An, null)
             : a && a.doc && a.doc.epsilon
-            ? o.a.createElement(cn, null)
+            ? o.a.createElement(gn, null)
             : l
-            ? o.a.createElement(mn, null)
-            : o.a.createElement(ln, null)
+            ? o.a.createElement(yn, null)
+            : o.a.createElement(vn, null)
         );
       }
-      function ln() {
-        var e = Object(c.g)(),
+      function vn() {
+        var e = Object(s.g)(),
           a = e.state && e.state.background;
         return o.a.createElement(
           "div",
@@ -11656,53 +11786,53 @@
             "div",
             { className: "Main-Body-Intro" },
             o.a.createElement(
-              c.c,
+              s.c,
               { location: a || e },
               o.a.createElement(
-                c.a,
+                s.a,
                 { path: "/tos" },
-                o.a.createElement(wt, null)
+                o.a.createElement(xt, null)
               ),
               o.a.createElement(
-                c.a,
+                s.a,
                 { path: "/privacy" },
-                o.a.createElement(Bt, null)
+                o.a.createElement(jt, null)
               ),
               o.a.createElement(
-                c.a,
+                s.a,
                 { path: "/login" },
                 o.a.createElement(Pa, { isLogin: !0 })
               ),
               o.a.createElement(
-                c.a,
+                s.a,
                 { path: "/signup/:code?" },
                 o.a.createElement(Pa, null)
               ),
-              o.a.createElement(c.a, { path: "/" }, o.a.createElement(Aa, null))
+              o.a.createElement(s.a, { path: "/" }, o.a.createElement(Aa, null))
             ),
             a &&
               o.a.createElement(
                 o.a.Fragment,
                 null,
-                o.a.createElement(c.a, {
+                o.a.createElement(s.a, {
                   path: "/signup",
                   children: o.a.createElement(Pa, { isModal: !0 }),
                 }),
-                o.a.createElement(c.a, {
+                o.a.createElement(s.a, {
                   path: "/login",
                   children: o.a.createElement(Pa, { isModal: !0, isLogin: !0 }),
                 }),
-                o.a.createElement(c.a, {
+                o.a.createElement(s.a, {
                   path: "/team/:nickname",
                   children: o.a.createElement(wa, { isModal: !0 }),
                 }),
-                o.a.createElement(c.a, {
+                o.a.createElement(s.a, {
                   path: "/bet/:gameId",
                   children: o.a.createElement(fe, { isModal: !0 }),
                 }),
-                o.a.createElement(c.a, {
+                o.a.createElement(s.a, {
                   path: "/vote/:voteType/:entityId",
-                  children: o.a.createElement(St, { isModal: !0 }),
+                  children: o.a.createElement(Pt, { isModal: !0 }),
                 })
               ),
             o.a.createElement(Da, { isModal: !0, dismissable: !1 })
@@ -11725,7 +11855,7 @@
               ),
               o.a.createElement(
                 "a",
-                { className: "Main-Footer-Link", href: un() },
+                { className: "Main-Footer-Link", href: bn() },
                 "Advertise"
               )
             ),
@@ -11736,43 +11866,43 @@
                 target: "_blank",
                 className: "Main-Footer-Logo",
               },
-              o.a.createElement(Gt, null)
+              o.a.createElement(Ft, null)
             )
           )
         );
       }
-      function sn() {
+      function An() {
         return o.a.createElement(
           "div",
           null,
           o.a.createElement("div", { className: "Main-Body" })
         );
       }
-      function cn() {
+      function gn() {
         return o.a.createElement(
           "div",
           null,
           o.a.createElement(
             "div",
             { className: "Main-Body" },
-            o.a.createElement(Ht, null)
+            o.a.createElement(Xt, null)
           )
         );
       }
-      function mn() {
+      function yn() {
         var e = Object(r.useContext)(I.context),
-          a = Object(c.g)(),
+          a = Object(s.g)(),
           t = a.state && a.state.background,
           n = function (e, a) {
             switch (e) {
               case 0:
-                return o.a.createElement(It, { path: a });
+                return o.a.createElement(Mt, { path: a });
               case 1:
-                return o.a.createElement(nn, { path: a });
+                return o.a.createElement(En, { path: a });
               case 2:
                 return o.a.createElement(ua, { path: a });
               case 3:
-                return o.a.createElement(rn, { path: a });
+                return o.a.createElement(pn, { path: a });
               case 4:
                 return o.a.createElement(da, { path: a });
               case 5:
@@ -11782,7 +11912,7 @@
             return o.a.createElement("div", null);
           };
         return o.a.createElement(
-          xt,
+          qt,
           null,
           o.a.createElement(
             M,
@@ -11795,80 +11925,80 @@
                 "div",
                 { className: "Main-Body" },
                 o.a.createElement(
-                  c.c,
+                  s.c,
                   { location: t || a },
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/tos" },
-                    o.a.createElement(wt, null)
+                    o.a.createElement(xt, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/privacy" },
-                    o.a.createElement(Bt, null)
+                    o.a.createElement(jt, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/about" },
                     o.a.createElement(va, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/bulletin" },
-                    o.a.createElement(zt, null)
+                    o.a.createElement(on, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/shop" },
                     o.a.createElement(La, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/thebook" },
-                    o.a.createElement(jt, null)
+                    o.a.createElement(zt, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/offseason" },
-                    o.a.createElement(bt, null)
+                    o.a.createElement(Rt, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/login" },
                     o.a.createElement(Pa, { isLogin: !0 })
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/signup" },
                     o.a.createElement(Pa, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/team/:nickname" },
                     o.a.createElement(wa, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/player/:id" },
-                    o.a.createElement(an, null)
+                    o.a.createElement(dn, null)
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/standings" },
                     e.sim && n(e.sim.phase, "/standings")
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/leaderboard" },
                     e.sim && n(e.sim.phase, "/leaderboard")
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/upcoming" },
                     e.sim && n(e.sim.phase, "/upcoming")
                   ),
                   o.a.createElement(
-                    c.a,
+                    s.a,
                     { path: "/" },
                     e.sim && n(e.sim.phase, "/")
                   )
@@ -11877,32 +12007,32 @@
                   o.a.createElement(
                     o.a.Fragment,
                     null,
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/signup",
                       children: o.a.createElement(Pa, { isModal: !0 }),
                     }),
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/login",
                       children: o.a.createElement(Pa, {
                         isModal: !0,
                         isLogin: !0,
                       }),
                     }),
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/team/:nickname",
                       children: o.a.createElement(wa, { isModal: !0 }),
                     }),
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/player/:id",
-                      children: o.a.createElement(an, { isModal: !0 }),
+                      children: o.a.createElement(dn, { isModal: !0 }),
                     }),
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/bet/:gameId",
                       children: o.a.createElement(fe, { isModal: !0 }),
                     }),
-                    o.a.createElement(c.a, {
+                    o.a.createElement(s.a, {
                       path: "/vote/:voteType/:entityId",
-                      children: o.a.createElement(St, { isModal: !0 }),
+                      children: o.a.createElement(Pt, { isModal: !0 }),
                     })
                   ),
                 o.a.createElement(Da, { isModal: !0, dismissable: !1 })
@@ -11940,7 +12070,7 @@
                     { className: "Main-Footer-Advertise-Inner" },
                     o.a.createElement(
                       "a",
-                      { className: "Main-Footer-Advertise-Icon", href: un() },
+                      { className: "Main-Footer-Advertise-Icon", href: bn() },
                       "Sponsor a Season"
                     )
                   )
@@ -11952,19 +12082,19 @@
                     target: "_blank",
                     className: "Main-Footer-Logo",
                   },
-                  o.a.createElement(Gt, null)
+                  o.a.createElement(Ft, null)
                 )
               )
             )
           )
         );
       }
-      function un() {
+      function bn() {
         return "mailto:sponsors@thegameband.com?subject=".concat(
           encodeURIComponent("I\u2019d like to sponsor a season of Blaseball")
         );
       }
-      var dn = function () {
+      var Nn = function () {
         return o.a.createElement(
           "div",
           { className: "Main" },
@@ -11972,7 +12102,7 @@
             G,
             null,
             o.a.createElement(fa, null),
-            o.a.createElement(on, null)
+            o.a.createElement(fn, null)
           )
         );
       };
@@ -11983,7 +12113,7 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var hn = { sim: void 0, standings: void 0, season: void 0 };
+      var Tn = { sim: void 0, standings: void 0, season: void 0 };
       "serviceWorker" in navigator &&
         navigator.serviceWorker.ready
           .then(function (e) {
@@ -12008,14 +12138,14 @@
                 { value: {} },
                 o.a.createElement(
                   I,
-                  { value: hn },
+                  { value: Tn },
                   o.a.createElement(
                     Pe,
                     { value: {} },
                     o.a.createElement(
                       Ra,
                       { value: {} },
-                      o.a.createElement(m.a, null, o.a.createElement(dn, null))
+                      o.a.createElement(m.a, null, o.a.createElement(Nn, null))
                     )
                   )
                 )
