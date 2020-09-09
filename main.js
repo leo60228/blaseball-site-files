@@ -1808,14 +1808,19 @@
         function b() {
           return l.homeScore > l.awayScore ? l.awayTeam : l.homeTeam;
         }
-        function N(e) {
+        function N() {
+          return l.homeScore > l.awayScore
+            ? l.homeTeamNickname
+            : l.awayTeamNickname;
+        }
+        function T(e) {
           return e === l.homeTeam
             ? l.homeTeamNickname
             : e === l.awayTeam
             ? l.awayTeamNickname
             : "Null Team";
         }
-        function T(e) {
+        function O(e) {
           return e === l.homeTeam
             ? l.homeTeamColor
             : e === l.awayTeam
@@ -1830,7 +1835,7 @@
             g > A && l.gameComplete
               ? { border: 2, borderColor: "#fffffff", borderStyle: "solid" }
               : {});
-        var O = (function (e) {
+        var S = (function (e) {
             for (
               var a = {
                   onFirst: !1,
@@ -1858,13 +1863,13 @@
             }
             return a;
           })(l),
-          S = "";
-        O.onFirst && (S += " first"),
-          O.onSecond && (S += " second"),
-          O.onThird && (S += " third");
-        var I = o.a.createElement("div", { className: "GameWidget-Outs" }, E),
-          B = Object(s.g)(),
-          w =
+          I = "";
+        S.onFirst && (I += " first"),
+          S.onSecond && (I += " second"),
+          S.onThird && (I += " third");
+        var B = o.a.createElement("div", { className: "GameWidget-Outs" }, E),
+          w = Object(s.g)(),
+          C =
             h.complete || !h.started
               ? o.a.createElement("div", null)
               : o.a.createElement(
@@ -1891,7 +1896,7 @@
                       o.a.createElement(
                         u,
                         {
-                          background: B,
+                          background: w,
                           path: "/player/".concat(
                             l.topOfInning ? l.homePitcher : l.awayPitcher
                           ),
@@ -1923,7 +1928,7 @@
                         ? o.a.createElement(
                             u,
                             {
-                              background: B,
+                              background: w,
                               path: "/player/".concat(
                                 l.topOfInning ? l.awayBatter : l.homeBatter
                               ),
@@ -1939,27 +1944,27 @@
                     )
                   )
                 ),
-          C = null;
-        if (h.started && c.isSignedIn) C = null;
-        else if (h.started) C = o.a.createElement("div", null);
+          k = null;
+        if (h.started && c.isSignedIn) k = null;
+        else if (h.started) k = o.a.createElement("div", null);
         else if (c.isSignedIn) {
-          var k,
-            R = d[l.id],
-            L = (null === R || void 0 === R ? void 0 : R.length) || 0,
-            D = L > 0 ? R[0] : void 0;
-          void 0 !== D &&
-            (k = D.entityId === l.homeTeam ? l.homeTeamName : l.awayTeamName),
-            (C = o.a.createElement(
+          var R,
+            L = d[l.id],
+            D = (null === L || void 0 === L ? void 0 : L.length) || 0,
+            P = D > 0 ? L[0] : void 0;
+          void 0 !== P &&
+            (R = P.entityId === l.homeTeam ? l.homeTeamName : l.awayTeamName),
+            (k = o.a.createElement(
               F.a,
               { className: "GameWidget-Button-Centered" },
-              L > 0
+              D > 0
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
                     o.a.createElement(Y.J, null),
                     " ",
-                    L > 0
-                      ? "".concat(D.amount, " on ").concat(k)
+                    D > 0
+                      ? "".concat(P.amount, " on ").concat(R)
                       : "No active bets"
                   )
                 : c.coins
@@ -1968,7 +1973,7 @@
                     { className: "GameWidget-Button", variant: "success" },
                     o.a.createElement(
                       u,
-                      { background: B, path: "/bet/".concat(l.id) },
+                      { background: w, path: "/bet/".concat(l.id) },
                       "Place a Bet"
                     )
                   )
@@ -1987,7 +1992,7 @@
                   )
             ));
         } else
-          C = o.a.createElement(
+          k = o.a.createElement(
             "a",
             { href: "/login" },
             o.a.createElement(
@@ -1996,17 +2001,17 @@
               "Login to Play"
             )
           );
-        var P = null,
-          x = null,
-          W = d[l.id],
-          Q =
-            ((null === W || void 0 === W ? void 0 : W.length) || 0) > 0
-              ? W[0]
+        var x = null,
+          W = null,
+          Q = d[l.id],
+          H =
+            ((null === Q || void 0 === Q ? void 0 : Q.length) || 0) > 0
+              ? Q[0]
               : void 0;
         if (h.started) {
-          var H = void 0 !== Q ? Ee(Q.odds, Q.amount) : 0;
-          (P =
-            void 0 !== Q && Q.entityId === l.homeTeam
+          var J = void 0 !== H ? Ee(H.odds, H.amount) : 0;
+          (x =
+            void 0 !== H && H.entityId === l.homeTeam
               ? o.a.createElement(
                   "div",
                   { className: "GameWidget-ScoreBet" },
@@ -2017,7 +2022,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
-                      Q.amount
+                      H.amount
                     )
                   ),
                   o.a.createElement(
@@ -2026,12 +2031,12 @@
                     o.a.createElement("div", {
                       className: "GameWidget-ScoreBet-Triangle",
                     }),
-                    H
+                    J
                   )
                 )
               : null),
-            (x =
-              void 0 !== Q && Q.entityId === l.awayTeam
+            (W =
+              void 0 !== H && H.entityId === l.awayTeam
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet" },
@@ -2042,7 +2047,7 @@
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
-                        Q.amount
+                        H.amount
                       )
                     ),
                     o.a.createElement(
@@ -2051,35 +2056,41 @@
                       o.a.createElement("div", {
                         className: "GameWidget-ScoreBet-Triangle",
                       }),
-                      H
+                      J
                     )
                   )
                 : null);
         }
-        var J,
-          V,
-          K = null;
+        var V,
+          K,
+          q,
+          z = null;
         if (h.complete) {
-          var q =
+          var Z =
             y() === l.homeTeam
               ? l.homeOdds - l.awayOdds
               : l.awayOdds - l.homeOdds;
-          K = o.a.createElement(
+          z = o.a.createElement(
             "div",
             { className: "GameWidget-Outcome" },
             o.a.createElement(
               "div",
               { className: "GameWidget-Outcome-Blurb" },
               "The ",
-              (V = q) > 0.25
-                ? "heavily favored"
-                : V > 0
-                ? "favored"
-                : V < -0.25
+              ((K = N()),
+              (q = Z) > 0.25
+                ? "Wild Wings" === K
+                  ? "heavily flavored"
+                  : "heavily favored"
+                : q > 0
+                ? "Wild Wings" === K
+                  ? "flavored"
+                  : "favored"
+                : q < -0.25
                 ? "heavy underdog"
-                : V < 0
+                : q < 0
                 ? "underdog"
-                : "",
+                : ""),
               "\xa0",
               o.a.createElement(
                 "span",
@@ -2092,9 +2103,7 @@
                         : l.awayTeamColor,
                   },
                 },
-                l.homeScore > l.awayScore
-                  ? l.homeTeamNickname
-                  : l.awayTeamNickname
+                N()
               ),
               "\xa0won the game."
             ),
@@ -2107,9 +2116,9 @@
                     "span",
                     {
                       className: "GameWidget-Outcome-Callout",
-                      style: { color: T(b()) },
+                      style: { color: O(b()) },
                     },
-                    N(b())
+                    T(b())
                   ),
                   "\xa0were ",
                   o.a.createElement(
@@ -2119,7 +2128,7 @@
                   )
                 )
               : null,
-            void 0 !== Q
+            void 0 !== H
               ? o.a.createElement(
                   "div",
                   { className: "GameWidget-Outcome-Blurb" },
@@ -2129,19 +2138,19 @@
                     { className: "GameWidget-Outcome-Callout" },
                     o.a.createElement(Y.J, null),
                     "\xa0",
-                    Q.amount
+                    H.amount
                   ),
                   "\xa0on the \xa0",
                   o.a.createElement(
                     "span",
                     {
                       className: "GameWidget-Outcome-Callout",
-                      style: { color: T(Q.entityId) },
+                      style: { color: O(H.entityId) },
                     },
-                    N(Q.entityId)
+                    T(H.entityId)
                   ),
                   "\xa0and ",
-                  y() == Q.entityId
+                  y() == H.entityId
                     ? o.a.createElement(
                         "span",
                         null,
@@ -2151,7 +2160,7 @@
                           { className: "GameWidget-Outcome-Callout" },
                           o.a.createElement(Y.J, null),
                           "\xa0",
-                          Ee(Q.odds, Q.amount)
+                          Ee(H.odds, H.amount)
                         ),
                         "."
                       )
@@ -2169,7 +2178,7 @@
               : null
           );
         } else
-          K = h.started
+          z = h.started
             ? o.a.createElement(
                 o.a.Fragment,
                 null,
@@ -2184,10 +2193,10 @@
                       o.a.createElement(
                         o.a.Fragment,
                         null,
-                        ((J = O),
+                        ((V = S),
                         o.a.createElement(
                           "div",
-                          { className: "GameWidget-Bases" + S },
+                          { className: "GameWidget-Bases" + I },
                           o.a.createElement("div", {
                             id: "tooltip",
                             style: { display: "none", position: "absolute" },
@@ -2206,7 +2215,7 @@
                                   o.a.createElement(
                                     "strong",
                                     null,
-                                    J.playerOnFirst
+                                    V.playerOnFirst
                                   )
                                 ),
                               },
@@ -2237,7 +2246,7 @@
                                   o.a.createElement(
                                     "strong",
                                     null,
-                                    J.playerOnSecond
+                                    V.playerOnSecond
                                   )
                                 ),
                               },
@@ -2268,7 +2277,7 @@
                                   o.a.createElement(
                                     "strong",
                                     null,
-                                    J.playerOnThird
+                                    V.playerOnThird
                                   )
                                 ),
                               },
@@ -2290,8 +2299,8 @@
                             )
                           )
                         )),
-                        I,
-                        w,
+                        B,
+                        C,
                         o.a.createElement(
                           "div",
                           { className: "GameWidget-Log" },
@@ -2342,7 +2351,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: B,
+                                background: w,
                                 path: "/player/".concat(l.awayPitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2362,7 +2371,7 @@
                             o.a.createElement(
                               u,
                               {
-                                background: B,
+                                background: w,
                                 path: "/player/".concat(l.homePitcher),
                                 className: "GameWidget-PlayerLineName",
                               },
@@ -2467,13 +2476,13 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-Upcoming-BetButtons" },
-                    C
+                    k
                   )
                 )
               );
-        var z = null;
+        var X = null;
         h.started &&
-          (z = o.a.createElement(
+          (X = o.a.createElement(
             "div",
             { className: "GameWidget-Log" },
             o.a.createElement(
@@ -2486,10 +2495,10 @@
               { className: "GameWidget-Log-Content" },
               l.lastUpdate
             ),
-            C
+            k
           ));
-        var Z = h.started ? "GameWidget-Full-Live" : "GameWidget-Full-Upcoming",
-          X = l.isPostseason
+        var _ = h.started ? "GameWidget-Full-Live" : "GameWidget-Full-Upcoming",
+          $ = l.isPostseason
             ? "Game "
                 .concat(l.seriesIndex, " - Best of ")
                 .concat(l.seriesLength)
@@ -2499,7 +2508,7 @@
           { className: "GameWidget ".concat(h.complete ? "IsComplete" : "") },
           o.a.createElement(
             "div",
-            { className: Z },
+            { className: _ },
             o.a.createElement(
               "div",
               { className: "GameWidget-Header-Wrapper" },
@@ -2513,7 +2522,7 @@
                     className:
                       "GameWidget-ScoreLabel GameWidget-ScoreLabel--Series",
                   },
-                  X
+                  $
                 )
               ),
               o.a.createElement(
@@ -2522,7 +2531,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: B,
+                    background: w,
                     path: "/team/".concat(l.awayTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2548,7 +2557,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreTeamInfo" },
-                      h.started && void 0 !== Q
+                      h.started && void 0 !== H
                         ? o.a.createElement(
                             "div",
                             { className: "GameWidget-ScoreRecord-WithBet" },
@@ -2567,7 +2576,7 @@
                         ? o.a.createElement(
                             "span",
                             { className: "GameWidget-AllBetInfo" },
-                            void 0 === Q
+                            void 0 === H
                               ? o.a.createElement(
                                   "div",
                                   {
@@ -2586,7 +2595,7 @@
                                   Math.round(100 * l.awayOdds),
                                   "%"
                                 ),
-                            x
+                            W
                           )
                         : null
                     )
@@ -2600,7 +2609,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: B,
+                    background: w,
                     path: "/team/".concat(l.homeTeam),
                     className: "GameWidget-ScoreLine",
                   },
@@ -2626,7 +2635,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreTeamInfo" },
-                      h.started && void 0 !== Q
+                      h.started && void 0 !== H
                         ? o.a.createElement(
                             "div",
                             { className: "GameWidget-ScoreRecord-WithBet" },
@@ -2645,7 +2654,7 @@
                         ? o.a.createElement(
                             "span",
                             { className: "GameWidget-AllBetInfo" },
-                            void 0 === Q
+                            void 0 === H
                               ? o.a.createElement(
                                   "div",
                                   {
@@ -2664,7 +2673,7 @@
                                   Math.round(100 * l.homeOdds),
                                   "%"
                                 ),
-                            P
+                            x
                           )
                         : null
                     )
@@ -2677,8 +2686,8 @@
                 )
               )
             ),
-            K,
-            z
+            z,
+            X
           )
         );
       }
