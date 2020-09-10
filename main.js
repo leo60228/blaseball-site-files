@@ -2824,6 +2824,7 @@
           divisions: [],
           teams: [],
           players: [],
+          tiebreakers: [],
         }),
         De = function (e) {
           var a = e.children,
@@ -2833,6 +2834,7 @@
               divisions: [],
               teams: [],
               players: [],
+              tiebreakers: [],
             }),
             n = Object(c.a)(t, 2),
             l = n[0],
@@ -3677,7 +3679,7 @@
       function na() {
         var e = Object(r.useContext)(I.context),
           a = Object(r.useContext)(Pe.context);
-        if (!e || !e.sim) return null;
+        if (!e || !e.sim || !e.standings) return null;
         if (!a || !a.leagues) return null;
         var t = a.leagues.find(function (a) {
           var t;
@@ -3693,6 +3695,7 @@
             n.push(
               o.a.createElement(ra, {
                 key: l,
+                league: t,
                 subleague: t.subleagues[l],
                 standings: e.standings,
               })
@@ -3719,6 +3722,7 @@
           t.push(
             o.a.createElement(oa, {
               key: n,
+              league: e.league,
               division: a.divisions[n],
               standings: e.standings,
             })
@@ -3739,49 +3743,48 @@
         );
       }
       function oa(e) {
-        var a = Object(r.useContext)(Pe.context).divisions.find(function (a) {
+        var a = Object(r.useContext)(Pe.context),
+          t = a.tiebreakers.find(function (a) {
+            return a.id === e.league.tiebreakers;
+          });
+        if (void 0 === t) return null;
+        var n = a.divisions.find(function (a) {
           return a.id === e.division;
         });
-        if (void 0 === a) return null;
-        for (
-          var t = [], n = [], l = [], i = [], c = 0;
-          c < a.teams.length;
-          c++
-        ) {
-          for (
-            var s = la(a.teams[c], e.standings), m = !1, u = 0;
-            u < n.length;
-            u++
-          ) {
-            var d = l[u];
-            if (s[0] > d) {
-              n.splice(u, 0, a.teams[c]),
-                l.splice(u, 0, s[0]),
-                i.splice(u, 0, s[1]),
-                (m = !0);
-              break;
-            }
-          }
-          m || (n.push(a.teams[c]), l.push(s[0]), i.push(s[1]));
-        }
-        for (var h = 0; h < n.length; h++)
-          t.push(
-            o.a.createElement(ia, {
-              key: h,
-              team: n[h],
-              wins: l[h],
-              losses: i[h],
-            })
-          );
+        if (void 0 === n) return null;
+        n.teams.sort(function (a, n) {
+          var r = la(a, e.standings),
+            o = la(n, e.standings),
+            l = t.order.indexOf(a),
+            i = t.order.indexOf(n);
+          return r[0] > o[0]
+            ? -1
+            : r[0] < o[0]
+            ? 1
+            : l < i
+            ? -1
+            : i < l
+            ? 1
+            : 0;
+        });
+        var l = n.teams.map(function (a, t) {
+          var n = la(a, e.standings);
+          return o.a.createElement(ia, {
+            key: t,
+            team: a,
+            wins: n[0],
+            losses: n[1],
+          });
+        });
         return o.a.createElement(
           "div",
           { className: "Standings-Division" },
           o.a.createElement(
             "div",
             { className: "Standings-Division-Header" },
-            a.name
+            n.name
           ),
-          o.a.createElement("ul", { className: "Standings-Team-Container" }, t)
+          o.a.createElement("ul", { className: "Standings-Team-Container" }, l)
         );
       }
       function la(e, a) {
@@ -5255,7 +5258,27 @@
                     o.a.createElement(
                       "div",
                       { className: "Team-Standing" },
-                      "( ".concat(S, " - ").concat(O, " )")
+                      "( ".concat(S, " - ").concat(O, " ) - ") +
+                        (function (e, a, t) {
+                          if (void 0 === a || void 0 === t || void 0 === a.sim)
+                            return "";
+                          var n = t.leagues.find(function (e) {
+                            var t;
+                            return (
+                              e.id ===
+                              (null === (t = a.sim) || void 0 === t
+                                ? void 0
+                                : t.league)
+                            );
+                          });
+                          if (void 0 === n) return "";
+                          var r = t.tiebreakers.find(function (e) {
+                            return e.id === n.tiebreakers;
+                          });
+                          if (void 0 === r) return "";
+                          var o = r.order.indexOf(e);
+                          return "Ties #".concat(o + 1);
+                        })(a, t, n)
                     )
                   )
                 )
