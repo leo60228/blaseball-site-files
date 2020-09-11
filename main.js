@@ -273,6 +273,7 @@
           },
           { id: "ENGLAND_MEMORABILIA", name: "Bangers & Smash", attr: "NONE" },
           { id: "ARM_CANNON", name: "Literal Arm Cannon", attr: "NONE" },
+          { id: "BIRDSONG", name: "Birdsong", attr: "NONE" },
         ],
       };
     },
@@ -3521,7 +3522,7 @@
         var u = Object(r.useContext)(I.context);
         if (!u || !u.sim) return null;
         void 0 !== u.sim.season && u.sim.season;
-        var d = (null === (e = u.sim) || void 0 === e ? void 0 : e.phase) >= 3,
+        var d = 7 == (null === (e = u.sim) || void 0 === e ? void 0 : e.phase),
           E =
             i.length < 1 || void 0 === i
               ? o.a.createElement(pe, null)
@@ -5119,7 +5120,8 @@
                     className:
                       "Team-Player-Header" +
                       (e.permAttr.includes("SHELLED")
-                        ? " Team-Player-Shelled"
+                        ? " Team-Player-Shelled" +
+                          (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
                   f.idol === e.id ? o.a.createElement(Y.F, null) : "",
@@ -11923,6 +11925,7 @@
               case 2:
                 return o.a.createElement(sa, { path: a });
               case 3:
+              case 7:
                 return o.a.createElement(hn, { path: a });
               case 4:
                 return o.a.createElement(ma, { path: a });
