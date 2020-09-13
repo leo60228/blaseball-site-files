@@ -53,7 +53,7 @@
         "textColor": "#fffd85",
         "background": "#404040",
         "title": "Shelled",
-        "description": "A Shelled player is Shelled."
+        "description": "A Shelled player is trapped in a big Peanut is unable to bat or pitch."
     },
     {
         "id": "REVERBERATING",
@@ -133,7 +133,7 @@
         "textColor": "#d3d8de",
         "background": "#38080d",
         "title": "Inward",
-        "description": "This player has been turned Inward."
+        "description": "This player has turned Inward."
     },
     {
         "id": "MARKED",
