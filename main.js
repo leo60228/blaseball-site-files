@@ -2147,13 +2147,25 @@
               "The ",
               ((K = N()),
               (q = Z) > 0.25
-                ? "Wild Wings" === K
-                  ? "heavily flavored"
-                  : "heavily favored"
+                ? (function (e) {
+                    switch (e) {
+                      case "Wild Wings":
+                        return "heavily flavored";
+                      case "Mild Wings":
+                        return "heavily but mildly flavored";
+                    }
+                    return "heavily favored";
+                  })(K)
                 : q > 0
-                ? "Wild Wings" === K
-                  ? "flavored"
-                  : "favored"
+                ? (function (e) {
+                    switch (e) {
+                      case "Wild Wings":
+                        return "flavored";
+                      case "Mild Wings":
+                        return "mildly flavored";
+                    }
+                    return "favored";
+                  })(K)
                 : q < -0.25
                 ? "heavy underdog"
                 : q < 0
