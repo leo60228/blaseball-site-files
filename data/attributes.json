@@ -125,7 +125,7 @@
         "textColor": "#fbff8a",
         "background": "#1b1c80",
         "title": "Returned",
-        "description": "This player has Returned from the void."
+        "description": "This player has Returned from the void. At the end of each season, this player has a chance of being called back to the Void."
     },
     {
         "id": "INWARD",
@@ -141,7 +141,7 @@
         "textColor": "#eaabff",
         "background": "#1b1c80",
         "title": "Unstable",
-        "description": "This player is Unstable."
+        "description": "Unstable players have a much higher chance of being incinerated in a Solar Eclipse."
     },
     {
         "id": "PARTY_TIME",
@@ -174,5 +174,29 @@
         "background": "#d15700",
         "title": "Spicy",
         "description": "Spicy players can catch fire."
+    },
+    {
+        "id": "HONEY_ROASTED",
+        "color": "#ffda75",
+        "textColor": "#ffda75",
+        "background": "#b5831f",
+        "title": "Honey Roasted",
+        "description": "This player has been Honey-Roasted."
+    },
+    {
+        "id": "FIRST_BORN",
+        "color": "#fffea8",
+        "textColor": "#fffea8",
+        "background": "#517063",
+        "title": "First Born",
+        "description": "This player was the first born from the New Field of Eggs."
+    },
+    {
+        "id": "SUPERALLERGIC",
+        "color": "#bd224e",
+        "textColor": "#bd224e",
+        "background": "#45003d",
+        "title": "Superallergic",
+        "description": "This player is Superallergic"
     }
 ]
