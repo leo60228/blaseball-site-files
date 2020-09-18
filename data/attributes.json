@@ -198,5 +198,21 @@
         "background": "#45003d",
         "title": "Superallergic",
         "description": "This player is Superallergic"
+    },
+    {
+        "id": "EXTRA_BASE",
+        "color": "#d9d9d9",
+        "textColor": "#d9d9d9",
+        "background": "#4a001a",
+        "title": "Fifth Base",
+        "description": "This team must run five bases instead of four in order to score."
+    },
+    {
+        "id": "BLESS_OFF",
+        "color": "#e0cafa",
+        "textColor": "#e0cafa",
+        "background": "#7d58a8",
+        "title": "Bless Off",
+        "description": "This team cannot win any Blessings in the upcoming Election."
     }
 ]
