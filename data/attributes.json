@@ -169,11 +169,27 @@
     },
     {
         "id": "SPICY",
-        "color": "#87000e",
-        "textColor": "#87000e",
+        "color": "#9e0022",
+        "textColor": "#9e0022",
         "background": "#d15700",
         "title": "Spicy",
-        "description": "Spicy players can catch fire."
+        "description": "Spicy batters will be Red Hot when they get three consecutive hits."
+    },
+    {
+        "id": "HEATING_UP",
+        "color": "#9e0022",
+        "textColor": "#9e0022",
+        "background": "#d15700",
+        "title": "Heating Up...",
+        "description": "This batter needs one more consecutive hit to enter Fire mode. This mod will disappear if the batter gets out."
+    },
+    {
+        "id": "ON_FIRE",
+        "color": "#fff982",
+        "textColor": "#fff982",
+        "background": "#e32600",
+        "title": "Red Hot!",
+        "description": "Red Hot! This player's batting is greatly boosted. This mod will disappear if the batter gets out."
     },
     {
         "id": "HONEY_ROASTED",
@@ -214,5 +230,53 @@
         "background": "#7d58a8",
         "title": "Bless Off",
         "description": "This team cannot win any Blessings in the upcoming Election."
+    },
+    {
+        "id": "NON_IDOLIZED",
+        "color": "#fffaba",
+        "textColor": "#fffaba",
+        "background": "#540e43",
+        "title": "Idol Immune",
+        "description": "Idol Immune players cannot be Idolized by Fans."
+    },
+    {
+        "id": "GRAVITY",
+        "color": "#759bc9",
+        "textColor": "#759bc9",
+        "background": "#4c5052",
+        "title": "Gravity",
+        "description": "This player cannot be affected by Reverb."
+    },
+    {
+        "id": "ELECTRIC",
+        "color": "#fff199",
+        "textColor": "#fff199",
+        "background": "#04144a",
+        "title": "Electric",
+        "description": "Electric teams have a chance of zapping away Strikes."
+    },
+    {
+        "id": "DOUBLE_PAYOUTS",
+        "color": "#fffaba",
+        "textColor": "#fffaba",
+        "background": "#786600",
+        "title": "Super Idol",
+        "description": "This player will earn Fans double the rewards from all Idol Pendants."
+    },
+    {
+        "id": "FIRE_PROTECTOR",
+        "color": "#c4ff85",
+        "textColor": "#c4ff85",
+        "background": "#1f474f",
+        "title": "Fire Protector",
+        "description": "This player will protect their team from incinerations."
+    },
+    {
+        "id": "FLICKERING",
+        "color": "#ff007b",
+        "textColor": "#ff007b",
+        "background": "#383838",
+        "title": "Flickering",
+        "description": "This player is Flickering."
     }
 ]
