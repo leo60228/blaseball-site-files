@@ -69,7 +69,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Donor",
-        "description": "In the Blood Bath each season, this team will donate Stars to a division opponent that finished behind them in the standings."
+        "description": "In the Blood Bath, this team will donate Stars to a division opponent that finished behind them in the standings."
     },
     {
         "id": "BLOOD_THIEF",
@@ -77,7 +77,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Thief",
-        "description": "In the Blood Bath each season, this team will steal Stars from a division opponent that finished ahead of them in the standings."
+        "description": "In the Blood Bath, this team will steal Stars from a division opponent that finished ahead of them in the standings."
     },
     {
         "id": "BLOOD_PITY",
@@ -85,7 +85,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Pity",
-        "description": "In the Blood Bath each season, this team must give Stars to the team that finished last in their division."
+        "description": "In the Blood Bath, this team must give Stars to the team that finished last in their division."
     },
     {
         "id": "BLOOD_WINNER",
@@ -93,7 +93,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Winner",
-        "description": "In the Blood Bath each season, this team must give Stars to the team that finished first in their division."
+        "description": "In the Blood Bath, this team must give Stars to the team that finished first in their division."
     },
     {
         "id": "BLOOD_FAITH",
@@ -101,7 +101,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Faith",
-        "description": "In the Blood Bath each season, this player will receive a small boost to a random stat."
+        "description": "In the Blood Bath, this player will receive a small boost to a random stat."
     },
     {
         "id": "BLOOD_LAW",
@@ -109,7 +109,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Law",
-        "description": "In the Blood Bath each season, this team will gain or lose Stars depending on how low or high they finish in their division."
+        "description": "In the Blood Bath, this team will gain or lose Stars depending on how low or high they finish in their division."
     },
     {
         "id": "BLOOD_CHAOS",
@@ -117,7 +117,7 @@
         "textColor": "#ff1f3c",
         "background": "#52050f",
         "title": "Blood Chaos",
-        "description": "In the Blood Bath each season, each player on this team will gain or lose a random amount of Stars."
+        "description": "In the Blood Bath, each player on this team will gain or lose a random amount of Stars."
     },
     {
         "id": "RETURNED",

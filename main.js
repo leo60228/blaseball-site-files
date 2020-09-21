@@ -408,7 +408,7 @@
             background: "#52050f",
             title: "Blood Donor",
             description:
-              "In the Blood Bath each season, this team will donate Stars to a division opponent that finished behind them in the standings.",
+              "In the Blood Bath, this team will donate Stars to a division opponent that finished behind them in the standings.",
           },
           {
             id: "BLOOD_THIEF",
@@ -417,7 +417,7 @@
             background: "#52050f",
             title: "Blood Thief",
             description:
-              "In the Blood Bath each season, this team will steal Stars from a division opponent that finished ahead of them in the standings.",
+              "In the Blood Bath, this team will steal Stars from a division opponent that finished ahead of them in the standings.",
           },
           {
             id: "BLOOD_PITY",
@@ -426,7 +426,7 @@
             background: "#52050f",
             title: "Blood Pity",
             description:
-              "In the Blood Bath each season, this team must give Stars to the team that finished last in their division.",
+              "In the Blood Bath, this team must give Stars to the team that finished last in their division.",
           },
           {
             id: "BLOOD_WINNER",
@@ -435,7 +435,7 @@
             background: "#52050f",
             title: "Blood Winner",
             description:
-              "In the Blood Bath each season, this team must give Stars to the team that finished first in their division.",
+              "In the Blood Bath, this team must give Stars to the team that finished first in their division.",
           },
           {
             id: "BLOOD_FAITH",
@@ -444,7 +444,7 @@
             background: "#52050f",
             title: "Blood Faith",
             description:
-              "In the Blood Bath each season, this player will receive a small boost to a random stat.",
+              "In the Blood Bath, this player will receive a small boost to a random stat.",
           },
           {
             id: "BLOOD_LAW",
@@ -453,7 +453,7 @@
             background: "#52050f",
             title: "Blood Law",
             description:
-              "In the Blood Bath each season, this team will gain or lose Stars depending on how low or high they finish in their division.",
+              "In the Blood Bath, this team will gain or lose Stars depending on how low or high they finish in their division.",
           },
           {
             id: "BLOOD_CHAOS",
@@ -462,7 +462,7 @@
             background: "#52050f",
             title: "Blood Chaos",
             description:
-              "In the Blood Bath each season, each player on this team will gain or lose a random amount of Stars.",
+              "In the Blood Bath, each player on this team will gain or lose a random amount of Stars.",
           },
           {
             id: "RETURNED",
@@ -1047,7 +1047,7 @@
           );
         throw new Error("Bad Hex");
       }
-      function M() {
+      function x() {
         var e = [0],
           a = new Date();
         if ((a.setMinutes(a.getMinutes() + 1, 0, 0), 0 == e.length)) return a;
@@ -1061,12 +1061,12 @@
         }
         return a;
       }
-      function H(e, a) {
+      function M(e, a) {
         if (void 0 === e) return !1;
         for (var t = 0; t < e.attr.length; t++) if (e.attr[t] === a) return !0;
         return !1;
       }
-      function x(e, a) {
+      function H(e, a) {
         var t = a.leagues[0];
         if (void 0 === t) return !1;
         var n = !1;
@@ -1437,7 +1437,7 @@
             { className: "LoadingSpinner" },
             100 * Math.random() < 99
               ? o.a.createElement(V.a, null)
-              : o.a.createElement(J.M, null)
+              : o.a.createElement(J.P, null)
           );
         };
       t(99), t(62);
@@ -1687,7 +1687,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Bet-Coin-Wrapper" },
-                      o.a.createElement(J.db, { className: "Bet-Coin-Icon" }),
+                      o.a.createElement(J.hb, { className: "Bet-Coin-Icon" }),
                       n.coins
                     ),
                     o.a.createElement(de.a.Control, {
@@ -1802,7 +1802,7 @@
           },
           {
             name: "Peanuts",
-            icon: o.a.createElement(J.M, null),
+            icon: o.a.createElement(J.P, null),
             background: "#c4aa70",
             color: "#423822",
           },
@@ -1814,7 +1814,7 @@
           },
           {
             name: "Feedback",
-            icon: o.a.createElement(J.I, null),
+            icon: o.a.createElement(J.L, null),
             background: "#383838",
             color: "#ff007b",
           },
@@ -2162,9 +2162,9 @@
           var D,
             P = d[l.id],
             F = (null === P || void 0 === P ? void 0 : P.length) || 0,
-            M = F > 0 ? P[0] : void 0;
-          void 0 !== M &&
-            (D = M.entityId === l.homeTeam ? l.homeTeamName : l.awayTeamName),
+            x = F > 0 ? P[0] : void 0;
+          void 0 !== x &&
+            (D = x.entityId === l.homeTeam ? l.homeTeamName : l.awayTeamName),
             (R = o.a.createElement(
               Y.a,
               { className: "GameWidget-Button-Centered" },
@@ -2172,10 +2172,10 @@
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
-                    o.a.createElement(J.db, null),
+                    o.a.createElement(J.hb, null),
                     " ",
                     F > 0
-                      ? "".concat(M.amount, " on ").concat(D)
+                      ? "".concat(x.amount, " on ").concat(D)
                       : "No active bets"
                   )
                 : s.coins
@@ -2212,8 +2212,8 @@
               "Login to Play"
             )
           );
-        var H = null,
-          x = null,
+        var M = null,
+          H = null,
           j = d[l.id],
           V =
             ((null === j || void 0 === j ? void 0 : j.length) || 0) > 0
@@ -2221,7 +2221,7 @@
               : void 0;
         if (h.started) {
           var K = void 0 !== V ? fe(V.odds, V.amount) : 0;
-          (H =
+          (M =
             void 0 !== V && V.entityId === l.homeTeam
               ? o.a.createElement(
                   "div",
@@ -2229,7 +2229,7 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet-Bet" },
-                    o.a.createElement(J.db, null),
+                    o.a.createElement(J.hb, null),
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
@@ -2246,7 +2246,7 @@
                   )
                 )
               : null),
-            (x =
+            (H =
               void 0 !== V && V.entityId === l.awayTeam
                 ? o.a.createElement(
                     "div",
@@ -2254,7 +2254,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Bet" },
-                      o.a.createElement(J.db, null),
+                      o.a.createElement(J.hb, null),
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
@@ -2359,7 +2359,7 @@
                   o.a.createElement(
                     "span",
                     { className: "GameWidget-Outcome-Callout" },
-                    o.a.createElement(J.db, null),
+                    o.a.createElement(J.hb, null),
                     "\xa0",
                     V.amount
                   ),
@@ -2381,7 +2381,7 @@
                         o.a.createElement(
                           "span",
                           { className: "GameWidget-Outcome-Callout" },
-                          o.a.createElement(J.db, null),
+                          o.a.createElement(J.hb, null),
                           "\xa0",
                           fe(V.odds, V.amount)
                         ),
@@ -2853,7 +2853,7 @@
                                   Math.round(100 * l.awayOdds),
                                   "%"
                                 ),
-                            x
+                            H
                           )
                         : null
                     )
@@ -2931,7 +2931,7 @@
                                   Math.round(100 * l.homeOdds),
                                   "%"
                                 ),
-                            H
+                            M
                           )
                         : null
                     )
@@ -3258,7 +3258,7 @@
                 path: "/player/".concat(a.idol),
                 className: "Navigation-IdolizedPlayer",
               },
-              o.a.createElement(J.Y, null)
+              o.a.createElement(J.cb, null)
             ));
           return o.a.createElement(
             o.a.Fragment,
@@ -3274,7 +3274,7 @@
                   content: g,
                   url: "/upcoming",
                 },
-                o.a.createElement(J.db, null),
+                o.a.createElement(J.hb, null),
                 "\xa0",
                 a.coins
               ),
@@ -3287,7 +3287,7 @@
                       content: A,
                       url: "/shop",
                     },
-                    o.a.createElement(J.cb, null),
+                    o.a.createElement(J.gb, null),
                     "\xa0",
                     a.votes
                   )
@@ -3445,7 +3445,7 @@
                     o.a.createElement(
                       "span",
                       { className: "Peanut-Icon" },
-                      m ? "" : o.a.createElement(J.M, null)
+                      m ? "" : o.a.createElement(J.P, null)
                     ),
                     "\xa0",
                     a.peanuts
@@ -3454,7 +3454,7 @@
                 o.a.createElement(
                   "div",
                   { className: m ? "Peanut-Eating" : "Peanut" },
-                  o.a.createElement(J.M, null)
+                  o.a.createElement(J.P, null)
                 )
               )
             ),
@@ -3471,15 +3471,15 @@
             )
           );
         },
-        Me = function () {
+        xe = function () {
           return o.a.createElement(
             o.a.Fragment,
             null,
-            o.a.createElement(xe, { isModal: !0, path: "/signup" }, "Signup"),
-            o.a.createElement(xe, { isModal: !0, path: "/login" }, "Login")
+            o.a.createElement(He, { isModal: !0, path: "/signup" }, "Signup"),
+            o.a.createElement(He, { isModal: !0, path: "/login" }, "Login")
           );
         };
-      function He(e) {
+      function Me(e) {
         var a = Object(r.useContext)(I.context),
           t = Object(r.useContext)(Q.context).user,
           n = Object(r.useState)(!1),
@@ -3533,13 +3533,13 @@
           t &&
             t.isSignedIn &&
             (T.push({ text: "Book", path: "/thebook" }),
-            H(a.sim, "UNLOCKED_HALL") &&
+            M(a.sim, "UNLOCKED_HALL") &&
               T.push({ text: "The Hall", path: "/thehall", glow: !0 }));
         var w = t.isFetching
           ? null
           : t.isSignedIn
           ? o.a.createElement(We, null)
-          : o.a.createElement(Me, null);
+          : o.a.createElement(xe, null);
         return o.a.createElement(
           "nav",
           { className: "Navigation", ref: y },
@@ -3554,7 +3554,7 @@
                 },
                 className: "Navigation-Button",
               },
-              o.a.createElement(J.y, null)
+              o.a.createElement(J.A, null)
             ),
             w
           ),
@@ -3571,7 +3571,7 @@
               { className: "Navigation-Main" },
               N.map(function (e, a) {
                 return o.a.createElement(
-                  xe,
+                  He,
                   { key: a, path: e.path, subpaths: e.subpaths },
                   e.text,
                   " ",
@@ -3610,7 +3610,7 @@
                     i &&
                       T.map(function (e, a) {
                         return o.a.createElement(
-                          xe,
+                          He,
                           { key: a, path: e.path, glow: e.glow },
                           e.text
                         );
@@ -3625,7 +3625,7 @@
             : o.a.createElement("div", { className: "Navigation-User" }, w)
         );
       }
-      function xe(e) {
+      function He(e) {
         var a = e.path,
           t = e.isModal,
           n = e.subpaths,
@@ -3661,7 +3661,7 @@
           o.a.createElement(
             "div",
             { className: "Navigation-User" },
-            o.a.createElement(Me, null)
+            o.a.createElement(xe, null)
           )
         );
       }
@@ -3694,13 +3694,13 @@
             o.a.createElement(
               "a",
               {
-                href: "https://www.multitude.productions/blaseball",
+                href: "http://limitedrungames.com/blaseball",
                 onClick: function () {
-                  return Ye("Multitude (MainPage/Title");
+                  return Ye("Limited Run (MainPage/Title");
                 },
                 target: "_blank",
               },
-              "the Multitude Podcast Collective"
+              "Limited Run Games"
             )
           )
         );
@@ -3731,25 +3731,25 @@
           o.a.createElement(
             "div",
             { className: "LeagueNavigation-Nav" },
-            o.a.createElement(xe, { path: "/" }, "Watch Live"),
-            o.a.createElement(xe, { path: "/upcoming" }, "Place Bets"),
-            o.a.createElement(xe, { path: "/standings" }, "Standings"),
-            H(e.sim, "UNLOCKED_IDOLS")
-              ? o.a.createElement(xe, { path: "/leaderboard" }, "Idols")
+            o.a.createElement(He, { path: "/" }, "Watch Live"),
+            o.a.createElement(He, { path: "/upcoming" }, "Place Bets"),
+            o.a.createElement(He, { path: "/standings" }, "Standings"),
+            M(e.sim, "UNLOCKED_IDOLS")
+              ? o.a.createElement(He, { path: "/leaderboard" }, "Idols")
               : null
           )
         );
       }
       function Ke() {
-        return H(Object(r.useContext)(I.context).sim, "UNLOCKED_IDOLS")
+        return M(Object(r.useContext)(I.context).sim, "UNLOCKED_IDOLS")
           ? o.a.createElement(
               o.a.Fragment,
               null,
               o.a.createElement(
                 "div",
                 { className: "LeagueNavigation-Nav" },
-                o.a.createElement(xe, { path: "/" }, "Standings"),
-                o.a.createElement(xe, { path: "/leaderboard" }, "Idols")
+                o.a.createElement(He, { path: "/" }, "Standings"),
+                o.a.createElement(He, { path: "/leaderboard" }, "Idols")
               )
             )
           : null;
@@ -4062,7 +4062,7 @@
                 "div",
                 { className: "Leaderboard-Player-Name-Container" },
                 e.showIcons && [6, 11, 18].includes(e.info.place)
-                  ? o.a.createElement(J.I, { className: "Leaderboard-Icon" })
+                  ? o.a.createElement(J.L, { className: "Leaderboard-Icon" })
                   : null,
                 o.a.createElement(
                   "div",
@@ -4081,7 +4081,7 @@
                     (null === (n = e.info.player) || void 0 === n
                       ? void 0
                       : n.id)
-                    ? o.a.createElement(J.Y, null)
+                    ? o.a.createElement(J.cb, null)
                     : "",
                   " ",
                   null === (l = e.info.player) || void 0 === l ? void 0 : l.name
@@ -4394,7 +4394,7 @@
                       "div",
                       { className: "DailySchedule-Countdown" },
                       c() === ra.Upcoming
-                        ? o.a.createElement(Ze, { dateString: M().toString() })
+                        ? o.a.createElement(Ze, { dateString: x().toString() })
                         : null
                     ),
                     h
@@ -4600,7 +4600,7 @@
                             { className: "DailySchedule-Countdown" },
                             g() === ma.Upcoming
                               ? o.a.createElement(Ze, {
-                                  dateString: M().toString(),
+                                  dateString: x().toString(),
                                 })
                               : null
                           ),
@@ -5156,7 +5156,7 @@
                     (null === (t = e.info.player) || void 0 === t
                       ? void 0
                       : t.id)
-                    ? o.a.createElement(J.Y, null)
+                    ? o.a.createElement(J.cb, null)
                     : "",
                   " ",
                   null === (n = e.info.player) || void 0 === n ? void 0 : n.name
@@ -5407,30 +5407,30 @@
       function ka(e) {
         switch (e.id) {
           case "EXTRA_STRIKE":
-            return o.a.createElement(J.H, null);
+            return o.a.createElement(J.K, null);
           case "SHAME_PIT":
             return o.a.createElement(J.b, null);
           case "HOME_FIELD":
             return o.a.createElement(V.b, null);
           case "FIREPROOF":
-            return o.a.createElement(J.s, null);
+            return o.a.createElement(J.u, null);
           case "ALTERNATE":
-            return o.a.createElement(J.D, null);
+            return o.a.createElement(J.F, null);
           case "SHELLED":
           case "SUPERALLERGIC":
-            return o.a.createElement(J.M, null);
+            return o.a.createElement(J.P, null);
           case "SOUNDPROOF":
-            return o.a.createElement(J.C, null);
+            return o.a.createElement(J.E, null);
           case "REVERBERATING":
             return o.a.createElement(J.f, null);
           case "BLOOD_THIEF":
-            return o.a.createElement(J.S, null);
+            return o.a.createElement(J.V, null);
           case "BLOOD_DONOR":
-            return o.a.createElement(J.J, null);
+            return o.a.createElement(J.M, null);
           case "BLOOD_WINNER":
-            return o.a.createElement(J.O, null);
+            return o.a.createElement(J.R, null);
           case "BLOOD_PITY":
-            return o.a.createElement(J.ab, null);
+            return o.a.createElement(J.eb, null);
           case "BLOOD_FAITH":
           case "BLOOD_LAW":
           case "BLOOD_CHAOS":
@@ -5440,39 +5440,39 @@
           case "DEBT":
             return o.a.createElement(J.d, null);
           case "MARKED":
-            return o.a.createElement(J.gb, null);
+            return o.a.createElement(J.kb, null);
           case "PARTY_TIME":
-            return o.a.createElement(J.L, null);
+            return o.a.createElement(J.O, null);
           case "LIFE_OF_PARTY":
-            return o.a.createElement(J.x, null);
-          case "INWARD":
-            return o.a.createElement(J.E, null);
-          case "FIRST_BORN":
-            return o.a.createElement(J.p, null);
-          case "HONEY_ROASTED":
-            return o.a.createElement(J.m, null);
-          case "EXTRA_BASE":
-            return o.a.createElement(J.B, null);
-          case "BLESS_OFF":
             return o.a.createElement(J.z, null);
-          case "NON_IDOLIZED":
+          case "INWARD":
             return o.a.createElement(J.G, null);
+          case "FIRST_BORN":
+            return o.a.createElement(J.r, null);
+          case "HONEY_ROASTED":
+            return o.a.createElement(J.o, null);
+          case "EXTRA_BASE":
+            return o.a.createElement(J.D, null);
+          case "BLESS_OFF":
+            return o.a.createElement(J.B, null);
+          case "NON_IDOLIZED":
+            return o.a.createElement(J.J, null);
           case "GRAVITY":
             return o.a.createElement(J.i, null);
           case "SPICY":
-            return o.a.createElement(J.k, null);
+            return o.a.createElement(J.m, null);
           case "ELECTRIC":
-            return o.a.createElement(J.q, null);
+            return o.a.createElement(J.s, null);
           case "DOUBLE_PAYOUTS":
-            return o.a.createElement(J.Z, null);
+            return o.a.createElement(J.db, null);
           case "FIRE_PROTECTOR":
-            return o.a.createElement(J.t, null);
+            return o.a.createElement(J.v, null);
           case "ON_FIRE":
-            return o.a.createElement(J.U, null);
+            return o.a.createElement(J.Y, null);
           case "HEATING_UP":
-            return o.a.createElement(J.A, null);
+            return o.a.createElement(J.C, null);
           case "FLICKERING":
-            return o.a.createElement(J.j, null);
+            return o.a.createElement(J.l, null);
         }
         return null;
       }
@@ -5824,7 +5824,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(J.Y, null) : "",
+                  f.idol === e.id ? o.a.createElement(J.cb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -5878,7 +5878,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(J.Y, null) : "",
+                  f.idol === e.id ? o.a.createElement(J.cb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -6250,7 +6250,7 @@
                           e.votes + 1
                         ),
                         available: !0,
-                        icon: o.a.createElement(J.cb, null),
+                        icon: o.a.createElement(J.gb, null),
                         buyUrl: "/api/buyVote",
                         userUpdate: function () {
                           a(
@@ -6273,7 +6273,7 @@
                           e.votes,
                           " Vote already from signing up."
                         ),
-                        icon: o.a.createElement(J.cb, null),
+                        icon: o.a.createElement(J.gb, null),
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
@@ -6289,29 +6289,28 @@
                     y.delta &&
                     (c = {
                       id: 5,
-                      name: "The Multitude Podcast Collective",
+                      name: "Limited Run Games",
                       description: "",
                       isSponsor: !0,
                       sponsorText: o.a.createElement(
                         o.a.Fragment,
                         null,
-                        "Multitude has the perfect podcast for each team. Click ",
+                        "Buy your favorite games in physical format. Shantae available now! Doom 64 coming Sep 25 at 10am ET... ",
                         o.a.createElement(
                           "a",
                           {
-                            href: "https://multitude.productions/blaseball",
+                            href: "http://limitedrungames.com/blaseball",
                             onClick: function () {
-                              return Ye("Multitude (ShopItem)");
+                              return Ye("Limited Run (ShopItem)");
                             },
                             target: "_blank",
                             className: "Shop-Item-Link",
                           },
-                          o.a.createElement("strong", null, "HERE")
-                        ),
-                        " to find yours!"
+                          o.a.createElement("strong", null, "Visit the Site")
+                        )
                       ),
                       amount: 0,
-                      toast: "Have a great time listening.",
+                      toast: "",
                       available: !0,
                       handleComplete: function () {},
                     });
@@ -6402,7 +6401,7 @@
                           maxed: !0,
                           amount: 0,
                         };
-                  if (H(t, "UNLOCKED_PEANUTS") && r) {
+                  if (M(t, "UNLOCKED_PEANUTS") && r) {
                     if (
                       ((f = {
                         id: 6,
@@ -6527,7 +6526,7 @@
                     }),
                     l)
                   ) {
-                    var R = x(e.favoriteTeam, n) ? 2e3 : 0;
+                    var R = H(e.favoriteTeam, n) ? 2e3 : 0;
                     b = {
                       id: 3,
                       name: "Fair Weather Flute",
@@ -6578,7 +6577,7 @@
                         ),
                         available: W,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
@@ -6591,7 +6590,7 @@
                         },
                       });
                   } else if (void 0 !== D) {
-                    var M = Q.amount,
+                    var x = Q.amount,
                       j = D.amount,
                       U = Object.create(e.relics);
                     (U.Idol_Strikeouts = U.Idol_Strikeouts + 1),
@@ -6600,14 +6599,14 @@
                         name: "Strikeout Pendant",
                         description: "Adorn yourself. When your Idol strikes a Batter out, you'll earn "
                           .concat(j, " coins. You currently earn ")
-                          .concat(M, " coins per Strikeout."),
+                          .concat(x, " coins per Strikeout."),
                         amount: D.price,
                         toast: "Coins per Idol strikeout is now ".concat(
                           D.amount
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
@@ -6624,7 +6623,7 @@
                     E = {
                       id: 14,
                       name: "Strikeout Pendant",
-                      icon: o.a.createElement(J.v, null),
+                      icon: o.a.createElement(J.x, null),
                       description: "Adorn yourself. When your Idol strikes out a batter, you earn ".concat(
                         Y,
                         " coins. You are maxed out."
@@ -6663,7 +6662,7 @@
                         ),
                         available: X,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
@@ -6692,7 +6691,7 @@
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
@@ -6714,7 +6713,7 @@
                         " coins. You are maxed out."
                       ),
                       maxed: !0,
-                      icon: o.a.createElement(J.v, null),
+                      icon: o.a.createElement(J.x, null),
                       amount: 0,
                     };
                   }
@@ -6746,7 +6745,7 @@
                         toast: "Coins per Idol homer is now ".concat(re.amount),
                         available: ie,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
@@ -6775,7 +6774,7 @@
                         ),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
@@ -6792,7 +6791,7 @@
                     h = {
                       id: 13,
                       name: "Home Run Pendant",
-                      icon: o.a.createElement(J.v, null),
+                      icon: o.a.createElement(J.x, null),
                       description: "Adorn yourself. When your Idol hits a Home Run, you earn ".concat(
                         ue,
                         " coins. You are maxed out."
@@ -6829,7 +6828,7 @@
                         toast: "Coins per Idol hit is now ".concat(pe.amount),
                         available: be,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
@@ -6856,7 +6855,7 @@
                         toast: "Coins per Idol hit is now ".concat(Ee.amount),
                         available: !0,
                         buyUrl: "/api/buyRelic",
-                        icon: o.a.createElement(J.v, null),
+                        icon: o.a.createElement(J.x, null),
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
@@ -6878,11 +6877,11 @@
                         " coins. You are maxed out."
                       ),
                       maxed: !0,
-                      icon: o.a.createElement(J.v, null),
+                      icon: o.a.createElement(J.x, null),
                       amount: 0,
                     };
                   }
-                  return H(t, "UNLOCKED_IDOLS")
+                  return M(t, "UNLOCKED_IDOLS")
                     ? [c, d, E, i, h, p, m, u, s, f, v, b]
                     : [c, i, m, u, s, f, v, b];
                 })(m, u, p.sim, v, f, d)
@@ -6970,7 +6969,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Shop-Item-Checkout" },
-                            o.a.createElement(J.db, {
+                            o.a.createElement(J.hb, {
                               className: "Shop-Item-Coins",
                             }),
                             o.a.createElement(
@@ -7027,7 +7026,7 @@
         );
       }
       t(117);
-      var Ma = function (e) {
+      var xa = function (e) {
           var a = Object(r.useContext)(Q.context),
             t = a.user,
             n = a.setUser,
@@ -7100,7 +7099,7 @@
                     return t < n ? -1 : t > n ? 1 : 0;
                   })
                   .map(function (e, a) {
-                    if (!1 === x(e.id, l)) return null;
+                    if (!1 === H(e.id, l)) return null;
                     var t = m === e.id;
                     return o.a.createElement(
                       "div",
@@ -7160,7 +7159,7 @@
             )
           );
         },
-        Ha = function (e) {
+        Ma = function (e) {
           var a = Object(r.useContext)(Q.context).user,
             t = Object(r.useState)(!1),
             n = Object(s.a)(t, 2),
@@ -7174,7 +7173,7 @@
             }, []),
             a && a.isSignedIn && l
               ? o.a.createElement(
-                  Ma,
+                  xa,
                   Object.assign({}, e, {
                     dismiss: Object(E.a)(
                       h.a.mark(function e() {
@@ -7195,7 +7194,7 @@
               : null
           );
         },
-        xa =
+        Ha =
           (t(118),
           function (e) {
             var a = Object(r.useContext)(Q.context).initUser,
@@ -7999,7 +7998,7 @@
             a ? "ed" : ""
           );
         };
-      function Mt(e) {
+      function xt(e) {
         return "forbidden_book" === e
           ? o.a.createElement(ht, { className: "Decrees-Option-Icon" })
           : "eliminate_team" === e
@@ -8007,62 +8006,68 @@
           : "redistribute_wealth" === e
           ? o.a.createElement(nt, { className: "Decrees-Option-Icon" })
           : "four_for_four" === e || "fourth_strike" === e
-          ? o.a.createElement(J.H, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.K, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
-          ? o.a.createElement(J.M, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.P, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
           ? o.a.createElement(bt, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
-          ? o.a.createElement(J.Q, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.T, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
-          ? o.a.createElement(J.l, { className: "Decrees-Option-Icon" })
-          : "blaserunning" === e
-          ? o.a.createElement(J.r, { className: "Decrees-Option-Icon" })
-          : "eat_the_rich" === e
           ? o.a.createElement(J.n, { className: "Decrees-Option-Icon" })
+          : "blaserunning" === e
+          ? o.a.createElement(J.t, { className: "Decrees-Option-Icon" })
+          : "eat_the_rich" === e
+          ? o.a.createElement(J.p, { className: "Decrees-Option-Icon" })
           : "eat_the_crust" === e
-          ? o.a.createElement(J.N, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.Q, { className: "Decrees-Option-Icon" })
           : "interviews" === e
-          ? o.a.createElement(J.I, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.L, { className: "Decrees-Option-Icon" })
           : "random_realignment" === e
           ? o.a.createElement(J.a, { className: "Decrees-Option-Icon" })
           : "alternate_reality" === e
           ? o.a.createElement(Sa.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
-          ? o.a.createElement(J.V, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.Z, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(Ia.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
           ? o.a.createElement(V.b, { className: "Decrees-Option-Icon" })
           : "team_punish" === e
-          ? o.a.createElement(J.fb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.jb, { className: "Decrees-Option-Icon" })
           : "do_nothing" === e
-          ? o.a.createElement(J.P, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.S, { className: "Decrees-Option-Icon" })
           : "confuse_good" === e
-          ? o.a.createElement(J.X, { className: "Decrees-Option-Icon" })
-          : "confuse_evil" === e
-          ? o.a.createElement(J.W, { className: "Decrees-Option-Icon" })
-          : "parallel_world" === e
-          ? o.a.createElement(J.R, { className: "Decrees-Option-Icon" })
-          : "diagonal_world" === e
           ? o.a.createElement(J.bb, { className: "Decrees-Option-Icon" })
+          : "confuse_evil" === e
+          ? o.a.createElement(J.ab, { className: "Decrees-Option-Icon" })
+          : "parallel_world" === e
+          ? o.a.createElement(J.U, { className: "Decrees-Option-Icon" })
+          : "diagonal_world" === e
+          ? o.a.createElement(J.fb, { className: "Decrees-Option-Icon" })
           : "high_filter" === e
-          ? o.a.createElement(J.F, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.I, { className: "Decrees-Option-Icon" })
           : "new_kids" === e
-          ? o.a.createElement(J.u, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.w, { className: "Decrees-Option-Icon" })
           : "hot_sauce" === e
           ? o.a.createElement(Tt, { className: "Decrees-Option-Icon" })
           : "enhanced_party_time" === e
           ? o.a.createElement(Bt, { className: "Decrees-Option-Icon" })
           : "fifth_base" === e
-          ? o.a.createElement(J.B, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.D, { className: "Decrees-Option-Icon" })
           : "walk_in_the_park" === e
           ? o.a.createElement(Dt, { className: "Decrees-Option-Icon" })
           : "bless_off" === e
-          ? o.a.createElement(J.z, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(J.B, { className: "Decrees-Option-Icon" })
+          : "wild_cards" === e
+          ? o.a.createElement(J.k, { className: "Decrees-Option-Icon" })
+          : "relief" === e
+          ? o.a.createElement(J.X, { className: "Decrees-Option-Icon" })
+          : "double_jumps" === e
+          ? o.a.createElement(J.H, { className: "Decrees-Option-Icon" })
           : o.a.createElement("div", null);
       }
-      var Ht = function (e) {
+      var Mt = function (e) {
           var a = e.title,
             t = e.description,
             n = e.id,
@@ -8077,7 +8082,7 @@
                 return l(n);
               },
             },
-            Mt(n),
+            xt(n),
             o.a.createElement("div", { className: "Decrees-Option-Header" }, a),
             t &&
               o.a.createElement(
@@ -8088,7 +8093,7 @@
             o.a.createElement(Wt, { isActive: r })
           );
         },
-        xt = function () {
+        Ht = function () {
           var e = Object(r.useContext)(Ja.context),
             a = Object(r.useContext)(Q.context).user,
             t = Object(r.useState)(),
@@ -8151,7 +8156,7 @@
                 { className: "Decrees-Container" },
                 e.decrees.map(function (e, a) {
                   return o.a.createElement(
-                    Ht,
+                    Mt,
                     Object.assign({ key: a }, e, {
                       isActive: l === e.id,
                       onSelect: function (e) {
@@ -8291,7 +8296,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Recap-Decree-Icon" },
-                          Mt(e.decreeId)
+                          xt(e.decreeId)
                         ),
                         o.a.createElement(
                           "div",
@@ -8519,7 +8524,7 @@
           : o.a.createElement(
               o.a.Fragment,
               null,
-              o.a.createElement(xt, null),
+              o.a.createElement(Ht, null),
               o.a.createElement(_a, null)
             );
       }
@@ -8653,7 +8658,7 @@
                   o.a.createElement(
                     "div",
                     { className: "Vote-Ticket-Wrapper" },
-                    o.a.createElement(J.cb, { className: "Vote-Ticket-Icon" }),
+                    o.a.createElement(J.gb, { className: "Vote-Ticket-Icon" }),
                     n.votes
                   ),
                   o.a.createElement(de.a.Control, {
@@ -10876,9 +10881,9 @@
                 (function (e) {
                   switch (e) {
                     case "One":
-                      return o.a.createElement(J.M, null);
+                      return o.a.createElement(J.P, null);
                     case "Two":
-                      return o.a.createElement(J.w, null);
+                      return o.a.createElement(J.y, null);
                   }
                   return;
                 })(t)
@@ -10964,14 +10969,14 @@
               "div",
               {
                 className: "Bulletin-Item-Header-Icon",
-                style: { background: "#deae00" },
+                style: { background: "#5988ff" },
               },
-              o.a.createElement(J.Y, null)
+              o.a.createElement(J.j, null)
             ),
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Header-Title" },
-              "IDOLS"
+              "HALL OF FLAME"
             )
           ),
           o.a.createElement(
@@ -10980,7 +10985,7 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents-Text" },
-              "No Half Measures. CONSOLATION PRIZE: BATH TIME POSTPONED"
+              "Visit your loved ones. Pay tribute."
             )
           )
         );
@@ -11099,7 +11104,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#32c775" },
                 },
-                o.a.createElement(J.eb, null)
+                o.a.createElement(J.ib, null)
               ),
               o.a.createElement(
                 "div",
@@ -11116,19 +11121,19 @@
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "Time for Crab! The Baltimore Crabs dominated the league with a record of 80-19 and clawed their way to their first Internet Series title."
+                "The formerly Mild-mannered Wings from Mexico City tapped into their Wild side and shocked the world, claiming their first Internet Series title!"
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "The Seattle Garages captured their first Mild League Championship, sweeping the first two rounds of the Postseason before finally being swept themselves in the Internet Series."
+                "The ILB was rocked by a massive debt crisis that saw countless fan favorites cashed in as payment for necromancy!"
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "Fans committed Idolatry in Season 6, idolizing their favorite players and receiving Coinage in exchange for their worship."
+                "The Unlimited Tacos offered up their entire pitching rotation in Snackrifice! In response, the Front Office simply noted \u201cPlay must continue.\u201d"
               )
             )
           )),
@@ -11144,7 +11149,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#c23284" },
                 },
-                o.a.createElement(J.T, null)
+                o.a.createElement(J.W, null)
               ),
               o.a.createElement(
                 "div",
@@ -11161,19 +11166,19 @@
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "The dead don\u2019t rest! Jaylen Hotdogfingers has Returned to the ILB! But the Ledger must be Balanced. Mike Townsend was Credited to the Shadows!"
+                "Another landmark on the road to making Blaseball sustainable -- The Front Office reached their second Patreon Goal!"
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "In a landslide Election, fans voted for Enhanced Party Time! Biscayne Bay has alighted. Invitations are in the mail! The Party will rage."
+                "The Microphone appears to have offered Jaylen Hotdogfingers a deal! What could our reality-shaping Microphone Mason have in mind!"
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
                 o.a.createElement(En, null),
-                "The Shelled One called STRIKE THREE! Stars Jessica Telephone and Nagomi Mcdaniel have been SHELLED. Is a Fourth Strike looming?"
+                "The Hall Monitor has offered fans the chance to visit the Hall of Flame. The price of admission? Peanuts, which it seems to think are eggs!"
               )
             )
           )),
@@ -11189,7 +11194,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#1b95e0" },
                 },
-                o.a.createElement(J.K, null)
+                o.a.createElement(J.N, null)
               ),
               o.a.createElement(
                 "div",
@@ -11209,7 +11214,7 @@
               })
             )
           )),
-          (m = H(u.sim, "UNLOCKED_HALL")
+          (m = M(u.sim, "UNLOCKED_HALL")
             ? o.a.createElement(
                 o.a.Fragment,
                 null,
@@ -11222,7 +11227,7 @@
                       className: "Bulletin-Item-Header-Icon",
                       style: { background: "#9c2c46" },
                     },
-                    o.a.createElement(J.o, null)
+                    o.a.createElement(J.q, null)
                   ),
                   o.a.createElement(
                     "div",
@@ -11252,7 +11257,7 @@
                       className: "Bulletin-Item-Header-Icon",
                       style: { background: "#9c2c46" },
                     },
-                    o.a.createElement(J.o, null)
+                    o.a.createElement(J.q, null)
                   ),
                   o.a.createElement(
                     "div",
@@ -11848,7 +11853,7 @@
             };
           })(),
           R =
-            H(null === i || void 0 === i ? void 0 : i.sim, "UNLOCKED_HALL") &&
+            M(null === i || void 0 === i ? void 0 : i.sim, "UNLOCKED_HALL") &&
             void 0 !== (null === p || void 0 === p ? void 0 : p.player) &&
             p.player.deceased
               ? o.a.createElement(
@@ -11881,7 +11886,7 @@
                               type: "submit",
                               variant: "warning",
                             },
-                            o.a.createElement(J.M, null),
+                            o.a.createElement(J.P, null),
                             " Pay Tribute"
                           )
                         )
@@ -12073,8 +12078,8 @@
               n && n.attr === a && (t = !0), r && r.attr === a && (t = !0), t
             );
           })(null === p || void 0 === p ? void 0 : p.player, "NON_IDOLIZED"),
-          M = y.idol,
-          x =
+          x = y.idol,
+          H =
             void 0 === (null === p || void 0 === p ? void 0 : p.player)
               ? o.a.createElement(pe, null)
               : o.a.createElement(
@@ -12124,11 +12129,11 @@
                             void 0 !== p.team ? p.team.fullName : "Null Team"
                           )
                         ),
-                        H(i.sim, "UNLOCKED_IDOLS")
+                        M(i.sim, "UNLOCKED_IDOLS")
                           ? o.a.createElement(
                               Y.a,
                               { className: "Player-Button" },
-                              (G || W) && M !== p.player.id
+                              (G || W) && x !== p.player.id
                                 ? o.a.createElement(
                                     "div",
                                     { className: "Idol-Disabled-Tooltip" },
@@ -12158,18 +12163,18 @@
                                             className: "Player-Button-Idol",
                                             variant: "dark",
                                           },
-                                          "" === M || null === M
+                                          "" === x || null === x
                                             ? o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(J.Y, null),
+                                                o.a.createElement(J.cb, null),
                                                 " ",
                                                 " Choose Idol"
                                               )
                                             : o.a.createElement(
                                                 o.a.Fragment,
                                                 null,
-                                                o.a.createElement(J.db, null),
+                                                o.a.createElement(J.hb, null),
                                                 " ",
                                                 "200 New Idol"
                                               ),
@@ -12178,11 +12183,11 @@
                                       )
                                     )
                                   )
-                                : M === p.player.id
+                                : x === p.player.id
                                 ? o.a.createElement(
                                     "div",
                                     { className: "Player-Button-Idol-Current" },
-                                    o.a.createElement(J.Y, null),
+                                    o.a.createElement(J.cb, null),
                                     " Your Idol"
                                   )
                                 : o.a.createElement(
@@ -12198,18 +12203,18 @@
                                         type: "submit",
                                         variant: "success",
                                       },
-                                      "" === M || null === M
+                                      "" === x || null === x
                                         ? o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(J.Y, null),
+                                            o.a.createElement(J.cb, null),
                                             " ",
                                             " Choose Idol"
                                           )
                                         : o.a.createElement(
                                             o.a.Fragment,
                                             null,
-                                            o.a.createElement(J.db, null),
+                                            o.a.createElement(J.hb, null),
                                             " ",
                                             "200 New Idol"
                                           ),
@@ -12759,7 +12764,7 @@
         return o.a.createElement(
           Z,
           Object.assign({}, e, { className: "Player" }),
-          x
+          H
         );
       };
       t(132), t(133);
@@ -14834,12 +14839,12 @@
               o.a.createElement(
                 c.a,
                 { path: "/login" },
-                o.a.createElement(xa, { isLogin: !0 })
+                o.a.createElement(Ha, { isLogin: !0 })
               ),
               o.a.createElement(
                 c.a,
                 { path: "/signup/:code?" },
-                o.a.createElement(xa, null)
+                o.a.createElement(Ha, null)
               ),
               o.a.createElement(
                 c.a,
@@ -14854,11 +14859,11 @@
                 null,
                 o.a.createElement(c.a, {
                   path: "/signup",
-                  children: o.a.createElement(xa, { isModal: !0 }),
+                  children: o.a.createElement(Ha, { isModal: !0 }),
                 }),
                 o.a.createElement(c.a, {
                   path: "/login",
-                  children: o.a.createElement(xa, { isModal: !0, isLogin: !0 }),
+                  children: o.a.createElement(Ha, { isModal: !0, isLogin: !0 }),
                 }),
                 o.a.createElement(c.a, {
                   path: "/team/:nickname",
@@ -14873,7 +14878,7 @@
                   children: o.a.createElement(Kt, { isModal: !0 }),
                 })
               ),
-            o.a.createElement(Ha, { isModal: !0, dismissable: !1 })
+            o.a.createElement(Ma, { isModal: !0, dismissable: !1 })
           ),
           o.a.createElement(
             "footer",
@@ -14978,7 +14983,7 @@
               o.a.createElement(
                 ya,
                 null,
-                o.a.createElement(He, { state: e }),
+                o.a.createElement(Me, { state: e }),
                 o.a.createElement(
                   "div",
                   { className: "Main-Body" },
@@ -15028,12 +15033,12 @@
                     o.a.createElement(
                       c.a,
                       { path: "/login" },
-                      o.a.createElement(xa, { isLogin: !0 })
+                      o.a.createElement(Ha, { isLogin: !0 })
                     ),
                     o.a.createElement(
                       c.a,
                       { path: "/signup" },
-                      o.a.createElement(xa, null)
+                      o.a.createElement(Ha, null)
                     ),
                     o.a.createElement(
                       c.a,
@@ -15045,7 +15050,7 @@
                       { path: "/player/:id" },
                       o.a.createElement(bn, null)
                     ),
-                    H(e.sim, "UNLOCKED_HALL")
+                    M(e.sim, "UNLOCKED_HALL")
                       ? o.a.createElement(
                           c.a,
                           { path: "/thehall" },
@@ -15079,11 +15084,11 @@
                       null,
                       o.a.createElement(c.a, {
                         path: "/signup",
-                        children: o.a.createElement(xa, { isModal: !0 }),
+                        children: o.a.createElement(Ha, { isModal: !0 }),
                       }),
                       o.a.createElement(c.a, {
                         path: "/login",
-                        children: o.a.createElement(xa, {
+                        children: o.a.createElement(Ha, {
                           isModal: !0,
                           isLogin: !0,
                         }),
@@ -15105,7 +15110,7 @@
                         children: o.a.createElement(Kt, { isModal: !0 }),
                       })
                     ),
-                  o.a.createElement(Ha, { isModal: !0, dismissable: !1 })
+                  o.a.createElement(Ma, { isModal: !0, dismissable: !1 })
                 ),
                 o.a.createElement(
                   "footer",
