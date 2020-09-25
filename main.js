@@ -630,6 +630,14 @@
               "This player will protect their team from incinerations.",
           },
           {
+            id: "RECEIVER",
+            color: "#ff007b",
+            textColor: "#ff007b",
+            background: "#383838",
+            title: "Receiver",
+            description: "This player is a Receiver.",
+          },
+          {
             id: "FLICKERING",
             color: "#ff007b",
             textColor: "#ff007b",
@@ -5523,6 +5531,8 @@
             return o.a.createElement(J.Y, null);
           case "HEATING_UP":
             return o.a.createElement(J.C, null);
+          case "RECEIVER":
+            return o.a.createElement(J.L, null);
           case "FLICKERING":
             return o.a.createElement(J.l, null);
         }

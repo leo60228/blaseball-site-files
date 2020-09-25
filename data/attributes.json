@@ -272,6 +272,14 @@
         "description": "This player will protect their team from incinerations."
     },
     {
+        "id": "RECEIVER",
+        "color": "#ff007b",
+        "textColor": "#ff007b",
+        "background": "#383838",
+        "title": "Receiver",
+        "description": "This player is a Receiver."
+    },
+    {
         "id": "FLICKERING",
         "color": "#ff007b",
         "textColor": "#ff007b",
