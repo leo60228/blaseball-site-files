@@ -17,8 +17,8 @@
     },
     {
         "id": "HOME_FIELD",
-        "color": "#ecffb8",
-        "textColor": "#4f9c30",
+        "color": "#f9ff54",
+        "textColor": "#f9ff54",
         "background": "#4f9c30",
         "title": "Home Field Advantage",
         "description": "Teams with Home Field Advantage will start each home game with one run."
@@ -160,10 +160,26 @@
         "description": "This team gets 10% more from their Party Time stat boosts."
     },
     {
+        "id": "DEBT_ZERO",
+        "color": "#ff1f3c",
+        "textColor": "#ff1f3c",
+        "background": "#1b1c80",
+        "title": "Debt",
+        "description": "This player must fulfill a debt."
+    },
+    {
         "id": "DEBT",
         "color": "#ff1f3c",
         "textColor": "#ff1f3c",
         "background": "#363738",
+        "title": "Refinanced Debt",
+        "description": "This player must fulfill a ⓓⓔⓑⓣ."
+    },
+    {
+        "id": "DEBT_TWO",
+        "color": "#ff1f3c",
+        "textColor": "#ff1f3c",
+        "background": "#1b1c80",
         "title": "Refinanced Debt",
         "description": "This player must fulfill a ⓓⓔⓑⓣ."
     },
@@ -285,6 +301,38 @@
         "textColor": "#ff007b",
         "background": "#383838",
         "title": "Flickering",
-        "description": "This player is Flickering."
+        "description": "Flickering players have a much higher chance of being Feedbacked to their opponent."
+    },
+    {
+        "id": "GROWTH",
+        "color": "#52a17b",
+        "textColor": "#52a17b",
+        "background": "#13422b",
+        "title": "Growth",
+        "description": "Growth teams will play better as the season goes on, up to a 5% global boost by season's end."
+    },
+    {
+        "id": "BASE_INSTINCTS",
+        "color": "#dedede",
+        "textColor": "#dedede",
+        "background": "#329c98",
+        "title": "Base Instincts",
+        "description": "Batters with Base Instincts will have a chance of heading past first base when getting walked."
+    },
+    {
+        "id": "STABLE",
+        "color": "#91b5a3",
+        "textColor": "#91b5a3",
+        "background": "#335980",
+        "title": "Stable",
+        "description": "Stable players cannot be made Unstable."
+    },
+    {
+        "id": "AFFINITY_FOR_CROWS",
+        "color": "#cb80d9",
+        "textColor": "#cb80d9",
+        "background": "#240c36",
+        "title": "Affinity for Crows",
+        "description": "Players with Affinity for Crows will hit and pitch 50% better during Birds weather."
     }
 ]
