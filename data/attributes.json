@@ -173,15 +173,15 @@
         "textColor": "#ff1f3c",
         "background": "#363738",
         "title": "Refinanced Debt",
-        "description": "This player must fulfill a ⓓⓔⓑⓣ."
+        "description": "This player must fulfill a debt."
     },
     {
         "id": "DEBT_TWO",
         "color": "#ff1f3c",
         "textColor": "#ff1f3c",
-        "background": "#1b1c80",
-        "title": "Refinanced Debt",
-        "description": "This player must fulfill a ⓓⓔⓑⓣ."
+        "background": "#612273",
+        "title": "Consolidated Debt",
+        "description": "This player must fulfill a debt."
     },
     {
         "id": "SPICY",
@@ -230,6 +230,14 @@
         "background": "#45003d",
         "title": "Superallergic",
         "description": "This player is Superallergic"
+    },
+    {
+        "id": "SUPERYUMMY",
+        "color": "#ffdb59",
+        "textColor": "#ffdb59",
+        "background": "#c96faa",
+        "title": "Superyummy",
+        "description": "This player seriously loves peanuts"
     },
     {
         "id": "EXTRA_BASE",
@@ -334,5 +342,77 @@
         "background": "#240c36",
         "title": "Affinity for Crows",
         "description": "Players with Affinity for Crows will hit and pitch 50% better during Birds weather."
+    },
+    {
+        "id": "SQUIDDISH",
+        "color": "#5988ff",
+        "textColor": "#5988ff",
+        "background": "#163073",
+        "title": "Squiddish",
+        "description": ""
+    },
+    {
+        "id": "CRUNCHY",
+        "color": "#f5eb5d",
+        "textColor": "#f5eb5d",
+        "background": "#de8123",
+        "title": "Crunchy",
+        "description": ""
+    },
+    {
+        "id": "REPEATING",
+        "color": "#61b3ff",
+        "textColor": "#61b3ff",
+        "background": "#3d5982",
+        "title": "Repeating",
+        "description": "In Reverb Weather, this player will Repeat."
+    },
+    {
+        "id": "SUBJECTION",
+        "color": "#d16f6f",
+        "textColor": "#d16f6f",
+        "background": "#2e2f33",
+        "title": "Subjection",
+        "description": ""
+    },
+    {
+        "id": "LIBERATED",
+        "color": "#90eb07",
+        "textColor": "#90eb07",
+        "background": "#07a1a3",
+        "title": "Liberated",
+        "description": ""
+    },
+    {
+        "id": "FIRE_EATER",
+        "color": "#f50a31",
+        "textColor": "#f50a31",
+        "background": "#e3d514",
+        "title": "Fire Eater",
+        "description": ""
+    },
+    {
+        "id": "MAGMATIC",
+        "color": "#e63200",
+        "textColor": "#e63200",
+        "background": "#6b0004",
+        "title": "Magmatic",
+        "description": ""
+    },
+    {
+        "id": "LOYALTY",
+        "color": "#ff61a5",
+        "textColor": "#ff61a5",
+        "background": "#8a047c",
+        "title": "Loyalty",
+        "description": ""
+    },
+    {
+        "id": "SABOTEUR",
+        "color": "#6b6a6a",
+        "textColor": "#6b6a6a",
+        "background": "#240c36",
+        "title": "Saboteur",
+        "description": ""
     }
 ]
