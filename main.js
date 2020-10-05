@@ -2173,9 +2173,9 @@
         }
         function w(e) {
           return e === l.homeTeam
-            ? l.homeTeamColor
+            ? l.homeTeamSecondaryColor
             : e === l.awayTeam
-            ? l.awayTeamColor
+            ? l.awayTeamSecondaryColor
             : "Null Color";
         }
         (t =
