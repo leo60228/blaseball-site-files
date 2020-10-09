@@ -784,7 +784,7 @@
     ,
     ,
     function (e, a, t) {
-      e.exports = t(140);
+      e.exports = t(141);
     },
     ,
     ,
@@ -816,6 +816,7 @@
     ,
     function (e, a, t) {},
     ,
+    function (e, a, t) {},
     function (e, a, t) {},
     function (e, a, t) {},
     function (e, a, t) {},
@@ -5962,7 +5963,7 @@
       t(116);
       var Ra,
         La = t(35),
-        Qa = t(144),
+        Qa = t(145),
         Pa = (t(53), t(69));
       function Ga(e) {
         switch (e.id) {
@@ -11036,9 +11037,59 @@
         },
         mn = o.a.forwardRef(function (e, a) {
           return o.a.createElement(cn, on({ svgRef: a }, e));
-        }),
-        un = (t.p, t(130), t(31)),
-        dn = {
+        });
+      t.p, t(130), t(131), t(132);
+      function un(e) {
+        return void 0 !== e.element
+          ? e.element
+          : o.a.createElement("div", { className: "Stubs-Header" }, e.text);
+      }
+      var dn = function (e) {
+          var a,
+            t = e.path,
+            n = Object(r.useContext)(O.context),
+            l =
+              (void 0 !== n.sim && void 0 !== n.sim.season && n.sim.season,
+              null);
+          switch (t) {
+            case "/leaderboard":
+              l = o.a.createElement(ta, null);
+              break;
+            case "/":
+              l = o.a.createElement(la, null);
+          }
+          return o.a.createElement(
+            "div",
+            null,
+            o.a.createElement(un, {
+              element: o.a.createElement(
+                "div",
+                { className: "Stubs-All" },
+                o.a.createElement(
+                  "div",
+                  { className: "Stubs-Header" },
+                  "The Season is Over!"
+                ),
+                o.a.createElement(_e, {
+                  dateString:
+                    null === (a = n.sim) || void 0 === a
+                      ? void 0
+                      : a.nextPhaseTime,
+                }),
+                o.a.createElement(
+                  "div",
+                  { className: "Stubs-Body" },
+                  "The Wild Card teams will be chosen soon."
+                )
+              ),
+              text: "Offseason. Check for updates on the Discord!",
+            }),
+            o.a.createElement(qe, null),
+            l
+          );
+        },
+        hn = t(31),
+        En = {
           notes: [],
           refreshNotes: (function () {
             var e = Object(E.a)(
@@ -11058,8 +11109,8 @@
             };
           })(),
         },
-        hn = Object(r.createContext)(dn),
-        En = function (e) {
+        pn = Object(r.createContext)(En),
+        fn = function (e) {
           var a = e.children,
             t = Object(r.useContext)(Q.context),
             n = t.user,
@@ -11089,8 +11140,8 @@
                                 e &&
                                   u(
                                     [].concat(
-                                      Object(un.a)(m),
-                                      Object(un.a)(e.notes)
+                                      Object(hn.a)(m),
+                                      Object(hn.a)(e.notes)
                                     )
                                   );
                               })
@@ -11414,12 +11465,12 @@
               [m]
             );
           var T = { notes: m, refreshNotes: b };
-          return o.a.createElement(hn.Provider, { value: T }, a);
+          return o.a.createElement(pn.Provider, { value: T }, a);
         };
-      En.context = hn;
-      var pn = En;
-      t(131);
-      function fn() {
+      fn.context = pn;
+      var bn = fn;
+      t(133);
+      function vn() {
         return o.a.createElement(
           "div",
           { className: "TheBook-All" },
@@ -11435,9 +11486,9 @@
             o.a.createElement(
               "span",
               { className: "TheBook-Subheader-Group" },
-              o.a.createElement(bn, { str: "||||||||||||||||||" }),
+              o.a.createElement(yn, { str: "||||||||||||||||||" }),
               " and ",
-              o.a.createElement(bn, { str: "|||||||||||||" })
+              o.a.createElement(yn, { str: "|||||||||||||" })
             )
           ),
           o.a.createElement(
@@ -11454,9 +11505,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Each season of Blaseball shall last 99 games. In the case of ",
-            o.a.createElement(bn, { str: "the Ultimate ||||||||" }),
+            o.a.createElement(yn, { str: "the Ultimate ||||||||" }),
             ", seasons shall ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "|||||||||||||||||, or at least until the ||||||| have ||||||||.",
             })
@@ -11465,20 +11516,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Every day of Blaseball shall last one ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hour."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. If any games last longer than one ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hour, a Spillover shall occur, and all games shall be delayed until the next ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hour. In the case of a game lasting two ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hours, the ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "entire season should be ||||||||| and both teams should be ||||||||| ||||||||| |||||||| |||| for |||||| |||||||||||.",
             })
@@ -11537,7 +11588,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "h. The home team in each Postseason game shall be ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "the |||||||||||, if the |||||||||||||||||||.",
             })
           ),
@@ -11545,16 +11596,16 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "i. The Wild Card Round should take place shortly after the end of the regular season. One full ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hour shall be skipped, and then the Round shall begin at the top of the next available ",
-            o.a.createElement(bn, { str: "|||||" }),
+            o.a.createElement(yn, { str: "|||||" }),
             " hour."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             'j. The Postseason shall continue early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
             })
@@ -11568,7 +11619,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Participants should be allowed to Vote on the rules, rosters, and other effects of the game of Blaseball. ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "The content of such Votes shall be ||||||||||||||| ||||||||||||||||||| ||||||||| entertainment",
             }),
@@ -11582,7 +11633,7 @@
               null,
               "b. Decrees will be decided by popular vote."
             ),
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "It is understood that ||||||||||||||||| will be a ||||||||||| |||||||||||, and the others shall ||||||||||||||| ||||||||||||||| ||||||||| |||||||||||||.",
             })
@@ -11591,20 +11642,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Blessings will be decided by a raffle. ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "It is understood that each of these",
             }),
             " should give players ",
-            o.a.createElement(bn, { str: "||||||||||||| |||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||||| |||||||||||" }),
             " control of the league. All won Blessings shall be processed & applied in order of the standings. "
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. ",
-            o.a.createElement(bn, { str: "||||||||||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||||||||||" }),
             " may occur at the end of an Election, before Decrees and Blessings are processed. ",
-            o.a.createElement(bn, { str: "Anything can happen here" }),
+            o.a.createElement(yn, { str: "Anything can happen here" }),
             ". Good luck."
           ),
           o.a.createElement(
@@ -11621,43 +11672,43 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Teams are a ",
-            o.a.createElement(bn, { str: "|||||||||| || players" }),
+            o.a.createElement(yn, { str: "|||||||||| || players" }),
             " bound by ",
-            o.a.createElement(bn, { str: "| |||||| |||||||||| |||| ||||||" }),
+            o.a.createElement(yn, { str: "| |||||| |||||||||| |||| ||||||" }),
             ". Names, colors, icons, and slogans are ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "||||||||||| |||||||||||| || ||| |||| |||||| || ||||| |||||||||||||",
             }),
             " in order for the Fans ",
-            o.a.createElement(bn, { str: "to find them palatable." })
+            o.a.createElement(yn, { str: "to find them palatable." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. A Team's roster is built of four sections: Lineup, Rotation, ",
-            o.a.createElement(bn, { str: "Bench" }),
+            o.a.createElement(yn, { str: "Bench" }),
             ", and ",
-            o.a.createElement(bn, { str: "Bullpen" }),
+            o.a.createElement(yn, { str: "Bullpen" }),
             ". The Lineup and Rotation make up a Team's Active Roster, and the ",
-            o.a.createElement(bn, { str: "Bench" }),
+            o.a.createElement(yn, { str: "Bench" }),
             " and ",
-            o.a.createElement(bn, { str: "Bullpen" }),
+            o.a.createElement(yn, { str: "Bullpen" }),
             " make up a Team's Shadows. A Team's Shadows cannot be accessed unless directly specified, or through direct selection from a public interface."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Teams may choose ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "|| |||| ||||| ||||| || ||||||||, a |||||| |||||",
             }),
             " to contain and represent their ",
-            o.a.createElement(bn, { str: "||||||" }),
+            o.a.createElement(yn, { str: "||||||" }),
             ". The Fans may shape ",
-            o.a.createElement(bn, { str: "|||| |||||| as they" }),
+            o.a.createElement(yn, { str: "|||| |||||| as they" }),
             " uncover and decipher ",
-            o.a.createElement(bn, { str: "their ||||' ||||||." })
+            o.a.createElement(yn, { str: "their ||||' ||||||." })
           ),
           o.a.createElement(
             "div",
@@ -11673,34 +11724,34 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. Each game should take place ",
-            o.a.createElement(bn, { str: "at the home team's stadium" }),
+            o.a.createElement(yn, { str: "at the home team's stadium" }),
             " on the immaterial plane."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. Weather: ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "The home team's stadium should determine the weather.",
             }),
             " In the case that ",
-            o.a.createElement(bn, { str: "||||||||||||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||||||||||||" }),
             ", a Solar Eclipse shall last until ",
-            o.a.createElement(bn, { str: "||||||||||||||||||||" })
+            o.a.createElement(yn, { str: "||||||||||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. There are ",
-            o.a.createElement(bn, { str: "two positions" }),
+            o.a.createElement(yn, { str: "two positions" }),
             " in Blaseball, ",
-            o.a.createElement(bn, { str: "||||||||||||||||||||." })
+            o.a.createElement(yn, { str: "||||||||||||||||||||." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "e. When a team is on Defense, ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "all of the team's ||||||| will stand ||||||||| out in the field. Doesn't really matter where.",
             })
@@ -11709,20 +11760,20 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. The pitcher must throw the ball ",
-            o.a.createElement(bn, { str: "with their hands." }),
+            o.a.createElement(yn, { str: "with their hands." }),
             ", unless ",
-            o.a.createElement(bn, { str: "that doesn't make sense." })
+            o.a.createElement(yn, { str: "that doesn't make sense." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "g. Once the ball is in play, ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "||| |||| || ||| |||||||||| ||||| |||||||||| the outcome of the play. ||| |||| ||||||| || ||||||||||||||||",
             }),
             " immaterial plane ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "|||||||||||||| ||||||| ||||||| ||||||||| ||||||||||||||| |||||||||||||||| |||||||| |||||||| unfathomable.",
             })
@@ -11741,38 +11792,38 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "j. ",
-            o.a.createElement(bn, { str: "||||||||||||||||||||||" })
+            o.a.createElement(yn, { str: "||||||||||||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "k. Crying in Blaseball is ",
-            o.a.createElement(bn, { str: "||||||||||." })
+            o.a.createElement(yn, { str: "||||||||||." })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "6. ",
-            o.a.createElement(bn, { str: "The Gods" }),
+            o.a.createElement(yn, { str: "The Gods" }),
             " and You"
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. Should the Participants open the Forbidden Book, ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "The Discipline Era should begin||||||||||||||||||||||",
             }),
             " suffering ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "upon the league. Players shall be ",
             }),
             " banished ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "at the ||||||||||| ||||||||| |||| ||||||||||||||||.",
             }),
             " The Discipline Era shall last until ",
-            o.a.createElement(bn, { str: "the Participants have" }),
+            o.a.createElement(yn, { str: "the Participants have" }),
             " atoned."
           ),
           o.a.createElement(
@@ -11784,9 +11835,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "c. When teams are sent to ",
-            o.a.createElement(bn, { str: "||||||||||| |||||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||| |||||||||||||" }),
             ", they shall return once ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "|||||||||||||||| |||||||||||||||||||||| |||||||||||||",
             })
           ),
@@ -11794,9 +11845,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "d. Divine Favor: the ",
-            o.a.createElement(bn, { str: "||||" }),
+            o.a.createElement(yn, { str: "||||" }),
             " have an internal ranking of favored teams. The list is decided ",
-            o.a.createElement(bn, { str: "|||||||||" }),
+            o.a.createElement(yn, { str: "|||||||||" }),
             " each season, and determines all standings tiebreakers."
           ),
           o.a.createElement(
@@ -11819,7 +11870,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "i. Blood Bath: ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "||||| ||||||, ||||||||||| |||||| ||| ||||||||, ||| ||||| |||| |||| ||||||| ||| ||||||. ||||| |||| || |||||||||||| ||||| || |||| |||||| ||||| |||||||||||||",
             })
@@ -11828,7 +11879,7 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. Sunglasses ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "shall be |||||||||| ||||||||||||| |||||||||||||||||. They shall provide |||||||||||||| may be ||||||||||||||||||||.",
             })
@@ -11842,13 +11893,13 @@
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "7. ",
-            o.a.createElement(bn, { str: "||||||||||||" })
+            o.a.createElement(yn, { str: "||||||||||||" })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "a. It is known ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str:
                 "that the intention of the game of Blaseball |||||||||||||||||||||||| |||||||||||||||||||| |||||||||||||| |||||||||||||||||| ||||||||||| |||||||||| would be diminished.",
             })
@@ -11857,13 +11908,13 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "b. ",
-            o.a.createElement(bn, { str: "|||||||" }),
+            o.a.createElement(yn, { str: "|||||||" }),
             ": Several entities in the ",
-            o.a.createElement(bn, { str: "||||||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||||||" }),
             " shall be chosen ",
-            o.a.createElement(bn, { str: "||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||" }),
             " to bring Blaseball to the people ",
-            o.a.createElement(bn, {
+            o.a.createElement(yn, {
               str: "|||||||||||||||||| ||||||||||||||||||",
             })
           ),
@@ -11877,7 +11928,7 @@
               "Game-Icons.net"
             ),
             ". ",
-            o.a.createElement(bn, { str: "||||||||" }),
+            o.a.createElement(yn, { str: "||||||||" }),
             " thank the authors immensely. Individual author credits coming soon."
           ),
           o.a.createElement(
@@ -11888,47 +11939,47 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            o.a.createElement(bn, { str: "||||" }),
+            o.a.createElement(yn, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||" }),
+            o.a.createElement(yn, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||||||" }),
+            o.a.createElement(yn, { str: "||||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "|||||||" }),
+            o.a.createElement(yn, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||||||" }),
+            o.a.createElement(yn, { str: "||||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "|||||||||" }),
+            o.a.createElement(yn, { str: "|||||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "|||||||" }),
+            o.a.createElement(yn, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||" }),
+            o.a.createElement(yn, { str: "||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||||" }),
+            o.a.createElement(yn, { str: "||||||" }),
             ", \xa0H",
-            o.a.createElement(bn, { str: "||||||||||" }),
+            o.a.createElement(yn, { str: "||||||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||||" }),
+            o.a.createElement(yn, { str: "||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "|||||||" }),
+            o.a.createElement(yn, { str: "|||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||| ||||" }),
+            o.a.createElement(yn, { str: "||||| ||||" }),
             ", \xa0A",
-            o.a.createElement(bn, { str: "|||||| ||||||" }),
+            o.a.createElement(yn, { str: "|||||| ||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||" }),
+            o.a.createElement(yn, { str: "||||" }),
             ", \xa0N",
-            o.a.createElement(bn, { str: "||||||" }),
+            o.a.createElement(yn, { str: "||||||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||" }),
+            o.a.createElement(yn, { str: "||" }),
             ", \xa0",
-            o.a.createElement(bn, { str: "||||||" }),
+            o.a.createElement(yn, { str: "||||||" }),
             ", \xa0M",
-            o.a.createElement(bn, { str: "|| ||||||" })
+            o.a.createElement(yn, { str: "|| ||||||" })
           )
         );
       }
-      function bn(e) {
+      function yn(e) {
         var a = e.str.split(" ");
         return o.a.createElement(
           "span",
@@ -11944,8 +11995,8 @@
           })
         );
       }
-      t(132);
-      function vn() {
+      t(134);
+      function gn() {
         var e,
           a = Object(r.useContext)(Ua.context),
           t = (null === a || void 0 === a ? void 0 : a.doc)
@@ -11993,9 +12044,9 @@
               )
             );
       }
-      t(133);
-      var yn = t(70);
-      function gn() {
+      t(135);
+      var An = t(70);
+      function Nn() {
         var e,
           a,
           t,
@@ -12254,19 +12305,19 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "The Baltimore Crabs are TWO-TIME Champions! The cantankerous crustaceans defeated the Hades Tigers 3 games to 1 to claim their second Internet Series title in three seasons."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "The ILB now finds itself in a three-way race for Ascension, as the Crabs, Tigers and Pies jockey to be the first team to win three titles and subsequently \u201cgo up or climb,\u201d or \u201crise through the air,\u201d as the commissioner suggested / pulled from the dictionary."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "Debt Trading had the league Flickering in Season 8, as Jaylen Hotdogfingers appears to have Refinanced in a mysterious deal with the Microphone."
               )
             )
@@ -12299,25 +12350,25 @@
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "The Microphone appears to have transformed both NaN and Sixpack Dogwalker into some sort of cosmic Receivers capable of broadcasting its messages to the league. What we know so far: The Mic is claiming to be Wyatt Mason. And it supposedly has a plan."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "In a landslide Election, fans voted to draw Wild Cards, expanding the Postseason field."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "The Monitor continues to be enthralled with the Peanut. The squid also seems to have taken interest in the shelled Idols."
               ),
               o.a.createElement(
                 "div",
                 { className: "Bulletin-Item-Contents-Text" },
-                o.a.createElement(Nn, null),
+                o.a.createElement(wn, null),
                 "After fans offered 100 million peanuts in tribute to the dead, the Peanut called STRIKE 4. The Shelled One claims to be on its way."
               )
             )
@@ -12345,8 +12396,8 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents Bulletin-Item-ImageGrid" },
-              An.map(function (e) {
-                return o.a.createElement(yn.a, {
+              Tn.map(function (e) {
+                return o.a.createElement(An.a, {
                   id: e,
                   options: { theme: "dark", conversation: "none", dnt: !0 },
                   className: "Bulletin-Tweet",
@@ -12534,7 +12585,7 @@
             )
           : g;
       }
-      var An = (function (e) {
+      var Tn = (function (e) {
         var a,
           t = [];
         for (; t.length <= 2; )
@@ -12868,11 +12919,11 @@
         "1301342212551249920",
         "1307365350556798979",
       ]);
-      function Nn() {
+      function wn() {
         return o.a.createElement(Qa.f, { className: "Bulletin-Bullet" });
       }
-      var Tn, wn;
-      t(134);
+      var Sn, On;
+      t(136);
       !(function (e) {
         (e[(e.SingleA = 0)] = "SingleA"),
           (e[(e.TripleA = 1)] = "TripleA"),
@@ -12887,7 +12938,7 @@
           (e[(e.Fire = 10)] = "Fire"),
           (e[(e.Psychic = 11)] = "Psychic"),
           (e[(e.Grass = 12)] = "Grass");
-      })(Tn || (Tn = {})),
+      })(Sn || (Sn = {})),
         (function (e) {
           (e[(e.Black = 0)] = "Black"),
             (e[(e.LightAndSweet = 1)] = "LightAndSweet"),
@@ -12903,8 +12954,8 @@
             (e[(e.MilkSubstitute = 11)] = "MilkSubstitute"),
             (e[(e.PlentyOfSugar = 12)] = "PlentyOfSugar"),
             (e[(e.Anything = 13)] = "Anything");
-        })(wn || (wn = {}));
-      function Sn(e) {
+        })(On || (On = {}));
+      function In(e) {
         for (
           var a = e / 0.2,
             t = Math.round(2 * a) / 2,
@@ -12921,759 +12972,725 @@
           o.a.createElement("span", null, l)
         );
       }
-      var On = function (e) {
-        var a,
-          t,
-          n,
-          l = Object(c.h)().id,
-          i = Object(r.useContext)(O.context),
-          m = Object(r.useContext)(De.context),
-          d = Object(r.useState)(void 0),
-          p = Object(s.a)(d, 2),
-          f = p[0],
-          b = p[1],
-          v = Object(ue.useToasts)().addToast,
-          y = Object(r.useContext)(Q.context),
-          g = y.user,
-          A = y.setUser,
-          N = Object(r.useState)(!1),
-          T = Object(s.a)(N, 2),
-          w = T[0],
-          S = (T[1], Object(r.useState)(1)),
-          B = Object(s.a)(S, 2);
-        B[0], B[1];
-        function k(e) {
-          for (var a = 0; a < m.teams.length; a++) {
-            for (var t = m.teams[a], n = 0; n < t.lineup.length; n++)
-              if (t.lineup[n] === e.id) return t;
-            for (var r = 0; r < t.rotation.length; r++)
-              if (t.rotation[r] === e.id) return t;
-            for (var o = 0; o < t.bench.length; o++)
-              if (t.bench[o] === e.id) return t;
-            for (var l = 0; l < t.bullpen.length; l++)
-              if (t.bullpen[l] === e.id) return t;
+      var Bn = function (e) {
+          var a,
+            t,
+            n,
+            l = Object(c.h)().id,
+            i = Object(r.useContext)(O.context),
+            m = Object(r.useContext)(De.context),
+            d = Object(r.useState)(void 0),
+            p = Object(s.a)(d, 2),
+            f = p[0],
+            b = p[1],
+            v = Object(ue.useToasts)().addToast,
+            y = Object(r.useContext)(Q.context),
+            g = y.user,
+            A = y.setUser,
+            N = Object(r.useState)(!1),
+            T = Object(s.a)(N, 2),
+            w = T[0],
+            S = (T[1], Object(r.useState)(1)),
+            B = Object(s.a)(S, 2);
+          B[0], B[1];
+          function k(e) {
+            for (var a = 0; a < m.teams.length; a++) {
+              for (var t = m.teams[a], n = 0; n < t.lineup.length; n++)
+                if (t.lineup[n] === e.id) return t;
+              for (var r = 0; r < t.rotation.length; r++)
+                if (t.rotation[r] === e.id) return t;
+              for (var o = 0; o < t.bench.length; o++)
+                if (t.bench[o] === e.id) return t;
+              for (var l = 0; l < t.bullpen.length; l++)
+                if (t.bullpen[l] === e.id) return t;
+            }
           }
-        }
-        Object(r.useEffect)(function () {
-          (function () {
-            var e = Object(E.a)(
-              h.a.mark(function e() {
-                var a, t, n;
-                return h.a.wrap(function (e) {
-                  for (;;)
-                    switch ((e.prev = e.next)) {
-                      case 0:
-                        return (e.next = 2), ce([l]);
-                      case 2:
-                        void 0 !== (a = e.sent) &&
-                          1 == a.length &&
-                          ((t = a[0]), (n = k(t)), b({ player: t, team: n }));
-                      case 4:
-                      case "end":
-                        return e.stop();
-                    }
-                }, e);
-              })
-            );
-            return function () {
-              return e.apply(this, arguments);
-            };
-          })()();
-        }, []);
-        var C,
-          R = (function (e) {
-            if (void 0 === e) return "NONE";
-            if (void 0 === e.bat) return "NONE";
-            if ("" === e.bat) return "NONE";
-            var a = M.collection.find(function (a) {
-              return a.id === e.bat;
-            });
-            return void 0 === a ? "NONE" : a.attr;
-          })(null === f || void 0 === f ? void 0 : f.player),
-          L = (function (e) {
-            if (void 0 === e) return "NONE";
-            if (void 0 === e.armor) return "NONE";
-            if ("" === e.armor) return "NONE";
-            var a = M.collection.find(function (a) {
-              return a.id === e.armor;
-            });
-            return void 0 === a ? "NONE" : a.attr;
-          })(null === f || void 0 === f ? void 0 : f.player),
-          P = Object(c.g)(),
-          G =
-            x(null === i || void 0 === i ? void 0 : i.sim, "UNLOCKED_HALL") &&
-            void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
-            f.player.deceased
-              ? o.a.createElement(
-                  "div",
-                  { className: "Player-Status" },
-                  o.a.createElement(
-                    "div",
-                    { className: "Player-Status-Line" },
-                    o.a.createElement("div", {
-                      className: "Player-Deceased-Icon",
-                    }),
-                    o.a.createElement(
-                      "div",
-                      { className: "Player-Status-Name" },
-                      "Deceased"
-                    )
-                  ),
-                  w
-                    ? o.a.createElement(Ee, null)
-                    : o.a.createElement(
-                        u,
-                        {
-                          className: "Player-Button-Tribute",
-                          background: P,
-                          path: "/tribute/".concat(
-                            null === f || void 0 === f ? void 0 : f.player.id
-                          ),
-                        },
-                        o.a.createElement(J.W, null),
-                        " Pay Tribute"
-                      )
-                )
-              : null,
-          D =
-            void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
-            (f.player.permAttr.length > 0 ||
-              f.player.seasAttr.length > 0 ||
-              f.player.weekAttr.length > 0 ||
-              f.player.gameAttr.length > 0 ||
-              "NONE" !== R ||
-              "NONE" !== L)
-              ? o.a.createElement(
-                  "div",
-                  { className: "Player-Attributes" },
-                  o.a.createElement(
-                    "div",
-                    { className: "AttributeBar" },
-                    f.player.permAttr.map(function (e, a) {
-                      return o.a.createElement(Ma, {
-                        id: e,
-                        type: Ra.Permanent,
-                        key: a,
-                      });
-                    }),
-                    f.player.seasAttr.map(function (e, a) {
-                      return o.a.createElement(Ma, {
-                        id: e,
-                        type: Ra.Season,
-                        key: a,
-                      });
-                    }),
-                    f.player.weekAttr.map(function (e, a) {
-                      return o.a.createElement(Ma, {
-                        id: e,
-                        type: Ra.Weekly,
-                        key: a,
-                      });
-                    }),
-                    f.player.gameAttr.map(function (e, a) {
-                      return o.a.createElement(Ma, {
-                        id: e,
-                        type: Ra.Game,
-                        key: a,
-                      });
-                    }),
-                    "NONE" !== R
-                      ? o.a.createElement(Ma, { id: R, type: Ra.Item })
-                      : null,
-                    "NONE" !== L
-                      ? o.a.createElement(Ma, { id: L, type: Ra.Armor })
-                      : null
-                  )
-                )
-              : null,
-          W = (function () {
-            var e = Object(E.a)(
-              h.a.mark(function e(a) {
-                return h.a.wrap(function (e) {
-                  for (;;)
-                    switch ((e.prev = e.next)) {
-                      case 0:
-                        if (
-                          (a.preventDefault(),
-                          !f || !f.player || f.player.id === g.idol)
-                        ) {
-                          e.next = 10;
-                          break;
-                        }
-                        if (
-                          !(g.coins < 200) ||
-                          ("" === g.idol && null === g.idol)
-                        ) {
-                          e.next = 6;
-                          break;
-                        }
-                        v("Not enough coins", { appearance: "error" }),
-                          (e.next = 8);
-                        break;
-                      case 6:
-                        return (
-                          (e.next = 8),
-                          _(
-                            "/api/chooseIdol",
-                            JSON.stringify({
-                              playerId: f.player.id,
-                              playerName: f.player.name,
-                            })
-                          ).then(
-                            (function () {
-                              var e = Object(E.a)(
-                                h.a.mark(function e(a) {
-                                  return h.a.wrap(function (e) {
-                                    for (;;)
-                                      switch ((e.prev = e.next)) {
-                                        case 0:
-                                          a.ok &&
-                                          a.status &&
-                                          200 === a.status &&
-                                          f &&
-                                          f.player
-                                            ? (!1,
-                                              "" === g.idol || null === g.idol
-                                                ? (A(
-                                                    Object(I.a)(
-                                                      Object(I.a)({}, g),
-                                                      {},
-                                                      { idol: f.player.id }
-                                                    )
-                                                  ),
-                                                  !0)
-                                                : g.coins >= 200 &&
-                                                  (A(
-                                                    Object(I.a)(
-                                                      Object(I.a)({}, g),
-                                                      {},
-                                                      {
-                                                        coins: g.coins - 200,
-                                                        idol: f.player.id,
-                                                      }
-                                                    )
-                                                  ),
-                                                  !0),
-                                              v(
-                                                f.player.name +
-                                                  " is now your idol.",
-                                                { appearance: "success" }
-                                              ))
-                                            : a.json().then(function (e) {
-                                                v(e.message || "Error", {
-                                                  appearance: "error",
-                                                });
-                                              });
-                                        case 1:
-                                        case "end":
-                                          return e.stop();
-                                      }
-                                  }, e);
-                                })
-                              );
-                              return function (a) {
-                                return e.apply(this, arguments);
-                              };
-                            })()
-                          )
-                        );
-                      case 8:
-                        e.next = 11;
-                        break;
-                      case 10:
-                        v("Insufficient coins!", { appearance: "error" });
-                      case 11:
-                      case "end":
-                        return e.stop();
-                    }
-                }, e);
-              })
-            );
-            return function (a) {
-              return e.apply(this, arguments);
-            };
-          })(),
-          F = !1;
-        (2 !== (null === (a = i.sim) || void 0 === a ? void 0 : a.phase) &&
-          4 !== (null === (t = i.sim) || void 0 === t ? void 0 : t.phase)) ||
-          null === i ||
-          void 0 === i ||
-          null === (C = i.schedule) ||
-          void 0 === C ||
-          C.forEach(function (e) {
-            e.gameComplete || (F = !0);
-          });
-        var j = (function (e, a) {
-            if (void 0 === e) return !1;
-            var t =
-                e.permAttr.includes(a) ||
-                e.seasAttr.includes(a) ||
-                e.weekAttr.includes(a) ||
-                e.gameAttr.includes(a),
-              n = M.collection.find(function (a) {
+          Object(r.useEffect)(function () {
+            (function () {
+              var e = Object(E.a)(
+                h.a.mark(function e() {
+                  var a, t, n;
+                  return h.a.wrap(function (e) {
+                    for (;;)
+                      switch ((e.prev = e.next)) {
+                        case 0:
+                          return (e.next = 2), ce([l]);
+                        case 2:
+                          void 0 !== (a = e.sent) &&
+                            1 == a.length &&
+                            ((t = a[0]), (n = k(t)), b({ player: t, team: n }));
+                        case 4:
+                        case "end":
+                          return e.stop();
+                      }
+                  }, e);
+                })
+              );
+              return function () {
+                return e.apply(this, arguments);
+              };
+            })()();
+          }, []);
+          var C,
+            R = (function (e) {
+              if (void 0 === e) return "NONE";
+              if (void 0 === e.bat) return "NONE";
+              if ("" === e.bat) return "NONE";
+              var a = M.collection.find(function (a) {
                 return a.id === e.bat;
-              }),
-              r = M.collection.find(function (a) {
+              });
+              return void 0 === a ? "NONE" : a.attr;
+            })(null === f || void 0 === f ? void 0 : f.player),
+            L = (function (e) {
+              if (void 0 === e) return "NONE";
+              if (void 0 === e.armor) return "NONE";
+              if ("" === e.armor) return "NONE";
+              var a = M.collection.find(function (a) {
                 return a.id === e.armor;
               });
-            return (
-              n && n.attr === a && (t = !0), r && r.attr === a && (t = !0), t
-            );
-          })(null === f || void 0 === f ? void 0 : f.player, "NON_IDOLIZED"),
-          H = g.idol,
-          V =
-            void 0 === (null === f || void 0 === f ? void 0 : f.player)
-              ? o.a.createElement(pe, null)
-              : o.a.createElement(
-                  o.a.Fragment,
-                  null,
-                  o.a.createElement(
+              return void 0 === a ? "NONE" : a.attr;
+            })(null === f || void 0 === f ? void 0 : f.player),
+            P = Object(c.g)(),
+            G =
+              x(null === i || void 0 === i ? void 0 : i.sim, "UNLOCKED_HALL") &&
+              void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
+              f.player.deceased
+                ? o.a.createElement(
                     "div",
-                    { className: "Player-Info" },
+                    { className: "Player-Status" },
                     o.a.createElement(
                       "div",
-                      { className: "Player-Header" },
+                      { className: "Player-Status-Line" },
+                      o.a.createElement("div", {
+                        className: "Player-Deceased-Icon",
+                      }),
                       o.a.createElement(
                         "div",
-                        { className: "Player-Header-Name" },
-                        f.player.name
-                      ),
+                        { className: "Player-Status-Name" },
+                        "Deceased"
+                      )
+                    ),
+                    w
+                      ? o.a.createElement(Ee, null)
+                      : o.a.createElement(
+                          u,
+                          {
+                            className: "Player-Button-Tribute",
+                            background: P,
+                            path: "/tribute/".concat(
+                              null === f || void 0 === f ? void 0 : f.player.id
+                            ),
+                          },
+                          o.a.createElement(J.W, null),
+                          " Pay Tribute"
+                        )
+                  )
+                : null,
+            D =
+              void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
+              (f.player.permAttr.length > 0 ||
+                f.player.seasAttr.length > 0 ||
+                f.player.weekAttr.length > 0 ||
+                f.player.gameAttr.length > 0 ||
+                "NONE" !== R ||
+                "NONE" !== L)
+                ? o.a.createElement(
+                    "div",
+                    { className: "Player-Attributes" },
+                    o.a.createElement(
+                      "div",
+                      { className: "AttributeBar" },
+                      f.player.permAttr.map(function (e, a) {
+                        return o.a.createElement(Ma, {
+                          id: e,
+                          type: Ra.Permanent,
+                          key: a,
+                        });
+                      }),
+                      f.player.seasAttr.map(function (e, a) {
+                        return o.a.createElement(Ma, {
+                          id: e,
+                          type: Ra.Season,
+                          key: a,
+                        });
+                      }),
+                      f.player.weekAttr.map(function (e, a) {
+                        return o.a.createElement(Ma, {
+                          id: e,
+                          type: Ra.Weekly,
+                          key: a,
+                        });
+                      }),
+                      f.player.gameAttr.map(function (e, a) {
+                        return o.a.createElement(Ma, {
+                          id: e,
+                          type: Ra.Game,
+                          key: a,
+                        });
+                      }),
+                      "NONE" !== R
+                        ? o.a.createElement(Ma, { id: R, type: Ra.Item })
+                        : null,
+                      "NONE" !== L
+                        ? o.a.createElement(Ma, { id: L, type: Ra.Armor })
+                        : null
+                    )
+                  )
+                : null,
+            W = (function () {
+              var e = Object(E.a)(
+                h.a.mark(function e(a) {
+                  return h.a.wrap(function (e) {
+                    for (;;)
+                      switch ((e.prev = e.next)) {
+                        case 0:
+                          if (
+                            (a.preventDefault(),
+                            !f || !f.player || f.player.id === g.idol)
+                          ) {
+                            e.next = 10;
+                            break;
+                          }
+                          if (
+                            !(g.coins < 200) ||
+                            ("" === g.idol && null === g.idol)
+                          ) {
+                            e.next = 6;
+                            break;
+                          }
+                          v("Not enough coins", { appearance: "error" }),
+                            (e.next = 8);
+                          break;
+                        case 6:
+                          return (
+                            (e.next = 8),
+                            _(
+                              "/api/chooseIdol",
+                              JSON.stringify({
+                                playerId: f.player.id,
+                                playerName: f.player.name,
+                              })
+                            ).then(
+                              (function () {
+                                var e = Object(E.a)(
+                                  h.a.mark(function e(a) {
+                                    return h.a.wrap(function (e) {
+                                      for (;;)
+                                        switch ((e.prev = e.next)) {
+                                          case 0:
+                                            a.ok &&
+                                            a.status &&
+                                            200 === a.status &&
+                                            f &&
+                                            f.player
+                                              ? (!1,
+                                                "" === g.idol || null === g.idol
+                                                  ? (A(
+                                                      Object(I.a)(
+                                                        Object(I.a)({}, g),
+                                                        {},
+                                                        { idol: f.player.id }
+                                                      )
+                                                    ),
+                                                    !0)
+                                                  : g.coins >= 200 &&
+                                                    (A(
+                                                      Object(I.a)(
+                                                        Object(I.a)({}, g),
+                                                        {},
+                                                        {
+                                                          coins: g.coins - 200,
+                                                          idol: f.player.id,
+                                                        }
+                                                      )
+                                                    ),
+                                                    !0),
+                                                v(
+                                                  f.player.name +
+                                                    " is now your idol.",
+                                                  { appearance: "success" }
+                                                ))
+                                              : a.json().then(function (e) {
+                                                  v(e.message || "Error", {
+                                                    appearance: "error",
+                                                  });
+                                                });
+                                          case 1:
+                                          case "end":
+                                            return e.stop();
+                                        }
+                                    }, e);
+                                  })
+                                );
+                                return function (a) {
+                                  return e.apply(this, arguments);
+                                };
+                              })()
+                            )
+                          );
+                        case 8:
+                          e.next = 11;
+                          break;
+                        case 10:
+                          v("Insufficient coins!", { appearance: "error" });
+                        case 11:
+                        case "end":
+                          return e.stop();
+                      }
+                  }, e);
+                })
+              );
+              return function (a) {
+                return e.apply(this, arguments);
+              };
+            })(),
+            F = !1;
+          (2 !== (null === (a = i.sim) || void 0 === a ? void 0 : a.phase) &&
+            4 !== (null === (t = i.sim) || void 0 === t ? void 0 : t.phase)) ||
+            null === i ||
+            void 0 === i ||
+            null === (C = i.schedule) ||
+            void 0 === C ||
+            C.forEach(function (e) {
+              e.gameComplete || (F = !0);
+            });
+          var j = (function (e, a) {
+              if (void 0 === e) return !1;
+              var t =
+                  e.permAttr.includes(a) ||
+                  e.seasAttr.includes(a) ||
+                  e.weekAttr.includes(a) ||
+                  e.gameAttr.includes(a),
+                n = M.collection.find(function (a) {
+                  return a.id === e.bat;
+                }),
+                r = M.collection.find(function (a) {
+                  return a.id === e.armor;
+                });
+              return (
+                n && n.attr === a && (t = !0), r && r.attr === a && (t = !0), t
+              );
+            })(null === f || void 0 === f ? void 0 : f.player, "NON_IDOLIZED"),
+            H = g.idol,
+            V =
+              void 0 === (null === f || void 0 === f ? void 0 : f.player)
+                ? o.a.createElement(pe, null)
+                : o.a.createElement(
+                    o.a.Fragment,
+                    null,
+                    o.a.createElement(
+                      "div",
+                      { className: "Player-Info" },
                       o.a.createElement(
                         "div",
-                        { className: "Player-Header-Bottom" },
+                        { className: "Player-Header" },
                         o.a.createElement(
                           "div",
-                          { className: "Player-Team-Line" },
+                          { className: "Player-Header-Name" },
+                          f.player.name
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Header-Bottom" },
                           o.a.createElement(
                             "div",
-                            {
-                              className: "Player-Team-Logo",
-                              style: {
-                                background:
-                                  void 0 !== f.team
-                                    ? f.team.mainColor
-                                    : "#999999",
-                              },
-                            },
+                            { className: "Player-Team-Line" },
                             o.a.createElement(
                               "div",
-                              { className: "Player-Team-Emoji" },
-                              String.fromCodePoint(
-                                Number(
-                                  void 0 !== f.team ? f.team.emoji : "0x2753"
+                              {
+                                className: "Player-Team-Logo",
+                                style: {
+                                  background:
+                                    void 0 !== f.team
+                                      ? f.team.mainColor
+                                      : "#999999",
+                                },
+                              },
+                              o.a.createElement(
+                                "div",
+                                { className: "Player-Team-Emoji" },
+                                String.fromCodePoint(
+                                  Number(
+                                    void 0 !== f.team ? f.team.emoji : "0x2753"
+                                  )
                                 )
                               )
+                            ),
+                            o.a.createElement(
+                              "div",
+                              { className: "Player-Team-Name" },
+                              void 0 !== f.team ? f.team.fullName : "Null Team"
                             )
                           ),
-                          o.a.createElement(
-                            "div",
-                            { className: "Player-Team-Name" },
-                            void 0 !== f.team ? f.team.fullName : "Null Team"
-                          )
-                        ),
-                        x(i.sim, "UNLOCKED_IDOLS")
-                          ? o.a.createElement(
-                              Y.a,
-                              { className: "Player-Button" },
-                              (F || j) && H !== f.player.id
-                                ? o.a.createElement(
-                                    "div",
-                                    { className: "Idol-Disabled-Tooltip" },
-                                    o.a.createElement(
-                                      Te.a,
-                                      {
-                                        placement: "right",
-                                        overlay: o.a.createElement(
-                                          we.a,
-                                          {
-                                            id: "tooltip-disabled",
-                                            className: "Idol-Disabled-Tooltip",
-                                          },
-                                          F
-                                            ? "You can't choose an Idol while games are active."
-                                            : "This player cannot be Idolized."
-                                        ),
-                                      },
+                          x(i.sim, "UNLOCKED_IDOLS")
+                            ? o.a.createElement(
+                                Y.a,
+                                { className: "Player-Button" },
+                                (F || j) && H !== f.player.id
+                                  ? o.a.createElement(
+                                      "div",
+                                      { className: "Idol-Disabled-Tooltip" },
                                       o.a.createElement(
-                                        "span",
-                                        { className: "d-inline-block" },
+                                        Te.a,
+                                        {
+                                          placement: "right",
+                                          overlay: o.a.createElement(
+                                            we.a,
+                                            {
+                                              id: "tooltip-disabled",
+                                              className:
+                                                "Idol-Disabled-Tooltip",
+                                            },
+                                            F
+                                              ? "You can't choose an Idol while games are active."
+                                              : "This player cannot be Idolized."
+                                          ),
+                                        },
                                         o.a.createElement(
-                                          U.a,
-                                          {
-                                            disabled: !0,
-                                            style: { pointerEvents: "none" },
-                                            className: "Player-Button-Idol",
-                                            variant: "dark",
-                                          },
-                                          "" === H || null === H
-                                            ? o.a.createElement(
-                                                o.a.Fragment,
-                                                null,
-                                                o.a.createElement(J.qb, null),
-                                                " ",
-                                                " Choose Idol"
-                                              )
-                                            : o.a.createElement(
-                                                o.a.Fragment,
-                                                null,
-                                                o.a.createElement(J.vb, null),
-                                                " ",
-                                                "200 New Idol"
-                                              ),
-                                          " "
+                                          "span",
+                                          { className: "d-inline-block" },
+                                          o.a.createElement(
+                                            U.a,
+                                            {
+                                              disabled: !0,
+                                              style: { pointerEvents: "none" },
+                                              className: "Player-Button-Idol",
+                                              variant: "dark",
+                                            },
+                                            "" === H || null === H
+                                              ? o.a.createElement(
+                                                  o.a.Fragment,
+                                                  null,
+                                                  o.a.createElement(J.qb, null),
+                                                  " ",
+                                                  " Choose Idol"
+                                                )
+                                              : o.a.createElement(
+                                                  o.a.Fragment,
+                                                  null,
+                                                  o.a.createElement(J.vb, null),
+                                                  " ",
+                                                  "200 New Idol"
+                                                ),
+                                            " "
+                                          )
                                         )
                                       )
                                     )
-                                  )
-                                : H === f.player.id
-                                ? o.a.createElement(
-                                    "div",
-                                    { className: "Player-Button-Idol-Current" },
-                                    o.a.createElement(J.qb, null),
-                                    " Your Idol"
-                                  )
-                                : o.a.createElement(
-                                    de.a,
-                                    {
-                                      className: "Player-Button-Form",
-                                      onSubmit: W,
-                                    },
-                                    o.a.createElement(
-                                      U.a,
+                                  : H === f.player.id
+                                  ? o.a.createElement(
+                                      "div",
                                       {
-                                        className: "Player-Button-Idol",
-                                        type: "submit",
-                                        variant: "success",
+                                        className: "Player-Button-Idol-Current",
                                       },
-                                      "" === H || null === H
-                                        ? o.a.createElement(
-                                            o.a.Fragment,
-                                            null,
-                                            o.a.createElement(J.qb, null),
-                                            " ",
-                                            " Choose Idol"
-                                          )
-                                        : o.a.createElement(
-                                            o.a.Fragment,
-                                            null,
-                                            o.a.createElement(J.vb, null),
-                                            " ",
-                                            "200 New Idol"
-                                          ),
-                                      " "
+                                      o.a.createElement(J.qb, null),
+                                      " Your Idol"
                                     )
-                                  )
-                            )
-                          : o.a.createElement("div", null)
-                      )
-                    )
-                  ),
-                  G,
-                  D,
-                  o.a.createElement(
-                    "div",
-                    { className: "Player-Content" },
-                    o.a.createElement(
-                      "ul",
-                      { className: "Player-Info-Stats" },
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Current Vibe"
-                        ),
-                        (function (e, a) {
-                          var t = (function (e, a) {
-                            var t = 6 + Math.round(10 * e.buoyancy),
-                              n = Math.PI * ((2 / t) * a + 0.5);
-                            return (
-                              0.5 *
-                                (e.pressurization + e.cinnamon) *
-                                Math.sin(n) -
-                              0.5 * e.pressurization +
-                              0.5 * e.cinnamon
-                            );
-                          })(e, a);
-                          if (t > 0.8)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-MostExcellent",
-                              },
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Most Excellent"
+                                  : o.a.createElement(
+                                      de.a,
+                                      {
+                                        className: "Player-Button-Form",
+                                        onSubmit: W,
+                                      },
+                                      o.a.createElement(
+                                        U.a,
+                                        {
+                                          className: "Player-Button-Idol",
+                                          type: "submit",
+                                          variant: "success",
+                                        },
+                                        "" === H || null === H
+                                          ? o.a.createElement(
+                                              o.a.Fragment,
+                                              null,
+                                              o.a.createElement(J.qb, null),
+                                              " ",
+                                              " Choose Idol"
+                                            )
+                                          : o.a.createElement(
+                                              o.a.Fragment,
+                                              null,
+                                              o.a.createElement(J.vb, null),
+                                              " ",
+                                              "200 New Idol"
+                                            ),
+                                        " "
+                                      )
+                                    )
                               )
-                            );
-                          if (t > 0.4)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-Excellent",
-                              },
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Excellent"
-                              )
-                            );
-                          if (t > 0.1)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-Quality",
-                              },
-                              o.a.createElement(Qa.c, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Quality"
-                              )
-                            );
-                          if (t > -0.1)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-Neutral",
-                              },
-                              o.a.createElement(Qa.a, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Neutral"
-                              )
-                            );
-                          if (t > -0.4)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-LessThanIdeal",
-                              },
-                              o.a.createElement(Qa.b, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Less Than Ideal"
-                              )
-                            );
-                          if (t > -0.8)
-                            return o.a.createElement(
-                              "span",
-                              {
-                                className:
-                                  "Player-VibeLine Player-Vibe-FarLessThanIdeal",
-                              },
-                              o.a.createElement(Qa.b, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(Qa.b, {
-                                className: "Player-VibeLine-Arrow",
-                              }),
-                              o.a.createElement(
-                                "div",
-                                { className: "Player-VibeLine-Text" },
-                                "Far Less Than Ideal"
-                              )
-                            );
-                          return o.a.createElement(
-                            "span",
-                            {
-                              className: "Player-VibeLine Player-Vibe-Terrible",
-                            },
-                            o.a.createElement(Qa.b, {
-                              className: "Player-VibeLine-Arrow",
-                            }),
-                            o.a.createElement(Qa.b, {
-                              className: "Player-VibeLine-Arrow",
-                            }),
-                            o.a.createElement(Qa.b, {
-                              className: "Player-VibeLine-Arrow",
-                            }),
-                            o.a.createElement(
-                              "div",
-                              { className: "Player-VibeLine-Text" },
-                              "Honestly Terrible"
-                            )
-                          );
-                        })(
-                          f.player,
-                          void 0 !==
-                            (null === (n = i.sim) || void 0 === n
-                              ? void 0
-                              : n.day)
-                            ? i.sim.day
-                            : -1
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Batting"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Ratings" },
-                          Sn(
-                            (function (e) {
-                              return (
-                                Math.pow(1 - e.tragicness, 0.01) *
-                                Math.pow(e.buoyancy, 0) *
-                                Math.pow(e.thwackability, 0.35) *
-                                Math.pow(e.moxie, 0.075) *
-                                Math.pow(e.divinity, 0.35) *
-                                Math.pow(e.musclitude, 0.075) *
-                                Math.pow(1 - e.patheticism, 0.05) *
-                                Math.pow(e.martyrdom, 0.02)
-                              );
-                            })(f.player)
-                          )
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Pitching"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Ratings" },
-                          (function (e) {
-                            return Sn(
-                              (function (e) {
-                                return (
-                                  Math.pow(e.shakespearianism, 0.1) *
-                                  Math.pow(e.suppression, 0) *
-                                  Math.pow(e.unthwackability, 0.5) *
-                                  Math.pow(e.coldness, 0.025) *
-                                  Math.pow(e.overpowerment, 0.15) *
-                                  Math.pow(e.ruthlessness, 0.4)
-                                );
-                              })(e)
-                            );
-                          })(f.player)
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Baserunning"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Ratings" },
-                          (function (e) {
-                            return Sn(
-                              (function (e) {
-                                return (
-                                  Math.pow(e.laserlikeness, 0.5) *
-                                  Math.pow(e.continuation, 0.1) *
-                                  Math.pow(e.baseThirst, 0.1) *
-                                  Math.pow(e.indulgence, 0.1) *
-                                  Math.pow(e.groundFriction, 0.1)
-                                );
-                              })(e)
-                            );
-                          })(f.player)
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Defense"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Ratings" },
-                          (function (e) {
-                            return Sn(
-                              (function (e) {
-                                return (
-                                  Math.pow(e.omniscience, 0.2) *
-                                  Math.pow(e.tenaciousness, 0.2) *
-                                  Math.pow(e.watchfulness, 0.1) *
-                                  Math.pow(e.anticapitalism, 0.1) *
-                                  Math.pow(e.chasiness, 0.1)
-                                );
-                              })(e)
-                            );
-                          })(f.player)
+                            : o.a.createElement("div", null)
                         )
                       )
                     ),
+                    G,
+                    D,
                     o.a.createElement(
                       "div",
-                      { className: "Player-Info-Items" },
+                      { className: "Player-Content" },
                       o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Items-Box" },
+                        "ul",
+                        { className: "Player-Info-Stats" },
                         o.a.createElement(
                           "div",
-                          { className: "Player-Info-Items-Header" },
-                          "Item"
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Current Vibe"
+                          ),
+                          (function (e, a) {
+                            var t = (function (e, a) {
+                              var t = 6 + Math.round(10 * e.buoyancy),
+                                n = Math.PI * ((2 / t) * a + 0.5);
+                              return (
+                                0.5 *
+                                  (e.pressurization + e.cinnamon) *
+                                  Math.sin(n) -
+                                0.5 * e.pressurization +
+                                0.5 * e.cinnamon
+                              );
+                            })(e, a);
+                            if (t > 0.8)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-MostExcellent",
+                                },
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Most Excellent"
+                                )
+                              );
+                            if (t > 0.4)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-Excellent",
+                                },
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Excellent"
+                                )
+                              );
+                            if (t > 0.1)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-Quality",
+                                },
+                                o.a.createElement(Qa.c, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Quality"
+                                )
+                              );
+                            if (t > -0.1)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-Neutral",
+                                },
+                                o.a.createElement(Qa.a, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Neutral"
+                                )
+                              );
+                            if (t > -0.4)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-LessThanIdeal",
+                                },
+                                o.a.createElement(Qa.b, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Less Than Ideal"
+                                )
+                              );
+                            if (t > -0.8)
+                              return o.a.createElement(
+                                "span",
+                                {
+                                  className:
+                                    "Player-VibeLine Player-Vibe-FarLessThanIdeal",
+                                },
+                                o.a.createElement(Qa.b, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(Qa.b, {
+                                  className: "Player-VibeLine-Arrow",
+                                }),
+                                o.a.createElement(
+                                  "div",
+                                  { className: "Player-VibeLine-Text" },
+                                  "Far Less Than Ideal"
+                                )
+                              );
+                            return o.a.createElement(
+                              "span",
+                              {
+                                className:
+                                  "Player-VibeLine Player-Vibe-Terrible",
+                              },
+                              o.a.createElement(Qa.b, {
+                                className: "Player-VibeLine-Arrow",
+                              }),
+                              o.a.createElement(Qa.b, {
+                                className: "Player-VibeLine-Arrow",
+                              }),
+                              o.a.createElement(Qa.b, {
+                                className: "Player-VibeLine-Arrow",
+                              }),
+                              o.a.createElement(
+                                "div",
+                                { className: "Player-VibeLine-Text" },
+                                "Honestly Terrible"
+                              )
+                            );
+                          })(
+                            f.player,
+                            void 0 !==
+                              (null === (n = i.sim) || void 0 === n
+                                ? void 0
+                                : n.day)
+                              ? i.sim.day
+                              : -1
+                          )
                         ),
                         o.a.createElement(
                           "div",
-                          { className: "Player-Info-Items-Details" },
+                          { className: "Player-Info-Line" },
                           o.a.createElement(
                             "div",
-                            { className: "Player-Info-Items-Name" },
-                            (function (e) {
-                              if (void 0 === e) return "None";
-                              if (void 0 === e.bat) return "None";
-                              if ("" === e.bat) return "None";
-                              var a = M.collection.find(function (a) {
-                                return a.id === e.bat;
-                              });
-                              return void 0 === a ? "None?" : a.name;
-                            })(f.player)
+                            { className: "Player-Info-Line-Header" },
+                            "Batting"
                           ),
                           o.a.createElement(
                             "div",
-                            { className: "Player-Info-Items-Icon" },
+                            { className: "Player-Ratings" },
+                            In(
+                              (function (e) {
+                                return (
+                                  Math.pow(1 - e.tragicness, 0.01) *
+                                  Math.pow(e.buoyancy, 0) *
+                                  Math.pow(e.thwackability, 0.35) *
+                                  Math.pow(e.moxie, 0.075) *
+                                  Math.pow(e.divinity, 0.35) *
+                                  Math.pow(e.musclitude, 0.075) *
+                                  Math.pow(1 - e.patheticism, 0.05) *
+                                  Math.pow(e.martyrdom, 0.02)
+                                );
+                              })(f.player)
+                            )
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Pitching"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Ratings" },
                             (function (e) {
-                              return (
-                                void 0 === e || void 0 === e.bat || e.bat, null
+                              return In(
+                                (function (e) {
+                                  return (
+                                    Math.pow(e.shakespearianism, 0.1) *
+                                    Math.pow(e.suppression, 0) *
+                                    Math.pow(e.unthwackability, 0.5) *
+                                    Math.pow(e.coldness, 0.025) *
+                                    Math.pow(e.overpowerment, 0.15) *
+                                    Math.pow(e.ruthlessness, 0.4)
+                                  );
+                                })(e)
+                              );
+                            })(f.player)
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Baserunning"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Ratings" },
+                            (function (e) {
+                              return In(
+                                (function (e) {
+                                  return (
+                                    Math.pow(e.laserlikeness, 0.5) *
+                                    Math.pow(e.continuation, 0.1) *
+                                    Math.pow(e.baseThirst, 0.1) *
+                                    Math.pow(e.indulgence, 0.1) *
+                                    Math.pow(e.groundFriction, 0.1)
+                                  );
+                                })(e)
+                              );
+                            })(f.player)
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Defense"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Ratings" },
+                            (function (e) {
+                              return In(
+                                (function (e) {
+                                  return (
+                                    Math.pow(e.omniscience, 0.2) *
+                                    Math.pow(e.tenaciousness, 0.2) *
+                                    Math.pow(e.watchfulness, 0.1) *
+                                    Math.pow(e.anticapitalism, 0.1) *
+                                    Math.pow(e.chasiness, 0.1)
+                                  );
+                                })(e)
                               );
                             })(f.player)
                           )
@@ -13681,281 +13698,317 @@
                       ),
                       o.a.createElement(
                         "div",
-                        { className: "Player-Info-Items-Box" },
+                        { className: "Player-Info-Items" },
                         o.a.createElement(
                           "div",
-                          { className: "Player-Info-Items-Header" },
-                          "Armor"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Items-Details" },
+                          { className: "Player-Info-Items-Box" },
                           o.a.createElement(
                             "div",
-                            { className: "Player-Info-Items-Name" },
-                            (function (e) {
-                              if (void 0 === e) return "None";
-                              if (void 0 === e.armor) return "None";
-                              if ("" === e.armor) return "None";
-                              var a = M.collection.find(function (a) {
-                                return a.id === e.armor;
-                              });
-                              return void 0 === a ? "None?" : a.name;
-                            })(f.player)
+                            { className: "Player-Info-Items-Header" },
+                            "Item"
                           ),
                           o.a.createElement(
                             "div",
-                            { className: "Player-Info-Items-Icon" },
-                            (function (e) {
-                              return (
-                                void 0 === e || void 0 === e.armor || e.armor,
-                                null
-                              );
-                            })(f.player)
-                          )
-                        )
-                      )
-                    ),
-                    o.a.createElement(
-                      "ul",
-                      { className: "Player-Info-Bio" },
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Evolution"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Body" },
-                          "Base"
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Pregame Ritual"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Body" },
-                          f.player.ritual
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Coffee Style"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Body" },
-                          (function (e) {
-                            switch (e) {
-                              case wn.Black:
-                                return "Black";
-                              case wn.LightAndSweet:
-                                return "Light & Sweet";
-                              case wn.Macchiato:
-                                return "Macchiato";
-                              case wn.CreamAndSugar:
-                                return "Cream & Sugar";
-                              case wn.ColdBrew:
-                                return "Cold Brew";
-                              case wn.FlatWhite:
-                                return "Flat White";
-                              case wn.Americano:
-                                return "Americano";
-                              case wn.Foam:
-                                return "Heavy Foam";
-                              case wn.Latte:
-                                return "Latte";
-                              case wn.Decaf:
-                                return "Decaf";
-                              case wn.MilkSubstitute:
-                                return "Milk Substitute";
-                              case wn.PlentyOfSugar:
-                                return "Plenty of Sugar";
-                              case wn.Anything:
-                                return "Anything";
-                            }
-                            return "Coffee?";
-                          })(f.player.coffee)
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Blood Type"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Body" },
-                          (function (e) {
-                            switch (e) {
-                              case Tn.SingleA:
-                                return "A";
-                              case Tn.DoubleA:
-                                return "AA";
-                              case Tn.TripleA:
-                                return "AAA";
-                              case Tn.Acid:
-                                return "Acidic";
-                              case Tn.Base:
-                                return "Basic";
-                              case Tn.Oh:
-                                return "O";
-                              case Tn.OhNo:
-                                return "O No";
-                              case Tn.Water:
-                                return "H\u2082O";
-                              case Tn.Electric:
-                                return "Electric";
-                              case Tn.Love:
-                                return "Love";
-                              case Tn.Fire:
-                                return "Fire";
-                              case Tn.Psychic:
-                                return "Psychic";
-                              case Tn.Grass:
-                                return "Grass";
-                            }
-                            return "Blood?";
-                          })(f.player.blood)
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Fate"
-                        ),
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Body" },
-                          f.player.fate
-                        )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "Player-Info-Line" },
-                        o.a.createElement(
-                          "div",
-                          { className: "Player-Info-Line-Header" },
-                          "Soulscream"
-                        ),
-                        (function (e) {
-                          for (
-                            var a = "",
-                              t = [
-                                "A",
-                                "E",
-                                "I",
-                                "O",
-                                "U",
-                                "X",
-                                "H",
-                                "A",
-                                "E",
-                                "I",
-                              ],
-                              n = [
-                                e.pressurization,
-                                e.divinity,
-                                e.tragicness,
-                                e.shakespearianism,
-                                e.ruthlessness,
-                              ],
-                              r = 0;
-                            r < e.soul;
-                            r++
-                          )
-                            for (var l = 0; l < 11; l++) {
-                              var i = 1 / Math.pow(10, r),
-                                s = n[l % n.length] % i,
-                                c = Math.floor((s / i) * 10);
-                              a += t[c];
-                            }
-                          return o.a.createElement(
-                            "div",
-                            { className: "Player-Soulscream" },
+                            { className: "Player-Info-Items-Details" },
                             o.a.createElement(
                               "div",
-                              { className: "Player-Soulscream-Body" },
-                              a
+                              { className: "Player-Info-Items-Name" },
+                              (function (e) {
+                                if (void 0 === e) return "None";
+                                if (void 0 === e.bat) return "None";
+                                if ("" === e.bat) return "None";
+                                var a = M.collection.find(function (a) {
+                                  return a.id === e.bat;
+                                });
+                                return void 0 === a ? "None?" : a.name;
+                              })(f.player)
+                            ),
+                            o.a.createElement(
+                              "div",
+                              { className: "Player-Info-Items-Icon" },
+                              (function (e) {
+                                return (
+                                  void 0 === e || void 0 === e.bat || e.bat,
+                                  null
+                                );
+                              })(f.player)
                             )
-                          );
-                        })(f.player)
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Items-Box" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Items-Header" },
+                            "Armor"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Items-Details" },
+                            o.a.createElement(
+                              "div",
+                              { className: "Player-Info-Items-Name" },
+                              (function (e) {
+                                if (void 0 === e) return "None";
+                                if (void 0 === e.armor) return "None";
+                                if ("" === e.armor) return "None";
+                                var a = M.collection.find(function (a) {
+                                  return a.id === e.armor;
+                                });
+                                return void 0 === a ? "None?" : a.name;
+                              })(f.player)
+                            ),
+                            o.a.createElement(
+                              "div",
+                              { className: "Player-Info-Items-Icon" },
+                              (function (e) {
+                                return (
+                                  void 0 === e || void 0 === e.armor || e.armor,
+                                  null
+                                );
+                              })(f.player)
+                            )
+                          )
+                        )
+                      ),
+                      o.a.createElement(
+                        "ul",
+                        { className: "Player-Info-Bio" },
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Evolution"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Body" },
+                            "Base"
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Pregame Ritual"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Body" },
+                            f.player.ritual
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Coffee Style"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Body" },
+                            (function (e) {
+                              switch (e) {
+                                case On.Black:
+                                  return "Black";
+                                case On.LightAndSweet:
+                                  return "Light & Sweet";
+                                case On.Macchiato:
+                                  return "Macchiato";
+                                case On.CreamAndSugar:
+                                  return "Cream & Sugar";
+                                case On.ColdBrew:
+                                  return "Cold Brew";
+                                case On.FlatWhite:
+                                  return "Flat White";
+                                case On.Americano:
+                                  return "Americano";
+                                case On.Foam:
+                                  return "Heavy Foam";
+                                case On.Latte:
+                                  return "Latte";
+                                case On.Decaf:
+                                  return "Decaf";
+                                case On.MilkSubstitute:
+                                  return "Milk Substitute";
+                                case On.PlentyOfSugar:
+                                  return "Plenty of Sugar";
+                                case On.Anything:
+                                  return "Anything";
+                              }
+                              return "Coffee?";
+                            })(f.player.coffee)
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Blood Type"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Body" },
+                            (function (e) {
+                              switch (e) {
+                                case Sn.SingleA:
+                                  return "A";
+                                case Sn.DoubleA:
+                                  return "AA";
+                                case Sn.TripleA:
+                                  return "AAA";
+                                case Sn.Acid:
+                                  return "Acidic";
+                                case Sn.Base:
+                                  return "Basic";
+                                case Sn.Oh:
+                                  return "O";
+                                case Sn.OhNo:
+                                  return "O No";
+                                case Sn.Water:
+                                  return "H\u2082O";
+                                case Sn.Electric:
+                                  return "Electric";
+                                case Sn.Love:
+                                  return "Love";
+                                case Sn.Fire:
+                                  return "Fire";
+                                case Sn.Psychic:
+                                  return "Psychic";
+                                case Sn.Grass:
+                                  return "Grass";
+                              }
+                              return "Blood?";
+                            })(f.player.blood)
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Fate"
+                          ),
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Body" },
+                            f.player.fate
+                          )
+                        ),
+                        o.a.createElement(
+                          "div",
+                          { className: "Player-Info-Line" },
+                          o.a.createElement(
+                            "div",
+                            { className: "Player-Info-Line-Header" },
+                            "Soulscream"
+                          ),
+                          (function (e) {
+                            for (
+                              var a = "",
+                                t = [
+                                  "A",
+                                  "E",
+                                  "I",
+                                  "O",
+                                  "U",
+                                  "X",
+                                  "H",
+                                  "A",
+                                  "E",
+                                  "I",
+                                ],
+                                n = [
+                                  e.pressurization,
+                                  e.divinity,
+                                  e.tragicness,
+                                  e.shakespearianism,
+                                  e.ruthlessness,
+                                ],
+                                r = 0;
+                              r < e.soul;
+                              r++
+                            )
+                              for (var l = 0; l < 11; l++) {
+                                var i = 1 / Math.pow(10, r),
+                                  s = n[l % n.length] % i,
+                                  c = Math.floor((s / i) * 10);
+                                a += t[c];
+                              }
+                            return o.a.createElement(
+                              "div",
+                              { className: "Player-Soulscream" },
+                              o.a.createElement(
+                                "div",
+                                { className: "Player-Soulscream-Body" },
+                                a
+                              )
+                            );
+                          })(f.player)
+                        )
                       )
                     )
-                  )
-                );
-        return o.a.createElement(
-          Z,
-          Object.assign({}, e, { className: "Player" }),
-          V
-        );
-      };
-      t(135), t(136);
-      function In(e) {
-        return void 0 !== e.element
-          ? e.element
-          : o.a.createElement("div", { className: "Stubs-Header" }, e.text);
-      }
-      var Bn = function (e) {
-          var a,
-            t = e.path,
-            n = Object(r.useContext)(O.context),
-            l = void 0 !== n.sim && void 0 !== n.sim.season ? n.sim.season : -1;
+                  );
           return o.a.createElement(
-            "div",
-            null,
-            o.a.createElement(In, {
-              element: o.a.createElement(
-                "div",
-                { className: "Stubs-All" },
-                o.a.createElement(
-                  "div",
-                  { className: "Stubs-Header" },
-                  "It's the Pre-Season."
-                ),
-                o.a.createElement(_e, {
-                  dateString:
-                    null === (a = n.sim) || void 0 === a
-                      ? void 0
-                      : a.nextPhaseTime,
-                }),
-                o.a.createElement(
-                  "div",
-                  { className: "Stubs-Body" },
-                  "Season ",
-                  l + 1,
-                  " will begin soon."
-                )
-              ),
-              text: "Offseason. Check for updates on the Discord!",
-            }),
-            o.a.createElement(qe, null),
-            "/leaderboard" === t
-              ? o.a.createElement(ta, null)
-              : o.a.createElement(la, null)
+            Z,
+            Object.assign({}, e, { className: "Player" }),
+            V
           );
         },
         kn =
           (t(137),
+          function (e) {
+            var a,
+              t = e.path,
+              n = Object(r.useContext)(O.context),
+              l =
+                void 0 !== n.sim && void 0 !== n.sim.season ? n.sim.season : -1;
+            return o.a.createElement(
+              "div",
+              null,
+              o.a.createElement(un, {
+                element: o.a.createElement(
+                  "div",
+                  { className: "Stubs-All" },
+                  o.a.createElement(
+                    "div",
+                    { className: "Stubs-Header" },
+                    "It's the Pre-Season."
+                  ),
+                  o.a.createElement(_e, {
+                    dateString:
+                      null === (a = n.sim) || void 0 === a
+                        ? void 0
+                        : a.nextPhaseTime,
+                  }),
+                  o.a.createElement(
+                    "div",
+                    { className: "Stubs-Body" },
+                    "Season ",
+                    l + 1,
+                    " will begin soon."
+                  )
+                ),
+                text: "Offseason. Check for updates on the Discord!",
+              }),
+              o.a.createElement(qe, null),
+              "/leaderboard" === t
+                ? o.a.createElement(ta, null)
+                : o.a.createElement(la, null)
+            );
+          }),
+        Cn =
+          (t(138),
           function (e) {
             var a,
               t = e.path,
@@ -13976,7 +14029,7 @@
             return o.a.createElement(
               "div",
               null,
-              o.a.createElement(In, {
+              o.a.createElement(un, {
                 element: o.a.createElement(
                   "div",
                   { className: "Stubs-All" },
@@ -14005,8 +14058,8 @@
               i
             );
           }),
-        Cn =
-          (t(138),
+        Rn =
+          (t(139),
           function () {
             var e = o.a.createElement(
                 o.a.Fragment,
@@ -15941,8 +15994,8 @@
               )
             );
           }),
-        Rn =
-          (t(139),
+        Ln =
+          (t(140),
           function (e) {
             var a,
               t = e.path,
@@ -15963,7 +16016,7 @@
             return o.a.createElement(
               "div",
               null,
-              o.a.createElement(In, {
+              o.a.createElement(un, {
                 element: o.a.createElement(
                   "div",
                   { className: "Stubs-All" },
@@ -15992,7 +16045,7 @@
               i
             );
           });
-      function Ln() {
+      function Qn() {
         var e = Object(r.useContext)(Q.context).user,
           a = Object(r.useContext)(Ua.context),
           t = Object(r.useState)(!1),
@@ -16007,15 +16060,15 @@
             [e]
           ),
           void 0 !== e && e.isFetching
-            ? o.a.createElement(Pn, null)
-            : a && a.doc && a.doc.epsilon
             ? o.a.createElement(Gn, null)
-            : l
+            : a && a.doc && a.doc.epsilon
             ? o.a.createElement(Dn, null)
-            : o.a.createElement(Qn, null)
+            : l
+            ? o.a.createElement(Mn, null)
+            : o.a.createElement(Pn, null)
         );
       }
-      function Qn() {
+      function Pn() {
         var e = Object(c.g)(),
           a = e.state && e.state.background;
         return o.a.createElement(
@@ -16051,7 +16104,7 @@
               o.a.createElement(
                 c.a,
                 { path: "/faq" },
-                o.a.createElement(Cn, null)
+                o.a.createElement(Rn, null)
               ),
               o.a.createElement(c.a, { path: "/" }, o.a.createElement(Ca, null))
             ),
@@ -16123,7 +16176,7 @@
                 { className: "Main-Footer-Advertise-Inner" },
                 o.a.createElement(
                   "a",
-                  { className: "Main-Footer-Advertise-Icon", href: Mn() },
+                  { className: "Main-Footer-Advertise-Icon", href: Wn() },
                   "Become a Sponsor"
                 )
               )
@@ -16140,25 +16193,25 @@
           )
         );
       }
-      function Pn() {
+      function Gn() {
         return o.a.createElement(
           "div",
           null,
           o.a.createElement("div", { className: "Main-Body" })
         );
       }
-      function Gn() {
+      function Dn() {
         return o.a.createElement(
           "div",
           null,
           o.a.createElement(
             "div",
             { className: "Main-Body" },
-            o.a.createElement(vn, null)
+            o.a.createElement(gn, null)
           )
         );
       }
-      function Dn() {
+      function Mn() {
         var e = Object(r.useContext)(O.context),
           a = Object(c.g)(),
           t = a.state && a.state.background,
@@ -16167,14 +16220,15 @@
               case 0:
                 return o.a.createElement(tn, { path: a });
               case 1:
-                return o.a.createElement(Bn, { path: a });
+                return o.a.createElement(kn, { path: a });
               case 2:
                 return o.a.createElement(ua, { path: a });
               case 3:
+                return o.a.createElement(Cn, { path: a });
               case 7:
-                return o.a.createElement(kn, { path: a });
+                return o.a.createElement(dn, { path: a });
               case 11:
-                return o.a.createElement(Rn, { path: a });
+                return o.a.createElement(Ln, { path: a });
               case 4:
               case 10:
                 return o.a.createElement(va, { path: a });
@@ -16185,7 +16239,7 @@
             return o.a.createElement("div", null);
           };
         return o.a.createElement(
-          pn,
+          bn,
           null,
           o.a.createElement(
             D,
@@ -16221,12 +16275,12 @@
                     o.a.createElement(
                       c.a,
                       { path: "/bulletin" },
-                      o.a.createElement(gn, null)
+                      o.a.createElement(Nn, null)
                     ),
                     o.a.createElement(
                       c.a,
                       { path: "/faq" },
-                      o.a.createElement(Cn, null)
+                      o.a.createElement(Rn, null)
                     ),
                     o.a.createElement(
                       c.a,
@@ -16236,7 +16290,7 @@
                     o.a.createElement(
                       c.a,
                       { path: "/thebook" },
-                      o.a.createElement(fn, null)
+                      o.a.createElement(vn, null)
                     ),
                     o.a.createElement(
                       c.a,
@@ -16261,7 +16315,7 @@
                     o.a.createElement(
                       c.a,
                       { path: "/player/:id" },
-                      o.a.createElement(On, null)
+                      o.a.createElement(Bn, null)
                     ),
                     x(e.sim, "UNLOCKED_HALL")
                       ? o.a.createElement(
@@ -16317,7 +16371,7 @@
                       }),
                       o.a.createElement(c.a, {
                         path: "/player/:id",
-                        children: o.a.createElement(On, { isModal: !0 }),
+                        children: o.a.createElement(Bn, { isModal: !0 }),
                       }),
                       o.a.createElement(c.a, {
                         path: "/bet/:gameId",
@@ -16371,7 +16425,7 @@
                       { className: "Main-Footer-Advertise-Inner" },
                       o.a.createElement(
                         "a",
-                        { className: "Main-Footer-Advertise-Icon", href: Mn() },
+                        { className: "Main-Footer-Advertise-Icon", href: Wn() },
                         "Become a Sponsor"
                       )
                     )
@@ -16391,12 +16445,12 @@
           )
         );
       }
-      function Mn() {
+      function Wn() {
         return "mailto:sponsors@thegameband.com?subject=".concat(
           encodeURIComponent("I\u2019d like to sponsor a season of Blaseball")
         );
       }
-      var Wn = function () {
+      var Fn = function () {
         return o.a.createElement(
           "div",
           { className: "Main" },
@@ -16404,7 +16458,7 @@
             Q,
             null,
             o.a.createElement(Na, null),
-            o.a.createElement(Ln, null)
+            o.a.createElement(Qn, null)
           )
         );
       };
@@ -16415,7 +16469,7 @@
             /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
           )
       );
-      var Fn = { sim: void 0, standings: void 0, season: void 0 };
+      var xn = { sim: void 0, standings: void 0, season: void 0 };
       "serviceWorker" in navigator &&
         navigator.serviceWorker.ready
           .then(function (e) {
@@ -16440,14 +16494,14 @@
                 { value: {} },
                 o.a.createElement(
                   O,
-                  { value: Fn },
+                  { value: xn },
                   o.a.createElement(
                     De,
                     { value: {} },
                     o.a.createElement(
                       Ua,
                       { value: {} },
-                      o.a.createElement(m.a, null, o.a.createElement(Wn, null))
+                      o.a.createElement(m.a, null, o.a.createElement(Fn, null))
                     )
                   )
                 )
