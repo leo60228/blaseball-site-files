@@ -12976,26 +12976,27 @@
           var a,
             t,
             n,
-            l = Object(c.h)().id,
-            i = Object(r.useContext)(O.context),
-            m = Object(r.useContext)(De.context),
-            d = Object(r.useState)(void 0),
-            p = Object(s.a)(d, 2),
-            f = p[0],
-            b = p[1],
-            v = Object(ue.useToasts)().addToast,
-            y = Object(r.useContext)(Q.context),
-            g = y.user,
-            A = y.setUser,
-            N = Object(r.useState)(!1),
-            T = Object(s.a)(N, 2),
-            w = T[0],
-            S = (T[1], Object(r.useState)(1)),
-            B = Object(s.a)(S, 2);
-          B[0], B[1];
-          function k(e) {
-            for (var a = 0; a < m.teams.length; a++) {
-              for (var t = m.teams[a], n = 0; n < t.lineup.length; n++)
+            l,
+            i = Object(c.h)().id,
+            m = Object(r.useContext)(O.context),
+            d = Object(r.useContext)(De.context),
+            p = Object(r.useState)(void 0),
+            f = Object(s.a)(p, 2),
+            b = f[0],
+            v = f[1],
+            y = Object(ue.useToasts)().addToast,
+            g = Object(r.useContext)(Q.context),
+            A = g.user,
+            N = g.setUser,
+            T = Object(r.useState)(!1),
+            w = Object(s.a)(T, 2),
+            S = w[0],
+            B = (w[1], Object(r.useState)(1)),
+            k = Object(s.a)(B, 2);
+          k[0], k[1];
+          function C(e) {
+            for (var a = 0; a < d.teams.length; a++) {
+              for (var t = d.teams[a], n = 0; n < t.lineup.length; n++)
                 if (t.lineup[n] === e.id) return t;
               for (var r = 0; r < t.rotation.length; r++)
                 if (t.rotation[r] === e.id) return t;
@@ -13014,11 +13015,11 @@
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
-                          return (e.next = 2), ce([l]);
+                          return (e.next = 2), ce([i]);
                         case 2:
                           void 0 !== (a = e.sent) &&
                             1 == a.length &&
-                            ((t = a[0]), (n = k(t)), b({ player: t, team: n }));
+                            ((t = a[0]), (n = C(t)), v({ player: t, team: n }));
                         case 4:
                         case "end":
                           return e.stop();
@@ -13031,8 +13032,8 @@
               };
             })()();
           }, []);
-          var C,
-            R = (function (e) {
+          var R,
+            L = (function (e) {
               if (void 0 === e) return "NONE";
               if (void 0 === e.bat) return "NONE";
               if ("" === e.bat) return "NONE";
@@ -13040,8 +13041,8 @@
                 return a.id === e.bat;
               });
               return void 0 === a ? "NONE" : a.attr;
-            })(null === f || void 0 === f ? void 0 : f.player),
-            L = (function (e) {
+            })(null === b || void 0 === b ? void 0 : b.player),
+            P = (function (e) {
               if (void 0 === e) return "NONE";
               if (void 0 === e.armor) return "NONE";
               if ("" === e.armor) return "NONE";
@@ -13049,12 +13050,12 @@
                 return a.id === e.armor;
               });
               return void 0 === a ? "NONE" : a.attr;
-            })(null === f || void 0 === f ? void 0 : f.player),
-            P = Object(c.g)(),
-            G =
-              x(null === i || void 0 === i ? void 0 : i.sim, "UNLOCKED_HALL") &&
-              void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
-              f.player.deceased
+            })(null === b || void 0 === b ? void 0 : b.player),
+            G = Object(c.g)(),
+            D =
+              x(null === m || void 0 === m ? void 0 : m.sim, "UNLOCKED_HALL") &&
+              void 0 !== (null === b || void 0 === b ? void 0 : b.player) &&
+              b.player.deceased
                 ? o.a.createElement(
                     "div",
                     { className: "Player-Status" },
@@ -13070,15 +13071,15 @@
                         "Deceased"
                       )
                     ),
-                    w
+                    S
                       ? o.a.createElement(Ee, null)
                       : o.a.createElement(
                           u,
                           {
                             className: "Player-Button-Tribute",
-                            background: P,
+                            background: G,
                             path: "/tribute/".concat(
-                              null === f || void 0 === f ? void 0 : f.player.id
+                              null === b || void 0 === b ? void 0 : b.player.id
                             ),
                           },
                           o.a.createElement(J.W, null),
@@ -13086,58 +13087,58 @@
                         )
                   )
                 : null,
-            D =
-              void 0 !== (null === f || void 0 === f ? void 0 : f.player) &&
-              (f.player.permAttr.length > 0 ||
-                f.player.seasAttr.length > 0 ||
-                f.player.weekAttr.length > 0 ||
-                f.player.gameAttr.length > 0 ||
-                "NONE" !== R ||
-                "NONE" !== L)
+            W =
+              void 0 !== (null === b || void 0 === b ? void 0 : b.player) &&
+              (b.player.permAttr.length > 0 ||
+                b.player.seasAttr.length > 0 ||
+                b.player.weekAttr.length > 0 ||
+                b.player.gameAttr.length > 0 ||
+                "NONE" !== L ||
+                "NONE" !== P)
                 ? o.a.createElement(
                     "div",
                     { className: "Player-Attributes" },
                     o.a.createElement(
                       "div",
                       { className: "AttributeBar" },
-                      f.player.permAttr.map(function (e, a) {
+                      b.player.permAttr.map(function (e, a) {
                         return o.a.createElement(Ma, {
                           id: e,
                           type: Ra.Permanent,
                           key: a,
                         });
                       }),
-                      f.player.seasAttr.map(function (e, a) {
+                      b.player.seasAttr.map(function (e, a) {
                         return o.a.createElement(Ma, {
                           id: e,
                           type: Ra.Season,
                           key: a,
                         });
                       }),
-                      f.player.weekAttr.map(function (e, a) {
+                      b.player.weekAttr.map(function (e, a) {
                         return o.a.createElement(Ma, {
                           id: e,
                           type: Ra.Weekly,
                           key: a,
                         });
                       }),
-                      f.player.gameAttr.map(function (e, a) {
+                      b.player.gameAttr.map(function (e, a) {
                         return o.a.createElement(Ma, {
                           id: e,
                           type: Ra.Game,
                           key: a,
                         });
                       }),
-                      "NONE" !== R
-                        ? o.a.createElement(Ma, { id: R, type: Ra.Item })
-                        : null,
                       "NONE" !== L
-                        ? o.a.createElement(Ma, { id: L, type: Ra.Armor })
+                        ? o.a.createElement(Ma, { id: L, type: Ra.Item })
+                        : null,
+                      "NONE" !== P
+                        ? o.a.createElement(Ma, { id: P, type: Ra.Armor })
                         : null
                     )
                   )
                 : null,
-            W = (function () {
+            F = (function () {
               var e = Object(E.a)(
                 h.a.mark(function e(a) {
                   return h.a.wrap(function (e) {
@@ -13146,19 +13147,19 @@
                         case 0:
                           if (
                             (a.preventDefault(),
-                            !f || !f.player || f.player.id === g.idol)
+                            !b || !b.player || b.player.id === A.idol)
                           ) {
                             e.next = 10;
                             break;
                           }
                           if (
-                            !(g.coins < 200) ||
-                            ("" === g.idol && null === g.idol)
+                            !(A.coins < 200) ||
+                            ("" === A.idol && null === A.idol)
                           ) {
                             e.next = 6;
                             break;
                           }
-                          v("Not enough coins", { appearance: "error" }),
+                          y("Not enough coins", { appearance: "error" }),
                             (e.next = 8);
                           break;
                         case 6:
@@ -13167,8 +13168,8 @@
                             _(
                               "/api/chooseIdol",
                               JSON.stringify({
-                                playerId: f.player.id,
-                                playerName: f.player.name,
+                                playerId: b.player.id,
+                                playerName: b.player.name,
                               })
                             ).then(
                               (function () {
@@ -13181,37 +13182,37 @@
                                             a.ok &&
                                             a.status &&
                                             200 === a.status &&
-                                            f &&
-                                            f.player
+                                            b &&
+                                            b.player
                                               ? (!1,
-                                                "" === g.idol || null === g.idol
-                                                  ? (A(
+                                                "" === A.idol || null === A.idol
+                                                  ? (N(
                                                       Object(I.a)(
-                                                        Object(I.a)({}, g),
+                                                        Object(I.a)({}, A),
                                                         {},
-                                                        { idol: f.player.id }
+                                                        { idol: b.player.id }
                                                       )
                                                     ),
                                                     !0)
-                                                  : g.coins >= 200 &&
-                                                    (A(
+                                                  : A.coins >= 200 &&
+                                                    (N(
                                                       Object(I.a)(
-                                                        Object(I.a)({}, g),
+                                                        Object(I.a)({}, A),
                                                         {},
                                                         {
-                                                          coins: g.coins - 200,
-                                                          idol: f.player.id,
+                                                          coins: A.coins - 200,
+                                                          idol: b.player.id,
                                                         }
                                                       )
                                                     ),
                                                     !0),
-                                                v(
-                                                  f.player.name +
+                                                y(
+                                                  b.player.name +
                                                     " is now your idol.",
                                                   { appearance: "success" }
                                                 ))
                                               : a.json().then(function (e) {
-                                                  v(e.message || "Error", {
+                                                  y(e.message || "Error", {
                                                     appearance: "error",
                                                   });
                                                 });
@@ -13232,7 +13233,7 @@
                           e.next = 11;
                           break;
                         case 10:
-                          v("Insufficient coins!", { appearance: "error" });
+                          y("Insufficient coins!", { appearance: "error" });
                         case 11:
                         case "end":
                           return e.stop();
@@ -13244,17 +13245,18 @@
                 return e.apply(this, arguments);
               };
             })(),
-            F = !1;
-          (2 !== (null === (a = i.sim) || void 0 === a ? void 0 : a.phase) &&
-            4 !== (null === (t = i.sim) || void 0 === t ? void 0 : t.phase)) ||
-            null === i ||
-            void 0 === i ||
-            null === (C = i.schedule) ||
-            void 0 === C ||
-            C.forEach(function (e) {
-              e.gameComplete || (F = !0);
+            j = !1;
+          (2 !== (null === (a = m.sim) || void 0 === a ? void 0 : a.phase) &&
+            4 !== (null === (t = m.sim) || void 0 === t ? void 0 : t.phase) &&
+            10 !== (null === (n = m.sim) || void 0 === n ? void 0 : n.phase)) ||
+            null === m ||
+            void 0 === m ||
+            null === (R = m.schedule) ||
+            void 0 === R ||
+            R.forEach(function (e) {
+              e.gameComplete || (j = !0);
             });
-          var j = (function (e, a) {
+          var H = (function (e, a) {
               if (void 0 === e) return !1;
               var t =
                   e.permAttr.includes(a) ||
@@ -13270,10 +13272,10 @@
               return (
                 n && n.attr === a && (t = !0), r && r.attr === a && (t = !0), t
               );
-            })(null === f || void 0 === f ? void 0 : f.player, "NON_IDOLIZED"),
-            H = g.idol,
-            V =
-              void 0 === (null === f || void 0 === f ? void 0 : f.player)
+            })(null === b || void 0 === b ? void 0 : b.player, "NON_IDOLIZED"),
+            V = A.idol,
+            q =
+              void 0 === (null === b || void 0 === b ? void 0 : b.player)
                 ? o.a.createElement(pe, null)
                 : o.a.createElement(
                     o.a.Fragment,
@@ -13287,7 +13289,7 @@
                         o.a.createElement(
                           "div",
                           { className: "Player-Header-Name" },
-                          f.player.name
+                          b.player.name
                         ),
                         o.a.createElement(
                           "div",
@@ -13301,8 +13303,8 @@
                                 className: "Player-Team-Logo",
                                 style: {
                                   background:
-                                    void 0 !== f.team
-                                      ? f.team.mainColor
+                                    void 0 !== b.team
+                                      ? b.team.mainColor
                                       : "#999999",
                                 },
                               },
@@ -13311,7 +13313,7 @@
                                 { className: "Player-Team-Emoji" },
                                 String.fromCodePoint(
                                   Number(
-                                    void 0 !== f.team ? f.team.emoji : "0x2753"
+                                    void 0 !== b.team ? b.team.emoji : "0x2753"
                                   )
                                 )
                               )
@@ -13319,14 +13321,14 @@
                             o.a.createElement(
                               "div",
                               { className: "Player-Team-Name" },
-                              void 0 !== f.team ? f.team.fullName : "Null Team"
+                              void 0 !== b.team ? b.team.fullName : "Null Team"
                             )
                           ),
-                          x(i.sim, "UNLOCKED_IDOLS")
+                          x(m.sim, "UNLOCKED_IDOLS")
                             ? o.a.createElement(
                                 Y.a,
                                 { className: "Player-Button" },
-                                (F || j) && H !== f.player.id
+                                (j || H) && V !== b.player.id
                                   ? o.a.createElement(
                                       "div",
                                       { className: "Idol-Disabled-Tooltip" },
@@ -13341,7 +13343,7 @@
                                               className:
                                                 "Idol-Disabled-Tooltip",
                                             },
-                                            F
+                                            j
                                               ? "You can't choose an Idol while games are active."
                                               : "This player cannot be Idolized."
                                           ),
@@ -13357,7 +13359,7 @@
                                               className: "Player-Button-Idol",
                                               variant: "dark",
                                             },
-                                            "" === H || null === H
+                                            "" === V || null === V
                                               ? o.a.createElement(
                                                   o.a.Fragment,
                                                   null,
@@ -13377,7 +13379,7 @@
                                         )
                                       )
                                     )
-                                  : H === f.player.id
+                                  : V === b.player.id
                                   ? o.a.createElement(
                                       "div",
                                       {
@@ -13390,7 +13392,7 @@
                                       de.a,
                                       {
                                         className: "Player-Button-Form",
-                                        onSubmit: W,
+                                        onSubmit: F,
                                       },
                                       o.a.createElement(
                                         U.a,
@@ -13399,7 +13401,7 @@
                                           type: "submit",
                                           variant: "success",
                                         },
-                                        "" === H || null === H
+                                        "" === V || null === V
                                           ? o.a.createElement(
                                               o.a.Fragment,
                                               null,
@@ -13422,8 +13424,8 @@
                         )
                       )
                     ),
-                    G,
                     D,
+                    W,
                     o.a.createElement(
                       "div",
                       { className: "Player-Content" },
@@ -13580,12 +13582,12 @@
                               )
                             );
                           })(
-                            f.player,
+                            b.player,
                             void 0 !==
-                              (null === (n = i.sim) || void 0 === n
+                              (null === (l = m.sim) || void 0 === l
                                 ? void 0
-                                : n.day)
-                              ? i.sim.day
+                                : l.day)
+                              ? m.sim.day
                               : -1
                           )
                         ),
@@ -13612,7 +13614,7 @@
                                   Math.pow(1 - e.patheticism, 0.05) *
                                   Math.pow(e.martyrdom, 0.02)
                                 );
-                              })(f.player)
+                              })(b.player)
                             )
                           )
                         ),
@@ -13640,7 +13642,7 @@
                                   );
                                 })(e)
                               );
-                            })(f.player)
+                            })(b.player)
                           )
                         ),
                         o.a.createElement(
@@ -13666,7 +13668,7 @@
                                   );
                                 })(e)
                               );
-                            })(f.player)
+                            })(b.player)
                           )
                         ),
                         o.a.createElement(
@@ -13692,7 +13694,7 @@
                                   );
                                 })(e)
                               );
-                            })(f.player)
+                            })(b.player)
                           )
                         )
                       ),
@@ -13721,7 +13723,7 @@
                                   return a.id === e.bat;
                                 });
                                 return void 0 === a ? "None?" : a.name;
-                              })(f.player)
+                              })(b.player)
                             ),
                             o.a.createElement(
                               "div",
@@ -13731,7 +13733,7 @@
                                   void 0 === e || void 0 === e.bat || e.bat,
                                   null
                                 );
-                              })(f.player)
+                              })(b.player)
                             )
                           )
                         ),
@@ -13757,7 +13759,7 @@
                                   return a.id === e.armor;
                                 });
                                 return void 0 === a ? "None?" : a.name;
-                              })(f.player)
+                              })(b.player)
                             ),
                             o.a.createElement(
                               "div",
@@ -13767,7 +13769,7 @@
                                   void 0 === e || void 0 === e.armor || e.armor,
                                   null
                                 );
-                              })(f.player)
+                              })(b.player)
                             )
                           )
                         )
@@ -13800,7 +13802,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Player-Info-Line-Body" },
-                            f.player.ritual
+                            b.player.ritual
                           )
                         ),
                         o.a.createElement(
@@ -13844,7 +13846,7 @@
                                   return "Anything";
                               }
                               return "Coffee?";
-                            })(f.player.coffee)
+                            })(b.player.coffee)
                           )
                         ),
                         o.a.createElement(
@@ -13888,7 +13890,7 @@
                                   return "Grass";
                               }
                               return "Blood?";
-                            })(f.player.blood)
+                            })(b.player.blood)
                           )
                         ),
                         o.a.createElement(
@@ -13902,7 +13904,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Player-Info-Line-Body" },
-                            f.player.fate
+                            b.player.fate
                           )
                         ),
                         o.a.createElement(
@@ -13954,7 +13956,7 @@
                                 a
                               )
                             );
-                          })(f.player)
+                          })(b.player)
                         )
                       )
                     )
@@ -13962,7 +13964,7 @@
           return o.a.createElement(
             Z,
             Object.assign({}, e, { className: "Player" }),
-            V
+            q
           );
         },
         kn =
