@@ -711,7 +711,7 @@
             textColor: "#5988ff",
             background: "#163073",
             title: "Squiddish",
-            description: "",
+            description: "This player is a wee bit Squiddish.",
           },
           {
             id: "CRUNCHY",
@@ -719,7 +719,7 @@
             textColor: "#f5eb5d",
             background: "#de8123",
             title: "Crunchy",
-            description: "",
+            description: "This player is very Crunchy.",
           },
           {
             id: "REPEATING",
@@ -735,7 +735,8 @@
             textColor: "#d16f6f",
             background: "#2e2f33",
             title: "Subjection",
-            description: "",
+            description:
+              "This player has been Subjected to the control of a great Power.",
           },
           {
             id: "LIBERATED",
@@ -1806,14 +1807,14 @@
                   { className: "Bet-Form-Teams", controlId: "team" },
                   o.a.createElement(G, {
                     id: S.homeTeam,
-                    color: S.homeTeamColor,
+                    color: S.homeTeamSecondaryColor,
                     modifier: "Home",
                     name: S.homeTeamNickname,
                     odds: S.homeOdds,
                   }),
                   o.a.createElement(G, {
                     id: S.awayTeam,
-                    color: S.awayTeamColor,
+                    color: S.awayTeamSecondaryColor,
                     modifier: "Away",
                     name: S.awayTeamNickname,
                     odds: S.awayOdds,
@@ -4738,50 +4739,55 @@
         );
       }
       function Ea(e, a) {
-        var t = Object(r.useContext)(De.context);
+        var t = Object(r.useContext)(De.context),
+          n = Object(c.g)();
         return void 0 === t
           ? null
           : null === a || void 0 === a
           ? void 0
-          : a.map(function (a, n) {
-              var r = a.homeTeam
+          : a.map(function (a, r) {
+              var l = a.homeTeam
                   ? t.teams.find(function (e) {
                       return e.id === a.homeTeam;
                     })
                   : void 0,
-                l = a.awayTeam
+                i = a.awayTeam
                   ? t.teams.find(function (e) {
                       return e.id === a.awayTeam;
                     })
                   : void 0;
-              if (void 0 === r && void 0 === l) return null;
-              var i = null !== a.homeSeed ? a.homeSeed : void 0,
-                s = null !== a.awaySeed ? a.awaySeed : void 0;
-              return void 0 === l
+              if (void 0 === l && void 0 === i) return null;
+              var s = null !== a.homeSeed ? a.homeSeed : void 0,
+                c = null !== a.awaySeed ? a.awaySeed : void 0;
+              return void 0 === i && l
                 ? o.a.createElement(
                     "div",
-                    { className: "PlayoffSetup-Matchup", key: n },
+                    { className: "PlayoffSetup-Matchup", key: r },
                     o.a.createElement(
-                      "div",
-                      { className: "PlayoffSetup-MatchupTeam-Group" },
+                      u,
+                      {
+                        background: n,
+                        path: "/team/".concat(l.id),
+                        className: "PlayoffSetup-MatchupTeam-Group",
+                      },
                       o.a.createElement(
                         "div",
                         { className: "PlayoffSetup-MatchupTeam-Info" },
-                        void 0 !== i
+                        void 0 !== s
                           ? o.a.createElement(
                               "div",
                               { className: "PlayoffSetup-Seed" },
-                              i + 1
+                              s + 1
                             )
                           : null,
-                        r
+                        l
                           ? o.a.createElement(
                               "div",
                               {
                                 className: "PlayoffSetup-MatchupTeam-Icon",
-                                style: { background: r.mainColor },
+                                style: { background: l.mainColor },
                               },
-                              String.fromCodePoint(Number(r.emoji))
+                              String.fromCodePoint(Number(l.emoji))
                             )
                           : null,
                         o.a.createElement(
@@ -4790,13 +4796,13 @@
                           o.a.createElement(
                             "div",
                             { className: "PlayoffSetup-MatchupTeam-Location" },
-                            null === r || void 0 === r ? void 0 : r.location,
+                            l.location,
                             "\xa0"
                           ),
                           o.a.createElement(
                             "div",
                             { className: "PlayoffSetup-MatchupTeam-Nickname" },
-                            null === r || void 0 === r ? void 0 : r.nickname
+                            l.nickname
                           )
                         )
                       ),
@@ -4813,76 +4819,16 @@
                   )
                 : o.a.createElement(
                     "div",
-                    { className: "PlayoffSetup-Matchup", key: n },
+                    { className: "PlayoffSetup-Matchup", key: r },
                     o.a.createElement(
-                      "div",
-                      { className: "PlayoffSetup-MatchupTeam-Group" },
-                      o.a.createElement(
-                        "div",
-                        { className: "PlayoffSetup-MatchupTeam-Info" },
-                        void 0 !== i
-                          ? o.a.createElement(
-                              "div",
-                              { className: "PlayoffSetup-Seed" },
-                              i + 1
-                            )
-                          : null,
-                        r
-                          ? o.a.createElement(
-                              "div",
-                              {
-                                className: "PlayoffSetup-MatchupTeam-Icon",
-                                style: { background: r.mainColor },
-                              },
-                              String.fromCodePoint(Number(r.emoji))
-                            )
-                          : null,
-                        r
-                          ? o.a.createElement(
-                              "div",
-                              { className: "PlayoffSetup-MatchupTeam" },
-                              o.a.createElement(
-                                "div",
-                                {
-                                  className:
-                                    "PlayoffSetup-MatchupTeam-Location",
-                                },
-                                r.location,
-                                "\xa0"
-                              ),
-                              o.a.createElement(
-                                "div",
-                                {
-                                  className:
-                                    "PlayoffSetup-MatchupTeam-Nickname",
-                                },
-                                r.nickname
-                              )
-                            )
-                          : o.a.createElement(
-                              "div",
-                              { className: "PlayoffSetup-Bye" },
-                              "idling..."
-                            )
-                      ),
-                      o.a.createElement(
-                        "div",
-                        { className: "PlayoffSetup-MatchupTeam-Info" },
-                        o.a.createElement(
-                          "div",
-                          {
-                            className:
-                              a.homeWins === pa(e)
-                                ? "PlayoffSetup-MatchupTeam-WinsComplete"
-                                : "PlayoffSetup-MatchupTeam-Wins",
-                          },
-                          a.homeWins
-                        )
-                      )
-                    ),
-                    o.a.createElement(
-                      "div",
-                      { className: "PlayoffSetup-MatchupTeam-Group" },
+                      u,
+                      {
+                        background: n,
+                        path: "/team/".concat(
+                          null === l || void 0 === l ? void 0 : l.id
+                        ),
+                        className: "PlayoffSetup-MatchupTeam-Group",
+                      },
                       o.a.createElement(
                         "div",
                         { className: "PlayoffSetup-MatchupTeam-Info" },
@@ -4923,6 +4869,78 @@
                                     "PlayoffSetup-MatchupTeam-Nickname",
                                 },
                                 l.nickname
+                              )
+                            )
+                          : o.a.createElement(
+                              "div",
+                              { className: "PlayoffSetup-Bye" },
+                              "idling..."
+                            )
+                      ),
+                      o.a.createElement(
+                        "div",
+                        { className: "PlayoffSetup-MatchupTeam-Info" },
+                        o.a.createElement(
+                          "div",
+                          {
+                            className:
+                              a.homeWins === pa(e)
+                                ? "PlayoffSetup-MatchupTeam-WinsComplete"
+                                : "PlayoffSetup-MatchupTeam-Wins",
+                          },
+                          a.homeWins
+                        )
+                      )
+                    ),
+                    o.a.createElement(
+                      u,
+                      {
+                        background: n,
+                        path: "/team/".concat(
+                          null === i || void 0 === i ? void 0 : i.id
+                        ),
+                        className: "PlayoffSetup-MatchupTeam-Group",
+                      },
+                      o.a.createElement(
+                        "div",
+                        { className: "PlayoffSetup-MatchupTeam-Info" },
+                        void 0 !== c
+                          ? o.a.createElement(
+                              "div",
+                              { className: "PlayoffSetup-Seed" },
+                              c + 1
+                            )
+                          : null,
+                        i
+                          ? o.a.createElement(
+                              "div",
+                              {
+                                className: "PlayoffSetup-MatchupTeam-Icon",
+                                style: { background: i.mainColor },
+                              },
+                              String.fromCodePoint(Number(i.emoji))
+                            )
+                          : null,
+                        i
+                          ? o.a.createElement(
+                              "div",
+                              { className: "PlayoffSetup-MatchupTeam" },
+                              o.a.createElement(
+                                "div",
+                                {
+                                  className:
+                                    "PlayoffSetup-MatchupTeam-Location",
+                                },
+                                i.location,
+                                "\xa0"
+                              ),
+                              o.a.createElement(
+                                "div",
+                                {
+                                  className:
+                                    "PlayoffSetup-MatchupTeam-Nickname",
+                                },
+                                i.nickname
                               )
                             )
                           : o.a.createElement(
@@ -5222,7 +5240,7 @@
               );
             });
             if (void 0 === l) return null;
-            var i = void 0 !== l ? l.mainColor : "#ffffff",
+            var i = void 0 !== l ? l.secondaryColor : "#ffffff",
               s = void 0 !== l ? l.fullName : "",
               c =
                 void 0 !== l
@@ -9696,7 +9714,7 @@
         });
         if (void 0 === i) return null;
         var s = void 0 !== l.sim ? l.sim.season : -1,
-          c = void 0 !== i ? i.mainColor : "#ffffff",
+          c = void 0 !== i ? i.secondaryColor : "#ffffff",
           m = void 0 !== i ? i.fullName : "",
           u =
             void 0 !== i
@@ -11478,30 +11496,67 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "a. Each Postseason of Blaseball shall consist of 8 teams. These teams shall be the 4 best teams from each league, regardless of division. Teams will be ranked by their total wins over the season. In the case of ties, teams shall be chosen based on their Divine Favor. ",
-            o.a.createElement("i", null, "See: "),
-            " Divine Favor"
+            "AMENDMENT. As per the Wild Card Decree, the Postseason has been Amended as follows:"
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            'b. The Postseason should start early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
+            "a. Each Postseason of Blaseball shall consist of 10 teams."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "b. The 2 Division Winners from each Sub-League will receive a Postseason Birth."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "c. The next 2 Runnerups from each Sub-League will receive a Postseason Birth based on regular season standings, regardless of Division."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "d. At the end of the regular season, 1 Wild Card will be drawn at random from each Sub-League and will be removed from Party Time to receive a Postseason Birth."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "e. Following the Wild Card draw, all Postseason teams will be seeded 1-5 in their Sub-League according to regular season standings."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "f. The 4 and 5 Seeds shall play in the Wild Card Round, a best 2 of 3 game series."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "g. All other Postseason series shall be best 3 of 5."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "h. The home team in each Postseason game shall be ",
             o.a.createElement(bn, {
-              str:
-                "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
+              str: "the |||||||||||, if the |||||||||||||||||||.",
             })
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "c. Postseason rounds should be played in best 3 of 5 game series."
+            "i. The Wild Card Round should take place shortly after the end of the regular season. One full ",
+            o.a.createElement(bn, { str: "|||||" }),
+            " hour shall be skipped, and then the Round shall begin at the top of the next available ",
+            o.a.createElement(bn, { str: "|||||" }),
+            " hour."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "d. The home team in each Postseason game shall be ",
+            'j. The Postseason shall continue early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
             o.a.createElement(bn, {
-              str: "the |||||||||||, if the |||||||||||||||||||.",
+              str:
+                "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
             })
           ),
           o.a.createElement(
@@ -11560,7 +11615,54 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
-            "4. Playing the Game"
+            "4. Teams"
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "a. Teams are a ",
+            o.a.createElement(bn, { str: "|||||||||| || players" }),
+            " bound by ",
+            o.a.createElement(bn, { str: "| |||||| |||||||||| |||| ||||||" }),
+            ". Names, colors, icons, and slogans are ",
+            o.a.createElement(bn, {
+              str:
+                "||||||||||| |||||||||||| || ||| |||| |||||| || ||||| |||||||||||||",
+            }),
+            " in order for the Fans ",
+            o.a.createElement(bn, { str: "to find them palatable." })
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "b. A Team's roster is built of four sections: Lineup, Rotation, ",
+            o.a.createElement(bn, { str: "Bench" }),
+            ", and ",
+            o.a.createElement(bn, { str: "Bullpen" }),
+            ". The Lineup and Rotation make up a Team's Active Roster, and the ",
+            o.a.createElement(bn, { str: "Bench" }),
+            " and ",
+            o.a.createElement(bn, { str: "Bullpen" }),
+            " make up a Team's Shadows. A Team's Shadows cannot be accessed unless directly specified, or through direct selection from a public interface."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "c. Teams may choose ",
+            o.a.createElement(bn, {
+              str: "|| |||| ||||| ||||| || ||||||||, a |||||| |||||",
+            }),
+            " to contain and represent their ",
+            o.a.createElement(bn, { str: "||||||" }),
+            ". The Fans may shape ",
+            o.a.createElement(bn, { str: "|||| |||||| as they" }),
+            " uncover and decipher ",
+            o.a.createElement(bn, { str: "their ||||' ||||||." })
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-Bullet" },
+            "5. Playing the Game"
           ),
           o.a.createElement(
             "div",
@@ -11607,7 +11709,9 @@
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
             "f. The pitcher must throw the ball ",
-            o.a.createElement(bn, { str: "with their hands." })
+            o.a.createElement(bn, { str: "with their hands." }),
+            ", unless ",
+            o.a.createElement(bn, { str: "that doesn't make sense." })
           ),
           o.a.createElement(
             "div",
@@ -11648,7 +11752,7 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
-            "5. ",
+            "6. ",
             o.a.createElement(bn, { str: "The Gods" }),
             " and You"
           ),
@@ -11737,7 +11841,7 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-Bullet" },
-            "6. ",
+            "7. ",
             o.a.createElement(bn, { str: "||||||||||||" })
           ),
           o.a.createElement(

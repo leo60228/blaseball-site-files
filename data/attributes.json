@@ -349,7 +349,7 @@
         "textColor": "#5988ff",
         "background": "#163073",
         "title": "Squiddish",
-        "description": ""
+        "description": "This player is a wee bit Squiddish."
     },
     {
         "id": "CRUNCHY",
@@ -357,7 +357,7 @@
         "textColor": "#f5eb5d",
         "background": "#de8123",
         "title": "Crunchy",
-        "description": ""
+        "description": "This player is very Crunchy."
     },
     {
         "id": "REPEATING",
@@ -373,7 +373,7 @@
         "textColor": "#d16f6f",
         "background": "#2e2f33",
         "title": "Subjection",
-        "description": ""
+        "description": "This player has been Subjected to the control of a great Power."
     },
     {
         "id": "LIBERATED",
