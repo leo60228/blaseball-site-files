@@ -344,6 +344,14 @@
         "description": "Players with Affinity for Crows will hit and pitch 50% better during Birds weather."
     },
     {
+        "id": "CURSE_OF_CROWS",
+        "color": "#915387",
+        "textColor": "#915387",
+        "background": "#3d2830",
+        "title": "Curse of Crows",
+        "description": "This team or player will be occasionally attacked by Birds."
+    },
+    {
         "id": "SQUIDDISH",
         "color": "#5988ff",
         "textColor": "#5988ff",
@@ -357,7 +365,23 @@
         "textColor": "#f5eb5d",
         "background": "#de8123",
         "title": "Crunchy",
-        "description": "This player is very Crunchy."
+        "description": "The Honey-Roasted players on a Crunchy team will hit 100% better and with +200% Power."
+    },
+    {
+        "id": "PITY",
+        "color": "#ffffff",
+        "textColor": "#ffffff",
+        "background": "#000000",
+        "title": "Pity",
+        "description": "This team is holding back, out of Pity."
+    },
+    {
+        "id": "GOD",
+        "color": "#ff4d90",
+        "textColor": "#ff4d90",
+        "background": "#fffc57",
+        "title": "God",
+        "description": "This team will start with 1,000x the amount of Team Spirit"
     },
     {
         "id": "REPEATING",
@@ -373,7 +397,7 @@
         "textColor": "#d16f6f",
         "background": "#2e2f33",
         "title": "Subjection",
-        "description": "This player has been Subjected to the control of a great Power."
+        "description": "Players leaving a team with Subjection will gain the Liberated modification."
     },
     {
         "id": "LIBERATED",
@@ -381,7 +405,7 @@
         "textColor": "#90eb07",
         "background": "#07a1a3",
         "title": "Liberated",
-        "description": ""
+        "description": "Liberated players will be guaranteed extra bases when they get a hit."
     },
     {
         "id": "FIRE_EATER",
@@ -413,6 +437,70 @@
         "textColor": "#6b6a6a",
         "background": "#240c36",
         "title": "Saboteur",
+        "description": ""
+    },
+    {
+        "id": "CREDIT_TO_THE_TEAM",
+        "color": "#6b6a6a",
+        "textColor": "#6b6a6a",
+        "background": "#240c36",
+        "title": "Credit to the Team",
+        "description": "This player will earn Fans 5x the rewards from all Idol Pendants."
+    },
+    {
+        "id": "LOVE",
+        "color": "#ff2b6b",
+        "textColor": "#ff2b6b",
+        "background": "#732652",
+        "title": "Charm",
+        "description": "Players with Charm have a chance of convincing their opponents to fail."
+    },
+    {
+        "id": "PEANUT_RAIN",
+        "color": "#fff199",
+        "textColor": "#fff199",
+        "background": "#04144a",
+        "title": "Peanut Rain",
+        "description": "This Team weaponizes Peanut weather against their enemies."
+    },
+    {
+        "id": "FLINCH",
+        "color": "#219ccc",
+        "textColor": "#219ccc",
+        "background": "#5e5e5e",
+        "title": "Flinch",
+        "description": "Hitters with Flinch cannot swing until a strike has been thrown in the At Bat."
+    },
+    {
+        "id": "WILD",
+        "color": "#219ccc",
+        "textColor": "#219ccc",
+        "background": "#361a57",
+        "title": "Mild",
+        "description": "Pitchers with Mild have a chance of throwing a Mild Pitch."
+    },
+    {
+        "id": "DESTRUCTION",
+        "color": "#ff8a24",
+        "textColor": "#ff8a24",
+        "background": "#802d00",
+        "title": "Destruction",
+        "description": "Teams with Destruction will add 5 Curses to their Opponent when defeating them in battle."
+    },
+    {
+        "id": "SIPHON",
+        "color": "#fff199",
+        "textColor": "#fff199",
+        "background": "#04144a",
+        "title": "Siphon",
+        "description": ""
+    },
+    {
+        "id": "FLIICKERRRIIING",
+        "color": "#fff199",
+        "textColor": "#fff199",
+        "background": "#04144a",
+        "title": "Fliickerrriiing",
         "description": ""
     }
 ]
