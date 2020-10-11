@@ -413,7 +413,7 @@
         "textColor": "#f50a31",
         "background": "#e3d514",
         "title": "Fire Eater",
-        "description": ""
+        "description": "Fire Eaters swallow fire instead of being incinerated."
     },
     {
         "id": "MAGMATIC",
@@ -421,7 +421,7 @@
         "textColor": "#e63200",
         "background": "#6b0004",
         "title": "Magmatic",
-        "description": ""
+        "description": "Magmatic players are guaranteed to hit a home run in their next At Bat."
     },
     {
         "id": "LOYALTY",
@@ -441,9 +441,9 @@
     },
     {
         "id": "CREDIT_TO_THE_TEAM",
-        "color": "#6b6a6a",
-        "textColor": "#6b6a6a",
-        "background": "#240c36",
+        "color": "#fffaba",
+        "textColor": "#fffaba",
+        "background": "#786600",
         "title": "Credit to the Team",
         "description": "This player will earn Fans 5x the rewards from all Idol Pendants."
     },
@@ -489,18 +489,26 @@
     },
     {
         "id": "SIPHON",
-        "color": "#fff199",
-        "textColor": "#fff199",
-        "background": "#04144a",
+        "color": "#e30000",
+        "textColor": "#e30000",
+        "background": "#2b0000",
         "title": "Siphon",
-        "description": ""
+        "description": "Siphons will steal blood more often in Blooddrain and use it in more ways."
     },
     {
         "id": "FLIICKERRRIIING",
-        "color": "#fff199",
-        "textColor": "#fff199",
-        "background": "#04144a",
+        "color": "#80fffb",
+        "textColor": "#80fffb",
+        "background": "#383838",
         "title": "Fliickerrriiing",
-        "description": ""
+        "description": "Fliickerrriiing players have a much much higher chance of being Feedbacked to their opponent."
+    },
+    {
+        "id": "FRIEND_OF_CROWS",
+        "color": "#ff7ae7",
+        "textColor": "#ff7ae7",
+        "background": "#570026",
+        "title": "Friend of Crows",
+        "description": "In Birds weather, pitchers with Friend of Crows will encourage the Birds to attack hitters."
     }
 ]
