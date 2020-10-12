@@ -1713,7 +1713,7 @@
             { className: "LoadingSpinner" },
             100 * Math.random() < 99
               ? o.a.createElement(K.a, null)
-              : o.a.createElement(V.eb, null)
+              : o.a.createElement(V.db, null)
           );
         };
       t(100), t(43);
@@ -1964,7 +1964,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Bet-Coin-Wrapper" },
-                      o.a.createElement(V.Gb, { className: "Bet-Coin-Icon" }),
+                      o.a.createElement(V.Fb, { className: "Bet-Coin-Icon" }),
                       n.coins
                     ),
                     o.a.createElement(he.a.Control, {
@@ -2079,7 +2079,7 @@
           },
           {
             name: "Peanuts",
-            icon: o.a.createElement(V.eb, null),
+            icon: o.a.createElement(V.db, null),
             background: "#c4aa70",
             color: "#423822",
           },
@@ -2452,7 +2452,7 @@
                 ? o.a.createElement(
                     "div",
                     { className: "GameWidget-UpcomingBet" },
-                    o.a.createElement(V.Gb, null),
+                    o.a.createElement(V.Fb, null),
                     " ",
                     W > 0
                       ? "".concat(x.amount, " on ").concat(D)
@@ -2509,7 +2509,7 @@
                   o.a.createElement(
                     "div",
                     { className: "GameWidget-ScoreBet-Bet" },
-                    o.a.createElement(V.Gb, null),
+                    o.a.createElement(V.Fb, null),
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Amount" },
@@ -2534,7 +2534,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-ScoreBet-Bet" },
-                      o.a.createElement(V.Gb, null),
+                      o.a.createElement(V.Fb, null),
                       o.a.createElement(
                         "div",
                         { className: "GameWidget-ScoreBet-Amount" },
@@ -2639,7 +2639,7 @@
                   o.a.createElement(
                     "span",
                     { className: "GameWidget-Outcome-Callout" },
-                    o.a.createElement(V.Gb, null),
+                    o.a.createElement(V.Fb, null),
                     "\xa0",
                     U.amount
                   ),
@@ -2661,7 +2661,7 @@
                         o.a.createElement(
                           "span",
                           { className: "GameWidget-Outcome-Callout" },
-                          o.a.createElement(V.Gb, null),
+                          o.a.createElement(V.Fb, null),
                           "\xa0",
                           be(U.odds, U.amount)
                         ),
@@ -3538,7 +3538,7 @@
                 path: "/player/".concat(a.idol),
                 className: "Navigation-IdolizedPlayer",
               },
-              o.a.createElement(V.zb, null)
+              o.a.createElement(V.yb, null)
             ));
           return o.a.createElement(
             o.a.Fragment,
@@ -3554,7 +3554,7 @@
                   content: y,
                   url: "/upcoming",
                 },
-                o.a.createElement(V.Gb, null),
+                o.a.createElement(V.Fb, null),
                 "\xa0",
                 a.coins
               ),
@@ -3567,7 +3567,7 @@
                       content: A,
                       url: "/shop",
                     },
-                    o.a.createElement(V.Eb, null),
+                    o.a.createElement(V.Db, null),
                     "\xa0",
                     a.votes
                   )
@@ -3725,7 +3725,7 @@
                     o.a.createElement(
                       "span",
                       { className: "Peanut-Icon" },
-                      m ? "" : o.a.createElement(V.eb, null)
+                      m ? "" : o.a.createElement(V.db, null)
                     ),
                     "\xa0",
                     a.peanuts
@@ -3734,7 +3734,7 @@
                 o.a.createElement(
                   "div",
                   { className: m ? "Peanut-Eating" : "Peanut" },
-                  o.a.createElement(V.eb, null)
+                  o.a.createElement(V.db, null)
                 )
               )
             ),
@@ -4535,7 +4535,7 @@
                       (null === (n = e.info.player) || void 0 === n
                         ? void 0
                         : n.id)
-                      ? o.a.createElement(V.zb, null)
+                      ? o.a.createElement(V.yb, null)
                       : "",
                     " ",
                     null === (l = e.info.player) || void 0 === l
@@ -5944,7 +5944,7 @@
                     (null === (t = e.info.player) || void 0 === t
                       ? void 0
                       : t.id)
-                    ? o.a.createElement(V.zb, null)
+                    ? o.a.createElement(V.yb, null)
                     : "",
                   " ",
                   null === (n = e.info.player) || void 0 === n ? void 0 : n.name
@@ -6207,19 +6207,19 @@
           case "SHELLED":
           case "SUPERALLERGIC":
           case "SUPERYUMMY":
-            return o.a.createElement(V.eb, null);
+            return o.a.createElement(V.db, null);
           case "SOUNDPROOF":
             return o.a.createElement(V.P, null);
           case "REVERBERATING":
             return o.a.createElement(V.f, null);
           case "BLOOD_THIEF":
-            return o.a.createElement(V.lb, null);
+            return o.a.createElement(V.kb, null);
           case "BLOOD_DONOR":
-            return o.a.createElement(V.ab, null);
+            return o.a.createElement(V.Z, null);
           case "BLOOD_WINNER":
-            return o.a.createElement(V.gb, null);
+            return o.a.createElement(V.fb, null);
           case "BLOOD_PITY":
-            return o.a.createElement(V.Cb, null);
+            return o.a.createElement(V.Bb, null);
           case "BLOOD_FAITH":
           case "BLOOD_LAW":
           case "BLOOD_CHAOS":
@@ -6233,7 +6233,7 @@
           case "MARKED":
             return o.a.createElement(V.Jb, null);
           case "PARTY_TIME":
-            return o.a.createElement(V.db, null);
+            return o.a.createElement(V.cb, null);
           case "LIFE_OF_PARTY":
             return o.a.createElement(V.I, null);
           case "INWARD":
@@ -6255,11 +6255,11 @@
           case "ELECTRIC":
             return o.a.createElement(V.y, null);
           case "DOUBLE_PAYOUTS":
-            return o.a.createElement(V.Bb, null);
+            return o.a.createElement(V.Ab, null);
           case "FIRE_PROTECTOR":
             return o.a.createElement(V.C, null);
           case "ON_FIRE":
-            return o.a.createElement(V.sb, null);
+            return o.a.createElement(V.rb, null);
           case "HEATING_UP":
             return o.a.createElement(V.L, null);
           case "RECEIVER":
@@ -6272,9 +6272,9 @@
           case "FRIEND_OF_CROWS":
             return o.a.createElement(V.h, null);
           case "BASE_INSTINCTS":
-            return o.a.createElement(V.qb, null);
+            return o.a.createElement(V.pb, null);
           case "STABLE":
-            return o.a.createElement(V.yb, null);
+            return o.a.createElement(V.xb, null);
           case "GROWTH":
             return o.a.createElement(V.N, null);
           case "REPEATING":
@@ -6284,29 +6284,29 @@
           case "SQUIDDISH":
             return o.a.createElement(V.H, null);
           case "SUBJECTION":
-            return o.a.createElement(V.xb, null);
+            return o.a.createElement(V.wb, null);
           case "LIBERATED":
-            return o.a.createElement(V.nb, null);
+            return o.a.createElement(V.mb, null);
           case "FIRE_EATER":
             return o.a.createElement(V.z, null);
           case "MAGMATIC":
-            return o.a.createElement(V.ib, null);
+            return o.a.createElement(V.hb, null);
           case "LOYALTY":
-            return o.a.createElement(V.pb, null);
+            return o.a.createElement(V.ob, null);
           case "SABOTEUR":
-            return o.a.createElement(V.ub, null);
+            return o.a.createElement(V.tb, null);
           case "PITY":
             return o.a.createElement(V.G, null);
           case "GOD":
-            return o.a.createElement(V.bb, null);
+            return o.a.createElement(V.ab, null);
           case "PEANUT_RAIN":
             return o.a.createElement(V.E, null);
           case "DESTRUCTION":
             return o.a.createElement(V.u, null);
           case "FLINCH":
-            return o.a.createElement(V.Ab, null);
+            return o.a.createElement(V.zb, null);
           case "WILD":
-            return o.a.createElement(V.rb, null);
+            return o.a.createElement(V.qb, null);
           case "LOVE":
             return o.a.createElement(V.t, null);
           case "SIPHON":
@@ -6664,7 +6664,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(V.zb, null) : "",
+                  f.idol === e.id ? o.a.createElement(V.yb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -6718,7 +6718,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(V.zb, null) : "",
+                  f.idol === e.id ? o.a.createElement(V.yb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -7091,7 +7091,7 @@
                           "Each Vote can be spent in the Election to boost your team or bring important change to Blaseball.",
                         amount: 100,
                         available: !0,
-                        icon: o.a.createElement(V.Eb, null),
+                        icon: o.a.createElement(V.Db, null),
                         buyUrl: "/buy/vote",
                         handleComplete: function () {},
                         modal: !0,
@@ -7107,7 +7107,7 @@
                           e.votes,
                           " Vote already from signing up."
                         ),
-                        icon: o.a.createElement(V.Eb, null),
+                        icon: o.a.createElement(V.Db, null),
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
@@ -7803,7 +7803,7 @@
                           o.a.createElement(
                             "div",
                             { className: "Shop-Item-Checkout" },
-                            o.a.createElement(V.Gb, {
+                            o.a.createElement(V.Fb, {
                               className: "Shop-Item-Coins",
                             }),
                             o.a.createElement(
@@ -7981,7 +7981,7 @@
                   o.a.createElement(
                     "div",
                     { className: "BatchBuy-Ticket-Wrapper" },
-                    o.a.createElement(V.Eb, {
+                    o.a.createElement(V.Db, {
                       className: "BatchBuy-Ticket-Icon",
                     }),
                     n.votes
@@ -9025,11 +9025,11 @@
           : "four_for_four" === e || "fourth_strike" === e
           ? o.a.createElement(V.X, { className: "Decrees-Option-Icon" })
           : "peanuts" === e
-          ? o.a.createElement(V.eb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.db, { className: "Decrees-Option-Icon" })
           : "popular_evolution" === e
           ? o.a.createElement(It, { className: "Decrees-Option-Icon" })
           : "enhanced_shame" === e
-          ? o.a.createElement(V.jb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.ib, { className: "Decrees-Option-Icon" })
           : "late_stage" === e
           ? o.a.createElement(V.q, { className: "Decrees-Option-Icon" })
           : "blaserunning" === e
@@ -9037,7 +9037,7 @@
           : "eat_the_rich" === e
           ? o.a.createElement(V.v, { className: "Decrees-Option-Icon" })
           : "eat_the_crust" === e
-          ? o.a.createElement(V.fb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.eb, { className: "Decrees-Option-Icon" })
           : "interviews" === e
           ? o.a.createElement(V.Y, { className: "Decrees-Option-Icon" })
           : "random_realignment" === e
@@ -9045,7 +9045,7 @@
           : "alternate_reality" === e
           ? o.a.createElement(Pa.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
-          ? o.a.createElement(V.tb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.sb, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
           ? o.a.createElement(Qa.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
@@ -9053,15 +9053,15 @@
           : "team_punish" === e
           ? o.a.createElement(V.Ib, { className: "Decrees-Option-Icon" })
           : "do_nothing" === e
-          ? o.a.createElement(V.hb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.gb, { className: "Decrees-Option-Icon" })
           : "confuse_good" === e
-          ? o.a.createElement(V.wb, { className: "Decrees-Option-Icon" })
-          : "confuse_evil" === e
           ? o.a.createElement(V.vb, { className: "Decrees-Option-Icon" })
+          : "confuse_evil" === e
+          ? o.a.createElement(V.ub, { className: "Decrees-Option-Icon" })
           : "parallel_world" === e
-          ? o.a.createElement(V.kb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.jb, { className: "Decrees-Option-Icon" })
           : "diagonal_world" === e
-          ? o.a.createElement(V.Db, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.Cb, { className: "Decrees-Option-Icon" })
           : "high_filter" === e
           ? o.a.createElement(V.U, { className: "Decrees-Option-Icon" })
           : "new_kids" === e
@@ -9079,13 +9079,13 @@
           : "wild_cards" === e
           ? o.a.createElement(V.l, { className: "Decrees-Option-Icon" })
           : "relief" === e
-          ? o.a.createElement(V.ob, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.nb, { className: "Decrees-Option-Icon" })
           : "double_jumps" === e
           ? o.a.createElement(V.S, { className: "Decrees-Option-Icon" })
           : "forecast_birds" === e
           ? o.a.createElement(V.g, { className: "Decrees-Option-Icon" })
           : "forecast_peanuts" === e
-          ? o.a.createElement(V.eb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.db, { className: "Decrees-Option-Icon" })
           : "forecast_eclipse" === e
           ? o.a.createElement(ge.i, { className: "Decrees-Option-Icon" })
           : "forecast_blooddrain" === e
@@ -9095,11 +9095,11 @@
           : "forecast_feedback" === e
           ? o.a.createElement(V.Y, { className: "Decrees-Option-Icon" })
           : "tactical_nuke" === e
-          ? o.a.createElement(V.Z, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.Gb, { className: "Decrees-Option-Icon" })
           : "eliminator" === e
           ? o.a.createElement(V.m, { className: "Decrees-Option-Icon" })
           : "self_destruct" === e
-          ? o.a.createElement(V.Fb, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(V.Eb, { className: "Decrees-Option-Icon" })
           : o.a.createElement("div", null);
       }
       var Zt = function (e) {
@@ -9755,7 +9755,7 @@
                     o.a.createElement(
                       "div",
                       { className: "Tribute-Ticket-Wrapper" },
-                      o.a.createElement(V.eb, {
+                      o.a.createElement(V.db, {
                         className: "Tribute-Ticket-Icon",
                       }),
                       n.peanuts
@@ -9908,7 +9908,7 @@
                       o.a.createElement(
                         "div",
                         { className: "Vote-Ticket-Wrapper" },
-                        o.a.createElement(V.Eb, {
+                        o.a.createElement(V.Db, {
                           className: "Vote-Ticket-Icon",
                         }),
                         n.votes
@@ -12268,7 +12268,7 @@
         var n = (function (e) {
           switch (e) {
             case "One":
-              return o.a.createElement(V.eb, null);
+              return o.a.createElement(V.db, null);
             case "Two":
               return o.a.createElement(V.H, null);
           }
@@ -12352,7 +12352,7 @@
         )
           return null;
         M(m.sim, "DOUBLE_JUMPS") || M(m.sim, "WILD_CARDS")
-          ? (o.a.Fragment, V.zb)
+          ? (o.a.Fragment, V.yb)
           : (o.a.Fragment, V.k);
         var v =
           6 === (null === (e = m.sim) || void 0 === e ? void 0 : e.phase) ||
@@ -12565,7 +12565,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#c23284" },
                 },
-                o.a.createElement(V.mb, null)
+                o.a.createElement(V.lb, null)
               ),
               o.a.createElement(
                 "div",
@@ -12610,7 +12610,7 @@
                   className: "Bulletin-Item-Header-Icon",
                   style: { background: "#1b95e0" },
                 },
-                o.a.createElement(V.cb, null)
+                o.a.createElement(V.bb, null)
               ),
               o.a.createElement(
                 "div",
@@ -13244,7 +13244,7 @@
                               null === b || void 0 === b ? void 0 : b.player.id
                             ),
                           },
-                          o.a.createElement(V.eb, null),
+                          o.a.createElement(V.db, null),
                           " Pay Tribute"
                         )
                   )
@@ -13521,14 +13521,14 @@
                                               ? o.a.createElement(
                                                   o.a.Fragment,
                                                   null,
-                                                  o.a.createElement(V.zb, null),
+                                                  o.a.createElement(V.yb, null),
                                                   " ",
                                                   " Choose Idol"
                                                 )
                                               : o.a.createElement(
                                                   o.a.Fragment,
                                                   null,
-                                                  o.a.createElement(V.Gb, null),
+                                                  o.a.createElement(V.Fb, null),
                                                   " ",
                                                   "200 New Idol"
                                                 ),
@@ -13543,7 +13543,7 @@
                                       {
                                         className: "Player-Button-Idol-Current",
                                       },
-                                      o.a.createElement(V.zb, null),
+                                      o.a.createElement(V.yb, null),
                                       " Your Idol"
                                     )
                                   : o.a.createElement(
@@ -13563,14 +13563,14 @@
                                           ? o.a.createElement(
                                               o.a.Fragment,
                                               null,
-                                              o.a.createElement(V.zb, null),
+                                              o.a.createElement(V.yb, null),
                                               " ",
                                               " Choose Idol"
                                             )
                                           : o.a.createElement(
                                               o.a.Fragment,
                                               null,
-                                              o.a.createElement(V.Gb, null),
+                                              o.a.createElement(V.Fb, null),
                                               " ",
                                               "200 New Idol"
                                             ),
@@ -16995,7 +16995,7 @@
               o.a.createElement(
                 "div",
                 { className: "BossFightWidget-Enemy-Icon" },
-                o.a.createElement(V.eb, null)
+                o.a.createElement(V.db, null)
               ),
               o.a.createElement(
                 "div",
