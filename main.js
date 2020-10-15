@@ -991,7 +991,7 @@
         d = t(3),
         h = t.n(d),
         p = t(6),
-        E =
+        f =
           (null ===
             (n = Object({
               NODE_ENV: "production",
@@ -1002,7 +1002,7 @@
             })) || void 0 === n
             ? void 0
             : n.REACT_APP_EVENT_URL) || "/events/",
-        f = t(67),
+        E = t(67),
         b = +(
           Object({
             NODE_ENV: "production",
@@ -1012,7 +1012,7 @@
             WDS_SOCKET_PORT: void 0,
           }).DATA_STREAM_LIFETIME || 4e4
         ),
-        v = new f.SimpleEventDispatcher(),
+        v = new E.SimpleEventDispatcher(),
         g = o.a.createContext({
           games: void 0,
           leagues: void 0,
@@ -1044,7 +1044,7 @@
           i = n[1];
         return (
           Object(r.useEffect)(function () {
-            var e = new EventSource(E + "streamData");
+            var e = new EventSource(f + "streamData");
             y(e, i),
               (e.onmessage = function (e) {
                 var a = JSON.parse(e.data).value,
@@ -1064,7 +1064,7 @@
                       switch ((a.prev = a.next)) {
                         case 0:
                           e.close(),
-                            y((e = new EventSource(E + "streamData")), i);
+                            y((e = new EventSource(f + "streamData")), i);
                         case 3:
                         case "end":
                           return a.stop();
@@ -1412,7 +1412,7 @@
           case U.GENERIC:
             p += " Modal--Generic";
         }
-        var E = o.a.createElement(
+        var f = o.a.createElement(
           q.a.div,
           {
             style: h,
@@ -1443,10 +1443,10 @@
                 !s || (u && u.current && u.current.contains(e.target)) || d();
               },
             },
-            E
+            f
           );
         }
-        return E;
+        return f;
       };
       z.defaultProps = { dismissable: !0, style: U.GENERIC };
       var Z,
@@ -1698,7 +1698,7 @@
       var de = t(18),
         he = t(13),
         pe = t(14),
-        Ee =
+        fe =
           (t(99),
           function () {
             return o.a.createElement(
@@ -1707,7 +1707,7 @@
               o.a.createElement(K.a, null)
             );
           }),
-        fe = function () {
+        Ee = function () {
           return o.a.createElement(
             "div",
             { className: "LoadingSpinner" },
@@ -1735,10 +1735,10 @@
             d = u[0],
             h = u[1],
             p = Object(c.h)().gameId,
-            E = Object(r.useState)(0),
-            f = Object(s.a)(E, 2),
-            b = f[0],
-            v = f[1],
+            f = Object(r.useState)(0),
+            E = Object(s.a)(f, 2),
+            b = E[0],
+            v = E[1],
             g = Object(r.useState)(""),
             y = Object(s.a)(g, 2),
             A = y[0],
@@ -1773,7 +1773,7 @@
             }, []),
             void 0 === w)
           )
-            return o.a.createElement(fe, null);
+            return o.a.createElement(Ee, null);
           var R = Math.min(pe.maxBetTiers[n.maxBetTier].amount, n.coins),
             L = function () {
               return w ? (A === w.homeTeam ? w.homeOdds : w.awayOdds) : 0.5;
@@ -1999,7 +1999,7 @@
                   "div",
                   { className: "Bet-Submit-Wrapper" },
                   d
-                    ? o.a.createElement(fe, null)
+                    ? o.a.createElement(Ee, null)
                     : o.a.createElement(
                         Y.a,
                         {
@@ -2208,7 +2208,7 @@
               e.started ? o.a.createElement(Ae, { type: e.weather }) : null
             );
           })(h),
-          E = (function (e) {
+          f = (function (e) {
             for (var a = [], t = 0; t < 3; t++)
               a.push(
                 o.a.createElement(
@@ -2280,7 +2280,7 @@
               )
             );
           })(h),
-          f = l.topOfInning ? l.awayTeamColor : l.homeTeamColor,
+          E = l.topOfInning ? l.awayTeamColor : l.homeTeamColor,
           b = l.topOfInning ? l.homeTeamColor : l.awayTeamColor,
           v = Oe(l),
           g = Ie(l);
@@ -2358,7 +2358,7 @@
         var O = 0,
           I = "0 0 255 197";
         h.bases > 4 && ((O = 30), (I = "0 0 285 197"));
-        var k = o.a.createElement("div", { className: "GameWidget-Outs" }, E),
+        var k = o.a.createElement("div", { className: "GameWidget-Outs" }, f),
           C = Object(c.g)(),
           R =
             h.complete || !h.started
@@ -2413,7 +2413,7 @@
                       "div",
                       {
                         className: "GameWidget-PlayerLineNameWrapper",
-                        style: { background: G(f, 0.5) },
+                        style: { background: G(E, 0.5) },
                       },
                       l.homeBatterName || l.awayBatterName
                         ? o.a.createElement(
@@ -3273,10 +3273,10 @@
               d = Object(s.a)(u, 2),
               h = d[0],
               p = d[1],
-              E = Object(r.useState)(!1),
-              f = Object(s.a)(E, 2),
-              b = f[0],
-              v = f[1];
+              f = Object(r.useState)(!1),
+              E = Object(s.a)(f, 2),
+              b = E[0],
+              v = E[1];
             Object(r.useEffect)(function () {
               var e = window.matchMedia("(max-width: 1080px)");
               return (
@@ -3465,15 +3465,15 @@
             i = Object(s.a)(l, 2),
             m = i[0],
             d = i[1],
-            E = Object(de.useToasts)().addToast,
-            f = [
+            f = Object(de.useToasts)().addToast,
+            E = [
               "PEANUTS",
               "EVERYONE LOVES PEANUTS",
               "CRACK IT OPEN",
               "CRACK IT OPEN NOW",
             ],
             b = ["SO GOOD", "YUMMY", "SO GREAT"],
-            v = Object(r.useRef)(Math.floor(Math.random() * f.length)),
+            v = Object(r.useRef)(Math.floor(Math.random() * E.length)),
             g = Object(r.useRef)(Math.floor(Math.random() * b.length)),
             y = o.a.createElement(
               "div",
@@ -3499,7 +3499,7 @@
               o.a.createElement(
                 "div",
                 { className: "CoinOverlay-Content-Body" },
-                m ? b[g.current] : f[v.current]
+                m ? b[g.current] : E[v.current]
               )
             ),
             T = null;
@@ -3648,7 +3648,7 @@
                                               )
                                             )
                                             .catch(function (e) {
-                                              E(e, { appearance: "error" });
+                                              f(e, { appearance: "error" });
                                             })
                                             .finally(
                                               Object(p.a)(
@@ -3672,7 +3672,7 @@
                                                               }
                                                             )
                                                           ),
-                                                            E(
+                                                            f(
                                                               "You consumed "
                                                                 .concat(
                                                                   o,
@@ -3703,7 +3703,7 @@
                                         e.next = 10;
                                         break;
                                       case 9:
-                                        E("You have no peanuts.", {
+                                        f("You have no peanuts.", {
                                           appearance: "error",
                                         });
                                       case 10:
@@ -3771,8 +3771,8 @@
           d = m[1],
           h = Object(r.useState)(!1),
           p = Object(s.a)(h, 2),
-          E = p[0],
-          f = p[1],
+          f = p[0],
+          E = p[1],
           b = Object(r.useState)(!1),
           v = Object(s.a)(b, 2),
           g = v[0],
@@ -3791,7 +3791,7 @@
           );
         }, []);
         var T = function (e) {
-            e.matches ? f(!0) : f(!1);
+            e.matches ? E(!0) : E(!1);
           },
           S = function (e) {
             A.current && !A.current.contains(e.target) && d(!1),
@@ -3979,8 +3979,8 @@
             ),
             k
           ),
-          E ? C : R,
-          E
+          f ? C : R,
+          f
             ? null
             : o.a.createElement("div", { className: "Navigation-User" }, k)
         );
@@ -4322,7 +4322,7 @@
           m = Object(s.a)(c, 2),
           u = m[0],
           d = m[1];
-        function E(e) {
+        function f(e) {
           for (var a = 0; a < l.teams.length; a++) {
             for (var t = l.teams[a], n = 0; n < t.lineup.length; n++)
               if (t.lineup[n] === e.id) return t;
@@ -4355,7 +4355,7 @@
                             for (
                               r = function () {
                                 var e = t[o],
-                                  a = E(e),
+                                  a = f(e),
                                   r = i.find(function (a) {
                                     return a.id === e.id;
                                   });
@@ -4392,24 +4392,24 @@
           },
           [i]
         );
-        var f = Object(r.useContext)(B.context);
-        if (!f || !f.sim) return null;
-        void 0 !== f.sim.season && f.sim.season;
-        var b = 7 == (null === (e = f.sim) || void 0 === e ? void 0 : e.phase),
+        var E = Object(r.useContext)(B.context);
+        if (!E || !E.sim) return null;
+        void 0 !== E.sim.season && E.sim.season;
+        var b = 7 == (null === (e = E.sim) || void 0 === e ? void 0 : e.phase),
           v =
-            2 == (null === (a = f.sim) || void 0 === a ? void 0 : a.phase) ||
-            7 == (null === (t = f.sim) || void 0 === t ? void 0 : t.phase) ||
-            1 == (null === (n = f.sim) || void 0 === n ? void 0 : n.phase),
+            2 == (null === (a = E.sim) || void 0 === a ? void 0 : a.phase) ||
+            7 == (null === (t = E.sim) || void 0 === t ? void 0 : t.phase) ||
+            1 == (null === (n = E.sim) || void 0 === n ? void 0 : n.phase),
           g =
             u.length < 1 || void 0 === u
-              ? o.a.createElement(fe, null)
+              ? o.a.createElement(Ee, null)
               : o.a.createElement(la, { info: u, playoffs: b, line: v });
         return o.a.createElement(o.a.Fragment, null, g);
       }
       function la(e) {
         var a = [];
         if (void 0 === e.info || e.info.length < 1)
-          return o.a.createElement(fe, null);
+          return o.a.createElement(Ee, null);
         for (var t = !1, n = !1, r = 0; r < e.info.length; r++) {
           var l;
           t ||
@@ -4459,7 +4459,16 @@
           n,
           l,
           i = Object(c.g)(),
-          s = Object(r.useContext)(F.context).user;
+          s = Object(r.useContext)(F.context).user,
+          m = [3, 12],
+          d = [6, 15],
+          h = [9, 18],
+          p =
+            e.showIcons &&
+            e.info.deceased &&
+            (h.includes(e.info.place) ||
+              d.includes(e.info.place) ||
+              m.includes(e.info.place));
         return void 0 !== e.info
           ? o.a.createElement(
               "div",
@@ -4476,19 +4485,25 @@
                       className: "Leaderboard-Icon-Microphone",
                     })
                   : null,
-                e.showIcons && [6, 15].includes(e.info.place)
+                e.showIcons && d.includes(e.info.place)
                   ? o.a.createElement(ge.i, {
-                      className: "Leaderboard-Icon-Eclipse",
+                      className: e.info.deceased
+                        ? "Leaderboard-Icon-Confirmed"
+                        : "Leaderboard-Icon-Eclipse",
                     })
                   : null,
-                e.showIcons && [9, 18].includes(e.info.place)
+                e.showIcons && h.includes(e.info.place)
                   ? o.a.createElement(ge.f, {
-                      className: "Leaderboard-Icon-Blood",
+                      className: e.info.deceased
+                        ? "Leaderboard-Icon-Confirmed"
+                        : "Leaderboard-Icon-Blood",
                     })
                   : null,
-                e.showIcons && [3, 12].includes(e.info.place)
+                e.showIcons && m.includes(e.info.place)
                   ? o.a.createElement(V.g, {
-                      className: "Leaderboard-Icon-Birds",
+                      className: e.info.deceased
+                        ? "Leaderboard-Icon-Confirmed"
+                        : "Leaderboard-Icon-Birds",
                     })
                   : null,
                 e.showIcons && e.monitor
@@ -4520,7 +4535,11 @@
                   { className: "Leaderboard-Player-Name-Container" },
                   o.a.createElement(
                     "div",
-                    { className: "Leaderboard-Player-Position" },
+                    {
+                      className:
+                        "Leaderboard-Player-Position" +
+                        (p ? " Leaderboard-Icon-Confirmed" : ""),
+                    },
                     e.info.place
                   ),
                   e.info.deceased
@@ -4610,7 +4629,7 @@
                 n
               )
             )
-          : o.a.createElement(fe, null);
+          : o.a.createElement(Ee, null);
       }
       function ma(e) {
         var a = Object(r.useContext)(Ge.context).subleagues.find(function (a) {
@@ -4851,7 +4870,7 @@
                   ),
                   h
                 ),
-          E = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
+          f = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
         switch (c()) {
           case sa.Leaderboard:
             m = o.a.createElement(oa, null);
@@ -4861,7 +4880,7 @@
             break;
           case sa.Live:
           case sa.Upcoming:
-            m = s ? o.a.createElement(fe, null) : p;
+            m = s ? o.a.createElement(Ee, null) : p;
         }
         return o.a.createElement(
           "div",
@@ -4873,7 +4892,7 @@
             o.a.createElement(
               "span",
               { className: "DailySchedule-Number" },
-              E + 1
+              f + 1
             ),
             "Day",
             o.a.createElement(
@@ -4887,7 +4906,7 @@
         );
       };
       t(111);
-      function Ea(e) {
+      function fa(e) {
         var a = Object(r.useContext)(B.context),
           t = a.postseason.round,
           n = a.postseason.allRounds;
@@ -4919,7 +4938,7 @@
           o.a.createElement("div", { className: "PlayoffSetup-Navigation" }, l)
         );
       }
-      function fa(e) {
+      function Ea(e) {
         var a = Object(r.useContext)(B.context),
           t = a.postseason.allRounds,
           n = a.postseason.allMatchups;
@@ -5212,8 +5231,8 @@
               o.a.createElement(
                 "div",
                 { className: "PlayoffSetup" },
-                o.a.createElement(Ea, { index: n, setIndex: l }),
-                o.a.createElement(fa, { roundNumber: n })
+                o.a.createElement(fa, { index: n, setIndex: l }),
+                o.a.createElement(Ea, { roundNumber: n })
               ));
         };
       !(function (e) {
@@ -5236,14 +5255,14 @@
             d,
             h,
             p,
-            E = e.path,
-            f = Object(r.useContext)(B.context),
+            f = e.path,
+            E = Object(r.useContext)(B.context),
             b = Object(r.useContext)(F.context).user,
             v = Object(r.useContext)(P.context),
-            g = void 0 === f.schedule;
-          if (void 0 === f.postseason.playoffs) return null;
+            g = void 0 === E.schedule;
+          if (void 0 === E.postseason.playoffs) return null;
           function y() {
-            switch (E) {
+            switch (f) {
               case "/upcoming":
                 return ga.Upcoming;
               case "/leaderboard":
@@ -5259,16 +5278,16 @@
           function A() {
             var e, a;
             return y() === ga.Live
-              ? (null === (e = f.sim) || void 0 === e ? void 0 : e.day) || -1
-              : (null === (a = f.sim) || void 0 === a ? void 0 : a.day) || 0;
+              ? (null === (e = E.sim) || void 0 === e ? void 0 : e.day) || -1
+              : (null === (a = E.sim) || void 0 === a ? void 0 : a.day) || 0;
           }
-          if (!f.sim) return null;
+          if (!E.sim) return null;
           var N,
-            T = y() === ga.Live ? f.schedule : f.tomorrowSchedule,
+            T = y() === ga.Live ? E.schedule : E.tomorrowSchedule,
             S =
               y() === ga.Live
-                ? f.postseason.matchups
-                : f.postseason.tomorrowMatchups,
+                ? E.postseason.matchups
+                : E.postseason.tomorrowMatchups,
             w =
               void 0 === T || (void 0 !== T && T.length <= 0)
                 ? null
@@ -5325,17 +5344,17 @@
                   ),
             O =
               void 0 !==
-              (null === f ||
-              void 0 === f ||
-              null === (t = f.postseason) ||
+              (null === E ||
+              void 0 === E ||
+              null === (t = E.postseason) ||
               void 0 === t ||
               null === (n = t.round) ||
               void 0 === n
                 ? void 0
                 : n.roundNumber)
-                ? null === f ||
-                  void 0 === f ||
-                  null === (l = f.postseason) ||
+                ? null === E ||
+                  void 0 === E ||
+                  null === (l = E.postseason) ||
                   void 0 === l ||
                   null === (i = l.round) ||
                   void 0 === i
@@ -5344,17 +5363,17 @@
                 : -1,
             I =
               void 0 !==
-              (null === f ||
-              void 0 === f ||
-              null === (s = f.postseason) ||
+              (null === E ||
+              void 0 === E ||
+              null === (s = E.postseason) ||
               void 0 === s ||
               null === (c = s.tomorrowRound) ||
               void 0 === c
                 ? void 0
                 : c.roundNumber)
-                ? null === f ||
-                  void 0 === f ||
-                  null === (m = f.postseason) ||
+                ? null === E ||
+                  void 0 === E ||
+                  null === (m = E.postseason) ||
                   void 0 === m ||
                   null === (u = m.tomorrowRound) ||
                   void 0 === u
@@ -5374,7 +5393,7 @@
               break;
             default:
               N = g
-                ? o.a.createElement(fe, null)
+                ? o.a.createElement(Ee, null)
                 : o.a.createElement(
                     "div",
                     null,
@@ -5412,14 +5431,14 @@
                 "div",
                 { className: "DailySchedule-Header-Group" },
                 (
-                  null === (d = f.postseason.round) || void 0 === d
+                  null === (d = E.postseason.round) || void 0 === d
                     ? void 0
                     : d.special
                 )
                   ? o.a.createElement(
                       o.a.Fragment,
                       null,
-                      null === (h = f.postseason.round) || void 0 === h
+                      null === (h = E.postseason.round) || void 0 === h
                         ? void 0
                         : h.name,
                       "\xa0"
@@ -5427,7 +5446,7 @@
                   : "Postseason Round"
               ),
               (
-                null === (p = f.postseason.round) || void 0 === p
+                null === (p = E.postseason.round) || void 0 === p
                   ? void 0
                   : p.special
               )
@@ -5560,11 +5579,11 @@
             })
           )).apply(this, arguments);
         }
-        var E = "EventTicker-Group";
+        var f = "EventTicker-Group";
         if (c) {
-          for (var f = 0, b = 0; b < t.length; b++) f += t[b].length;
-          var v = f / 5;
-          E +=
+          for (var E = 0, b = 0; b < t.length; b++) E += t[b].length;
+          var v = E / 5;
+          f +=
             v > 300
               ? " EventTicker-Group-Animating-300"
               : v > 240
@@ -5585,7 +5604,7 @@
             o.a.createElement(
               "div",
               {
-                className: E,
+                className: f,
                 onAnimationEnd: function () {
                   m(!1), u();
                 },
@@ -5832,7 +5851,7 @@
         var c = 0 !== i.sim.phase,
           m =
             n.length < 1 || void 0 === n
-              ? o.a.createElement(fe, null)
+              ? o.a.createElement(Ee, null)
               : o.a.createElement(Ca, { info: n, showLine: c });
         return o.a.createElement(
           "div",
@@ -5861,7 +5880,7 @@
         var a = [],
           t = [];
         if (void 0 === e.info || e.info.length < 1)
-          return o.a.createElement(fe, null);
+          return o.a.createElement(Ee, null);
         for (var n = 0; n < e.info.length; n++)
           e.showLine
             ? n < 14
@@ -6570,8 +6589,8 @@
             }),
             m = Object(s.a)(i, 2),
             d = m[0],
-            E = m[1],
-            f = Object(r.useContext)(F.context).user,
+            f = m[1],
+            E = Object(r.useContext)(F.context).user,
             b = n.teams.find(function (e) {
               return e.id === a;
             }),
@@ -6628,7 +6647,7 @@
                           m++
                         )
                           c(m);
-                        E({ lineup: o, rotation: s, bench: [], bullpen: [] });
+                        f({ lineup: o, rotation: s, bench: [], bullpen: [] });
                       case 15:
                       case "end":
                         return e.stop();
@@ -6644,7 +6663,7 @@
           if (void 0 === n || void 0 === n.teams) return null;
           if (void 0 === b) return null;
           var y;
-          if (void 0 === d) return o.a.createElement(fe, null);
+          if (void 0 === d) return o.a.createElement(Ee, null);
           var A = d.lineup.map(function (e) {
               var a;
               return o.a.createElement(
@@ -6664,7 +6683,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(V.yb, null) : "",
+                  E.idol === e.id ? o.a.createElement(V.yb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -6718,7 +6737,7 @@
                           (Math.floor(5 * Math.random()) + 1)
                         : ""),
                   },
-                  f.idol === e.id ? o.a.createElement(V.yb, null) : "",
+                  E.idol === e.id ? o.a.createElement(V.yb, null) : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -6944,8 +6963,8 @@
           i = n[1],
           m = Object(r.useContext)(F.context),
           d = m.user,
-          E = m.setUser,
-          f = Object(r.useContext)(Ge.context).teams.find(function (e) {
+          f = m.setUser,
+          E = Object(r.useContext)(Ge.context).teams.find(function (e) {
             return e.id === d.favoriteTeam;
           }),
           b = Object(r.useContext)(B.context),
@@ -7078,8 +7097,8 @@
                     d,
                     h,
                     p,
-                    E,
                     f,
+                    E,
                     b,
                     v,
                     g = r.doc;
@@ -7237,7 +7256,7 @@
                         };
                   if (M(t, "UNLOCKED_PEANUTS") && r) {
                     if (
-                      ((f = {
+                      ((E = {
                         id: 6,
                         name: "Peanut".concat(g.alpha > 1 ? "s" : ""),
                         description:
@@ -7486,7 +7505,7 @@
                     ("" != e.idol && null != e.idol) ||
                       ((Z += " Go to a Player page to choose an Idol."),
                       (X = !1)),
-                      (E = {
+                      (f = {
                         id: 12,
                         name: "Shutout Pendant",
                         description: Z,
@@ -7513,7 +7532,7 @@
                       $ = K.amount,
                       ee = Object.create(e.relics);
                     (ee.Idol_Shutouts = ee.Idol_Shutouts + 1),
-                      (E = {
+                      (f = {
                         id: 12,
                         name: "Shutout Pendant",
                         description: "Adorn yourself. When your Idol pitches a Shutout, you'll earn "
@@ -7539,7 +7558,7 @@
                       });
                   } else {
                     var ae = J.amount;
-                    E = {
+                    f = {
                       id: 12,
                       name: "Shutout Pendant",
                       description: "Adorn yourself. When your Idol pitches a Shutout, you earn ".concat(
@@ -7643,11 +7662,11 @@
                       ],
                     he = pe.idolHitsTiers[e.relics.Idol_Hits + 1];
                   if (void 0 === e.relics.Idol_Hits) {
-                    var Ee = pe.idolHitsTiers[0],
-                      fe = Object.create(e.relics);
-                    fe.Idol_Hits = 0;
+                    var fe = pe.idolHitsTiers[0],
+                      Ee = Object.create(e.relics);
+                    Ee.Idol_Hits = 0;
                     var be = "Adorn yourself. When your Idol gets a Hit, you'll earn ".concat(
-                        Ee.amount,
+                        fe.amount,
                         " coins."
                       ),
                       ve = !0;
@@ -7658,8 +7677,8 @@
                         id: 11,
                         name: "Hits Pendant",
                         description: be,
-                        amount: Ee.price,
-                        toast: "Coins per Idol hit is now ".concat(Ee.amount),
+                        amount: fe.price,
+                        toast: "Coins per Idol hit is now ".concat(fe.amount),
                         available: ve,
                         buyUrl: "/api/buyRelic",
                         icon: o.a.createElement(V.F, null),
@@ -7669,7 +7688,7 @@
                             Object(O.a)(
                               Object(O.a)({}, e),
                               {},
-                              { coins: e.coins - Ee.price, relics: fe }
+                              { coins: e.coins - fe.price, relics: Ee }
                             )
                           );
                         },
@@ -7716,9 +7735,9 @@
                     };
                   }
                   return M(t, "UNLOCKED_IDOLS")
-                    ? [c, d, p, i, h, E, m, u, s, f, b, v]
-                    : [c, i, m, u, s, f, b, v];
-                })(d, E, b.sim, g, v, f)
+                    ? [c, d, p, i, h, f, m, u, s, E, b, v]
+                    : [c, i, m, u, s, E, b, v];
+                })(d, f, b.sim, g, v, E)
               : (function (e, a) {
                   var t = [];
                   return (
@@ -7742,7 +7761,7 @@
                     }),
                     t
                   );
-                })(d, E)),
+                })(d, f)),
           o.a.createElement(
             "div",
             { className: "Shop" },
@@ -7821,7 +7840,7 @@
                               "div",
                               { className: "Shop-Item-ButtonContainer" },
                               l && l.purchaseItem && l.purchaseItem.id === e.id
-                                ? o.a.createElement(Ee, null)
+                                ? o.a.createElement(fe, null)
                                 : (function (e) {
                                     return !e.available || e.maxed
                                       ? o.a.createElement(
@@ -7866,7 +7885,7 @@
                         );
                   })
                 )
-              : o.a.createElement(fe, null)
+              : o.a.createElement(Ee, null)
           )
         );
       }
@@ -7880,22 +7899,22 @@
             m = Object(c.h)().itemName,
             u = Object(r.useState)(0),
             d = Object(s.a)(u, 2),
-            E = d[0],
-            f = d[1],
+            f = d[0],
+            E = d[1],
             b = Object(r.useState)(!1),
             v = Object(s.a)(b, 2),
             g = v[0],
             y = v[1],
             A = function (e) {
               var a = e.target.value;
-              f(parseInt(a));
+              E(parseInt(a));
             },
             N = 1;
           switch (m) {
             case "vote":
               N = 100;
           }
-          var T = o.a.createElement(fe, null);
+          var T = o.a.createElement(Ee, null);
           g ||
             (T = o.a.createElement(
               Y.a,
@@ -7921,12 +7940,12 @@
                 className: "BatchBuy-Form",
                 onSubmit: function (e) {
                   e.preventDefault(),
-                    E > n.coins
+                    f > n.coins
                       ? a("Insufficent coins", { appearance: "error" })
-                      : E < 1
+                      : f < 1
                       ? a("Invalid input", { appearance: "error" })
                       : (y(!0),
-                        $("/api/buyVote", JSON.stringify({ amount: E }))
+                        $("/api/buyVote", JSON.stringify({ amount: f }))
                           .then(function (e) {
                             e.status && 200 === e.status && e.ok
                               ? (l(
@@ -7934,12 +7953,12 @@
                                     Object(O.a)({}, n),
                                     {},
                                     {
-                                      votes: n.votes + E,
-                                      coins: n.coins - E * N,
+                                      votes: n.votes + f,
+                                      coins: n.coins - f * N,
                                     }
                                   )
                                 ),
-                                a("Vote".concat(E > 1 ? "s" : "", " Bought"), {
+                                a("Vote".concat(f > 1 ? "s" : "", " Bought"), {
                                   appearance: "success",
                                 }),
                                 i.goBack())
@@ -7988,7 +8007,7 @@
                   ),
                   o.a.createElement(he.a.Control, {
                     type: "number",
-                    value: E,
+                    value: f,
                     onChange: A,
                   }),
                   o.a.createElement(he.a.Control, {
@@ -7996,7 +8015,7 @@
                     className: "BatchBuy-Range",
                     min: 1,
                     max: S,
-                    value: E,
+                    value: f,
                     onChange: A,
                     step: "1",
                   }),
@@ -8005,7 +8024,7 @@
                     {
                       className: "BatchBuy-Form-Inputs-Amount-MaxBatchBuy",
                       onClick: function (e) {
-                        e.preventDefault(), f(S);
+                        e.preventDefault(), E(S);
                       },
                     },
                     "Max: ",
@@ -8019,15 +8038,15 @@
                   o.a.createElement(
                     "span",
                     { className: "Bet-Outcome-Winnings" },
-                    E
+                    f
                   ),
                   " vote",
-                  E > 1 ? "s" : "",
+                  f > 1 ? "s" : "",
                   " for ",
                   o.a.createElement(
                     "span",
                     { className: "Bet-Outcome-Winnings" },
-                    E * N
+                    f * N
                   ),
                   " coins."
                 )
@@ -8227,8 +8246,8 @@
                   ? d.state.background.pathname
                   : "",
               p = e.isModal,
-              E = e.isLogin,
-              f = Object(r.useRef)(null),
+              f = e.isLogin,
+              E = Object(r.useRef)(null),
               b = Object(r.useRef)(null),
               v = Object(c.h)().code;
             return o.a.createElement(
@@ -8241,7 +8260,7 @@
                 o.a.createElement(
                   "header",
                   { className: "Auth-Header" },
-                  E ? "Login to Blaseball" : "Signup for Blaseball"
+                  f ? "Login to Blaseball" : "Signup for Blaseball"
                 ),
                 o.a.createElement(
                   "form",
@@ -8249,15 +8268,15 @@
                     onSubmit: function (e) {
                       e.preventDefault(), u(!0);
                       var r = {
-                        username: f.current.value,
+                        username: E.current.value,
                         password: b.current.value,
                         code: v,
-                        isLogin: E,
+                        isLogin: f,
                       };
                       $("/auth/local", JSON.stringify(r)).then(function (e) {
                         u(!1),
                           e.ok && e.status && 200 === e.status
-                            ? (E ||
+                            ? (f ||
                                 n("Account Created", { appearance: "success" }),
                               a(),
                               t.push("/"))
@@ -8271,7 +8290,7 @@
                     "div",
                     null,
                     o.a.createElement("input", {
-                      ref: f,
+                      ref: E,
                       className: "Auth-Input",
                       placeholder: "Email",
                       type: "text",
@@ -8293,7 +8312,7 @@
                     "div",
                     null,
                     m
-                      ? o.a.createElement(fe, null)
+                      ? o.a.createElement(Ee, null)
                       : o.a.createElement("input", {
                           className: "Auth-Submit",
                           type: "submit",
@@ -8347,8 +8366,8 @@
                 ),
                 o.a.createElement(
                   "a",
-                  { className: "Auth-CTA", href: E ? "/signup" : "/login" },
-                  E
+                  { className: "Auth-CTA", href: f ? "/signup" : "/login" },
+                  f
                     ? "Not on Blaseball yet? Signup"
                     : "Already a member? Log in"
                 )
@@ -8645,7 +8664,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function Et(e, a) {
+      function ft(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -8669,19 +8688,19 @@
         }
         return r;
       }
-      var ft = o.a.createElement("path", {
+      var Et = o.a.createElement("path", {
           d:
             "M7.919 17.377l-4.869-13.377h-2.05c-.266 0-.52-.105-.707-.293-.188-.187-.293-.442-.293-.707 0-.552.447-1 1-1h3.45l5.469 15.025c.841.101 1.59.5 2.139 1.088l11.258-4.097.684 1.879-11.049 4.021c.032.19.049.385.049.584 0 1.932-1.569 3.5-3.5 3.5-1.932 0-3.5-1.568-3.5-3.5 0-1.363.781-2.545 1.919-3.123zm1.581 1.811c.724 0 1.312.588 1.312 1.312 0 .724-.588 1.313-1.312 1.313-.725 0-1.313-.589-1.313-1.313s.588-1.312 1.313-1.312zm13.314-6.512l-11.418 4.156-2.736-7.518 11.418-4.156 2.736 7.518zm-8.71-3.215l-2.88 1.048 1.368 3.759 7.659-2.787-1.368-3.759-2.9 1.055.684 1.879-1.879.685-.684-1.88zm2.672-4.165l-8.458 3.078-1.927-5.296 8.457-3.078 1.928 5.296zm-3.123-2.733l-4.699 1.711.56 1.537 4.698-1.71-.559-1.538z",
         }),
         bt = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = Et(e, ["svgRef", "title"]);
+            n = ft(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
             pt({ viewBox: "0 0 24 24", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            ft
+            Et
           );
         },
         vt = o.a.forwardRef(function (e, a) {
@@ -9221,8 +9240,8 @@
           m = c[0],
           u = c[1],
           d = Object(r.useContext)(Ge.context);
-        function E() {
-          return (E = Object(p.a)(
+        function f() {
+          return (f = Object(p.a)(
             h.a.mark(function a() {
               var t, n, r, o, i, s, c;
               return h.a.wrap(function (a) {
@@ -9284,7 +9303,7 @@
           (Object(r.useEffect)(function () {
             u(!0),
               (function () {
-                return E.apply(this, arguments);
+                return f.apply(this, arguments);
               })().then(function () {
                 u(!1);
               });
@@ -9292,7 +9311,7 @@
           !e || !e.sim || !n || !n.recap)
         )
           return null;
-        var f = n.recap ? n.recap.totalDecreeVotes : 1,
+        var E = n.recap ? n.recap.totalDecreeVotes : 1,
           b =
             n.decreeResults && n.recap && n.recap.decreeResults.length > 0
               ? o.a.createElement(
@@ -9321,7 +9340,7 @@
                           "\xa0- ",
                           e.totalVotes,
                           " Votes, ",
-                          Math.round((e.totalVotes / f) * 100),
+                          Math.round((e.totalVotes / E) * 100),
                           "% of all Decree Votes"
                         )
                       ),
@@ -9482,7 +9501,7 @@
             "The Results are in."
           ),
           m
-            ? o.a.createElement(fe, null)
+            ? o.a.createElement(Ee, null)
             : o.a.createElement(
                 "div",
                 null,
@@ -9555,7 +9574,7 @@
         return void 0 === e ||
           0 === e.blessings.length ||
           0 === e.decrees.length
-          ? o.a.createElement(fe, null)
+          ? o.a.createElement(Ee, null)
           : o.a.createElement(
               o.a.Fragment,
               null,
@@ -9605,15 +9624,15 @@
             m = Object(c.h)().entityId,
             u = Object(r.useState)(0),
             d = Object(s.a)(u, 2),
-            E = d[0],
-            f = d[1],
+            f = d[0],
+            E = d[1],
             b = Object(r.useState)(!1),
             v = Object(s.a)(b, 2),
             g = v[0],
             y = v[1],
             A = function (e) {
               var a = e.target.value;
-              f(a);
+              E(a);
             },
             N = (function () {
               var e = Object(p.a)(
@@ -9622,7 +9641,7 @@
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
-                          if ((t.preventDefault(), !(n.peanuts < E))) {
+                          if ((t.preventDefault(), !(n.peanuts < f))) {
                             e.next = 5;
                             break;
                           }
@@ -9633,7 +9652,7 @@
                         case 4:
                           return e.abrupt("return");
                         case 5:
-                          if (!(E < 1)) {
+                          if (!(f < 1)) {
                             e.next = 9;
                             break;
                           }
@@ -9649,7 +9668,7 @@
                             (e.next = 12),
                             $(
                               "/api/payTribute",
-                              JSON.stringify({ playerId: m, amount: E })
+                              JSON.stringify({ playerId: m, amount: f })
                             )
                               .then(
                                 (function () {
@@ -9673,12 +9692,12 @@
                                                     Object(O.a)(
                                                       Object(O.a)({}, n),
                                                       {},
-                                                      { peanuts: n.peanuts - E }
+                                                      { peanuts: n.peanuts - f }
                                                     )
                                                   ),
                                                   a(
                                                     "YOU OFFER ".concat(
-                                                      E > 1
+                                                      f > 1
                                                         ? "PEANUTS"
                                                         : "A PEANUT",
                                                       " IN TRIBUTE"
@@ -9718,7 +9737,7 @@
                 return e.apply(this, arguments);
               };
             })(),
-            T = o.a.createElement(fe, null);
+            T = o.a.createElement(Ee, null);
           return (
             g ||
               (T = o.a.createElement(
@@ -9762,7 +9781,7 @@
                     ),
                     o.a.createElement(he.a.Control, {
                       type: "number",
-                      value: E,
+                      value: f,
                       onChange: A,
                     }),
                     o.a.createElement(he.a.Control, {
@@ -9770,7 +9789,7 @@
                       className: "Tribute-Range",
                       min: 1,
                       max: Math.min(n.peanuts),
-                      value: E,
+                      value: f,
                       onChange: A,
                       step: "1",
                     }),
@@ -9779,7 +9798,7 @@
                       {
                         className: "Tribute-Form-Inputs-Amount-MaxTribute",
                         onClick: function (e) {
-                          e.preventDefault(), f(n.peanuts);
+                          e.preventDefault(), E(n.peanuts);
                         },
                       },
                       "Max: ",
@@ -9807,10 +9826,10 @@
               m = Object(c.h)(),
               u = m.voteType,
               d = m.entityId,
-              E = Object(r.useState)(1),
-              f = Object(s.a)(E, 2),
-              b = f[0],
-              v = f[1],
+              f = Object(r.useState)(1),
+              E = Object(s.a)(f, 2),
+              b = E[0],
+              v = E[1],
               g = Object(r.useState)(!1),
               y = Object(s.a)(g, 2),
               A = y[0],
@@ -9821,7 +9840,7 @@
                 v(a);
               },
               w = n.votes,
-              B = o.a.createElement(fe, null);
+              B = o.a.createElement(Ee, null);
             return (
               A ||
                 (B = o.a.createElement(
@@ -11296,7 +11315,7 @@
           ? e.element
           : o.a.createElement("div", { className: "Stubs-Header" }, e.text);
       }
-      var En = function (e) {
+      var fn = function (e) {
           var a,
             t = e.path,
             n = Object(r.useContext)(B.context),
@@ -11340,7 +11359,7 @@
             l
           );
         },
-        fn = t(31),
+        En = t(31),
         bn = {
           notes: [],
           refreshNotes: (function () {
@@ -11372,8 +11391,8 @@
             m = c[0],
             u = c[1],
             d = Object(de.useToasts)().addToast,
-            E = Object(r.useRef)(void 0),
-            f = Object(r.useRef)(),
+            f = Object(r.useRef)(void 0),
+            E = Object(r.useRef)(),
             b = Object(r.useCallback)(
               Object(p.a)(
                 h.a.mark(function e() {
@@ -11392,8 +11411,8 @@
                                 e &&
                                   u(
                                     [].concat(
-                                      Object(fn.a)(m),
-                                      Object(fn.a)(e.notes)
+                                      Object(En.a)(m),
+                                      Object(En.a)(e.notes)
                                     )
                                   );
                               })
@@ -11427,7 +11446,7 @@
                               (function () {
                                 var e = Object(p.a)(
                                   h.a.mark(function e(t) {
-                                    var r, o, i, s, c, m, u, p, E, f, b, v, g;
+                                    var r, o, i, s, c, m, u, p, f, E, b, v, g;
                                     return h.a.wrap(function (e) {
                                       for (;;)
                                         switch ((e.prev = e.next)) {
@@ -11510,8 +11529,8 @@
                                               (m = 0),
                                               (u = 0),
                                               (p = 0),
-                                              (E = 0),
                                               (f = 0),
+                                              (E = 0),
                                               (b = 0),
                                               (v = 0),
                                               r.idolRewards.forEach(function (
@@ -11525,7 +11544,7 @@
                                                     u++, (p += e.amount);
                                                     break;
                                                   case $e.IdolStrikeout:
-                                                    E++, (f += e.amount);
+                                                    f++, (E += e.amount);
                                                     break;
                                                   case $e.IdolShutout:
                                                     b++, (v += e.amount);
@@ -11533,14 +11552,14 @@
                                               }),
                                               (g = r.idolName) ||
                                                 (g = "your Idol"),
-                                              E > 0 &&
+                                              f > 0 &&
                                                 d(
                                                   "You earned "
-                                                    .concat(f, " coins from ")
+                                                    .concat(E, " coins from ")
                                                     .concat(g, " pitching ")
                                                     .concat(
-                                                      E > 1
-                                                        ? E + " Strikeouts"
+                                                      f > 1
+                                                        ? f + " Strikeouts"
                                                         : "a Strikeout"
                                                     ),
                                                   {
@@ -11619,18 +11638,18 @@
           Object(r.useEffect)(
             function () {
               g() &&
-                (void 0 !== f.current && clearTimeout(f.current),
-                (f.current = setTimeout(A, 5e3))),
-                (E.current = N);
+                (void 0 !== E.current && clearTimeout(E.current),
+                (E.current = setTimeout(A, 5e3))),
+                (f.current = N);
             },
             [N]
           );
           var g = function () {
               var e,
                 a,
-                t = null === (e = E.current) || void 0 === e ? void 0 : e.sim,
+                t = null === (e = f.current) || void 0 === e ? void 0 : e.sim,
                 n =
-                  null === (a = E.current) || void 0 === a
+                  null === (a = f.current) || void 0 === a
                     ? void 0
                     : a.schedule,
                 r = null === N || void 0 === N ? void 0 : N.sim,
@@ -12310,8 +12329,8 @@
           m = Object(r.useContext)(B.context),
           u = Object(r.useState)([]),
           d = Object(s.a)(u, 2),
-          E = d[0],
-          f = d[1];
+          f = d[0],
+          E = d[1];
         function b() {
           return (b = Object(p.a)(
             h.a.mark(function e() {
@@ -12331,9 +12350,9 @@
                       for (n = 0; n < a.length; n++)
                         a[n].id.includes("-") && t.push(a[n].msg);
                       t.length >= 3
-                        ? f(t.slice(t.length - 3, t.length))
+                        ? E(t.slice(t.length - 3, t.length))
                         : (0 === t.length && t.push("Nothing has happened..."),
-                          f(t));
+                          E(t));
                     case 8:
                     case "end":
                       return e.stop();
@@ -12501,7 +12520,7 @@
         )),
           o.a.Fragment,
           V.e,
-          E.map(function (e) {
+          f.map(function (e) {
             return o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents-Text" },
@@ -13142,10 +13161,10 @@
             i = Object(c.h)().id,
             m = Object(r.useContext)(B.context),
             d = Object(r.useContext)(Ge.context),
-            E = Object(r.useState)(void 0),
-            f = Object(s.a)(E, 2),
-            b = f[0],
-            v = f[1],
+            f = Object(r.useState)(void 0),
+            E = Object(s.a)(f, 2),
+            b = E[0],
+            v = E[1],
             g = Object(de.useToasts)().addToast,
             y = Object(r.useContext)(F.context),
             A = y.user,
@@ -13234,7 +13253,7 @@
                       )
                     ),
                     w
-                      ? o.a.createElement(Ee, null)
+                      ? o.a.createElement(fe, null)
                       : o.a.createElement(
                           u,
                           {
@@ -13438,7 +13457,7 @@
             K = A.idol,
             q =
               void 0 === (null === b || void 0 === b ? void 0 : b.player)
-                ? o.a.createElement(fe, null)
+                ? o.a.createElement(Ee, null)
                 : o.a.createElement(
                     o.a.Fragment,
                     null,
@@ -16520,8 +16539,8 @@
           d = Object(r.useContext)(Va.context),
           h = Object(r.useState)([]),
           p = Object(s.a)(h, 2),
-          E = p[0],
-          f = p[1],
+          f = p[0],
+          E = p[1],
           b = Object(r.useState)(""),
           v = Object(s.a)(b, 2),
           g = v[0],
@@ -16534,7 +16553,7 @@
           function () {
             var e = JSON.parse(n.damageResults);
             if (void 0 !== e) {
-              f(e);
+              E(e);
               for (
                 var a = -1,
                   t = -1,
@@ -17062,7 +17081,7 @@
                     "div",
                     { className: "BossFightWidget-SpiritDamage" },
                     null !== n.damageResults && "" !== n.damageResults
-                      ? xn(E, n.awayTeam)
+                      ? xn(f, n.awayTeam)
                       : null
                   )
                 )
@@ -17097,7 +17116,7 @@
                     "div",
                     { className: "BossFightWidget-SpiritDamage" },
                     null !== n.damageResults && "" !== n.damageResults
-                      ? xn(E, n.homeTeam)
+                      ? xn(f, n.homeTeam)
                       : null
                   )
                 )
@@ -17175,7 +17194,7 @@
                 )
               : o.a.createElement("div", null, s),
           m = void 0 !== a && void 0 !== a.sim ? a.sim.season : -1,
-          u = n ? o.a.createElement(fe, null) : c;
+          u = n ? o.a.createElement(Ee, null) : c;
         return o.a.createElement(
           "div",
           null,
@@ -17380,7 +17399,7 @@
               case 3:
                 return o.a.createElement(Fn, { path: a });
               case 7:
-                return o.a.createElement(En, { path: a });
+                return o.a.createElement(fn, { path: a });
               case 11:
                 return o.a.createElement(Qn, { path: a });
               case 4:
