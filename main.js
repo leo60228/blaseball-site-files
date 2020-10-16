@@ -5218,21 +5218,83 @@
       var ga,
         ya = function () {
           var e = Object(r.useContext)(B.context),
-            a = Object(r.useState)(
+            a = Object(r.useContext)(Ge.context),
+            t = Object(c.g)(),
+            n = Object(r.useState)(
               e.postseason.round ? e.postseason.round.roundNumber : 0
             ),
-            t = Object(s.a)(a, 2),
-            n = t[0],
-            l = t[1];
-          return void 0 === e || void 0 === e.postseason.round
-            ? null
-            : (e.sim && e.sim.season,
+            l = Object(s.a)(n, 2),
+            i = l[0],
+            m = l[1];
+          if (void 0 === e) return null;
+          if (void 0 === e.postseason.round) return null;
+          e.sim && e.sim.season;
+          var d = a.teams.filter(function (e) {
+            return "PODS" === e.nickname;
+          })[0];
+          return o.a.createElement(
+            "div",
+            { className: "PlayoffSetup" },
+            o.a.createElement(
+              "div",
+              {
+                className: "PlayoffSetup-Matchup PlayoffSetup-Matchup-Divine",
+                key: i,
+                style: { boxShadow: "0 0 15px 5px ".concat(d.mainColor) },
+              },
               o.a.createElement(
-                "div",
-                { className: "PlayoffSetup" },
-                o.a.createElement(fa, { index: n, setIndex: l }),
-                o.a.createElement(Ea, { roundNumber: n })
-              ));
+                u,
+                {
+                  background: t,
+                  path: "/team/".concat(d.id),
+                  className: "PlayoffSetup-MatchupTeam-Group",
+                },
+                o.a.createElement(
+                  "div",
+                  { className: "PlayoffSetup-MatchupTeam-Info" },
+                  o.a.createElement(
+                    "div",
+                    { className: "PlayoffSetup-Seed" },
+                    "X"
+                  ),
+                  o.a.createElement(
+                    "div",
+                    {
+                      className: "PlayoffSetup-MatchupTeam-Icon",
+                      style: { background: d.mainColor },
+                    },
+                    String.fromCodePoint(Number(d.emoji))
+                  ),
+                  o.a.createElement(
+                    "div",
+                    { className: "PlayoffSetup-MatchupTeam" },
+                    o.a.createElement(
+                      "div",
+                      { className: "PlayoffSetup-MatchupTeam-Location" },
+                      d.location,
+                      "\xa0"
+                    ),
+                    o.a.createElement(
+                      "div",
+                      { className: "PlayoffSetup-MatchupTeam-Nickname" },
+                      d.nickname
+                    )
+                  )
+                ),
+                o.a.createElement(
+                  "div",
+                  { className: "PlayoffSetup-MatchupTeam-Info" },
+                  o.a.createElement(
+                    "div",
+                    { className: "PlayoffSetup-Bye" },
+                    "idling..."
+                  )
+                )
+              )
+            ),
+            o.a.createElement(fa, { index: i, setIndex: m }),
+            o.a.createElement(Ea, { roundNumber: i })
+          );
         };
       !(function (e) {
         (e[(e.Live = 0)] = "Live"),
