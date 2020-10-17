@@ -427,9 +427,9 @@
         "id": "LOYALTY",
         "color": "#ff61a5",
         "textColor": "#ff61a5",
-        "background": "#8a047c",
+        "background": "#2c1240",
         "title": "Loyalty",
-        "description": ""
+        "description": "Players leaving a team with Loyalty will gain the Saboteur modification."
     },
     {
         "id": "SABOTEUR",
@@ -437,7 +437,7 @@
         "textColor": "#6b6a6a",
         "background": "#240c36",
         "title": "Saboteur",
-        "description": ""
+        "description": "A Saboteur has a chance of intentionally failing."
     },
     {
         "id": "CREDIT_TO_THE_TEAM",
@@ -485,7 +485,7 @@
         "textColor": "#ff8a24",
         "background": "#802d00",
         "title": "Destruction",
-        "description": "Teams with Destruction will add 5 Curses to their Opponent when defeating them in battle."
+        "description": "Teams with Destruction will add a bunch of Curses to their Opponent when defeating them in battle."
     },
     {
         "id": "SIPHON",
@@ -510,5 +510,125 @@
         "background": "#570026",
         "title": "Friend of Crows",
         "description": "In Birds weather, pitchers with Friend of Crows will encourage the Birds to attack hitters."
+    },
+    {
+        "id": "BLASERUNNING",
+        "color": "#fffaa3",
+        "textColor": "#fffaa3",
+        "background": "#570026",
+        "title": "Blaserunning",
+        "description": "Blaserunners will score .2 Runs for their Team whenever they steal a base."
+    },
+    {
+        "id": "WALK_IN_THE_PARK",
+        "color": "#faff9c",
+        "textColor": "#faff9c",
+        "background": "#275c2a",
+        "title": "Walk in the Park",
+        "description": "Those with Walk in the Park will walk to first base on one less Ball."
+    },
+    {
+        "id": "BIRD_SEED",
+        "color": "#1e0036",
+        "textColor": "#dca8f7",
+        "background": "#dca8f7",
+        "title": "Bird Seed",
+        "description": "Birds like to eat Bird Seed. They'll peck those with Bird Seed out of peanut shells more often. Because they like to eat Bird Seed."
+    },
+    {
+        "id": "HAUNTED",
+        "color": "#b59c9c",
+        "textColor": "#b59c9c",
+        "background": "#1c1c1c",
+        "title": "Haunted",
+        "description": "Haunted players will occasionally be Inhabited."
+    },
+    {
+        "id": "TRAVELING",
+        "color": "#cfebff",
+        "textColor": "#cfebff",
+        "background": "#1c1c1c",
+        "title": "Traveling",
+        "description": "Traveling teams will play 5% better in Away games."
+    },
+    {
+        "id": "SEALANT",
+        "color": "#eded91",
+        "textColor": "#eded91",
+        "background": "#571f26",
+        "title": "Sealant",
+        "description": "Players with Sealant cannot have blood drained in Blooddrain."
+    },
+    {
+        "id": "O_NO",
+        "color": "#cffff0",
+        "textColor": "#cffff0",
+        "background": "#485099",
+        "title": "0 No",
+        "description": "Players with 0 No are good"
+    },
+    {
+        "id": "FAIRNESS",
+        "color": "#12b300",
+        "textColor": "#12b300",
+        "background": "#ffdb0f",
+        "title": "Total Fairness",
+        "description": "Each team will win only one Blessing, and will be Happy with what they get."
+    },
+    {
+        "id": "ESCAPE",
+        "color": "#ffe521",
+        "textColor": "#ffe521",
+        "background": "#0d0d0d",
+        "title": "Pending",
+        "description": "The players on this Team are Pending..."
+    },
+    {
+        "id": "UNFLAMED",
+        "color": "#eaabff",
+        "textColor": "#eaabff",
+        "background": "#1b1c80",
+        "title": "Chaotic",
+        "description": "The Unstable players on a Chaotic team will hit 100% better and with +200% Power."
+    },
+    {
+        "id": "TRIBUTE",
+        "color": "#dbce6e",
+        "textColor": "#dbce6e",
+        "background": "#362803",
+        "title": "Tribute",
+        "description": "When Hall of Flame players join this team, they'll add their Tribute as Team Spirit."
+    },
+    {
+        "id": "SQUIDDEST",
+        "color": "#e6eaeb",
+        "textColor": "#e6eaeb",
+        "background": "#163073",
+        "title": "Squiddest",
+        "description": "This Team is the Squiddest. When a player joins the Team, they'll become Squiddish."
+    },
+    {
+        "id": "CONTAINMENT",
+        "color": "#91ab91",
+        "textColor": "#91ab91",
+        "background": "#023802",
+        "title": "Containment",
+        "description": "When an Unstable player on this team is incinerated, the Instability cannot chain to their opponent."
+    },
+    {
+        "id": "RETIRED",
+        "color": "#d3ede5",
+        "textColor": "#d3ede5",
+        "background": "#000e33",
+        "title": "Released",
+        "description": ""
+    },
+    {
+        "id": "RESTING",
+        "color": "#5988ff",
+        "textColor": "#5988ff",
+        "background": "#163073",
+        "title": "Resting",
+        "description": ""
     }
 ]
