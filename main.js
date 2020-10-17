@@ -979,7 +979,7 @@
             background: "#1b1c80",
             title: "Chaotic",
             description:
-              "The Unstable players on a Chaotic team will hit 100% better and with +200% Power.",
+              "The Unstable players on a Chaotic team will hit 100% better.",
           },
           {
             id: "TRIBUTE",
