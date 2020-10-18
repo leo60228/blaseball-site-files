@@ -1471,7 +1471,7 @@
         for (var t = 0; t < e.attr.length; t++) if (e.attr[t] === a) return !0;
         return !1;
       }
-      function j(e, a) {
+      function H(e, a) {
         if (void 0 === e) return !1;
         var t =
             e.permAttr.includes(a) ||
@@ -1486,7 +1486,7 @@
           });
         return n && n.attr === a && (t = !0), r && r.attr === a && (t = !0), t;
       }
-      function H(e, a) {
+      function j(e, a) {
         var t = a.leagues[0];
         if (void 0 === t) return !1;
         var n = !1;
@@ -2702,11 +2702,11 @@
             )
           );
         var M = null,
-          j = null,
-          H = d[l.id],
+          H = null,
+          j = d[l.id],
           U =
-            ((null === H || void 0 === H ? void 0 : H.length) || 0) > 0
-              ? H[0]
+            ((null === j || void 0 === j ? void 0 : j.length) || 0) > 0
+              ? j[0]
               : void 0;
         if (h.started) {
           var J = void 0 !== U ? Ae(U.odds, U.amount) : 0;
@@ -2735,7 +2735,7 @@
                   )
                 )
               : null),
-            (j =
+            (H =
               void 0 !== U && U.entityId === l.awayTeam
                 ? o.a.createElement(
                     "div",
@@ -3348,7 +3348,7 @@
                                   Math.round(100 * l.awayOdds),
                                   "%"
                                 ),
-                            j
+                            H
                           )
                         : null
                     )
@@ -3474,7 +3474,7 @@
       var Ge,
         xe = t(58),
         Me = t(40),
-        je =
+        He =
           (t(105),
           function (e) {
             var a = Object(r.useRef)(null),
@@ -3630,7 +3630,7 @@
                   )
             );
           }),
-        He = o.a.createContext({
+        je = o.a.createContext({
           leagues: [],
           subleagues: [],
           divisions: [],
@@ -3663,10 +3663,10 @@
                 }
               );
             }, []),
-            o.a.createElement(He.Provider, { value: l }, a)
+            o.a.createElement(je.Provider, { value: l }, a)
           );
         };
-      Ue.context = He;
+      Ue.context = je;
       var Ye = Ue,
         Je = t(65),
         Ve = function () {
@@ -3762,7 +3762,7 @@
               "div",
               { className: "Navigation-User-Top" },
               o.a.createElement(
-                je,
+                He,
                 {
                   className: "CoinOverlay",
                   buttonClassname: "Navigation-CurrencyButton",
@@ -3775,7 +3775,7 @@
               ),
               a.unlockedElection
                 ? o.a.createElement(
-                    je,
+                    He,
                     {
                       className: "CoinOverlay",
                       buttonClassname: "Navigation-CurrencyButton",
@@ -3791,7 +3791,7 @@
                 "div",
                 { className: "Peanut-Container" },
                 o.a.createElement(
-                  je,
+                  He,
                   {
                     className: "CoinOverlay",
                     buttonClassname: "Navigation-CurrencyButton",
@@ -6485,8 +6485,8 @@
       }
       t(117);
       var Ma,
-        ja = t(35),
-        Ha = t(147),
+        Ha = t(35),
+        ja = t(147),
         Ua = (t(53), t(70));
       function Ya(e) {
         switch (e.id) {
@@ -6781,9 +6781,9 @@
           i < n;
           i++
         )
-          l.push(o.a.createElement(ja.b, null));
+          l.push(o.a.createElement(Ha.b, null));
         return (
-          n !== r && l.push(o.a.createElement(ja.c, null)),
+          n !== r && l.push(o.a.createElement(Ha.c, null)),
           o.a.createElement("span", null, l)
         );
       }
@@ -6804,13 +6804,13 @@
                 className:
                   "Team-Player-Vibe-Line Team-Player-Vibe-MostExcellent",
               },
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
@@ -6818,10 +6818,10 @@
           ? o.a.createElement(
               "span",
               { className: "Team-Player-Vibe-Line Team-Player-Vibe-Excellent" },
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
@@ -6829,7 +6829,7 @@
           ? o.a.createElement(
               "span",
               { className: "Team-Player-Vibe-Line Team-Player-Vibe-Quality" },
-              o.a.createElement(Ha.c, {
+              o.a.createElement(ja.c, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
@@ -6837,7 +6837,7 @@
           ? o.a.createElement(
               "span",
               { className: "Team-Player-Vibe-Line Team-Player-Vibe-Neutral" },
-              o.a.createElement(Ha.a, {
+              o.a.createElement(ja.a, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
@@ -6848,7 +6848,7 @@
                 className:
                   "Team-Player-Vibe-Line Team-Player-Vibe-LessThanIdeal",
               },
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
@@ -6859,23 +6859,23 @@
                 className:
                   "Team-Player-Vibe-Line Team-Player-Vibe-FarLessThanIdeal",
               },
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             )
           : o.a.createElement(
               "span",
               { className: "Team-Player-Vibe-Line Team-Player-Vibe-Terrible" },
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               }),
-              o.a.createElement(Ha.b, {
+              o.a.createElement(ja.b, {
                 className: "Team-Player-Vibe-Line-Arrow",
               })
             );
@@ -6898,7 +6898,7 @@
             b = n.teams.find(function (e) {
               return e.id === a;
             }),
-            v = H(a, n);
+            v = j(a, n);
           Object(r.useEffect)(function () {
             g();
           }, []);
@@ -7683,7 +7683,7 @@
                     }),
                     l)
                   ) {
-                    var L = H(e.favoriteTeam, n) ? 2e3 : 0;
+                    var L = j(e.favoriteTeam, n) ? 2e3 : 0;
                     v = {
                       id: 3,
                       name: "Fair Weather Flute",
@@ -7748,14 +7748,14 @@
                       });
                   } else if (void 0 !== F) {
                     var x = D.amount,
-                      j = F.amount,
+                      H = F.amount,
                       U = Object.create(e.relics);
                     (U.Idol_Strikeouts = U.Idol_Strikeouts + 1),
                       (p = {
                         id: 14,
                         name: "Strikeout Pendant",
                         description: "Adorn yourself. When your Idol strikes a Batter out, you'll earn "
-                          .concat(j, " coins. You currently earn ")
+                          .concat(H, " coins. You currently earn ")
                           .concat(x, " coins per Strikeout."),
                         amount: F.price,
                         toast: "Coins per Idol strikeout is now ".concat(
@@ -8438,7 +8438,7 @@
                       return t < n ? -1 : t > n ? 1 : 0;
                     })
                     .map(function (e, a) {
-                      if (!1 === H(e.id, l)) return null;
+                      if (!1 === j(e.id, l)) return null;
                       var t = m === e.id;
                       return o.a.createElement(
                         "div",
@@ -8457,7 +8457,7 @@
                             className: "TeamLogo",
                             style: { background: e.mainColor },
                           },
-                          String.fromCodePoint(Number(e.emoji))
+                          U(e)
                         ),
                         o.a.createElement(
                           "div",
@@ -9190,7 +9190,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function jt(e, a) {
+      function Ht(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -9214,7 +9214,7 @@
         }
         return r;
       }
-      var Ht = o.a.createElement("path", {
+      var jt = o.a.createElement("path", {
           d:
             "M122.7 23.32l1.7 21.87-16.7 14.25 21.4 5.17 8.4 20.25L149 66.18l21.8-1.75-14.2-16.71 5.1-21.32-20.3 8.35-18.7-11.43zM464 32a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zM239.8 42.5a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zm183.9 6.84c-9.2 1.74-17.7 7.18-25.9 14.28-7.6 6.53-14.7 14.66-20.7 23.45-18.8 3.01-37.6 10.67-50.2 21.13-16.1 13.2-30.4 35.8-38.2 59.1-7.4 3.1-14.4 6.8-20.1 10.8-15.5 10.9-23.5 31.8-29.4 50-5.9 18.3-8.8 34.3-8.8 34.3l17.8 3.2s2.7-15 8.1-31.9c5.5-16.9 14.8-35.3 22.7-40.8 1.3-.9 3-1.9 4.5-2.8-.6 5.7-.6 11.4.3 16.8 1.8 11.4 8 22.3 19 28.2 7.8 4.2 16.6 3.2 24 .2 7.4-3.1 14-8.2 19.7-14.2 5.7-6 10.4-13.1 13.2-20.6 2.8-7.5 3.8-16 .2-23.9h-.1c-3.9-8.4-11.4-13.8-19.4-16.1-8-2.3-16.6-2.2-25.2-.9-1.5.2-2.9.7-4.4 1 7.4-15.8 18-30.7 27.5-38.6 6.2-5.1 16.6-10 27.7-13.6-1.4 3.8-2.5 7.6-3 11.5-1.6 10.5.7 21.9 9.1 29.7 6.1 5.6 14.3 6.5 21.5 5.3 7.1-1.2 14-4.4 20.2-8.5 6.2-4.2 11.7-9.4 15.6-15.5 3.9-6.1 6.5-13.9 4-21.7v-.1c-3.3-10.07-11.5-16.99-20.6-20.27-3.9-1.4-8-2.19-12.2-2.66 2.9-3.26 5.9-6.31 8.9-8.92 6.8-5.84 13.7-9.5 17.6-10.23l-3.4-17.68zM174.8 84.39l-15.2 9.56 34.5 55.25-56.4 2.9 26.5 57.8 16.4-7.6-15.5-33.6 60.6-3.1-50.9-81.21zm216.4 19.31c6.1-.1 11.5.6 15.5 2.1 5.4 1.9 8.1 4.3 9.5 8.8.4 1.1.2 3.3-1.9 6.6-2.2 3.4-6.1 7.2-10.5 10.2-4.5 3-9.5 5.1-13.2 5.7-3.8.7-5.5 0-6.3-.7-3.5-3.2-4.5-7.2-3.5-13.9.8-5.4 3.3-11.9 7-18.6 1.2 0 2.3-.2 3.4-.2zM94.99 123a16 16 0 0 0-16 16 16 16 0 0 0 16 16A16 16 0 0 0 111 139a16 16 0 0 0-16.01-16zm356.11 37.2l-14.4 16.6-21.8-1.8 11.4 18.8-8.5 20.2 21.4-5 16.6 14.3 1.9-21.9 18.7-11.4-20.2-8.5-5.1-21.3zm-123.5 16.5c2.9.1 5.6.5 7.7 1.1 4.3 1.2 6.6 3 8.2 6.4.9 1.9 1 5.4-.7 10-1.7 4.7-5.2 10.1-9.4 14.6s-9.3 8.1-13.5 9.8c-4.2 1.7-6.8 1.6-8.5.7h-.1c-5.8-3.2-8.6-7.8-9.7-15.2-1-6.3-.3-14.3 1.8-22.9 4.9-1.7 9.8-3.1 14.5-3.8 3.5-.5 6.7-.7 9.7-.7zm-202.4 51.9c-7.2-.2-11.7 1.5-14.5 4.3-2.8 2.8-4.5 7.3-4.3 14.5.2 7.3 2.6 16.9 7.2 27.6 9.2 21.5 27.3 47.4 51.6 71.8 24.3 24.3 50.3 42.3 71.8 51.5 10.6 4.6 20.2 7 27.5 7.2 7.3.3 11.7-1.5 14.5-4.3 2.8-2.8 4.6-7.2 4.3-14.5-.2-7.3-2.6-16.9-7.2-27.6-9.2-21.4-27.2-47.4-51.5-71.7-24.3-24.4-50.3-42.4-71.8-51.6-10.7-4.6-20.3-7-27.6-7.2zm232 31.3l-33 54-29.1-27.9-12.4 13 45.1 43.3 33.8-55.2 38.7 32.3 89.3-38.2-7-16.6-79.3 34-46.1-38.7zM93.43 272.6l-17.64 57.9c41.41 49.1 89.71 76.7 142.11 94.7l21.6-6.6c-3.1-1.1-6.4-2.4-9.7-3.8-24.4-10.4-51.7-29.6-77.3-55.3-25.7-25.7-44.9-53-55.34-77.4-1.41-3.2-2.65-6.4-3.73-9.5zm-23.82 78.2l-14.01 46c28.89 27 59 39.2 90.6 50.2l43.4-13.2c-43.2-17.6-84-43.3-119.99-83zM368 352a16 16 0 0 0-16 16 16 16 0 0 0 16 16 16 16 0 0 0 16-16 16 16 0 0 0-16-16zM49.81 415.9l-20.29 66.6 88.28-26.9c-22.77-9.1-45.78-20.7-67.99-39.7z",
           fill: "#fff",
@@ -9223,12 +9223,12 @@
         Ut = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = jt(e, ["svgRef", "title"]);
+            n = Ht(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
             Mt({ viewBox: "0 0 512 512", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            Ht
+            jt
           );
         },
         Yt = o.a.forwardRef(function (e, a) {
@@ -9366,11 +9366,11 @@
           : "random_realignment" === e
           ? o.a.createElement(q.a, { className: "Decrees-Option-Icon" })
           : "alternate_reality" === e
-          ? o.a.createElement(Ha.e, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(ja.e, { className: "Decrees-Option-Icon" })
           : "targeted_shame" === e
           ? o.a.createElement(q.Bb, { className: "Decrees-Option-Icon" })
           : "roster_shuffle" === e
-          ? o.a.createElement(ja.a, { className: "Decrees-Option-Icon" })
+          ? o.a.createElement(Ha.a, { className: "Decrees-Option-Icon" })
           : "home_field_advantage" === e
           ? o.a.createElement(z.b, { className: "Decrees-Option-Icon" })
           : "team_punish" === e
@@ -12760,7 +12760,7 @@
                 className: "Bulletin-Item-Header-Icon",
                 style: { background: "#ba1111" },
               },
-              o.a.createElement(Ha.d, null)
+              o.a.createElement(ja.d, null)
             ),
             o.a.createElement(
               "div",
@@ -13427,7 +13427,7 @@
         "1307365350556798979",
       ]);
       function Dn() {
-        return o.a.createElement(Ha.f, { className: "Bulletin-Bullet" });
+        return o.a.createElement(ja.f, { className: "Bulletin-Bullet" });
       }
       var Fn, Pn;
       t(137);
@@ -13473,9 +13473,9 @@
           i < n;
           i++
         )
-          l.push(o.a.createElement(ja.b, null));
+          l.push(o.a.createElement(Ha.b, null));
         return (
-          n !== r && l.push(o.a.createElement(ja.c, null)),
+          n !== r && l.push(o.a.createElement(Ha.c, null)),
           o.a.createElement("span", null, l)
         );
       }
@@ -13752,7 +13752,7 @@
                 return e.apply(this, arguments);
               };
             })(),
-            H = j(null === b || void 0 === b ? void 0 : b.player, "RETIRED"),
+            j = H(null === b || void 0 === b ? void 0 : b.player, "RETIRED"),
             Y = !1;
           (2 !== (null === (a = m.sim) || void 0 === a ? void 0 : a.phase) &&
             4 !== (null === (t = m.sim) || void 0 === t ? void 0 : t.phase) &&
@@ -13764,13 +13764,13 @@
             R.forEach(function (e) {
               e.gameComplete || (Y = !0);
             });
-          var J = j(
+          var J = H(
               null === b || void 0 === b ? void 0 : b.player,
               "NON_IDOLIZED"
             ),
             z = A.idol,
             Z =
-              !H && (null === b || void 0 === b ? void 0 : b.player)
+              !j && (null === b || void 0 === b ? void 0 : b.player)
                 ? o.a.createElement(
                     "div",
                     { className: "Player-Header-Bottom" },
@@ -13895,7 +13895,7 @@
                   )
                 : null,
             X =
-              !H && (null === b || void 0 === b ? void 0 : b.player)
+              !j && (null === b || void 0 === b ? void 0 : b.player)
                 ? o.a.createElement(
                     "ul",
                     { className: "Player-Info-Stats" },
@@ -13926,13 +13926,13 @@
                               className:
                                 "Player-VibeLine Player-Vibe-MostExcellent",
                             },
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -13948,10 +13948,10 @@
                               className:
                                 "Player-VibeLine Player-Vibe-Excellent",
                             },
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -13966,7 +13966,7 @@
                             {
                               className: "Player-VibeLine Player-Vibe-Quality",
                             },
-                            o.a.createElement(Ha.c, {
+                            o.a.createElement(ja.c, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -13981,7 +13981,7 @@
                             {
                               className: "Player-VibeLine Player-Vibe-Neutral",
                             },
-                            o.a.createElement(Ha.a, {
+                            o.a.createElement(ja.a, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -13997,7 +13997,7 @@
                               className:
                                 "Player-VibeLine Player-Vibe-LessThanIdeal",
                             },
-                            o.a.createElement(Ha.b, {
+                            o.a.createElement(ja.b, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -14013,10 +14013,10 @@
                               className:
                                 "Player-VibeLine Player-Vibe-FarLessThanIdeal",
                             },
-                            o.a.createElement(Ha.b, {
+                            o.a.createElement(ja.b, {
                               className: "Player-VibeLine-Arrow",
                             }),
-                            o.a.createElement(Ha.b, {
+                            o.a.createElement(ja.b, {
                               className: "Player-VibeLine-Arrow",
                             }),
                             o.a.createElement(
@@ -14028,13 +14028,13 @@
                         return o.a.createElement(
                           "span",
                           { className: "Player-VibeLine Player-Vibe-Terrible" },
-                          o.a.createElement(Ha.b, {
+                          o.a.createElement(ja.b, {
                             className: "Player-VibeLine-Arrow",
                           }),
-                          o.a.createElement(Ha.b, {
+                          o.a.createElement(ja.b, {
                             className: "Player-VibeLine-Arrow",
                           }),
-                          o.a.createElement(Ha.b, {
+                          o.a.createElement(ja.b, {
                             className: "Player-VibeLine-Arrow",
                           }),
                           o.a.createElement(
@@ -14162,7 +14162,7 @@
                   )
                 : null,
             _ =
-              !H && (null === b || void 0 === b ? void 0 : b.player)
+              !j && (null === b || void 0 === b ? void 0 : b.player)
                 ? o.a.createElement(
                     "div",
                     { className: "Player-Info-Items" },
@@ -14405,11 +14405,11 @@
                           o.a.createElement(
                             "div",
                             { className: "Player-Info-Line-Header" },
-                            H ? "Soulsong" : "Soulscream"
+                            j ? "Soulsong" : "Soulscream"
                           ),
                           (function (e) {
                             for (
-                              var a = j(e, "RETIRED"),
+                              var a = H(e, "RETIRED"),
                                 t = "",
                                 n = [
                                   "A",
@@ -16493,7 +16493,7 @@
               )
             );
           }),
-        jn =
+        Hn =
           (t(141),
           function (e) {
             var a,
@@ -16544,7 +16544,7 @@
               i
             );
           }),
-        Hn = (t(142), t(59));
+        jn = (t(142), t(59));
       function Un(e, a) {
         var t = (e / a) * 100;
         return e >= 1e3 && t < 8
@@ -16972,8 +16972,8 @@
             { className: "BossFightWidget-Outs" },
             m
           ),
-          j = Object(c.g)(),
-          H =
+          H = Object(c.g)(),
+          j =
             l.complete || !l.started
               ? o.a.createElement("div", null)
               : o.a.createElement(
@@ -17000,7 +17000,7 @@
                       o.a.createElement(
                         u,
                         {
-                          background: j,
+                          background: H,
                           path: "/player/".concat(
                             n.topOfInning ? n.homePitcher : n.awayPitcher
                           ),
@@ -17032,7 +17032,7 @@
                         ? o.a.createElement(
                             u,
                             {
-                              background: j,
+                              background: H,
                               path: "/player/".concat(
                                 n.topOfInning ? n.awayBatter : n.homeBatter
                               ),
@@ -17263,7 +17263,7 @@
                     )
                   )),
                   M,
-                  H,
+                  j,
                   o.a.createElement(
                     "div",
                     { className: "BossFightWidget-Log" },
@@ -17407,7 +17407,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: j,
+                    background: H,
                     path: "/team/".concat(n.awayTeam),
                     className: "BossFightWidget-ScoreLine",
                   },
@@ -17419,7 +17419,7 @@
                     o.a.createElement(
                       "div",
                       { className: "BossFightWidget-Names-Spirit" },
-                      o.a.createElement(Hn.a, {
+                      o.a.createElement(jn.a, {
                         now: X,
                         label: Le(n.awayHp),
                         variant: Yn(X),
@@ -17442,7 +17442,7 @@
                 o.a.createElement(
                   u,
                   {
-                    background: j,
+                    background: H,
                     path: "/team/".concat(n.homeTeam),
                     className: "BossFightWidget-ScoreLine",
                   },
@@ -17454,7 +17454,7 @@
                     o.a.createElement(
                       "div",
                       { className: "BossFightWidget-Names-Spirit" },
-                      o.a.createElement(Hn.a, {
+                      o.a.createElement(jn.a, {
                         now: Z,
                         label: Le(n.homeHp),
                         variant: Yn(Z),
@@ -17751,7 +17751,7 @@
               case 7:
                 return o.a.createElement(An, { path: a });
               case 11:
-                return o.a.createElement(jn, { path: a });
+                return o.a.createElement(Hn, { path: a });
               case 4:
               case 10:
                 return o.a.createElement(Ba, { path: a });
