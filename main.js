@@ -4296,7 +4296,8 @@
               o.a.createElement(
                 "a",
                 {
-                  href: "http://wherecardsfall.com/",
+                  href:
+                    "https://store.steampowered.com/app/589450/Where_Cards_Fall/",
                   onClick: function () {
                     return $e("WCF (MainPage/Title)");
                   },
@@ -7424,14 +7425,15 @@
                         o.a.createElement(
                           "a",
                           {
-                            href: "http://wherecardsfall.com/",
+                            href:
+                              "https://store.steampowered.com/app/589450/Where_Cards_Fall/",
                             onClick: function () {
                               return $e("WCF (ShopItem)");
                             },
                             target: "_blank",
                             className: "Shop-Item-Link",
                           },
-                          o.a.createElement("strong", null, "Learn More")
+                          o.a.createElement("strong", null, "Wishlist on Steam")
                         )
                       ),
                       amount: 0,
