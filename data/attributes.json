@@ -357,7 +357,7 @@
         "textColor": "#5988ff",
         "background": "#163073",
         "title": "Squiddish",
-        "description": "This player is a wee bit Squiddish."
+        "description": "When a Squiddish player is incinerated, they'll be replaced by a random Hall of Flame player."
     },
     {
         "id": "CRUNCHY",
@@ -565,7 +565,7 @@
         "textColor": "#cffff0",
         "background": "#485099",
         "title": "0 No",
-        "description": "Players with 0 No are good"
+        "description": "Players with 0 No cannot be struck out when there are 0 Balls in the Count."
     },
     {
         "id": "FAIRNESS",
@@ -573,7 +573,7 @@
         "textColor": "#12b300",
         "background": "#ffdb0f",
         "title": "Total Fairness",
-        "description": "Each team will win only one Blessing, and will be Happy with what they get."
+        "description": "This Season, each team will win only one Blessing, and will be Happy with what they get."
     },
     {
         "id": "ESCAPE",
@@ -630,5 +630,13 @@
         "background": "#163073",
         "title": "Resting",
         "description": ""
+    },
+    {
+        "id": "INHABITING",
+        "color": "#b59c9c",
+        "textColor": "#b59c9c",
+        "background": "#1c1c1c",
+        "title": "Inhabiting",
+        "description": "This player is temporarily Inhabiting a Haunted player."
     }
 ]
