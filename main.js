@@ -8849,7 +8849,7 @@
               o.a.createElement(
                 "p",
                 { className: "Blessings-Description" },
-                "Each Blessing will be rewarded to a randomly selected player. Vote for Blessings for chances to win them for your team."
+                "Each Blessing will be rewarded to a randomly selected Fan. Pick a card for your Team."
               ),
               o.a.createElement(
                 "div",
