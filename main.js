@@ -1283,8 +1283,8 @@
         };
       w.context = S;
       var O = w,
-        I = t(7),
-        B = {
+        B = t(7),
+        I = {
           id: "",
           email: "",
           isSignedIn: !1,
@@ -1303,15 +1303,15 @@
           relics: "",
         },
         k = {
-          user: B,
+          user: I,
           clearUser: function () {},
           initUser: function () {},
           setUser: function () {},
         },
         C = Object(r.createContext)(k),
         R = function (e) {
-          var a = Object(I.a)(
-            Object(I.a)({}, e),
+          var a = Object(B.a)(
+            Object(B.a)({}, e),
             {},
             { id: e.id, isFetching: !1, isSignedIn: !(!e || !e.email) }
           );
@@ -1328,7 +1328,7 @@
         },
         L = function (e) {
           var a = e.children,
-            t = Object(r.useState)(B),
+            t = Object(r.useState)(I),
             n = Object(s.a)(t, 2),
             l = n[0],
             i = n[1],
@@ -1369,8 +1369,8 @@
                                 })()
                               )
                               .catch(function (e) {
-                                var a = Object(I.a)(
-                                  Object(I.a)({}, l),
+                                var a = Object(B.a)(
+                                  Object(B.a)({}, l),
                                   {},
                                   { isFetching: !1 }
                                 );
@@ -1399,7 +1399,7 @@
             initUser: c,
             setUser: i,
             clearUser: function () {
-              i(B);
+              i(I);
             },
           };
           return o.a.createElement(C.Provider, { value: m }, a);
@@ -1949,7 +1949,7 @@
             T = Object(r.useState)(void 0),
             S = Object(s.a)(T, 2),
             w = S[0],
-            B = S[1],
+            I = S[1],
             k = Object(r.useContext)(O.context),
             C = function (e) {
               var a = e.target.value;
@@ -1972,7 +1972,7 @@
                     : a.find(function (e) {
                         return p === e.id;
                       })),
-                t && B(t);
+                t && I(t);
             }, []),
             void 0 === w)
           )
@@ -2116,8 +2116,8 @@
                         h(!1),
                           e.ok && e.status && 200 === e.status
                             ? (l(
-                                Object(I.a)(
-                                  Object(I.a)({}, n),
+                                Object(B.a)(
+                                  Object(B.a)({}, n),
                                   {},
                                   { coins: n.coins - b }
                                 )
@@ -2318,7 +2318,7 @@
           "div",
           {
             className: "WeatherIcon",
-            style: { color: Ie(a), background: Be(a) },
+            style: { color: Be(a), background: Ie(a) },
           },
           t
         );
@@ -2326,10 +2326,10 @@
       function Oe(e) {
         return Se[e].name;
       }
-      function Ie(e) {
+      function Be(e) {
         return Se[e].color;
       }
-      function Be(e) {
+      function Ie(e) {
         return Se[e].background;
       }
       var ke = t(25),
@@ -2596,9 +2596,9 @@
           w.onSecond && (O += " second"),
           w.onThird && (O += " third"),
           w.onFourth && (O += " fourth");
-        var I = 0,
-          B = "0 0 255 197";
-        h.bases > 4 && ((I = 30), (B = "0 0 285 197"));
+        var B = 0,
+          I = "0 0 255 197";
+        h.bases > 4 && ((B = 30), (I = "0 0 285 197"));
         var k = o.a.createElement("div", { className: "GameWidget-Outs" }, E),
           C = Object(c.g)(),
           R =
@@ -2947,7 +2947,7 @@
                           }),
                           o.a.createElement(
                             "svg",
-                            { viewBox: B, version: "1.1" },
+                            { viewBox: I, version: "1.1" },
                             o.a.createElement(
                               ke.a,
                               {
@@ -2972,8 +2972,8 @@
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-40.4706,152.625)",
                                 },
                                 o.a.createElement("rect", {
-                                  x: 141.95 + I,
-                                  y: 105.74 + I,
+                                  x: 141.95 + B,
+                                  y: 105.74 + B,
                                   width: "70.31",
                                   height: "70.31",
                                 })
@@ -3003,8 +3003,8 @@
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-16.7558,95.4764)",
                                 },
                                 o.a.createElement("rect", {
-                                  x: 84.83 + I,
-                                  y: 48.54 + I,
+                                  x: 84.83 + B,
+                                  y: 48.54 + B,
                                   width: "70.31",
                                   height: "70.31",
                                 })
@@ -3034,8 +3034,8 @@
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-74.0296,71.6061)",
                                 },
                                 o.a.createElement("rect", {
-                                  x: 27.38 + I,
-                                  y: 105.74 + I,
+                                  x: 27.38 + B,
+                                  y: 105.74 + B,
                                   width: "70.31",
                                   height: "70.31",
                                 })
@@ -3066,8 +3066,8 @@
                                         "matrix(0.7071,-0.7071,0.7071,0.7071,-74.0296,71.6061)",
                                     },
                                     o.a.createElement("rect", {
-                                      x: 27.38 + I,
-                                      y: 25.04 + I,
+                                      x: 27.38 + B,
+                                      y: 25.04 + B,
                                       width: "70.31",
                                       height: "70.31",
                                     })
@@ -3557,8 +3557,8 @@
                   return o.a.createElement(
                     "div",
                     Object.assign({}, a, {
-                      style: Object(I.a)(
-                        Object(I.a)({}, a.style),
+                      style: Object(B.a)(
+                        Object(B.a)({}, a.style),
                         {},
                         { top: "12px" }
                       ),
@@ -3592,8 +3592,8 @@
                     return o.a.createElement(
                       "div",
                       Object.assign({}, a, {
-                        style: Object(I.a)(
-                          Object(I.a)({}, a.style),
+                        style: Object(B.a)(
+                          Object(B.a)({}, a.style),
                           {},
                           { bottom: "12px" }
                         ),
@@ -3748,11 +3748,11 @@
             });
             if (S) {
               var w = U(S),
-                B = encodeURIComponent(
+                I = encodeURIComponent(
                   "".concat(S.slogan || "", " ").concat(w, " #blaseball")
                 ),
                 k = "http://twitter.com/intent/tweet?text=".concat(
-                  B,
+                  I,
                   "&url=https%3A%2F%2Fblaseball.com"
                 );
               T = o.a.createElement(
@@ -3899,8 +3899,8 @@
                                                       ) {
                                                         case 0:
                                                           t(
-                                                            Object(I.a)(
-                                                              Object(I.a)(
+                                                            Object(B.a)(
+                                                              Object(B.a)(
                                                                 {},
                                                                 a
                                                               ),
@@ -4037,7 +4037,7 @@
               N.current && !N.current.contains(e.target) && y(!1);
           },
           w = [],
-          I = [];
+          B = [];
         9 !== (null === (a = l.sim) || void 0 === a ? void 0 : a.phase)
           ? (w.push({
               text: "League",
@@ -4058,7 +4058,7 @@
                   path: "/shop",
                   locked: !i.unlockedShop,
                 }),
-                I.push({ text: "Bulletin", path: "/bulletin" })),
+                B.push({ text: "Bulletin", path: "/bulletin" })),
               w.push({
                 text: "Election",
                 path: "/offseason",
@@ -4068,16 +4068,16 @@
               i.isSignedIn &&
               ((M(l.sim, "WILD_CARDS") || M(l.sim, "DOUBLE_JUMPS")) &&
                 (w.push({ text: "Bulletin", path: "/bulletin" }),
-                I.push({
+                B.push({
                   text: "Shop",
                   path: "/shop",
                   locked: !i.unlockedShop,
                 })),
-              I.push({ text: "Book", path: "/thebook" }),
+              B.push({ text: "Book", path: "/thebook" }),
               M(l.sim, "UNLOCKED_HALL") &&
-                I.push({ text: "The Hall", path: "/thehall", glow: !0 })))
+                B.push({ text: "The Hall", path: "/thehall", glow: !0 })))
           : w.push({ text: "League", path: "/" });
-        var B = function () {
+        var I = function () {
             d(!u);
           },
           k = i.isFetching
@@ -4112,7 +4112,7 @@
                     o.a.createElement(
                       "button",
                       {
-                        onClick: B,
+                        onClick: I,
                         type: "button",
                         className: "Navigation-Button",
                       },
@@ -4134,7 +4134,7 @@
                           style: u ? { display: "flex" } : {},
                         },
                         u &&
-                          I.map(function (e, a) {
+                          B.map(function (e, a) {
                             return o.a.createElement(
                               Ze,
                               { key: a, path: e.path, glow: e.glow },
@@ -4166,7 +4166,7 @@
                   o.a.createElement(
                     "button",
                     {
-                      onClick: B,
+                      onClick: I,
                       type: "button",
                       className: "Navigation-Button",
                     },
@@ -4188,7 +4188,7 @@
                         style: u ? { display: "flex" } : {},
                       },
                       u &&
-                        I.map(function (e, a) {
+                        B.map(function (e, a) {
                           return o.a.createElement(
                             Ze,
                             { key: a, path: e.path, glow: e.glow },
@@ -5449,7 +5449,7 @@
         return 0 === e ? 2 : 3;
       }
       var Oa,
-        Ia = function () {
+        Ba = function () {
           var e = Object(r.useContext)(O.context),
             a = Object(r.useContext)(Je.context),
             t =
@@ -5480,7 +5480,7 @@
           (e[(e.Standings = 3)] = "Standings"),
           (e[(e.Postseason = 4)] = "Postseason");
       })(Oa || (Oa = {}));
-      var Ba = function (e) {
+      var Ia = function (e) {
           var a,
             t,
             n,
@@ -5580,7 +5580,7 @@
                           });
                         })
                   ),
-            I =
+            B =
               void 0 !==
               (null === f ||
               void 0 === f ||
@@ -5599,7 +5599,7 @@
                   ? void 0
                   : i.roundNumber
                 : -1,
-            B =
+            I =
               void 0 !==
               (null === f ||
               void 0 === f ||
@@ -5618,10 +5618,10 @@
                   ? void 0
                   : u.roundNumber
                 : -1,
-            k = (y() === Oa.Live ? I : B) + 1;
+            k = (y() === Oa.Live ? B : I) + 1;
           switch (y()) {
             case Oa.Postseason:
-              N = o.a.createElement(Ia, null);
+              N = o.a.createElement(Ba, null);
               break;
             case Oa.Leaderboard:
               N = o.a.createElement(da, null);
@@ -7055,7 +7055,7 @@
             })(b.id, null === t || void 0 === t ? void 0 : t.standings),
             S = T[1],
             w = T[0],
-            I =
+            B =
               b.permAttr.length > 0 ||
               b.seasAttr.length > 0 ||
               b.weekAttr.length > 0 ||
@@ -7101,7 +7101,7 @@
                     )
                   )
                 : null,
-            B = v
+            I = v
               ? o.a.createElement(
                   "div",
                   { className: "Team-Standing" },
@@ -7165,11 +7165,11 @@
                       { className: "Team-Slogan" },
                       o.a.createElement("i", null, '"', b.slogan, '"')
                     ),
-                    B
+                    I
                   )
                 )
               ),
-              I,
+              B,
               o.a.createElement(
                 "div",
                 { className: "Team-Content" },
@@ -7398,8 +7398,8 @@
                         buyUrl: "/api/buyUnlockElection",
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { unlockedElection: !0, coins: e.coins - 100 }
                             )
@@ -7461,8 +7461,8 @@
                       buyUrl: "/api/buyIncreaseMaxBet",
                       userUpdate: function () {
                         a(
-                          Object(I.a)(
-                            Object(I.a)({}, e),
+                          Object(B.a)(
+                            Object(B.a)({}, e),
                             {},
                             {
                               maxBetTier: e.maxBetTier + 1,
@@ -7507,8 +7507,8 @@
                           buyUrl: "/api/buyIncreaseDailyCoins",
                           userUpdate: function () {
                             a(
-                              Object(I.a)(
-                                Object(I.a)({}, e),
+                              Object(B.a)(
+                                Object(B.a)({}, e),
                                 {},
                                 {
                                   dailyCoinsTier: e.dailyCoinsTier + 1,
@@ -7554,8 +7554,8 @@
                         buyUrl: "/api/buyADangPeanut",
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               {
                                 peanuts: e.peanuts + g.alpha,
@@ -7567,12 +7567,12 @@
                       }),
                       g.beta > 0 || e.squirrels > 0)
                     ) {
-                      var B = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144],
-                        k = B[Math.min(e.squirrels, B.length)],
+                      var I = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144],
+                        k = I[Math.min(e.squirrels, I.length)],
                         C = 100 * Math.pow(2, e.squirrels + 1),
-                        R = B[Math.min(e.squirrels + 1, B.length)];
+                        R = I[Math.min(e.squirrels + 1, I.length)];
                       b =
-                        e.squirrels < Math.min(g.beta, B.length - 1)
+                        e.squirrels < Math.min(g.beta, I.length - 1)
                           ? {
                               id: 7,
                               name: "Squirrel of Devouring",
@@ -7600,8 +7600,8 @@
                               buyUrl: "/api/buyADangSquirrel",
                               userUpdate: function () {
                                 a(
-                                  Object(I.a)(
-                                    Object(I.a)({}, e),
+                                  Object(B.a)(
+                                    Object(B.a)({}, e),
                                     {},
                                     {
                                       squirrels: e.squirrels + 1,
@@ -7643,8 +7643,8 @@
                         t &&
                           (console.log(t),
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins + t.amount }
                             )
@@ -7665,8 +7665,8 @@
                       buyUrl: "/api/buyUpdateFavoriteTeam",
                       userUpdate: function () {
                         a(
-                          Object(I.a)(
-                            Object(I.a)({}, e),
+                          Object(B.a)(
+                            Object(B.a)({}, e),
                             {},
                             { favoriteTeam: null, coins: e.coins - L }
                           )
@@ -7708,8 +7708,8 @@
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - F.price, relics: D }
                             )
@@ -7737,8 +7737,8 @@
                         buyParams: { relicId: "Idol_Strikeouts" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - Q.price, relics: U }
                             )
@@ -7793,8 +7793,8 @@
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - K.price, relics: z }
                             )
@@ -7822,8 +7822,8 @@
                         buyParams: { relicId: "Idol_Shutouts" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - V.price, relics: ee }
                             )
@@ -7876,8 +7876,8 @@
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - re.price, relics: oe }
                             )
@@ -7905,8 +7905,8 @@
                         buyParams: { relicId: "Idol_Homers" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - ne.price, relics: me }
                             )
@@ -7959,8 +7959,8 @@
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - pe.price, relics: Ee }
                             )
@@ -7986,8 +7986,8 @@
                         buyParams: { relicId: "Idol_Hits" },
                         userUpdate: function () {
                           a(
-                            Object(I.a)(
-                              Object(I.a)({}, e),
+                            Object(B.a)(
+                              Object(B.a)({}, e),
                               {},
                               { coins: e.coins - he.price, relics: Ae }
                             )
@@ -8025,8 +8025,8 @@
                       buyUrl: "/api/buyUnlockShop",
                       userUpdate: function () {
                         a(
-                          Object(I.a)(
-                            Object(I.a)({}, e),
+                          Object(B.a)(
+                            Object(B.a)({}, e),
                             {},
                             { unlockedShop: !0, coins: e.coins - 20 }
                           )
@@ -8223,8 +8223,8 @@
                           .then(function (e) {
                             e.status && 200 === e.status && e.ok
                               ? (l(
-                                  Object(I.a)(
-                                    Object(I.a)({}, n),
+                                  Object(B.a)(
+                                    Object(B.a)({}, n),
                                     {},
                                     {
                                       votes: n.votes + E,
@@ -8361,8 +8361,8 @@
                                   200 === e.status &&
                                   e.ok &&
                                   n(
-                                    Object(I.a)(
-                                      Object(I.a)({}, t),
+                                    Object(B.a)(
+                                      Object(B.a)({}, t),
                                       {},
                                       { favoriteTeam: m }
                                     )
@@ -8993,7 +8993,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function It(e, a) {
+      function Bt(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -9017,19 +9017,19 @@
         }
         return r;
       }
-      var Bt = o.a.createElement("path", {
+      var It = o.a.createElement("path", {
           d:
             "M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v6h-6c-1.104 0-2 .896-2 2s.896 2 2 2h6v6h-14v-16zm9 8c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z",
         }),
         kt = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = It(e, ["svgRef", "title"]);
+            n = Bt(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
             Ot({ viewBox: "0 0 24 24", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            Bt
+            It
           );
         },
         Ct = o.a.forwardRef(function (e, a) {
@@ -10036,8 +10036,8 @@
                                               t.status &&
                                               200 === t.status
                                                 ? (l(
-                                                    Object(I.a)(
-                                                      Object(I.a)({}, n),
+                                                    Object(B.a)(
+                                                      Object(B.a)({}, n),
                                                       {},
                                                       { peanuts: n.peanuts - E }
                                                     )
@@ -10227,8 +10227,8 @@
                           .then(function (e) {
                             e.status && 200 === e.status && e.ok
                               ? (l(
-                                  Object(I.a)(
-                                    Object(I.a)({}, n),
+                                  Object(B.a)(
+                                    Object(B.a)({}, n),
                                     {},
                                     { votes: n.votes - b }
                                   )
@@ -11814,8 +11814,8 @@
                                             }
                                             if (
                                               (l(
-                                                Object(I.a)(
-                                                  Object(I.a)({}, n),
+                                                Object(B.a)(
+                                                  Object(B.a)({}, n),
                                                   {},
                                                   {
                                                     coins: r.coins,
@@ -12086,9 +12086,9 @@
           return o.a.createElement(wn.Provider, { value: T }, a);
         };
       On.context = wn;
-      var In = On;
+      var Bn = On;
       t(134);
-      function Bn() {
+      function In() {
         return o.a.createElement(
           "div",
           { className: "TheBook-All" },
@@ -12159,6 +12159,18 @@
           ),
           o.a.createElement(
             "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "e. The Standings of a season of Blaseball shall be decided by two factors: Wins and Divine Favor. ",
+            o.a.createElement(kn, { str: "Nothing else matters" }),
+            ". The Team with the higher number of Wins shall be considered higher in the Standings. If two Teams are tied, the tie-breaker will be decided by their positions on the Divine Favor list."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "f. Party Time: A Team will enter Party Time if receiving 1 Win per remaining game would not land them in the Postseason."
+          ),
+          o.a.createElement(
+            "div",
             { className: "TheBook-Line TheBook-Bullet" },
             "2. Postseasons"
           ),
@@ -12185,27 +12197,37 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "d. At the end of the regular season, 1 Wild Card will be drawn at random from each Sub-League and will be removed from Party Time to receive a Postseason Birth."
+            "d. At the end of the regular season, 1 Wild Card will be drawn at random from the remaining teams in each Sub-League to receive a Postseason Birth."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "e. Following the Wild Card draw, all Postseason teams will be seeded 1-5 in their Sub-League according to regular season standings."
+            "e. All Postseason teams will be removed from Party Time, if applicable."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "f. The 4 and 5 Seeds shall play in the Wild Card Round, a best 2 of 3 game series."
+            "f. Following the Wild Card draw, all Postseason teams will be seeded 1-5 in their Sub-League according to regular season standings."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "g. All other Postseason series shall be best 3 of 5."
+            "g. The 4 and 5 Seeds shall play in the Wild Card Round, a 2-Win series."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "h. The home team in each Postseason game shall be ",
+            "h. All other Postseason series shall be 3-Win series."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "i. Postseason series are decided when, at the conclusion of a game, a Team has reached the specified Win count, and has more Wins than their opponent."
+          ),
+          o.a.createElement(
+            "div",
+            { className: "TheBook-Line TheBook-SubBullet" },
+            "j. The home team in each Postseason game shall be ",
             o.a.createElement(kn, {
               str: "the |||||||||||, if the |||||||||||||||||||.",
             })
@@ -12213,16 +12235,16 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "i. The Wild Card Round should take place shortly after the end of the regular season. One full ",
+            "k. The first two Rounds should begin after the end of the regular season. One full ",
             o.a.createElement(kn, { str: "|||||" }),
-            " hour shall be skipped, and then the Round shall begin at the top of the next available ",
+            " hour shall be skipped, and then the Wild Card Round shall begin at the top of the next available ",
             o.a.createElement(kn, { str: "|||||" }),
             " hour."
           ),
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            'j. The Postseason shall continue early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
+            'l. The Postseason shall continue early on a "Saturday" and conclude within the same day. If the Postseason lasts into the following day, no ',
             o.a.createElement(kn, {
               str:
                 "||||| shall be ||||||||, and both teams shall be |||||||||| |||||||| ||||||||||||.",
@@ -12270,9 +12292,7 @@
           o.a.createElement(
             "div",
             { className: "TheBook-Line TheBook-SubBullet" },
-            "c. ",
-            o.a.createElement(kn, { str: "||||||||||||||||||" }),
-            " may occur at the end of an Election, before Decrees and Blessings are processed. ",
+            "c. End of Season Events may occur at the end of an Election, before Decrees and Blessings are processed. ",
             o.a.createElement(kn, { str: "Anything can happen here" }),
             ". Good luck."
           ),
@@ -12679,13 +12699,14 @@
           c,
           m,
           u = Object(r.useContext)(O.context),
-          d = null,
-          E = Object(r.useState)([]),
-          f = Object(s.a)(E, 2),
-          b = f[0],
-          v = f[1];
-        function g() {
-          return (g = Object(p.a)(
+          d = Object(r.useContext)($a.context),
+          E = null,
+          f = Object(r.useState)([]),
+          b = Object(s.a)(f, 2),
+          v = b[0],
+          g = b[1];
+        function y() {
+          return (y = Object(p.a)(
             h.a.mark(function e() {
               var a, t, n;
               return h.a.wrap(function (e) {
@@ -12703,9 +12724,9 @@
                       for (n = 0; n < a.length; n++)
                         a[n].id.includes("-") && t.push(a[n].msg);
                       t.length >= 3
-                        ? v(t.slice(t.length - 3, t.length))
+                        ? g(t.slice(t.length - 3, t.length))
                         : (0 === t.length && t.push("Nothing has happened..."),
-                          v(t));
+                          g(t));
                     case 8:
                     case "end":
                       return e.stop();
@@ -12717,7 +12738,7 @@
         if (
           (Object(r.useEffect)(function () {
             !(function () {
-              g.apply(this, arguments);
+              y.apply(this, arguments);
             })();
           }, []),
           void 0 === u || void 0 === u.sim)
@@ -12726,7 +12747,7 @@
         M(u.sim, "DOUBLE_JUMPS") || M(u.sim, "WILD_CARDS")
           ? (o.a.Fragment, q.Lb)
           : (o.a.Fragment, q.l);
-        var y =
+        var A =
           6 === (null === (e = u.sim) || void 0 === e ? void 0 : e.phase) ||
           0 === (null === (a = u.sim) || void 0 === a ? void 0 : a.phase);
         (n = o.a.createElement(
@@ -12828,7 +12849,7 @@
         )),
           o.a.Fragment,
           q.e,
-          b.map(function (e) {
+          v.map(function (e) {
             return o.a.createElement(
               "div",
               { className: "Bulletin-Item-Contents-Text" },
@@ -12964,7 +12985,7 @@
             )
           )),
           M(u.sim, "BLACK_HOLE"),
-          (d = o.a.createElement(
+          (E = o.a.createElement(
             o.a.Fragment,
             null,
             o.a.createElement(
@@ -12993,71 +13014,79 @@
                 "PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD PICK A CARD"
               )
             )
-          )),
-          (m = o.a.createElement(
-            o.a.Fragment,
-            null,
+          ));
+        var N = d && d.doc,
+          T = d && d.doc ? d.doc.eta : 0;
+        (m = o.a.createElement(
+          o.a.Fragment,
+          null,
+          o.a.createElement(
+            "div",
+            { className: "Bulletin-Item-Header" },
             o.a.createElement(
               "div",
-              { className: "Bulletin-Item-Header" },
-              o.a.createElement(
-                "div",
-                {
-                  className: "Bulletin-Item-Header-Icon",
-                  style: { background: "#ded123" },
-                },
-                o.a.createElement(q.Gb, null)
-              ),
-              o.a.createElement(
-                "div",
-                { className: "Bulletin-Item-Header-Title" },
-                "Telescope"
-              )
+              {
+                className: "Bulletin-Item-Header-Icon",
+                style: { background: "#ded123" },
+              },
+              o.a.createElement(q.Gb, null)
             ),
             o.a.createElement(
               "div",
-              { className: "Bulletin-Item-Contents" },
+              { className: "Bulletin-Item-Header-Title" },
+              "Telescope"
+            )
+          ),
+          o.a.createElement(
+            "div",
+            { className: "Bulletin-Item-Contents" },
+            o.a.createElement(
+              "div",
+              { className: "Bulletin-Item-Telescope-Team" },
               o.a.createElement(
                 "div",
-                { className: "Bulletin-Item-Telescope-Team" },
+                { className: "Bulletin-Item-Telescope-Contents" },
                 o.a.createElement(
                   "div",
-                  { className: "Bulletin-Item-Telescope-Contents" },
+                  { className: "Bulletin-Item-Telescope-LogoLine" },
                   o.a.createElement(
                     "div",
-                    { className: "Bulletin-Item-Telescope-LogoLine" },
-                    o.a.createElement(
-                      "div",
-                      {
-                        style: { backgroundColor: "#593037" },
-                        className: "Bulletin-Item-Telescope-Logo",
-                      },
-                      Y("0x1F980")
-                    )
-                  ),
-                  o.a.createElement(
-                    "div",
-                    { className: "Bulletin-Item-Telescope-Name" },
-                    "Baltimore Crabs"
+                    {
+                      style: { backgroundColor: "#593037" },
+                      className: "Bulletin-Item-Telescope-Logo",
+                    },
+                    Y("0x1F980")
                   )
                 ),
                 o.a.createElement(
                   "div",
                   {
-                    className: "Bulletin-Item-Telescope-Record",
+                    className: "Bulletin-Item-Telescope-Name",
                     style: { color: "#b05c6b" },
                   },
-                  "0-",
-                  Math.min(
-                    (null === (t = u.sim) || void 0 === t ? void 0 : t.day) + 1,
-                    99
-                  )
+                  "Baltimore Crabs"
                 )
+              ),
+              o.a.createElement(
+                "div",
+                { className: "Bulletin-Item-Telescope-Record" },
+                N
+                  ? Pe(
+                      T,
+                      Math.min(
+                        (null === (t = u.sim) || void 0 === t
+                          ? void 0
+                          : t.day) + 1,
+                        99
+                      ) - T
+                    )
+                  : o.a.createElement(ge, null)
               )
             )
-          )),
+          )
+        )),
           o.a.Fragment;
-        var A = o.a.createElement(
+        var S = o.a.createElement(
           "div",
           { className: "Bulletin" },
           o.a.createElement(
@@ -13066,7 +13095,7 @@
             o.a.createElement(
               "div",
               { className: "Bulletin-Item Bulletin-Top-Left" },
-              d
+              E
             ),
             o.a.createElement(
               "div",
@@ -13090,7 +13119,7 @@
             )
           )
         );
-        return y
+        return A
           ? o.a.createElement(
               "div",
               { className: "Bulletin" },
@@ -13105,7 +13134,7 @@
                 o.a.createElement(
                   "div",
                   { className: "Bulletin-Item Bulletin-Tall-Left" },
-                  d
+                  E
                 ),
                 o.a.createElement(
                   "div",
@@ -13114,7 +13143,7 @@
                 )
               )
             )
-          : A;
+          : S;
       }
       var Pn = (function (e) {
         var a,
@@ -13522,8 +13551,8 @@
             T = Object(r.useState)(!1),
             S = Object(s.a)(T, 2),
             w = S[0],
-            B = (S[1], Object(r.useState)(1)),
-            k = Object(s.a)(B, 2);
+            I = (S[1], Object(r.useState)(1)),
+            k = Object(s.a)(I, 2);
           k[0], k[1];
           function C(e) {
             for (var a = 0; a < d.teams.length; a++) {
@@ -13718,8 +13747,8 @@
                                               ? (!1,
                                                 "" === A.idol || null === A.idol
                                                   ? (N(
-                                                      Object(I.a)(
-                                                        Object(I.a)({}, A),
+                                                      Object(B.a)(
+                                                        Object(B.a)({}, A),
                                                         {},
                                                         { idol: b.player.id }
                                                       )
@@ -13727,8 +13756,8 @@
                                                     !0)
                                                   : A.coins >= 200 &&
                                                     (N(
-                                                      Object(I.a)(
-                                                        Object(I.a)({}, A),
+                                                      Object(B.a)(
+                                                        Object(B.a)({}, A),
                                                         {},
                                                         {
                                                           coins: A.coins - 200,
@@ -14547,7 +14576,7 @@
                 i = o.a.createElement(fa, null);
                 break;
               case "/":
-                i = o.a.createElement(Ia, null);
+                i = o.a.createElement(Ba, null);
             }
             return o.a.createElement(
               "div",
@@ -16534,7 +16563,7 @@
                 i = o.a.createElement(fa, null);
                 break;
               case "/":
-                i = o.a.createElement(Ia, null);
+                i = o.a.createElement(Ba, null);
             }
             return o.a.createElement(
               "div",
@@ -16935,10 +16964,10 @@
         );
         var w = n.topOfInning ? n.awayTeamColor : n.homeTeamColor,
           O = n.topOfInning ? n.homeTeamColor : n.awayTeamColor,
-          I = (function (e) {
+          B = (function (e) {
             return e.homeScore;
           })(n),
-          B = (function (e) {
+          I = (function (e) {
             return e.awayScore;
           })(n);
         function k() {
@@ -16949,7 +16978,7 @@
             ? n.homeTeamNickname
             : n.awayTeamNickname;
         }
-        I > B && n.gameComplete, B > I && n.gameComplete;
+        B > I && n.gameComplete, I > B && n.gameComplete;
         var R = (function (e) {
             for (
               var a = {
@@ -17778,7 +17807,7 @@
                 return o.a.createElement(jn, { path: a });
               case 4:
               case 10:
-                return o.a.createElement(Ba, { path: a });
+                return o.a.createElement(Ia, { path: a });
               case 5:
               case 6:
                 return o.a.createElement(ka, { path: a });
@@ -17788,7 +17817,7 @@
             return o.a.createElement("div", null);
           };
         return o.a.createElement(
-          In,
+          Bn,
           null,
           o.a.createElement(
             D,
@@ -17839,7 +17868,7 @@
                     o.a.createElement(
                       c.a,
                       { path: "/thebook" },
-                      o.a.createElement(Bn, null)
+                      o.a.createElement(In, null)
                     ),
                     o.a.createElement(
                       c.a,
