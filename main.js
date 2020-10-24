@@ -5364,7 +5364,7 @@
                           {
                             className:
                               e.homeWins >= e.gamesNeeded &&
-                              e.homeWins !== e.awayWins
+                              e.homeWins > e.awayWins
                                 ? "PlayoffSetup-MatchupTeam-WinsComplete"
                                 : "PlayoffSetup-MatchupTeam-Wins",
                           },
@@ -5437,7 +5437,7 @@
                           {
                             className:
                               e.awayWins >= e.gamesNeeded &&
-                              e.homeWins !== e.awayWins
+                              e.awayWins > e.homeWins
                                 ? "PlayoffSetup-MatchupTeam-WinsComplete"
                                 : "PlayoffSetup-MatchupTeam-Wins",
                           },
