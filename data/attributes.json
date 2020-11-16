@@ -638,5 +638,53 @@
         "background": "#1c1c1c",
         "title": "Inhabiting",
         "description": "This player is temporarily Inhabiting a Haunted player."
+    },
+    {
+        "id": "WIRED",
+        "color": "#511c00",
+        "textColor": "#511c00",
+        "background": "#ffffff",
+        "title": "Wired",
+        "description": "When a Run is collected, if this player was involved in the play, it will be worth 0.5 more."
+    },
+    {
+        "id": "TIRED",
+        "color": "#ffffff",
+        "textColor": "#ffffff",
+        "background": "#511c00",
+        "title": "Tired",
+        "description": "When a Run is collected, if this player was involved in the play, it will be worth 0.5 less."
+    },
+    {
+        "id": "COFFEE_EXIT",
+        "color": "#e9c4ff",
+        "textColor": "#e9c4ff",
+        "background": "#96afd4",
+        "title": "Percolated",
+        "description": "This player has been fully and completely Percolated."
+    },
+    {
+        "id": "COFFEE_SHADOWS",
+        "color": "#f0efaa",
+        "textColor": "#f0efaa",
+        "background": "#031736",
+        "title": "Well Rested",
+        "description": "Whenever a player on this team loses the Tired modification, they'll swap with a player in the Shadows."
+    },
+    {
+        "id": "HARD_BOILED",
+        "color": "#9a7b4f",
+        "textColor": "#9a7b4f",
+        "background": "#511c00",
+        "title": "Hard Boiled",
+        "description": "This player was boiled a little bit before hatching."
+    },
+    {
+        "id": "COFFEE_PERIL",
+        "color": "#9a7b4f",
+        "textColor": "#9a7b4f",
+        "background": "#000000",
+        "title": "Observed",
+        "description": "This player is being Observed carefully..."
     }
 ]
