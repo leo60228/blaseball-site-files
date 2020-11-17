@@ -642,7 +642,7 @@
     {
         "id": "WIRED",
         "color": "#511c00",
-        "textColor": "#ffffff",
+        "textColor": "#511c00",
         "background": "#ffffff",
         "title": "Wired",
         "description": "When a Run scores, each Wired player involved in the play (the Scoring Baserunner, Current Batter, or Current Pitcher) will make the Run worth 0.5 more."
@@ -650,7 +650,7 @@
     {
         "id": "TIRED",
         "color": "#ffffff",
-        "textColor": "#511c00",
+        "textColor": "#ffffff",
         "background": "#511c00",
         "title": "Tired",
         "description": "When a Run scores, each Tired player involved in the play (the Scoring Baserunner, Current Batter, or Current Pitcher) with make the Run worth 0.5 less."

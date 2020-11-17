@@ -1017,7 +1017,7 @@
           {
             id: "WIRED",
             color: "#511c00",
-            textColor: "#ffffff",
+            textColor: "#511c00",
             background: "#ffffff",
             title: "Wired",
             description:
@@ -1026,7 +1026,7 @@
           {
             id: "TIRED",
             color: "#ffffff",
-            textColor: "#511c00",
+            textColor: "#ffffff",
             background: "#511c00",
             title: "Tired",
             description:
@@ -2458,10 +2458,15 @@
         return e.awayScore;
       }
       function We(e) {
-        var a = m.collection.find(function (a) {
-          return a.id === e;
-        });
-        return a ? [a.background, a.color] : [];
+        var a = Object(r.useContext)(D.context).user,
+          t = m.collection.find(function (a) {
+            return a.id === e;
+          });
+        return t
+          ? [t.background, t.color]
+          : a.lightMode
+          ? ["#000000", "#ffffff"]
+          : ["#ffffff", "#000000"];
       }
       function Qe(e) {
         var a = Object(r.useContext)(O.context),
@@ -2738,10 +2743,10 @@
             return a;
           })(l),
           O = "",
-          B = ["#ffffff", "#000000"],
-          k = ["#ffffff", "#000000"],
-          C = ["#ffffff", "#000000"],
-          L = ["#ffffff", "#000000"];
+          B = s.lightMode ? ["#000000", "#ffffff"] : ["#ffffff", "#000000"],
+          k = s.lightMode ? ["#000000", "#ffffff"] : ["#ffffff", "#000000"],
+          C = s.lightMode ? ["#000000", "#ffffff"] : ["#ffffff", "#000000"],
+          L = s.lightMode ? ["#000000", "#ffffff"] : ["#ffffff", "#000000"];
         w.onFirst && ((O += " first"), (B = We(w.modOnFirst))),
           w.onSecond && ((O += " second"), (k = We(w.modOnSecond))),
           w.onThird && ((O += " third"), (C = We(w.modOnThird))),
@@ -3192,7 +3197,13 @@
                                     "strong",
                                     null,
                                     te.playerOnFirst
-                                  )
+                                  ),
+                                  " ",
+                                  "BLASERUNNING" === w.modOnFirst
+                                    ? "(Blaserunning)"
+                                    : "",
+                                  "WIRED" === w.modOnFirst ? "(Wired)" : "",
+                                  "TIRED" === w.modOnFirst ? "(Tired)" : ""
                                 ),
                               },
                               o.a.createElement(
@@ -3205,15 +3216,8 @@
                                   transform:
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-40.4706,152.625)",
                                   style: {
-                                    fill: w.onFirst
-                                      ? "" !== B[0]
-                                        ? B[0]
-                                        : "#ffffff"
-                                      : "none",
-                                    stroke:
-                                      "" !== B[0] && w.onFirst
-                                        ? B[0]
-                                        : "#ffffff",
+                                    fill: w.onFirst ? B[0] : "none",
+                                    stroke: B[0],
                                   },
                                 },
                                 o.a.createElement("rect", {
@@ -3260,7 +3264,13 @@
                                     "strong",
                                     null,
                                     te.playerOnSecond
-                                  )
+                                  ),
+                                  " ",
+                                  "BLASERUNNING" === w.modOnSecond
+                                    ? "(Blaserunning)"
+                                    : "",
+                                  "WIRED" === w.modOnSecond ? "(Wired)" : "",
+                                  "TIRED" === w.modOnSecond ? "(Tired)" : ""
                                 ),
                               },
                               o.a.createElement(
@@ -3273,15 +3283,8 @@
                                   transform:
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-16.7558,95.4764)",
                                   style: {
-                                    fill: w.onSecond
-                                      ? "" !== k[0]
-                                        ? k[0]
-                                        : "#ffffff"
-                                      : "none",
-                                    stroke:
-                                      "" !== k[0] && w.onSecond
-                                        ? k[0]
-                                        : "#ffffff",
+                                    fill: w.onSecond ? k[0] : "none",
+                                    stroke: k[0],
                                   },
                                 },
                                 o.a.createElement("rect", {
@@ -3328,7 +3331,13 @@
                                     "strong",
                                     null,
                                     te.playerOnThird
-                                  )
+                                  ),
+                                  " ",
+                                  "BLASERUNNING" === w.modOnThird
+                                    ? "(Blaserunning)"
+                                    : "",
+                                  "WIRED" === w.modOnThird ? "(Wired)" : "",
+                                  "TIRED" === w.modOnThird ? "(Tired)" : ""
                                 ),
                               },
                               o.a.createElement(
@@ -3341,15 +3350,8 @@
                                   transform:
                                     "matrix(0.7071,-0.7071,0.7071,0.7071,-74.0296,71.6061)",
                                   style: {
-                                    fill: w.onThird
-                                      ? "" !== C[0]
-                                        ? C[0]
-                                        : "#ffffff"
-                                      : "none",
-                                    stroke:
-                                      "" !== C[0] && w.onThird
-                                        ? C[0]
-                                        : "#ffffff",
+                                    fill: w.onThird ? C[0] : "none",
+                                    stroke: C[0],
                                   },
                                 },
                                 o.a.createElement("rect", {
@@ -3397,7 +3399,15 @@
                                         "strong",
                                         null,
                                         te.playerOnFourth
-                                      )
+                                      ),
+                                      " ",
+                                      "BLASERUNNING" === w.modOnFourth
+                                        ? "(Blaserunning)"
+                                        : "",
+                                      "WIRED" === w.modOnFourth
+                                        ? "(Wired)"
+                                        : "",
+                                      "TIRED" === w.modOnFourth ? "(Tired)" : ""
                                     ),
                                   },
                                   o.a.createElement(
@@ -3413,15 +3423,8 @@
                                     o.a.createElement(z.s, {
                                       className: "Widget-Bases-Icon",
                                       style: {
-                                        fill: w.onFourth
-                                          ? "" !== L[0]
-                                            ? L[0]
-                                            : "#ffffff"
-                                          : "none",
-                                        stroke:
-                                          "" !== L[0] && w.onFourth
-                                            ? L[0]
-                                            : "#ffffff",
+                                        fill: w.onFourth ? L[0] : "none",
+                                        stroke: L[0],
                                       },
                                     }),
                                     o.a.createElement("rect", {
@@ -19905,12 +19908,14 @@
                 o.a.createElement(
                   "div",
                   { className: "Stubs-Body" },
+                  "Coffee Break! ",
                   null === l || void 0 === l ? void 0 : l.name,
-                  " will continue soon. Whaaat"
+                  " will continue soon. Cool!"
                 )
               ),
               text: "Offseason. Check for updates on the Discord!",
             }),
+            o.a.createElement(ta, null),
             o.a.createElement(sa, null),
             i
           );
