@@ -686,5 +686,13 @@
         "background": "#000000",
         "title": "Observed",
         "description": "This player is being Observed carefully..."
+    },
+    {
+        "id": "COFFEE_RALLY",
+        "color": "#2e1406",
+        "textColor": "#fffcd9",
+        "background": "#44c97c",
+        "title": "Free Refill",
+        "description": "Good for one Free Refill"
     }
 ]
