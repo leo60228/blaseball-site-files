@@ -1062,6 +1062,15 @@
             title: "Free Refill",
             description: "Good for one Free Refill",
           },
+          {
+            id: "TRIPLE_THREAT",
+            color: "#cc527a",
+            textColor: "#cc527a",
+            background: "#5dbcd2",
+            title: "Triple Threat",
+            description:
+              "This pitcher's strikeouts score Unruns when there are 3 runners on base, a runner on 3rd, or 3 Balls in the count. Each condition met is worth .3 Unruns. At the end of the 3rd Inning, there's a 33.33% chance that this mod will disappear.",
+          },
         ],
       };
     },
@@ -1277,8 +1286,8 @@
       };
       N.context = y;
       var T,
-        S = N,
-        I = o.a.createContext({
+        I = N,
+        S = o.a.createContext({
           sim: void 0,
           standings: void 0,
           season: void 0,
@@ -1329,10 +1338,10 @@
                 }
               );
             }, []),
-            o.a.createElement(I.Provider, { value: l }, a)
+            o.a.createElement(S.Provider, { value: l }, a)
           );
         };
-      w.context = I;
+      w.context = S;
       var O = w,
         k = t(7),
         B = {
@@ -2004,9 +2013,9 @@
             A = y[0],
             N = y[1],
             T = Object(r.useState)(void 0),
-            S = Object(s.a)(T, 2),
-            I = S[0],
-            w = S[1],
+            I = Object(s.a)(T, 2),
+            S = I[0],
+            w = I[1],
             B = Object(r.useContext)(O.context),
             C = function (e) {
               var a = e.target.value;
@@ -2031,12 +2040,12 @@
                       })),
                 t && w(t);
             }, []),
-            void 0 === I)
+            void 0 === S)
           )
             return o.a.createElement(Ae, null);
           var L = Math.min(ve.maxBetTiers[n.maxBetTier].amount, n.coins),
             M = function () {
-              return I ? (A === I.homeTeam ? I.homeOdds : I.awayOdds) : 0.5;
+              return S ? (A === S.homeTeam ? S.homeOdds : S.awayOdds) : 0.5;
             },
             R = function (e) {
               N(e);
@@ -2212,18 +2221,18 @@
                   be.a.Group,
                   { className: "ModalForm-Form-Teams", controlId: "team" },
                   o.a.createElement(D, {
-                    id: I.homeTeam,
-                    color: I.homeTeamSecondaryColor,
+                    id: S.homeTeam,
+                    color: S.homeTeamSecondaryColor,
                     modifier: "Home",
-                    name: I.homeTeamNickname,
-                    odds: I.homeOdds,
+                    name: S.homeTeamNickname,
+                    odds: S.homeOdds,
                   }),
                   o.a.createElement(D, {
-                    id: I.awayTeam,
-                    color: I.awayTeamSecondaryColor,
+                    id: S.awayTeam,
+                    color: S.awayTeamSecondaryColor,
                     modifier: "Away",
-                    name: I.awayTeamNickname,
-                    odds: I.awayOdds,
+                    name: S.awayTeamNickname,
+                    odds: S.awayOdds,
                   })
                 ),
                 o.a.createElement(
@@ -2308,65 +2317,65 @@
             )
           );
         },
-        Se = (t(105), t(29)),
-        Ie = [
+        Ie = (t(105), t(29)),
+        Se = [
           {
             name: "Void",
-            icon: o.a.createElement(Se.e, null),
+            icon: o.a.createElement(Ie.e, null),
             background: "#67678a",
             color: "#000000",
           },
           {
             name: "Sun 2",
-            icon: o.a.createElement(Se.c, null),
+            icon: o.a.createElement(Ie.c, null),
             background: "#fdff9c",
             color: "#ff3c00",
           },
           {
             name: "Overcast",
-            icon: o.a.createElement(Se.a, null),
+            icon: o.a.createElement(Ie.a, null),
             background: "#cfcfcf",
             color: "#737373",
           },
           {
             name: "Rainy",
-            icon: o.a.createElement(Se.f, null),
+            icon: o.a.createElement(Ie.f, null),
             background: "#348e9e",
             color: "#0727a8",
           },
           {
             name: "Sandstorm",
-            icon: o.a.createElement(Se.g, null),
+            icon: o.a.createElement(Ie.g, null),
             background: "#877652",
             color: "#e0dac3",
           },
           {
             name: "Snowy",
-            icon: o.a.createElement(Se.h, null),
+            icon: o.a.createElement(Ie.h, null),
             background: "#68969e",
             color: "#ffffff",
           },
           {
             name: "Acidic",
-            icon: o.a.createElement(Se.d, null),
+            icon: o.a.createElement(Ie.d, null),
             background: "#92ad58",
             color: "#235917",
           },
           {
             name: "Solar Eclipse",
-            icon: o.a.createElement(Se.i, null),
+            icon: o.a.createElement(Ie.i, null),
             background: "#002f3b",
             color: "#3c6cba",
           },
           {
             name: "Glitter",
-            icon: o.a.createElement(Se.j, null),
+            icon: o.a.createElement(Ie.j, null),
             background: "#ff94ff",
             color: "#fff98a",
           },
           {
             name: "Blooddrain",
-            icon: o.a.createElement(Se.f, null),
+            icon: o.a.createElement(Ie.f, null),
             background: "#52050f",
             color: "#ff1f3c",
           },
@@ -2412,10 +2421,16 @@
             background: "#44c97c",
             color: "#2e1406",
           },
+          {
+            name: "Coffee 3s",
+            icon: o.a.createElement(z.s, null),
+            background: "#5fa9f1",
+            color: "#cc527a",
+          },
         ];
       function we(e) {
         var a = e.type,
-          t = Ie[a].icon;
+          t = Se[a].icon;
         return o.a.createElement(
           "div",
           {
@@ -2426,13 +2441,13 @@
         );
       }
       function Oe(e) {
-        return Ie[e].name;
+        return Se[e].name;
       }
       function ke(e) {
-        return Ie[e].color;
+        return Se[e].color;
       }
       function Be(e) {
-        return Ie[e].background;
+        return Se[e].background;
       }
       var Ce,
         Le = t(24),
@@ -2654,6 +2669,8 @@
               className: r,
               style: l,
             });
+          case "TRIPLE_THREAT":
+            return o.a.createElement(z.s, null);
         }
         return null;
       }
@@ -2974,6 +2991,7 @@
                   (e.inning <= 9 ? "" : " (".concat(e.inning + 1, ")")));
             else if (e.started)
               if (e.shame) (a = "Shame"), (t = "Shame");
+              else if (-1 === e.inning) (t = "Live"), (a = "Live - 1 \u25b2");
               else {
                 t = "Live";
                 var l = e.topOfInning ? "\u25b2" : "\u25bc";
@@ -3118,14 +3136,14 @@
             ? l.homeTeamSecondaryColor
             : l.awayTeamSecondaryColor;
         }
-        function S(e) {
+        function I(e) {
           return e === l.homeTeam
             ? l.homeTeamNickname
             : e === l.awayTeam
             ? l.awayTeamNickname
             : "Null Team";
         }
-        function I(e) {
+        function S(e) {
           return e === l.homeTeam
             ? l.homeTeamSecondaryColor
             : e === l.awayTeam
@@ -3498,12 +3516,12 @@
                     {
                       className: "GameWidget-Outcome-Callout",
                       style: {
-                        color: s.lightMode ? "#000000" : I(A()),
-                        background: s.lightMode ? x(I(A()), 0.5) : "none",
+                        color: s.lightMode ? "#000000" : S(A()),
+                        background: s.lightMode ? x(S(A()), 0.5) : "none",
                         padding: s.lightMode ? "0 4px" : "initial",
                       },
                     },
-                    S(A())
+                    I(A())
                   ),
                   "\xa0were ",
                   o.a.createElement(
@@ -3531,14 +3549,14 @@
                     {
                       className: "GameWidget-Outcome-Callout",
                       style: {
-                        color: s.lightMode ? "#000000" : I(ee.entityId),
+                        color: s.lightMode ? "#000000" : S(ee.entityId),
                         background: s.lightMode
-                          ? x(I(ee.entityId), 0.5)
+                          ? x(S(ee.entityId), 0.5)
                           : "none",
                         padding: s.lightMode ? "0 4px" : "initial",
                       },
                     },
-                    S(ee.entityId)
+                    I(ee.entityId)
                   ),
                   "\xa0and ",
                   y() == ee.entityId
@@ -3929,7 +3947,7 @@
                     o.a.createElement(
                       "div",
                       { className: "GameWidget-Upcoming-Body" },
-                      o.a.createElement(Se.b, {
+                      o.a.createElement(Ie.b, {
                         className: "GameWidget-Upcoming-Icon",
                       }),
                       o.a.createElement(
@@ -4380,7 +4398,7 @@
                   p(!1);
                 }, 100);
               },
-              S = o.a.createElement(
+              I = o.a.createElement(
                 ze.a,
                 { target: a.current, show: h, placement: "bottom" },
                 function (e) {
@@ -4421,7 +4439,7 @@
               );
             return (
               g &&
-                (S = o.a.createElement(
+                (I = o.a.createElement(
                   ze.a,
                   { target: a.current, show: h, placement: "top" },
                   function (e) {
@@ -4475,7 +4493,7 @@
                       },
                       n
                     ),
-                    S
+                    I
                   )
                 : m
                 ? o.a.createElement(
@@ -4492,7 +4510,7 @@
                       },
                       n
                     ),
-                    S
+                    I
                   )
                 : o.a.createElement(
                     o.a.Fragment,
@@ -4502,7 +4520,7 @@
                       { ref: a, onMouseOver: N, onMouseOut: T, className: c },
                       n
                     ),
-                    S
+                    I
                   )
             );
           }),
@@ -4595,13 +4613,13 @@
             ),
             T = null;
           if (null !== a.favoriteTeam) {
-            var S = n.teams.find(function (e) {
+            var I = n.teams.find(function (e) {
               return e.id === a.favoriteTeam;
             });
-            if (S) {
-              var I = Y(S),
+            if (I) {
+              var S = Y(I),
                 w = encodeURIComponent(
-                  "".concat(S.slogan || "", " ").concat(I, " #blaseball")
+                  "".concat(I.slogan || "", " ").concat(S, " #blaseball")
                 ),
                 B = "http://twitter.com/intent/tweet?text=".concat(
                   w,
@@ -4612,14 +4630,14 @@
                 {
                   target: "_blank",
                   href: B,
-                  style: { background: S.mainColor },
+                  style: { background: I.mainColor },
                   className:
                     "Navigation-FavoriteTeamEmoji" +
                     (a.lightMode
                       ? " Navigation-FavoriteTeamEmoji-LightMode"
                       : ""),
                 },
-                I
+                S
               );
             }
           }
@@ -4917,7 +4935,7 @@
               y.current && !y.current.contains(e.target) && b(!1);
           },
           T = [],
-          S = [];
+          I = [];
         t &&
           t.sim &&
           (t.sim.phase >= 12 && t.sim.phase <= 15
@@ -4934,7 +4952,7 @@
               n &&
                 n.isSignedIn &&
                 (T.push({ text: "Bulletin", path: "/bulletin" }),
-                S.push({
+                I.push({
                   text: "League",
                   path: "/league",
                   subpaths: [
@@ -4946,18 +4964,18 @@
                     "/tournament",
                   ],
                 }),
-                S.push({
+                I.push({
                   text: "Election",
                   path: "/offseason",
                   locked: !n.unlockedElection,
                 }),
-                S.push({
+                I.push({
                   text: "Shop",
                   path: "/shop",
                   locked: !n.unlockedShop,
                 }),
-                S.push({ text: "Book", path: "/thebook" }),
-                S.push({ text: "The Hall", path: "/thehall", glow: !0 })))
+                I.push({ text: "Book", path: "/thebook" }),
+                I.push({ text: "The Hall", path: "/thehall", glow: !0 })))
             : 9 !== t.sim.phase
             ? (T.push({
                 text: "League",
@@ -4979,15 +4997,15 @@
                   locked: !n.unlockedElection,
                 }),
                 T.push({ text: "Bulletin", path: "/bulletin" }),
-                S.push({
+                I.push({
                   text: "Shop",
                   path: "/shop",
                   locked: !n.unlockedShop,
                 }),
-                S.push({ text: "Book", path: "/thebook" }),
-                S.push({ text: "The Hall", path: "/thehall", glow: !0 })))
+                I.push({ text: "Book", path: "/thebook" }),
+                I.push({ text: "The Hall", path: "/thehall", glow: !0 })))
             : T.push({ text: "League", path: "/" }));
-        var I = function () {
+        var S = function () {
             m(!c);
           },
           w = n.isFetching
@@ -5022,7 +5040,7 @@
                     o.a.createElement(
                       "button",
                       {
-                        onClick: I,
+                        onClick: S,
                         type: "button",
                         className: "Navigation-Button",
                       },
@@ -5044,7 +5062,7 @@
                           style: c ? { display: "flex" } : {},
                         },
                         c &&
-                          S.map(function (e, a) {
+                          I.map(function (e, a) {
                             return o.a.createElement(
                               ra,
                               { key: a, path: e.path, glow: e.glow },
@@ -5075,7 +5093,7 @@
               o.a.createElement(
                 "button",
                 {
-                  onClick: I,
+                  onClick: S,
                   type: "button",
                   className:
                     "Navigation-Button" +
@@ -5103,7 +5121,7 @@
                     style: c ? { display: "flex" } : {},
                   },
                   c &&
-                    S.map(function (e, a) {
+                    I.map(function (e, a) {
                       return o.a.createElement(
                         ra,
                         { key: a, path: e.path, glow: e.glow },
@@ -5622,7 +5640,7 @@
             ((n = !0), (l = !0)),
             i < 0 || e.line,
             t.push(
-              o.a.createElement(Sa, {
+              o.a.createElement(Ia, {
                 info: e.info[i],
                 key: e.info[i].place,
                 showIcons: e.line,
@@ -5659,7 +5677,7 @@
           )
         );
       }
-      function Sa(e) {
+      function Ia(e) {
         var a,
           t,
           n,
@@ -5695,14 +5713,14 @@
                     })
                   : null,
                 e.showIcons && p.includes(e.info.place)
-                  ? o.a.createElement(Se.i, {
+                  ? o.a.createElement(Ie.i, {
                       className: e.info.deceased
                         ? "Leaderboard-Icon-Confirmed"
                         : "Leaderboard-Icon-Eclipse",
                     })
                   : null,
                 e.showIcons && E.includes(e.info.place)
-                  ? o.a.createElement(Se.f, {
+                  ? o.a.createElement(Ie.f, {
                       className: e.info.deceased
                         ? "Leaderboard-Icon-Confirmed"
                         : "Leaderboard-Icon-Blood",
@@ -5824,7 +5842,7 @@
             )
           : null;
       }
-      var Ia;
+      var Sa;
       t(41);
       function wa() {
         var e = Object(r.useContext)(O.context),
@@ -6020,7 +6038,7 @@
           (e[(e.TheHall = 2)] = "TheHall"),
           (e[(e.Standings = 3)] = "Standings"),
           (e[(e.Leaderboard = 4)] = "Leaderboard");
-      })(Ia || (Ia = {}));
+      })(Sa || (Sa = {}));
       var La = function (e) {
         var a,
           t = e.path,
@@ -6031,19 +6049,19 @@
         function c() {
           switch (t) {
             case "/upcoming":
-              return Ia.Upcoming;
+              return Sa.Upcoming;
             case "/leaderboard":
-              return Ia.Leaderboard;
+              return Sa.Leaderboard;
             case "/standings":
-              return Ia.Standings;
+              return Sa.Standings;
             default:
-              return Ia.Live;
+              return Sa.Live;
           }
         }
         if (!n.sim) return null;
         var m,
-          u = c() === Ia.Upcoming ? n.tomorrowSchedule : n.schedule,
-          d = c() === Ia.Upcoming ? n.sim.day + 1 : n.sim.day,
+          u = c() === Sa.Upcoming ? n.tomorrowSchedule : n.schedule,
+          d = c() === Sa.Upcoming ? n.sim.day + 1 : n.sim.day,
           h =
             void 0 === u
               ? null
@@ -6113,7 +6131,7 @@
                   o.a.createElement(
                     "div",
                     { className: "League-Countdown" },
-                    c() === Ia.Upcoming
+                    c() === Sa.Upcoming
                       ? o.a.createElement(ba, { dateString: G().toString() })
                       : null
                   ),
@@ -6121,14 +6139,14 @@
                 ),
           E = void 0 !== n && void 0 !== n.sim ? n.sim.season : -1;
         switch (c()) {
-          case Ia.Leaderboard:
+          case Sa.Leaderboard:
             m = o.a.createElement(Na, null);
             break;
-          case Ia.Standings:
+          case Sa.Standings:
             m = o.a.createElement(wa, null);
             break;
-          case Ia.Live:
-          case Ia.Upcoming:
+          case Sa.Live:
+          case Sa.Upcoming:
             m = s ? o.a.createElement(Ae, null) : p;
         }
         return o.a.createElement(
@@ -6554,11 +6572,11 @@
           if (!f.sim) return null;
           var N,
             T = y() === Da.Live ? f.schedule : f.tomorrowSchedule,
-            S =
+            I =
               y() === Da.Live
                 ? f.postseason.matchups
                 : f.postseason.tomorrowMatchups,
-            I =
+            S =
               void 0 === T || (void 0 !== T && T.length <= 0)
                 ? null
                 : o.a.createElement(
@@ -6608,7 +6626,7 @@
                           return o.a.createElement(Ve, {
                             key: a,
                             data: e,
-                            matchups: S,
+                            matchups: I,
                           });
                         })
                   ),
@@ -6667,7 +6685,7 @@
                 : o.a.createElement(
                     "div",
                     null,
-                    null !== I
+                    null !== S
                       ? o.a.createElement(
                           "div",
                           null,
@@ -6680,7 +6698,7 @@
                                 })
                               : null
                           ),
-                          o.a.createElement("ul", null, I)
+                          o.a.createElement("ul", null, S)
                         )
                       : o.a.createElement(
                           "div",
@@ -7865,6 +7883,11 @@
                         className: "ModalItem-Icons-Refills",
                       })
                     : "",
+                  e.permAttr.includes("TRIPLE_THREAT")
+                    ? o.a.createElement(z.s, {
+                        className: "ModalItem-Icons-Threes",
+                      })
+                    : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -7936,6 +7959,11 @@
                         className: "ModalItem-Icons-Refills",
                       })
                     : "",
+                  e.permAttr.includes("TRIPLE_THREAT")
+                    ? o.a.createElement(z.s, {
+                        className: "ModalItem-Icons-Threes",
+                      })
+                    : "",
                   " ",
                   null === e || void 0 === e ? void 0 : e.name
                 ),
@@ -7985,8 +8013,8 @@
               }
               return [t, n];
             })(g.id, null === t || void 0 === t ? void 0 : t.standings),
-            S = T[1],
-            I = T[0],
+            I = T[1],
+            S = T[0],
             w =
               g.permAttr.length > 0 ||
               g.seasAttr.length > 0 ||
@@ -8052,7 +8080,7 @@
                       (f.lightMode ? " Team-Standing-LightMode" : ""),
                   },
                   " ",
-                  De(I, S),
+                  De(S, I),
                   " ,  ",
                   (function (e, a, t) {
                     if (void 0 === a || void 0 === t || void 0 === a.sim)
@@ -8497,19 +8525,19 @@
                       },
                     };
                   } else {
-                    var S = y.amount;
+                    var I = y.amount;
                     m = {
                       id: 1,
                       name: "High Roller Snake Oil",
                       description: "This invigorating oil allows you to place larger wagers on each game. Your current limit is ".concat(
-                        S,
+                        I,
                         ", you are maxed out."
                       ),
                       maxed: !0,
                       amount: 0,
                     };
                   }
-                  var I =
+                  var S =
                       ve.teamWinCoinTiers[
                         Math.min(
                           e.dailyCoinsTier,
@@ -8523,7 +8551,7 @@
                           id: 2,
                           name: "Passive Income Potion",
                           description: "This potion will boost the coins you earn when your team wins. Your current income per win is "
-                            .concat(I.amount, ", it would increase to ")
+                            .concat(S.amount, ", it would increase to ")
                             .concat(w.amount, "."),
                           amount: w.price,
                           toast: "Coins per win is now ".concat(w.amount),
@@ -8546,7 +8574,7 @@
                           id: 2,
                           name: "Passive Income Potion",
                           description: "This potion will boost the coins you earn when your team wins. Your current income per win is ".concat(
-                            I.amount,
+                            S.amount,
                             ", you are maxed out."
                           ),
                           maxed: !0,
@@ -9237,7 +9265,7 @@
               },
               "Buy"
             ));
-          var S = Math.floor(n.coins / N);
+          var I = Math.floor(n.coins / N);
           return o.a.createElement(
             ee,
             Object.assign({}, e, { className: "BatchBuy" }),
@@ -9332,7 +9360,7 @@
                     type: "range",
                     className: "ModalForm-Range",
                     min: 1,
-                    max: S,
+                    max: I,
                     value: h,
                     onChange: A,
                     step: "1",
@@ -9346,11 +9374,11 @@
                           ? " ModalForm-Form-Inputs-Amount-Max-LightMode"
                           : ""),
                       onClick: function (e) {
-                        e.preventDefault(), f(S);
+                        e.preventDefault(), f(I);
                       },
                     },
                     "Max: ",
-                    S
+                    I
                   )
                 ),
                 o.a.createElement(
@@ -9979,7 +10007,7 @@
             return e;
           }).apply(this, arguments);
       }
-      function St(e, a) {
+      function It(e, a) {
         if (null == e) return {};
         var t,
           n,
@@ -10003,19 +10031,19 @@
         }
         return r;
       }
-      var It = o.a.createElement("path", {
+      var St = o.a.createElement("path", {
           d:
             "M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v6h-6c-1.104 0-2 .896-2 2s.896 2 2 2h6v6h-14v-16zm9 8c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z",
         }),
         wt = function (e) {
           var a = e.svgRef,
             t = e.title,
-            n = St(e, ["svgRef", "title"]);
+            n = It(e, ["svgRef", "title"]);
           return o.a.createElement(
             "svg",
             Tt({ viewBox: "0 0 24 24", ref: a }, n),
             t ? o.a.createElement("title", null, t) : null,
-            It
+            St
           );
         },
         Ot = o.a.forwardRef(function (e, a) {
@@ -10474,13 +10502,13 @@
                 (a.lightMode ? " Decrees-Option-Icon-LightMode" : ""),
             })
           : "forecast_eclipse" === e
-          ? o.a.createElement(Se.i, {
+          ? o.a.createElement(Ie.i, {
               className:
                 "Decrees-Option-Icon" +
                 (a.lightMode ? " Decrees-Option-Icon-LightMode" : ""),
             })
           : "forecast_blooddrain" === e
-          ? o.a.createElement(Se.f, {
+          ? o.a.createElement(Ie.f, {
               className:
                 "Decrees-Option-Icon" +
                 (a.lightMode ? " Decrees-Option-Icon-LightMode" : ""),
@@ -11485,11 +11513,11 @@
             A = y[0],
             N = y[1],
             T = { team1: n.favoriteTeam },
-            S = function (e) {
+            I = function (e) {
               var a = e.target.value;
               b(a);
             },
-            I = n.votes,
+            S = n.votes,
             w = o.a.createElement(Ae, null);
           return (
             A ||
@@ -11515,8 +11543,8 @@
                 {
                   className: "ModalForm-Form",
                   onSubmit: function (e) {
-                    if ((e.preventDefault(), N(!0), g > I))
-                      a("Max vote is ".concat(I, "!"), { appearance: "error" });
+                    if ((e.preventDefault(), N(!0), g > S))
+                      a("Max vote is ".concat(S, "!"), { appearance: "error" });
                     else {
                       var t = { amount: g, entityId: d, voteType: u, data: T };
                       te("/api/vote", JSON.stringify(t))
@@ -11582,15 +11610,15 @@
                     o.a.createElement(be.a.Control, {
                       type: "number",
                       value: g,
-                      onChange: S,
+                      onChange: I,
                     }),
                     o.a.createElement(be.a.Control, {
                       type: "range",
                       className: "ModalForm-Range",
                       min: 1,
-                      max: Math.min(n.votes, I),
+                      max: Math.min(n.votes, S),
                       value: g,
-                      onChange: S,
+                      onChange: I,
                       step: "1",
                     }),
                     o.a.createElement(
@@ -11602,11 +11630,11 @@
                             ? " ModalForm-Form-Inputs-Amount-Max-LightMode"
                             : ""),
                         onClick: function (e) {
-                          e.preventDefault(), b(Math.min(n.votes, I));
+                          e.preventDefault(), b(Math.min(n.votes, S));
                         },
                       },
                       "Max Vote: ",
-                      I
+                      S
                     )
                   )
                 ),
@@ -14477,7 +14505,7 @@
       }
       t(128);
       var Tn = t(76);
-      function Sn() {
+      function In() {
         var e,
           a,
           t,
@@ -14854,7 +14882,7 @@
               )
             )
           ),
-          S = o.a.createElement(
+          I = o.a.createElement(
             "div",
             { className: "Bulletin" },
             o.a.createElement(
@@ -14889,9 +14917,9 @@
               )
             )
           );
-        return v ? S : T;
+        return v ? I : T;
       }
-      var In,
+      var Sn,
         wn,
         On = (function (e) {
           var a,
@@ -15350,7 +15378,7 @@
           (e[(e.Fire = 10)] = "Fire"),
           (e[(e.Psychic = 11)] = "Psychic"),
           (e[(e.Grass = 12)] = "Grass");
-      })(In || (In = {})),
+      })(Sn || (Sn = {})),
         (function (e) {
           (e[(e.Black = 0)] = "Black"),
             (e[(e.LightAndSweet = 1)] = "LightAndSweet"),
@@ -15401,10 +15429,10 @@
             A = Object(r.useContext)(F.context),
             N = A.user,
             T = A.setUser,
-            S = Object(r.useState)(!1),
-            I = Object(s.a)(S, 2),
-            w = I[0],
-            B = (I[1], Object(r.useState)(1)),
+            I = Object(r.useState)(!1),
+            S = Object(s.a)(I, 2),
+            w = S[0],
+            B = (S[1], Object(r.useState)(1)),
             C = Object(s.a)(B, 2);
           C[0], C[1];
           function L(e) {
@@ -16420,31 +16448,31 @@
                             { className: "Player-Info-Line-Body" },
                             (function (e) {
                               switch (e) {
-                                case In.SingleA:
+                                case Sn.SingleA:
                                   return "A";
-                                case In.DoubleA:
+                                case Sn.DoubleA:
                                   return "AA";
-                                case In.TripleA:
+                                case Sn.TripleA:
                                   return "AAA";
-                                case In.Acid:
+                                case Sn.Acid:
                                   return "Acidic";
-                                case In.Base:
+                                case Sn.Base:
                                   return "Basic";
-                                case In.Oh:
+                                case Sn.Oh:
                                   return "O";
-                                case In.OhNo:
+                                case Sn.OhNo:
                                   return "O No";
-                                case In.Water:
+                                case Sn.Water:
                                   return "H\u2082O";
-                                case In.Electric:
+                                case Sn.Electric:
                                   return "Electric";
-                                case In.Love:
+                                case Sn.Love:
                                   return "Love";
-                                case In.Fire:
+                                case Sn.Fire:
                                   return "Fire";
-                                case In.Psychic:
+                                case Sn.Psychic:
                                   return "Psychic";
-                                case In.Grass:
+                                case Sn.Grass:
                                   return "Grass";
                               }
                               return "Blood?";
@@ -18944,7 +18972,7 @@
           A = Object(r.useState)(""),
           N = Object(s.a)(A, 2),
           T = N[0],
-          S = N[1];
+          I = N[1];
         Object(r.useEffect)(
           function () {
             var e = JSON.parse(n.damageResults);
@@ -18973,12 +19001,12 @@
                   (a = Math.max(a, r(e[l].dmg))),
                   n.homeTeam === e[l].teamTarget &&
                     (t = Math.max(t, r(e[l].dmg)));
-              S(o(a)), y(o(t));
+              I(o(a)), y(o(t));
             }
           },
           [n.damageResults]
         );
-        var I = n.topOfInning ? n.awayTeamColor : n.homeTeamColor,
+        var S = n.topOfInning ? n.awayTeamColor : n.homeTeamColor,
           w = n.topOfInning ? n.homeTeamColor : n.awayTeamColor,
           O = (function (e) {
             return e.homeScore;
@@ -19099,7 +19127,7 @@
                       "div",
                       {
                         className: "BossFightWidget-PlayerLineNameWrapper",
-                        style: { background: x(I, 0.5) },
+                        style: { background: x(S, 0.5) },
                       },
                       n.homeBatterName || n.awayBatterName
                         ? o.a.createElement(
@@ -20304,7 +20332,7 @@
                     o.a.createElement(
                       c.a,
                       { path: "/bulletin" },
-                      o.a.createElement(Sn, null)
+                      o.a.createElement(In, null)
                     ),
                     o.a.createElement(
                       c.a,
@@ -20564,7 +20592,7 @@
                 placement: "bottom-right",
               },
               o.a.createElement(
-                S,
+                I,
                 { value: {} },
                 o.a.createElement(
                   O,

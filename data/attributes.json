@@ -694,5 +694,13 @@
         "background": "#44c97c",
         "title": "Free Refill",
         "description": "Good for one Free Refill"
+    },
+    {
+        "id": "TRIPLE_THREAT",
+        "color": "#cc527a",
+        "textColor": "#cc527a",
+        "background": "#5dbcd2",
+        "title": "Triple Threat",
+        "description": "This pitcher's strikeouts score Unruns when there are 3 runners on base, a runner on 3rd, or 3 Balls in the count. Each condition met is worth .3 Unruns. At the end of the 3rd Inning, there's a 33.33% chance that this mod will disappear."
     }
 ]
