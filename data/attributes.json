@@ -702,5 +702,13 @@
         "background": "#5dbcd2",
         "title": "Triple Threat",
         "description": "This pitcher's strikeouts score Unruns when there are 3 runners on base, a runner on 3rd, or 3 Balls in the count. Each condition met is worth .3 Unruns. At the end of the 3rd Inning, there's a 33.33% chance that this mod will disappear."
+    },
+    {
+        "id": "PERK",
+        "color": "#be4fff",
+        "textColor": "#be4fff",
+        "background": "#96afd4",
+        "title": "Perk",
+        "description": "This player has been rewarded Percolated energy."
     }
 ]
